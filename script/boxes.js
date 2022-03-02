@@ -1,6 +1,9 @@
 var c = document.getElementById("boxCanvas");
 var ctx = c.getContext("2d");
-var nbBox = 18;
+
+function nbBox() {
+	return Math.ceil(Math.pow(c.width * c.height, 0.75) / 1500)
+}
 
 function resize() {
 	var box = c.getBoundingClientRect();
@@ -80,20 +83,24 @@ function draw() {
 	};
 	for (var i = 0; i < boxes.length; i++) {
 		collisionDetection(i)
-		boxes[i].draw();
+		if (i < boxes.length) {
+			boxes[i].draw();
+		};
 	};
 	requestAnimationFrame(draw);
 }
 
 document.addEventListener('click',(event)=>//when user clicks on the canvas
 	{   
+		// for (var k = 0; k < 40; k++) {
+		// 	boxes.push(new Box());
+		// }
 		boxes.push(new Box(event.clientX, event.clientY));
-		nbBox += 1;
 	});
 
 resize();
 
-while (boxes.length < nbBox) {
+while (boxes.length < nbBox()) {
 	boxes.push(new Box());
 }
 
@@ -103,12 +110,12 @@ window.onresize = resize;
 
 function collisionDetection(b){
 	for (var i = boxes.length - 1; i >= 0; i--) {
-		if(i != b){	
+		if(i != b && b < boxes.length){	
 			var dx = (boxes[b].x + boxes[b].half_size) - (boxes[i].x + boxes[i].half_size);
 			var dy = (boxes[b].y + boxes[b].half_size) - (boxes[i].y + boxes[i].half_size);
 			var d = Math.sqrt(dx * dx + dy * dy);
 			if (d < boxes[b].half_size + boxes[i].half_size) {
-                if (boxes[b].half_size > 10) {
+                if (boxes[b].half_size > 12) {
                     boxes[b].half_size = boxes[b].half_size - 1
                 } else {
                     if (i > b) {
@@ -116,12 +123,16 @@ function collisionDetection(b){
                     };
                     boxes.splice(b, 1);
                 } ;
-                if (boxes[i].half_size > 10) {
+                if (boxes[i].half_size > 12) {
                     boxes[i].half_size = boxes[i].half_size - 1;
                 } else {
                     boxes.splice(i, 1);
+					if (i < b) {
+						b -= 1;
+						break;
+					}
                 } ;
-                while (boxes.length < nbBox) {
+                while (boxes.length < nbBox()) {
                     boxes.push(new Box());
                 } ;
 			}
