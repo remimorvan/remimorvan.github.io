@@ -1,5 +1,30 @@
 /* Color palette: https://flatuicolors.com/palette/de */
 
+@font-face {
+    font-family: "Fira Sans";
+    src: url("fonts/FiraSans-Medium.ttf");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "Fira Sans";
+    src: url("fonts/FiraSans-Bold.ttf");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "Fira Sans";
+    src: url("fonts/FiraSans-MediumItalic.ttf");
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Fira Sans";
+    src: url("fonts/FiraSans-BoldItalic.ttf");
+    font-weight: bold;
+    font-style: italic;
+}
+
 body {
     margin: 0;
     
