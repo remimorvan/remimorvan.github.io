@@ -371,45 +371,7 @@ a.pdf {
         }
 }
 
-@media screen and (max-width: 900px) {
-
-    aside {
-        width: 160px;
-        left: calc(50vw - 350px);
-    }
-
-    aside #avatar {
-        height: 160px;
-        min-height: 160px;
-        width: 160px;
-        min-width: 160px;
-        left: calc(50vw - 350px + 32px);
-    }
-
-    aside #fake-avatar {
-        min-height: calc(160px - 48px);
-        height: calc(160px - 48px);
-    }
-
-    main {
-        width: calc(700px - 160px - 64px - 32px);
-        left: calc(50vw - 350px + 160px + 64px + 32px);
-    }
-
-    aside .copyright {
-        display: none;
-    }
-
-    main .copyright {
-        display: block;
-    }
-
-    main .copyright {
-        font-size: 11pt;
-    }
-}
-
-@media screen and (max-width: 740px), screen and (orientation: portrait) {
+@media screen and (max-width: 900px), screen and (orientation: portrait) {
 
     a.anchor {
         top: -64px;
