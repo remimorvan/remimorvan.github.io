@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Rémi Morvan</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" >
+    <meta name="author" content="Rémi Morvan">
+    <meta name="keywords" content="Rémi Morvan, computer science, logic, automata, database, game, anakin, knowledge">
+    <meta name="description" content="Personnal webpage of Rémi Morvan, PhD student at LaBRI, Université de Bordeaux.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="design.css">
+    <link  rel="stylesheet" href="hamburger.css">
+
+  </head>
+  
+  <body>
+
+      <canvas id='boxCanvas'></canvas> 
+
+      <div id="content">
+
+        <nav id="navbar-mobile">
+          <button class="hamburger hamburger--spin" type="button">
+            <span class="hamburger-box">
+              <span class="hamburger-inner"></span>
+            </span>
+          </button>
+          
+          <div id="menu-container">
+            <ul id="menu-mobile">
+              <li><a href="index.html">About</a></li>
+              <li><a href="index.html#talks">Talks</a></li>
+              <li><a href="index.html#publi">Publications</a></li>
+              <li><a href="teaching.html">Teaching (fr)</a></li>
+            </ul>
+          </div>
+        </nav>
+
+        <div id="relative-wrap-aside">
+          <aside>
+            <div id="header">
+              <div id="avatar"></div>
+              <div id="fake-avatar"></div>
+              <h1>Rémi Morvan</h1>
+            </div>
+
+            <nav>
+              <ul>
+                <li><a href="index.html">About</a></li>
+                <li><a href="index.html#talks">Talks</a></li>
+                <li><a href="index.html#publi">Publications</a></li>
+                <li><a href="teaching.html">Teaching (fr)</a></li>
+              </ul>
+            </nav>
+
+            <div id="footer">
+              <p class="contact"><b>Contact:</b> <span class="mail"><u>x</u>@u-bordeaux.fr</span>
+                where <u>x</u> = remi.morvan</p>
+              <p class="copyright">
+                Last modification: 2 March, 2022. <br>
+                Background derived from
+                <a href="https://codepen.io/mladen___/pen/oXRxbx">Long Shadow 2</a>
+                by <a href="https://codepen.io/mladen___">Mladen Stanojevic</a>. <br>
+                Content and design under <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.
+              </p>
+            </div>
+          </aside>
+        </div>
+
+        <main>
+
+          <header>
+            <img src="img/photo.jpg" width="120px" height="120px">
+            <div>
+              <h1>Rémi Morvan</h1>
+              <p><b>Contact:</b> <span class="mail"><u>x</u>@u-bordeaux.fr</span>
+                where <u>x</u> = remi.morvan</p>
+            </div>
+          </header>
+
+          <section>
+            <a id="about" class="anchor"></a>
+            <article>
+              <h2>About me</h2>
+              <p>Since September 2021, I am a <strong>Ph.D. student
+                at <a href="https://www.labri.fr/">LaBRI</a>,
+                <a href="https://www.u-bordeaux.fr/">Université de Bordeaux</a></strong>,
+                under the supervision of
+                <a href="https://www.labri.fr/perso/dfigueir/">Diego Figueira</a> and
+                <a href="https://nathanael-fijalkow.github.io/">Nathanaël Fijalkow</a>.
+                Before that, from 2017 to 2021, I was a student at the Department of Computer Science of the
+                <a href="https://ens-paris-saclay.fr/">École normale supérieure Paris-Saclay</a>: I obtained the
+                <em><a href="https://en.wikipedia.org/wiki/Agr%C3%A9gation">agrégation</a> de mathématiques</em>
+                and the <a href="https://wikimpri.dptinfo.ens-cachan.fr/doku.php">Parisian Master of Research in Computer Science</a>.
+                More info in my <b>CV</b> <a href="cv-morvan-en.pdf">in English</a> / <a href="cv-morvan-fr.pdf">in French</a>.
+              </p>
+              <p>
+                I am interested in <b>logic</b>, including (but not limited to) <b>automata</b>, <b>algebraic language theory</b>, <b>infinite-duration games</b>,
+                and theoretical aspects of <b>graph databases</b>.
+              </p>
+            </article>
+
+            <div class="row">
+              <div class="column large">
+                <article>
+                  <h2>News</h2>
+                  <ul>
+                    <li>March 2022: New website, with colorful polygons!</li>
+                    <li>January 2022: Talk at ANR Delta, online, on <i>Separation over infinite words</i>.
+                      <a href="slides/delta-online.pdf" class="pdf">slides</a></li>
+                    <li><b>December 2021: <a style="font-style:italic" href="https://arxiv.org/abs/2201.03089">First-order separation over countable ordinals</a> has been accepted at <a href="https://etaps.org/2022/fossacs">FoSSaCS 2022</a>.</b></li>
+                    <li>October 2021: Talk at LX seminar, on <i>First-order separation over countable ordinals</i>.
+                      <a href="slides/lx-2021.pdf" class="pdf">slides</a></li>
+                  </ul>
+                </article>
+              </div>
+              <div class="column small">
+                <article id="didyouknow">
+                  <h2 id="randomtitle"></h2>
+                  <p id="randomcontent"></p>
+                </article>
+              </div>
+            </div>
+
+            <a id="talks" class="anchor"></a>
+            <article>
+              <h2>Talks</h2>
+              <p>
+                <b>First-order separation over countable ordinals:</b> <br>
+                <span style="display: inline-block; margin-left: 16px; margin-top: 0;">
+                  5 April 2022: FoSSaCS '22, Munich (30 min) <br>
+                  4 Jan. 2022: 6th ANR Delta meeting, online (20 min)
+                    <a href="slides/delta-online.pdf" class="pdf">slides</a> <br>
+                  7 Oct. 2021: LX Seminar, Bordeaux (60 min)
+                    <a href="slides/lx-2021.pdf" class="pdf">slides</a> <br>
+                  3 Sept. 2021: M2 internship defense, Paris (20 min)
+                    <a href="slides/m2-internship-defense.pdf" class="pdf">slides</a>
+                </span>
+              </p>
+              <p>
+                <b>Universal algorithms for parity games and nested fixpoints:</b> <br>
+                <span style="display: inline-block; margin-left: 16px; margin-top: 0;">
+                  28 June 2021: 5th ANR Delta meeting, Paris (20 min)
+                    <a href="slides/delta-2021.pdf" class="pdf">slides</a> <br>
+                  16 Sept. 2020: Highlights 2020, online (5 min)
+                    <a href="slides/highlights-2020.pdf" class="pdf">slides</a><br>
+                  4 Sept. 2019: M1 internship defense, Cachan (20 min)
+                    <a href="slides/m1-internship-defense.pdf" class="pdf">slides</a>
+                </span>
+              </p>
+
+            </article>
+
+            <a id="publi" class="anchor"></a>
+            <article>
+              <h2>Publications</h2>
+              <h3>2022</h3>
+              <p><b>First-order separation over countable ordinals</b>, <br>
+                <span style="display: inline-block; margin-left: 16px; margin-top: 0;">
+                  with
+                  <a href="https://www.irif.fr/~colcombe/">Thomas Colcombet</a>
+                  and
+                  <a href="https://www.samvangool.net/">Sam van Gool</a>,
+                  FoSSaCS '22.
+                <span style="margin-left: 4px;">
+                  <a href="https://doi.org/10.48550/arXiv.2201.03089" class="doi">doi</a>
+                  <a href="https://arxiv.org/pdf/2201.03089.pdf" class="pdf">pdf</a>
+                </span></span>
+              </p>
+
+              <h3>2021</h3>
+              <p><b>First-order separation of transfinite regular languages</b>, <br>
+                <span style="display: inline-block; margin-left: 16px; margin-top: 0;">
+                  Internship report, MPRI, École normale supérieure Paris-Saclay.
+                <span style="margin-left: 4px;">
+                  <a href="https://doi.org/10.13140/RG.2.2.22251.87847/1" class="doi">doi</a>
+                  <a href="papers/m2-internship-report.pdf" class="pdf">pdf</a>
+                </span></span>
+              </p>
+
+              <h3>2020</h3>
+              <p><b>A symmetric attractor-decomposition lifting algorithm for parity games</b>, <br>
+                <span style="display: inline-block; margin-left: 16px; margin-top: 0;">
+                  with <a href="https://www.dcs.warwick.ac.uk/~mju/">Marcin Jurdziński</a>,
+                  <a href="https://www.irif.fr/~ohlmann/">Pierre Ohlmann</a>, and
+                  <a href="https://thejaswiniraghavan.github.io/">K. S. Thejaswini</a>, CoRR abs/2010.08288.
+                <span style="margin-left: 4px;">
+                  <a href="https://doi.org/10.48550/arXiv.2010.08288" class="doi">doi</a>
+                  <a href="https://arxiv.org/pdf/2010.08288.pdf" class="pdf">pdf</a>
+                </span></span>
+              </p>
+              <p><b>A Universal Attractor Decomposition Algorithm for Parity Games</b>, <br>
+                <span style="display: inline-block; margin-left: 16px; margin-top: 0;">
+                  with <a href="https://www.dcs.warwick.ac.uk/~mju/">Marcin Jurdziński</a>, CoRR abs/2001.04333.
+                <span style="margin-left: 4px;">
+                  <a href="https://doi.org/10.48550/arXiv.2001.04333" class="doi">doi</a>
+                  <a href="https://arxiv.org/pdf/2001.04333.pdf" class="pdf">pdf</a>
+                </span></span>
+              </p>
+
+            </article>
+
+          </section>
+
+          <footer class="copyright">
+            <p>
+              Last modification: 2 March, 2022. <br>
+              Background derived from
+              <a href="https://codepen.io/mladen___/pen/oXRxbx">Long Shadow 2</a>
+              by <a href="https://codepen.io/mladen___">Mladen Stanojevic</a>.
+              Content and design under <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.
+            </p>
+          </footer>
+        </main>
+      
+      </div>
+  </body>
+
+  <script src="script/random-content.js"></script>
+  <script src="script/menu.js"></script>
+  <script src="script/boxes.js"></script>
+</html>
