@@ -2,26 +2,30 @@
 
 @font-face {
     font-family: "Fira Sans";
-    src: url("fonts/FiraSans-Regular.ttf");
+    src: local("Fira Sans"), url("fonts/FiraSans-Regular.ttf");
+    font-display: swap;
 }
 
 @font-face {
     font-family: "Fira Sans";
-    src: url("fonts/FiraSans-Bold.ttf");
+    src: local("Fira Sans Bold"), url("fonts/FiraSans-Bold.ttf");
     font-weight: bold;
+    font-display: swap;
 }
 
 @font-face {
     font-family: "Fira Sans";
-    src: url("fonts/FiraSans-Italic.ttf");
+    src: local("Fira Sans Italic"), url("fonts/FiraSans-Italic.ttf");
     font-style: italic;
+    font-display: swap;
 }
 
 @font-face {
     font-family: "Fira Sans";
-    src: url("fonts/FiraSans-BoldItalic.ttf");
+    src: local("Fira Sans Bold Italic"), url("fonts/FiraSans-BoldItalic.ttf");
     font-weight: bold;
     font-style: italic;
+    font-display: swap;
 }
 
 body {
