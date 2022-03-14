@@ -1,0 +1,189 @@
+{
+  "version": 0.915,
+  "presentation": "Untitled",
+  "slideDict": {
+    "new_slide": "Main",
+    "Finite_words": "Finite_words",
+    "Words": "Words",
+    "Infinite_words": "Infinite_words"
+  },
+  "tree": {
+    "type": "child",
+    "name": "Main",
+    "id": "new_slide",
+    "merged": false,
+    "children": [
+      {
+        "type": "show",
+        "id": "Separation",
+        "name": "Separation",
+        "merged": false,
+        "keywords": [
+          "set of all words",
+          "Separation"
+        ],
+        "eventId": "5",
+        "disabled": false
+      },
+      {
+        "type": "show",
+        "id": "Separator",
+        "name": "Separator",
+        "merged": false,
+        "keywords": [
+          "Separator"
+        ],
+        "eventId": "3",
+        "disabled": false
+      },
+      {
+        "type": "child",
+        "name": "Words",
+        "id": "Words",
+        "merged": false,
+        "children": [
+          {
+            "type": "child",
+            "name": "Finite words",
+            "id": "Finite_words",
+            "merged": false,
+            "children": [
+              {
+                "type": "show",
+                "id": "Automaton",
+                "name": "Automaton",
+                "merged": false,
+                "keywords": [
+                  "accepted by a finite-state automaton",
+                  "Automaton"
+                ],
+                "eventId": "1",
+                "disabled": false
+              },
+              {
+                "type": "show",
+                "id": "Formula",
+                "name": "Formula",
+                "merged": false,
+                "keywords": [
+                  "defined by an MSO formula",
+                  "Formula"
+                ],
+                "eventId": "6",
+                "disabled": false
+              },
+              {
+                "type": "show",
+                "id": "Arrow_7",
+                "name": "Arrow 7",
+                "merged": true,
+                "keywords": [
+                  "Arrow 7"
+                ],
+                "eventId": "7",
+                "disabled": false
+              },
+              {
+                "type": "show",
+                "id": "Monoid",
+                "name": "Monoid",
+                "merged": false,
+                "keywords": [
+                  "recognized by a finite monoid",
+                  "Monoid"
+                ],
+                "eventId": "9",
+                "disabled": false
+              },
+              {
+                "type": "show",
+                "id": "Arrow_8",
+                "name": "Arrow 8",
+                "merged": true,
+                "keywords": [
+                  "Arrow 8"
+                ],
+                "eventId": "8",
+                "disabled": false
+              },
+              {
+                "type": "show",
+                "id": "Arrow_9",
+                "name": "Arrow 9",
+                "merged": false,
+                "keywords": [
+                  "Arrow 9"
+                ],
+                "eventId": "10",
+                "disabled": false
+              },
+              {
+                "type": "hide",
+                "id": "Automaton",
+                "name": "Automaton",
+                "merged": false,
+                "keywords": [
+                  "Automaton"
+                ],
+                "eventId": "11",
+                "disabled": false
+              },
+              {
+                "type": "hide",
+                "id": "Arrow_7",
+                "name": "Arrow 7",
+                "merged": true,
+                "keywords": [
+                  "Arrow 7"
+                ],
+                "eventId": "12",
+                "disabled": false
+              },
+              {
+                "type": "hide",
+                "id": "Arrow_8",
+                "name": "Arrow 8",
+                "merged": true,
+                "keywords": [
+                  "Arrow 8"
+                ],
+                "eventId": "13",
+                "disabled": false
+              }
+            ],
+            "keywords": [
+              "Finite words"
+            ],
+            "eventId": "1"
+          },
+          {
+            "type": "child",
+            "name": "Infinite words",
+            "id": "Infinite_words",
+            "merged": false,
+            "children": [],
+            "keywords": [
+              "Infinite words"
+            ],
+            "eventId": "2"
+          }
+        ],
+        "keywords": [
+          "Words & logic",
+          "Finite words",
+          "Words over countable ordinals",
+          "Words"
+        ],
+        "eventId": "4"
+      }
+    ],
+    "keywords": [
+      "First-order separation over countable ordinals",
+      "Thomas Colcombet, Sam van Gool & Rémi Morvan",
+      "FoSSaCS 2022, Munich",
+      "Main"
+    ],
+    "eventId": "root"
+  },
+  "soundDict": {}
+}
