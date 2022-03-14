@@ -11,7 +11,7 @@ var c = document.getElementById("boxCanvas");
 var ctx = c.getContext("2d");
 
 function nbBox() {
-	return Math.ceil(Math.pow(c.width * c.height, 0.65) / 800)
+	return Math.ceil(Math.pow(c.width * c.height, 0.75) / 2600)
 }
 
 function resize() {
@@ -52,7 +52,7 @@ function Box(x = Math.floor((Math.random() * c.width) + 1), y = Math.floor((Math
 
 	}
 	this.rotate = function() {
-		var speed = (this.dir) * (60 - this.half_size) / 40;
+		var speed = (this.dir) * (60 - this.half_size) / 50;
 		this.r += speed * 0.003;
 		this.x += speed;
 		this.y += this.coef * speed;
