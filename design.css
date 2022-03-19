@@ -55,6 +55,32 @@ canvas {
         text-decoration: none;
     } */
 
+blockquote {
+    position: relative;
+    margin: 0 0 0 24px;
+}
+
+blockquote::before {
+    content: '\201C';
+    color: #eb3b5a;
+    /* font-family: 'Josefin Sans'; */
+    font-size: 2.5em;
+    position: absolute;
+    top: -.1em;
+    left: -24px;
+}
+
+blockquote cite::before {
+    content: '— '
+}
+
+@supports ( hanging-punctuation: first) {
+    blockquote {
+      text-indent: 0;
+      hanging-punctuation: first;
+    }
+  }
+
 a {
     color: #eb3b5a;
     text-decoration: none;
@@ -100,8 +126,8 @@ aside {
     background: #191919f0;
     color: #F4F4F4;
     text-align: right;
-    border-radius: 12px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+    border-radius: 16px;
+    box-shadow: 0 0 13px rgba(0, 0, 0, 0.13);
 }
 
     aside a {
@@ -134,8 +160,8 @@ aside {
         left: calc(50vw - 600px + 32px);
         margin-bottom: 32px;
 
-        border-radius: 12px;
-        box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+        border-radius: 16px;
+        box-shadow: 0 0 13px rgba(0, 0, 0, 0.13);
         /* border: solid 3px #111111; */
         /* box-shadow: 0 2px 4px 0px #111111;
         -webkit-transition: background-image 200ms ease-in-out;
@@ -163,7 +189,7 @@ aside {
     }
 
         aside li {
-            border-radius: 12px;
+            border-radius: 16px;
             padding: 0;
             margin: 16px 0 0 0;
             transition: color 200ms;
@@ -220,11 +246,11 @@ section > article:last-child {
 
 article, header, footer {
     background-color: #F4F4F4f0;
-    border-radius: 12px;
+    border-radius: 16px;
     margin: 32px 0;
     padding: 32px;
 
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 0 13px rgba(0, 0, 0, 0.13);
 }
 
 header {
@@ -235,7 +261,7 @@ header {
 }
 
     header img {
-        border-radius: 12px;
+        border-radius: 16px;
         margin-right: 32px;
     }
 
@@ -317,7 +343,6 @@ table td:first-child {
 a.doi {
     /* color: #2d98da; */
     padding: 2px;
-    border-radius: 6px;
     font-weight: 700;
     font-size: 90%;
 }
@@ -397,7 +422,7 @@ a.pdf {
         left: 0;
         
         background: #191919f0;
-        box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+        box-shadow: 0 0 13px rgba(0, 0, 0, 0.13);
     }
     
         #navbar-mobile .hamburger {

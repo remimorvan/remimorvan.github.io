@@ -11,7 +11,7 @@ var c = document.getElementById("boxCanvas");
 var ctx = c.getContext("2d");
 
 function nbBox() {
-	return Math.ceil(Math.pow(c.width * c.height, 0.65) / 800)
+	return Math.ceil(Math.pow(c.width * c.height, 0.65) / 1200)
 }
 
 function resize() {
@@ -25,7 +25,7 @@ var light = {
 	y: 200
 }
 
-var colors = ["#eb3b5a", "#2d98da", "#f7b731", "#8854d0", "#20bf6b"];
+var colors = ["#eb3b5a", "#2d98da", "#f7b731", "#8854d0"];
 
 function Box(x = Math.floor((Math.random() * c.width) + 1), y = Math.floor((Math.random() * c.height) + 1)) {
 	this.half_size = Math.floor((Math.random() * 30) + 20);
@@ -52,7 +52,7 @@ function Box(x = Math.floor((Math.random() * c.width) + 1), y = Math.floor((Math
 
 	}
 	this.rotate = function() {
-		var speed = (this.dir) * (60 - this.half_size) / 30;
+		var speed = (this.dir) * (60 - this.half_size) / 35;
 		this.r += speed * 0.003;
 		this.x += speed;
 		this.y += this.coef * speed;
