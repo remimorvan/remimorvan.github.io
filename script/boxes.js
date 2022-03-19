@@ -11,11 +11,7 @@ var c = document.getElementById("boxCanvas");
 var ctx = c.getContext("2d");
 
 function nbBox() {
-	if (c.width * c.height < 150000) {
-		return 3
-	} else {
-		return 7
-	}
+	return Math.ceil(Math.pow(c.width * c.height, 0.65) / 800)
 }
 
 function resize() {

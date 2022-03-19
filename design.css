@@ -33,6 +33,7 @@ body {
     
     font: 12pt 'Fira Sans', sans-serif;
     color: #111111;
+
 }
 
 canvas {
@@ -100,6 +101,7 @@ aside {
     color: #F4F4F4;
     text-align: right;
     border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
 }
 
     aside a {
@@ -133,6 +135,7 @@ aside {
         margin-bottom: 32px;
 
         border-radius: 12px;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
         /* border: solid 3px #111111; */
         /* box-shadow: 0 2px 4px 0px #111111;
         -webkit-transition: background-image 200ms ease-in-out;
@@ -220,6 +223,8 @@ article, header, footer {
     border-radius: 12px;
     margin: 32px 0;
     padding: 32px;
+
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
 }
 
 header {
@@ -392,6 +397,7 @@ a.pdf {
         left: 0;
         
         background: #191919f0;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
     }
     
         #navbar-mobile .hamburger {
