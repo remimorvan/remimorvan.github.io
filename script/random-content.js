@@ -16,5 +16,5 @@ funFactTitle[5] = "Random quote";
 
 
 var num = Math.floor( Math.random() * funFact.length );
-document.getElementById("randomtitle").innerHTML = funFactTitle[num];
+// document.getElementById("randomtitle").innerHTML = funFactTitle[num];
 document.getElementById("randomcontent").innerHTML = funFact[num];
