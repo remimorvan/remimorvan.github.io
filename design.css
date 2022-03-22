@@ -61,7 +61,7 @@ blockquote {
 
 blockquote::before {
     content: '\201C';
-    color: #eb3b5a;
+    color: #1289A7;
     /* font-family: 'Josefin Sans'; */
     font-size: 2.5em;
     position: absolute;
@@ -81,7 +81,7 @@ blockquote cite::before {
   }
 
 a {
-    color: #eb3b5a;
+    color: #1289A7;
     text-decoration: none;
 }
 
@@ -195,7 +195,7 @@ aside {
         }
 
             aside li:hover {
-                color: #eb3b5a;
+                color: #1289A7;
                 transition: color 200ms;
             }
 
@@ -214,7 +214,7 @@ aside {
             }
 
     aside .mail, main .mail {
-        color: #eb3b5a;
+        color: #1289A7;
     }
 
     aside .copyright {
@@ -277,12 +277,12 @@ footer {
 }
 
 /* article#news {
-    background: #eb3b5af0;
+    background: #1289A7f0;
     color: #F4F4F4;
 }
 
 article#didyouknow {
-    background: #eb3b5af0;
+    background: #1289A7f0;
     color: #F4F4F4;
 } */
 
@@ -347,7 +347,7 @@ a.doi {
 }
 
 a.pdf {
-    color: #f7b731;
+    color: #F79F1F;
     padding: 2px;
     font-weight: 700;
     font-size: 90%;
