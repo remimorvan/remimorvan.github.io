@@ -133,6 +133,10 @@ aside {
         color: inherit;
     }
 
+    aside a:hover {
+        text-decoration: inherit !important;
+    }
+
     aside #header {
         text-align: center;
     }
