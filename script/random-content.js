@@ -9,12 +9,8 @@ funFact[2] = "Despite many efforts, my <a href=\"https://www.irif.fr/~haberm/hai
 funFactTitle[2] = "Did you know?";
 funFact[3] = "<a href='https://github.com/remimorvan/knowledge-clustering'>Knowledge-Clustering</a> is a program that helps the user write LaTeX documents using the knowledge package, by giving (helpful!) suggestions on which notions should be grouped together.";
 funFactTitle[3] = "Have you heard of?";
-funFact[4] = "<a href='https://ctan.org/pkg/knowledge'>Knowledge</a> is a LaTeX package for (among other things) automatically linking a notion to its definition via an internal hyperlink. For example, <a href='https://arxiv.org/pdf/2201.03089.pdf'>this paper</a> or <a href='https://arxiv.org/pdf/1805.06238.pdf'>this thesis</a> were written using <a href='https://ctan.org/pkg/knowledge'>knowledge</a>.";
-funFactTitle[4] = "Have you heard of?";
-funFact[5] = "<blockquote><p>Too much change is not a good thing. Ask the climate.</p><p><cite>Michael G. Scott</cite></p></blockquote><a href='https://tcs4f.org/'>Learn about Theoretical Computer Scientists for Future</a> (and stop flying to conferences)." ;
-funFactTitle[5] = "Random quote";
 
 
 var num = Math.floor( Math.random() * funFact.length );
-// document.getElementById("randomtitle").innerHTML = funFactTitle[num];
+document.getElementById("randomtitle").innerHTML = funFactTitle[num];
 document.getElementById("randomcontent").innerHTML = funFact[num];
