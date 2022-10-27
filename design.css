@@ -526,6 +526,10 @@ a.pdf {
 }
 
 @media screen and (max-width: 560px) {
+    body {
+        font-size: 90%;
+    }
+
     main {
         width: calc(100vw - 48px);
         left: 24px;
@@ -537,5 +541,24 @@ a.pdf {
 
     #navbar-mobile ul#menu-mobile {
         padding: 0 32px;
+    }
+
+    article {
+        padding: 24px;
+        margin: 24px 0;
+    }
+
+    header {
+        padding: 16px 24px;
+        margin: -12px 0 24px 0;
+    }
+
+    header img {
+        margin-right: 24px;
+    }
+
+    footer {
+        padding: 24px;
+        margin: 24px 0 -12px 0;
     }
 }
