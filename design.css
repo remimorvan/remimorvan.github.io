@@ -80,13 +80,30 @@ blockquote cite::before {
     }
   }
 
-a {
+.important {
     color: #1289A7;
-    text-decoration: none;
+}
+
+.alsoimportant {
+    color: #F79F1F;
+}
+
+.goto {
+    padding-left: 24px;
+    font-weight: bold;
+}
+
+.goto::before {
+    content: "› ";
+}
+
+a {
+    color: inherit;
+    text-decoration: underline dotted;
 }
 
     a:hover {
-        text-decoration: underline solid;
+        text-decoration: none;
     }
 
     a.anchor {
@@ -131,6 +148,7 @@ aside {
 
     aside a {
         color: inherit;
+        text-decoration: inherit;
     }
 
     aside a:hover {
@@ -344,7 +362,7 @@ table td:first-child {
 } */
 
 a.doi {
-    /* color: #2d98da; */
+    color: #2d98da;
     padding: 2px;
     font-weight: 700;
     font-size: 90%;
@@ -392,12 +410,12 @@ a.pdf {
     .row .column {
         flex: calc(100% - 64px);
         min-width: calc(100% - 64px);
-        margin: 0 0 32px 0;
+        margin: 0;
     }
 
-        .row .column:last-child {
+        /* .row .column:last-child {
             margin-bottom: 0; 
-        }
+        } */
 
         .row .column.small {
             flex: calc(100% - 64px);
