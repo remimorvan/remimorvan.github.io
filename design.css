@@ -362,7 +362,7 @@ table td:first-child {
 } */
 
 a.doi {
-    color: #2d98da;
+    color: #1289A7;
     padding: 2px;
     font-weight: 700;
     font-size: 90%;
@@ -385,6 +385,11 @@ a.pdf {
 
 .copyright a {
     color: inherit;
+}
+
+ul.recent {
+    padding-left: 0px;
+    list-style-type: none;
 }
 
 @media screen and (max-width: 1300px) {
