@@ -30,7 +30,7 @@
 
 body {
     margin: 0;
-    
+
     font: 12pt 'Fira Sans', sans-serif;
     color: #111111;
 }
@@ -73,12 +73,12 @@ blockquote cite::before {
     content: '— '
 }
 
-@supports ( hanging-punctuation: first) {
+@supports (hanging-punctuation: first) {
     blockquote {
-      text-indent: 0;
-      hanging-punctuation: first;
+        text-indent: 0;
+        hanging-punctuation: first;
     }
-  }
+}
 
 .important {
     color: #1289A7;
@@ -89,7 +89,7 @@ blockquote cite::before {
 }
 
 .goto {
-    padding-left: 24px;
+    padding-left: 16px;
     font-weight: bold;
 }
 
@@ -102,16 +102,16 @@ a {
     text-decoration: underline dotted;
 }
 
-    a:hover {
-        text-decoration: none;
-    }
+a:hover {
+    text-decoration: none;
+}
 
-    a.anchor {
-        display: block;
-        position: relative;
-        top: -32px;
-        visibility: hidden;
-    }
+a.anchor {
+    display: block;
+    position: relative;
+    top: -32px;
+    visibility: hidden;
+}
 
 h2::before {
     content: "› ";
@@ -146,104 +146,105 @@ aside {
     box-shadow: 0 0 13px rgba(0, 0, 0, 0.13);
 }
 
-    aside a {
-        color: inherit;
-        text-decoration: inherit;
-    }
+aside a {
+    color: inherit;
+    text-decoration: inherit;
+}
 
-    aside a:hover {
-        text-decoration: inherit !important;
-    }
+aside a:hover {
+    text-decoration: inherit !important;
+}
 
-    aside #header {
-        text-align: center;
-    }
+aside #header {
+    text-align: center;
+}
 
-    aside h1 {
-        width: 100%;
-        /* border-bottom: 1px solid #444444; */
-        margin-top: 0;
-        /* padding-bottom: 8px; */
-        text-align: center;
-        font-size: 20pt;
-    }
+aside h1 {
+    width: 100%;
+    /* border-bottom: 1px solid #444444; */
+    margin-top: 0;
+    /* padding-bottom: 8px; */
+    text-align: center;
+    font-size: 20pt;
+}
 
-    aside #avatar {
-        position: fixed;
-        background: url("img/photo.jpg") no-repeat center;
-        background-size: contain;
-        display: inline-block;
-        height: 220px;
-        min-height: 220px;
-        width: 220px;
-        min-width: 220px;
-        top: 32px;
-        left: calc(50vw - 600px + 32px);
-        margin-bottom: 32px;
+aside #avatar {
+    position: fixed;
+    background: url("img/photo.jpg") no-repeat center;
+    background-size: contain;
+    display: inline-block;
+    height: 220px;
+    min-height: 220px;
+    width: 220px;
+    min-width: 220px;
+    top: 32px;
+    left: calc(50vw - 600px + 32px);
+    margin-bottom: 32px;
 
-        border-radius: 16px;
-        box-shadow: 0 0 13px rgba(0, 0, 0, 0.13);
-        /* border: solid 3px #111111; */
-        /* box-shadow: 0 2px 4px 0px #111111;
+    border-radius: 16px;
+    box-shadow: 0 0 13px rgba(0, 0, 0, 0.13);
+    /* border: solid 3px #111111; */
+    /* box-shadow: 0 2px 4px 0px #111111;
         -webkit-transition: background-image 200ms ease-in-out;
         transition: background-image 200ms ease-in-out; */
-    }
+}
 
-    aside #fake-avatar {
-        display: relative;
-        min-height: calc(220px - 48px);
-        height: calc(220px - 48px);
-    }
+aside #fake-avatar {
+    display: relative;
+    min-height: calc(220px - 48px);
+    height: calc(220px - 48px);
+}
 
-    /* aside #avatar:hover {
+/* aside #avatar:hover {
         background: url("img/photo-col.jpg") no-repeat center;
         background-size: contain;
         transition: background-image 200ms;
     } */
-    
-    aside ul {
-        padding-left: 0;
-        list-style: none;
-        margin-top: 32px;
-        font-size: 15pt;
-        font-weight: bold;
-    }
 
-        aside li {
-            border-radius: 16px;
-            padding: 0;
-            margin: 16px 0 0 0;
-            transition: color 200ms;
-        }
+aside ul {
+    padding-left: 0;
+    list-style: none;
+    margin-top: 32px;
+    font-size: 15pt;
+    font-weight: bold;
+}
 
-            aside li:hover {
-                color: #1289A7;
-                transition: color 200ms;
-            }
+aside li {
+    border-radius: 16px;
+    padding: 0;
+    margin: 16px 0 0 0;
+    transition: color 200ms;
+}
 
-        aside ul ul {
-            margin-top: 0;
-            padding: 0;
-            font-size: 12pt;
-        }
+aside li:hover {
+    color: #1289A7;
+    transition: color 200ms;
+}
 
-        aside ul ul li {
-            margin: 2px 0 0 0;
-        }
+aside ul ul {
+    margin-top: 0;
+    padding: 0;
+    font-size: 12pt;
+}
 
-            aside li:hover ul {
-                color: #F4F4F4 !important;
-            }
+aside ul ul li {
+    margin: 2px 0 0 0;
+}
 
-    aside .mail, main .mail {
-        color: #1289A7;
-    }
+aside li:hover ul {
+    color: #F4F4F4 !important;
+}
 
-    aside .copyright {
-        text-align: left;
-        font-size: 10pt;
-        margin-bottom: 0;
-    }
+aside .mail,
+main .mail {
+    color: #1289A7;
+}
+
+aside .copyright {
+    text-align: left;
+    font-size: 10pt;
+    margin-bottom: 0;
+}
 
 main {
     position: absolute;
@@ -252,20 +253,22 @@ main {
     padding: 64px 0 32px 0;
 }
 
-    main .copyright {
-        display: none;
-    }
+main .copyright {
+    display: none;
+}
 
-section > article:first-of-type {
+section>article:first-of-type {
     margin-top: 0;
 }
 
-section > article:last-child {
+section>article:last-child {
     margin-bottom: 0;
 }
 
 
-article, header, footer {
+article,
+header,
+footer {
     background-color: #F4F4F4f0;
     border-radius: 16px;
     margin: 32px 0;
@@ -281,20 +284,20 @@ header {
     margin-top: 0;
 }
 
-    header img {
-        border-radius: 16px;
-        margin-right: 32px;
-    }
+header img {
+    border-radius: 16px;
+    margin-right: 32px;
+}
 
 footer {
     margin-bottom: 0;
 }
 
-:is(article, header, footer) > *:first-child {
+:is(article, header, footer)>*:first-child {
     margin-top: 0px;
 }
 
-:is(article,header, footer) > *:last-child {
+:is(article, header, footer)>*:last-child {
     margin-bottom: 0px;
 }
 
@@ -312,26 +315,26 @@ article#didyouknow {
     display: flex;
 }
 
-    .row article {
-        margin: 0;
-    }
+.row article {
+    margin: 0;
+}
 
-    .row .column {
-        flex: 50%;
-        margin: 0 32px 0 0;
-    }
+.row .column {
+    flex: 50%;
+    margin: 0 32px 0 0;
+}
 
-        .row .column:last-child {
-            margin-right: 0; 
-        }
+.row .column:last-child {
+    margin-right: 0;
+}
 
-        .row .column.small {
-            flex: 45%;
-        }
+.row .column.small {
+    flex: 45%;
+}
 
-        .row .column.large {
-            flex: 55%;
-        }
+.row .column.large {
+    flex: 55%;
+}
 
 /* table {
     width: 100%;
@@ -374,14 +377,14 @@ a.pdf {
     font-weight: 700;
     font-size: 90%;
 }
-    
-    :is(a.pdf, a.doi):before {
-        content: '['
-    }
 
-    :is(a.pdf, a.doi):after {
-        content: ']'
-    }
+:is(a.pdf, a.doi):before {
+    content: '['
+}
+
+:is(a.pdf, a.doi):after {
+    content: ']'
+}
 
 .copyright a {
     color: inherit;
@@ -393,7 +396,7 @@ ul.recent {
 }
 
 @media screen and (max-width: 1300px) {
-    
+
     aside {
         left: calc(50vw - 400px);
     }
@@ -418,20 +421,21 @@ ul.recent {
         margin: 0;
     }
 
-        /* .row .column:last-child {
+    /* .row .column:last-child {
             margin-bottom: 0; 
         } */
 
-        .row .column.small {
-            flex: calc(100% - 64px);
-        }
+    .row .column.small {
+        flex: calc(100% - 64px);
+    }
 
-        .row .column.large {
-            flex: calc(100% - 64px);
-        }
+    .row .column.large {
+        flex: calc(100% - 64px);
+    }
 }
 
-@media screen and (max-width: 900px), screen and (orientation: portrait) {
+@media screen and (max-width: 900px),
+screen and (orientation: portrait) {
 
     a.anchor {
         top: -64px;
@@ -439,69 +443,72 @@ ul.recent {
 
     #navbar-mobile {
         z-index: 1000;
-        
+
         display: block;
         position: fixed;
         height: 64px;
         width: 100vw;
         top: 0;
         left: 0;
-        
+
         background: #191919f0;
         box-shadow: 0 0 13px rgba(0, 0, 0, 0.13);
     }
-    
-        #navbar-mobile .hamburger {
-            z-index: 1001;
-            position: absolute;
-            padding: 20px 0px;
-            left: calc(64px);
-        }
-    
-        #navbar-mobile .hamburger-inner, #navbar-mobile .hamburger-inner::before, #navbar-mobile .hamburger-inner::after {
-            background: #f4f4f4 !important;
-        }
 
-        #navbar-mobile #menu-container {
-            width: 100vw;
-            position: absolute;
-            top: 64px;
-            left: 0;
+    #navbar-mobile .hamburger {
+        z-index: 1001;
+        position: absolute;
+        padding: 20px 0px;
+        left: calc(64px);
+    }
 
-            transform: translate(0, -600px);
-            transform-origin: top;
-            transition: all 400ms;
+    #navbar-mobile .hamburger-inner,
+    #navbar-mobile .hamburger-inner::before,
+    #navbar-mobile .hamburger-inner::after {
+        background: #f4f4f4 !important;
+    }
 
-            background: #191919f0;
-        }
+    #navbar-mobile #menu-container {
+        width: 100vw;
+        position: absolute;
+        top: 64px;
+        left: 0;
 
-        #navbar-mobile #menu-container.is-active{
-            transform: translate(0, 0);
-            transition: all 400ms;
-        }
+        transform: translate(0, -600px);
+        transform-origin: top;
+        transition: all 400ms;
 
-        #navbar-mobile ul#menu-mobile {
-            position: relative;
-            list-style: none;
-            margin: 0 0 64px 0;
-            padding: 0 64px;
+        background: #191919f0;
+    }
 
-            text-align: right;
-        }
+    #navbar-mobile #menu-container.is-active {
+        transform: translate(0, 0);
+        transition: all 400ms;
+    }
 
-        #navbar-mobile ul#menu-mobile, #navbar-mobile ul#menu-mobile a {
-            color: #F4F4F4;
-            font-size: 15pt;
-            font-weight: bold;
-        }
+    #navbar-mobile ul#menu-mobile {
+        position: relative;
+        list-style: none;
+        margin: 0 0 64px 0;
+        padding: 0 64px;
 
-        #navbar-mobile ul#menu-mobile li {
-            margin: 16px 0 0 0;
-        }
+        text-align: right;
+    }
 
-        #navbar-mobile ul#menu-mobile li:first-child {
-            margin: 0;
-        }
+    #navbar-mobile ul#menu-mobile,
+    #navbar-mobile ul#menu-mobile a {
+        color: #F4F4F4;
+        font-size: 15pt;
+        font-weight: bold;
+    }
+
+    #navbar-mobile ul#menu-mobile li {
+        margin: 16px 0 0 0;
+    }
+
+    #navbar-mobile ul#menu-mobile li:first-child {
+        margin: 0;
+    }
 
     aside {
         display: none;
