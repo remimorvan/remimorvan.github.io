@@ -11,7 +11,7 @@ var c = document.getElementById("boxCanvas");
 var ctx = c.getContext("2d");
 
 function nbBox() {
-	return Math.ceil(Math.pow(c.width * c.height, 0.65) / 1200)
+	return 3
 }
 
 function resize() {
