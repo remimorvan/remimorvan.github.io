@@ -11,7 +11,7 @@ var c = document.getElementById("boxCanvas");
 var ctx = c.getContext("2d");
 
 function nbBox() {
-	return 3
+	return 0
 }
 
 function resize() {
