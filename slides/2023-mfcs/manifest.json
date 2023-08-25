@@ -1,0 +1,32 @@
+{
+  "version": 0.915,
+  "presentation": "2023-mfcs",
+  "slideDict": {
+    "new_slide": "slide1",
+    "new_slide2": "slide2"
+  },
+  "tree": {
+    "type": "child",
+    "name": "slide1",
+    "id": "new_slide",
+    "merged": false,
+    "children": [
+      {
+        "type": "child",
+        "name": "slide2",
+        "id": "new_slide2",
+        "merged": false,
+        "children": [],
+        "keywords": [
+          "slide2"
+        ],
+        "eventId": "2"
+      }
+    ],
+    "keywords": [
+      "slide1"
+    ],
+    "eventId": "root"
+  },
+  "soundDict": {}
+}
