@@ -3,28 +3,550 @@
   "presentation": "2023-mfcs",
   "slideDict": {
     "new_slide": "slide1",
-    "new_slide2": "slide2"
+    "new_slide2": "slide2",
+    "automaticity": "automaticity",
+    "separation_=_colourability": "separation_=_colourability",
+    "undecidability": "undecidability",
+    "recognizable": "recognizable",
+    "automatic_graph": "automatic_graph",
+    "undecidability_sep": "undecidability_sep",
+    "question": "question"
   },
   "tree": {
     "type": "child",
-    "name": "slide1",
+    "name": "main slide",
     "id": "new_slide",
     "merged": false,
     "children": [
       {
         "type": "child",
-        "name": "slide2",
-        "id": "new_slide2",
+        "name": "automaticity",
+        "id": "automaticity",
         "merged": false,
-        "children": [],
+        "children": [
+          {
+            "type": "show",
+            "id": "Automaticity",
+            "name": "Automaticity",
+            "merged": false,
+            "keywords": [
+              "Automaticity"
+            ],
+            "eventId": "1",
+            "disabled": false
+          },
+          {
+            "type": "show",
+            "id": "Def_automatic",
+            "name": "Def automatic",
+            "merged": false,
+            "keywords": [
+              "is automatic when it can be described by a synchronous automaton.",
+              "Def automatic"
+            ],
+            "eventId": "3",
+            "disabled": false
+          },
+          {
+            "type": "show",
+            "id": "Encoding",
+            "name": "Encoding",
+            "merged": false,
+            "keywords": [
+              "Encoding"
+            ],
+            "eventId": "4",
+            "disabled": false
+          },
+          {
+            "type": "show",
+            "id": "Automaton",
+            "name": "Automaton",
+            "merged": false,
+            "keywords": [
+              "accepts the identity relation.",
+              "Automaton"
+            ],
+            "eventId": "5",
+            "disabled": false
+          },
+          {
+            "type": "child",
+            "name": "recognizable",
+            "id": "recognizable",
+            "merged": false,
+            "children": [
+              {
+                "type": "show",
+                "id": "Automaticity",
+                "name": "Recognizability",
+                "merged": false,
+                "keywords": [
+                  "Recognizability"
+                ],
+                "eventId": "1",
+                "disabled": false
+              },
+              {
+                "type": "show",
+                "id": "Def_automatic",
+                "name": "Def rec",
+                "merged": false,
+                "keywords": [
+                  "regular lang.",
+                  "Recognizable relations:",
+                  "Def rec"
+                ],
+                "eventId": "2",
+                "disabled": false
+              },
+              {
+                "type": "show",
+                "id": "Ex",
+                "name": "Ex",
+                "merged": false,
+                "keywords": [
+                  "“same parity” “end with the same letter” identity relation",
+                  "Ex. Co-ex.",
+                  "Ex"
+                ],
+                "eventId": "3",
+                "disabled": false
+              },
+              {
+                "type": "show",
+                "id": "Prop._Recognizable_implies_automatic.",
+                "name": "Prop. Recognizable implies automatic.",
+                "merged": false,
+                "keywords": [
+                  "Prop. Recognizable implies automatic."
+                ],
+                "eventId": "4",
+                "disabled": false
+              },
+              {
+                "type": "show",
+                "id": "Prop._(Stearns__E2_80_9867_&_Valiant__E2_80_9875_&_Carton-Choffrut-Grigorieff__E2_80_9806)_Given_an_automatic_relation,_we_can_decide_if_it_is_recognizable.",
+                "name": "Prop. (Stearns ‘67 & Valiant ‘75 & Carton-Choffrut-Grigorieff ‘06) Given an automatic relation, we can decide if it is recognizable.",
+                "merged": false,
+                "keywords": [
+                  "Prop. (Stearns ‘67 & Valiant ‘75 & Carton-Choffrut-Grigorieff ‘06) Given an automatic relation, we can decide if it is recognizable."
+                ],
+                "eventId": "5",
+                "disabled": false
+              }
+            ],
+            "keywords": [
+              "recognizable"
+            ],
+            "eventId": "2"
+          }
+        ],
         "keywords": [
-          "slide2"
+          "automaticity"
+        ],
+        "eventId": "1"
+      },
+      {
+        "type": "show",
+        "id": "Group_3",
+        "name": "Main Question",
+        "merged": false,
+        "keywords": [
+          "Ques°. Can we decide if two automatic relations can be separated by a recognizable relation?",
+          "Main Question"
+        ],
+        "eventId": "30",
+        "disabled": false
+      },
+      {
+        "type": "child",
+        "name": "separation = colourability",
+        "id": "separation_=_colourability",
+        "merged": false,
+        "children": [
+          {
+            "type": "show",
+            "id": "Separation_vs._Colouring",
+            "name": "Separation vs. Colouring",
+            "merged": false,
+            "keywords": [
+              "Separation vs. Colouring"
+            ],
+            "eventId": "1",
+            "disabled": false
+          },
+          {
+            "type": "show",
+            "id": "Separation_fig",
+            "name": "Separation fig",
+            "merged": false,
+            "keywords": [
+              "automatic",
+              "recognizable",
+              "Aut/Rec separa- bility problem",
+              "Separation fig"
+            ],
+            "eventId": "2",
+            "disabled": false
+          },
+          {
+            "type": "child",
+            "name": "automatic graph",
+            "id": "automatic_graph",
+            "merged": false,
+            "children": [
+              {
+                "type": "show",
+                "id": "Automatic_graphs",
+                "name": "Automatic graphs",
+                "merged": false,
+                "keywords": [
+                  "Automatic graphs"
+                ],
+                "eventId": "1",
+                "disabled": false
+              },
+              {
+                "type": "show",
+                "id": "Def_automatic_graph",
+                "name": "Def automatic graph",
+                "merged": false,
+                "keywords": [
+                  "Automatic graph: with automatic.",
+                  "Def automatic graph"
+                ],
+                "eventId": "2",
+                "disabled": false
+              },
+              {
+                "type": "show",
+                "id": "Def_colouring",
+                "name": "Def colouring",
+                "merged": false,
+                "keywords": [
+                  "Colouring: consistent with edges.",
+                  "Def colouring"
+                ],
+                "eventId": "3",
+                "disabled": false
+              },
+              {
+                "type": "show",
+                "id": "Ex",
+                "name": "Ex",
+                "merged": false,
+                "keywords": [
+                  "Ex.",
+                  "a b aa ab ba bb",
+                  "Ex"
+                ],
+                "eventId": "4",
+                "disabled": false
+              },
+              {
+                "type": "show",
+                "id": "Colouring",
+                "name": "Colouring",
+                "merged": false,
+                "keywords": [
+                  "is a colouring.",
+                  "a b aa ab ba bb",
+                  "Colouring"
+                ],
+                "eventId": "8",
+                "disabled": false
+              },
+              {
+                "type": "show",
+                "id": "Def_regular",
+                "name": "Def regular",
+                "merged": false,
+                "keywords": [
+                  "Def. is regular when every is regular.",
+                  "Def regular"
+                ],
+                "eventId": "5",
+                "disabled": false
+              },
+              {
+                "type": "show",
+                "id": "regular",
+                "name": "regular",
+                "merged": false,
+                "keywords": [
+                  "regular"
+                ],
+                "eventId": "7",
+                "disabled": false
+              }
+            ],
+            "keywords": [
+              "automatic graph"
+            ],
+            "eventId": "3"
+          },
+          {
+            "type": "show",
+            "id": "Group_2",
+            "name": "Reg colour pb",
+            "merged": false,
+            "keywords": [
+              "Regular colourability problem: Does have a finite regular colouring?",
+              "Reg colour pb"
+            ],
+            "eventId": "4",
+            "disabled": false
+          },
+          {
+            "type": "show",
+            "id": "Thm._These_problems_are_Turing-equivalent.",
+            "name": "Thm. These problems are Turing-equivalent.",
+            "merged": false,
+            "keywords": [
+              "Thm. These problems are Turing-equivalent."
+            ],
+            "eventId": "5",
+            "disabled": false
+          },
+          {
+            "type": "show",
+            "id": "Intuition",
+            "name": "Intuition",
+            "merged": false,
+            "keywords": [
+              "Intuition. A finite regular colouring of satisfies:",
+              "Intuition"
+            ],
+            "eventId": "6",
+            "disabled": false
+          }
+        ],
+        "keywords": [
+          "separation = colourability"
         ],
         "eventId": "2"
+      },
+      {
+        "type": "child",
+        "name": "undecidability",
+        "id": "undecidability",
+        "merged": false,
+        "children": [
+          {
+            "type": "show",
+            "id": "Undecidability_for_fixed_k",
+            "name": "Undecidability for fixed k",
+            "merged": false,
+            "keywords": [
+              "Undecidability for fixed k"
+            ],
+            "eventId": "1",
+            "disabled": false
+          },
+          {
+            "type": "show",
+            "id": "Thm_Kocher",
+            "name": "Thm Kocher",
+            "merged": false,
+            "keywords": [
+              "Thm. (Köcher ‘14) The -colourability problem is undecidable for each .",
+              "not required to be regular",
+              "Thm Kocher"
+            ],
+            "eventId": "2",
+            "disabled": false
+          },
+          {
+            "type": "show",
+            "id": "Thm_(ours)",
+            "name": "Thm (ours)",
+            "merged": false,
+            "keywords": [
+              "Thm. The -regular colourability problem is undecidable for each .",
+              "Thm (ours)"
+            ],
+            "eventId": "3",
+            "disabled": false
+          },
+          {
+            "type": "show",
+            "id": "Lem._Given_a_det._and_co-det._Turing_machine,_it_is_undecidable_whether_its_set_of_reachable_configurations_is_a_regular_language.",
+            "name": "Lem. Given a det. and co-det. Turing machine, it is undecidable whether its set of reachable configurations is a regular language.",
+            "merged": false,
+            "keywords": [
+              "Lem. Given a det. and co-det. Turing machine, it is undecidable whether its set of reachable configurations is a regular language."
+            ],
+            "eventId": "4",
+            "disabled": false
+          },
+          {
+            "type": "show",
+            "id": "Semi-algo__Enumerate_all_regular_colourings.",
+            "name": "Semi-algo: Enumerate all regular colourings.",
+            "merged": false,
+            "keywords": [
+              "Semi-algo: Enumerate all regular colourings."
+            ],
+            "eventId": "5",
+            "disabled": false
+          },
+          {
+            "type": "show",
+            "id": "Coro_RE",
+            "name": "Coro RE",
+            "merged": false,
+            "keywords": [
+              "Coro. -regular colourability is RE.",
+              "Coro RE"
+            ],
+            "eventId": "6",
+            "disabled": false
+          },
+          {
+            "type": "show",
+            "id": "Thm_Bruijn-Erdos",
+            "name": "Thm Bruijn-Erdos",
+            "merged": false,
+            "keywords": [
+              "Thm. (de Bruijn–Erdős ‘51) A graph is -colourable iff every finite subgraph is -colourable.",
+              "Thm Bruijn-Erdos"
+            ],
+            "eventId": "7",
+            "disabled": false
+          },
+          {
+            "type": "show",
+            "id": "Coro_coRE",
+            "name": "Coro coRE",
+            "merged": false,
+            "keywords": [
+              "Coro. -colourability is coRE.",
+              "Coro coRE"
+            ],
+            "eventId": "8",
+            "disabled": false
+          }
+        ],
+        "keywords": [
+          "undecidability"
+        ],
+        "eventId": "3"
+      },
+      {
+        "type": "child",
+        "name": "undecidability sep",
+        "id": "undecidability_sep",
+        "merged": false,
+        "children": [
+          {
+            "type": "show",
+            "id": "k-rec_undec",
+            "name": "k-rec undec",
+            "merged": false,
+            "keywords": [
+              "Coro. Aut/ -Rec separability is undecidable.",
+              "k-rec undec"
+            ],
+            "eventId": "1",
+            "disabled": false
+          },
+          {
+            "type": "show",
+            "id": "def_k-rec",
+            "name": "def k-rec",
+            "merged": false,
+            "keywords": [
+              "Def. -Rec if there is a -partition of s.t.",
+              "reg. lang. in the partition",
+              "def k-rec"
+            ],
+            "eventId": "2",
+            "disabled": false
+          },
+          {
+            "type": "show",
+            "id": "k-prod_undec",
+            "name": "k-prod undec",
+            "merged": false,
+            "keywords": [
+              "Coro. Aut/ -Prod separability is undecidable.",
+              "= union of k products of reg. lang.",
+              "k-prod undec"
+            ],
+            "eventId": "4",
+            "disabled": false
+          }
+        ],
+        "keywords": [
+          "undecidability sep"
+        ],
+        "eventId": "5"
+      },
+      {
+        "type": "show",
+        "id": "finite_colorability",
+        "name": "finite colorability",
+        "merged": false,
+        "keywords": [
+          "Ques°. Can we decide if two automatic relations can be separated by a recognizable relation?",
+          "non-necessarily reg.",
+          "finite colorability"
+        ],
+        "eventId": "6",
+        "disabled": false
+      },
+      {
+        "type": "show",
+        "id": "Ques_C2_B0._Can_we_decide_if_two_automatic_relations_can_be_separated_by_a_recognizable_relation?",
+        "name": "unbounded cliques",
+        "merged": false,
+        "keywords": [
+          "unbounded cliques"
+        ],
+        "eventId": "11",
+        "disabled": false
+      },
+      {
+        "type": "show",
+        "id": "KL",
+        "name": "KL",
+        "merged": false,
+        "keywords": [
+          "KL"
+        ],
+        "eventId": "28",
+        "disabled": false
+      },
+      {
+        "type": "child",
+        "name": "question",
+        "id": "question",
+        "merged": false,
+        "children": [
+          {
+            "type": "show",
+            "id": "Prop._This_graph_is_not_2-regular_colorable.",
+            "name": "Prop. This graph is not 2-regular colorable.",
+            "merged": false,
+            "keywords": [
+              "Prop. This graph is not 2-regular colorable."
+            ],
+            "eventId": "1",
+            "disabled": false
+          }
+        ],
+        "keywords": [
+          "question"
+        ],
+        "eventId": "31"
       }
     ],
     "keywords": [
-      "slide1"
+      "Separating Automatic Relations",
+      "or: Graph Colouring for Impractical Mathematicians",
+      "Rémi Morvan (Bordeaux) with Pabló Barcelo (Santiago de Chile) & Diego Figueira (Bordeaux)",
+      "main slide"
     ],
     "eventId": "root"
   },
