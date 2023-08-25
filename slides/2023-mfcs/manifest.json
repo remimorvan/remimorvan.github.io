@@ -550,5 +550,17 @@
     ],
     "eventId": "root"
   },
-  "soundDict": {}
+  "soundDict": {},
+  "live": [
+    {
+      "date": "Fri Aug 25 2023 18:06:58 GMT+0200 (heure d’été d’Europe centrale)",
+      "dir": "live_recording0",
+      "steps": []
+    },
+    {
+      "date": "Fri Aug 25 2023 18:07:08 GMT+0200 (heure d’été d’Europe centrale)",
+      "dir": "live_recording1",
+      "steps": []
+    }
+  ]
 }
