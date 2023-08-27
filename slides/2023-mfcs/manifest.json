@@ -527,10 +527,11 @@
           {
             "type": "show",
             "id": "Prop._This_graph_is_not_2-regular_colorable.",
-            "name": "Prop. This graph is not 2-regular colorable.",
+            "name": "Prop._This_graph_is_not_2-regular_colorable.",
             "merged": false,
             "keywords": [
-              "Prop. This graph is not 2-regular colorable."
+              "Prop. This graph is not 2-regular colorable.",
+              "Prop._This_graph_is_not_2-regular_colorable."
             ],
             "eventId": "1",
             "disabled": false
@@ -545,7 +546,7 @@
     "keywords": [
       "Separating Automatic Relations",
       "or: Graph Colouring for Impractical Mathematicians",
-      "Rémi Morvan (Bordeaux) with Pabló Barcelo (Santiago de Chile) & Diego Figueira (Bordeaux)",
+      "Rémi Morvan (Bordeaux) with Pablo Barceló (Santiago de Chile) & Diego Figueira (Bordeaux)",
       "main slide"
     ],
     "eventId": "root"
@@ -575,6 +576,61 @@
     {
       "date": "Fri Aug 25 2023 19:57:17 GMT+0200 (heure d’été d’Europe centrale)",
       "dir": "live_recording4",
+      "steps": []
+    },
+    {
+      "date": "Fri Aug 25 2023 23:43:18 GMT+0200 (heure d’été d’Europe centrale)",
+      "dir": "live_recording5",
+      "steps": []
+    },
+    {
+      "date": "Fri Aug 25 2023 23:43:21 GMT+0200 (heure d’été d’Europe centrale)",
+      "dir": "live_recording6",
+      "steps": []
+    },
+    {
+      "date": "Fri Aug 25 2023 23:43:23 GMT+0200 (heure d’été d’Europe centrale)",
+      "dir": "live_recording7",
+      "steps": []
+    },
+    {
+      "date": "Fri Aug 25 2023 23:43:24 GMT+0200 (heure d’été d’Europe centrale)",
+      "dir": "live_recording8",
+      "steps": []
+    },
+    {
+      "date": "Fri Aug 25 2023 23:43:24 GMT+0200 (heure d’été d’Europe centrale)",
+      "dir": "live_recording9",
+      "steps": []
+    },
+    {
+      "date": "Fri Aug 25 2023 23:43:26 GMT+0200 (heure d’été d’Europe centrale)",
+      "dir": "live_recording10",
+      "steps": []
+    },
+    {
+      "date": "Fri Aug 25 2023 23:43:26 GMT+0200 (heure d’été d’Europe centrale)",
+      "dir": "live_recording11",
+      "steps": []
+    },
+    {
+      "date": "Fri Aug 25 2023 23:43:27 GMT+0200 (heure d’été d’Europe centrale)",
+      "dir": "live_recording12",
+      "steps": []
+    },
+    {
+      "date": "Fri Aug 25 2023 23:43:27 GMT+0200 (heure d’été d’Europe centrale)",
+      "dir": "live_recording13",
+      "steps": []
+    },
+    {
+      "date": "Fri Aug 25 2023 23:43:28 GMT+0200 (heure d’été d’Europe centrale)",
+      "dir": "live_recording14",
+      "steps": []
+    },
+    {
+      "date": "Fri Aug 25 2023 23:43:29 GMT+0200 (heure d’été d’Europe centrale)",
+      "dir": "live_recording15",
       "steps": []
     }
   ]
