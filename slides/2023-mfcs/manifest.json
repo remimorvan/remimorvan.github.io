@@ -371,17 +371,6 @@
           },
           {
             "type": "show",
-            "id": "Lem._Given_a_det._and_co-det._Turing_machine,_it_is_undecidable_whether_its_set_of_reachable_configurations_is_a_regular_language.",
-            "name": "Lem. Given a det. and co-det. Turing machine, it is undecidable whether its set of reachable configurations is a regular language.",
-            "merged": false,
-            "keywords": [
-              "Lem. Given a det. and co-det. Turing machine, it is undecidable whether its set of reachable configurations is a regular language."
-            ],
-            "eventId": "4",
-            "disabled": false
-          },
-          {
-            "type": "show",
             "id": "Semi-algo__Enumerate_all_regular_colourings.",
             "name": "Semi-algo: Enumerate all regular colourings.",
             "merged": false,
@@ -527,11 +516,10 @@
           {
             "type": "show",
             "id": "Prop._This_graph_is_not_2-regular_colorable.",
-            "name": "Prop._This_graph_is_not_2-regular_colorable.",
+            "name": "Prop. This graph is not 2-regular colorable.",
             "merged": false,
             "keywords": [
-              "Prop. This graph is not 2-regular colorable.",
-              "Prop._This_graph_is_not_2-regular_colorable."
+              "Prop. This graph is not 2-regular colorable."
             ],
             "eventId": "1",
             "disabled": false
@@ -631,6 +619,11 @@
     {
       "date": "Fri Aug 25 2023 23:43:29 GMT+0200 (heure d’été d’Europe centrale)",
       "dir": "live_recording15",
+      "steps": []
+    },
+    {
+      "date": "Sun Aug 27 2023 10:14:28 GMT+0200 (heure d’été d’Europe centrale)",
+      "dir": "live_recording16",
       "steps": []
     }
   ]
