@@ -34,6 +34,6 @@
 <rect id="separation_=_colourability" opacity="0.5" x="357" y="365" width="310" height="233" fill="#FF0000"/>
 <rect id="undecidability" opacity="0.5" x="714" y="365" width="310" height="233" fill="#FF0000"/>
 <rect id="undecidability_sep" opacity="0.5" x="357" y="474" width="310" height="233" fill="#FF0000"/>
-<rect id="question" opacity="0.5" x="827" y="564" width="83" height="62" fill="#FF0000"/>
+<rect id="question" opacity="0.5" x="113" y="598" width="83" height="62" fill="#FF0000"/>
 </g>
 </svg>

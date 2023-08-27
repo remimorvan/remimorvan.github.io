@@ -519,7 +519,8 @@
             "name": "Prop. This graph is not 2-regular colorable.",
             "merged": false,
             "keywords": [
-              "Prop. This graph is not 2-regular colorable."
+              "Prop. This graph is not 2-regular colorable.",
+              "Separation vs. Colouring"
             ],
             "eventId": "1",
             "disabled": false
@@ -624,6 +625,11 @@
     {
       "date": "Sun Aug 27 2023 10:14:28 GMT+0200 (heure d’été d’Europe centrale)",
       "dir": "live_recording16",
+      "steps": []
+    },
+    {
+      "date": "Mon Aug 28 2023 00:02:41 GMT+0200 (heure d’été d’Europe centrale)",
+      "dir": "live_recording17",
       "steps": []
     }
   ]
