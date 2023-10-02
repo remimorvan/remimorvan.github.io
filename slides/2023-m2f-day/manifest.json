@@ -1,0 +1,32 @@
+{
+  "version": 0.915,
+  "presentation": "2023-m2f-day",
+  "slideDict": {
+    "new_slide": "main_slide"
+  },
+  "tree": {
+    "type": "child",
+    "name": "main slide",
+    "id": "new_slide",
+    "merged": false,
+    "children": [
+      {
+        "type": "show",
+        "id": "Ellipse_1",
+        "name": "Ellipse 1",
+        "merged": false,
+        "keywords": [
+          "Ellipse 1"
+        ],
+        "eventId": "1",
+        "disabled": false
+      }
+    ],
+    "keywords": [
+      "[Copy] Problems on Automatic Graphs",
+      "main slide"
+    ],
+    "eventId": "root"
+  },
+  "soundDict": {}
+}
