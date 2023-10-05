@@ -2,7 +2,12 @@
   "version": 0.915,
   "presentation": "2023-m2f-day",
   "slideDict": {
-    "new_slide": "main_slide"
+    "new_slide": "main_slide",
+    "slide_1": "slide_1",
+    "definition_automatic": "definition_automatic",
+    "undecidable": "undecidable",
+    "decidable": "decidable",
+    "automatic_graph": "automatic_graph"
   },
   "tree": {
     "type": "child",
@@ -11,19 +16,379 @@
     "merged": false,
     "children": [
       {
-        "type": "show",
-        "id": "Ellipse_1",
-        "name": "Ellipse 1",
+        "type": "child",
+        "name": "definition automatic",
+        "id": "definition_automatic",
         "merged": false,
-        "keywords": [
-          "Ellipse 1"
+        "children": [
+          {
+            "type": "show",
+            "id": "Automatic_Relations",
+            "name": "Automatic Relations",
+            "merged": false,
+            "keywords": [
+              "Automatic Relations"
+            ],
+            "eventId": "7",
+            "disabled": false
+          },
+          {
+            "type": "show",
+            "id": "Def_automatic",
+            "name": "Def automatic",
+            "merged": false,
+            "keywords": [
+              "is automatic when it can be described by a synchronous automaton.",
+              "Def automatic"
+            ],
+            "eventId": "4",
+            "disabled": false
+          },
+          {
+            "type": "show",
+            "id": "Encoding",
+            "name": "Encoding",
+            "merged": false,
+            "keywords": [
+              "Encoding"
+            ],
+            "eventId": "5",
+            "disabled": false
+          },
+          {
+            "type": "show",
+            "id": "Group_3",
+            "name": "automaton next word",
+            "merged": false,
+            "keywords": [
+              "accepts the “next word” relation",
+              "automaton next word"
+            ],
+            "eventId": "12",
+            "disabled": false
+          }
         ],
-        "eventId": "1",
-        "disabled": false
+        "keywords": [
+          "definition automatic"
+        ],
+        "eventId": "7"
+      },
+      {
+        "type": "child",
+        "name": "graph colouring",
+        "id": "undecidable",
+        "merged": false,
+        "children": [
+          {
+            "type": "show",
+            "id": "Group_4",
+            "name": "title undecidable",
+            "merged": false,
+            "keywords": [
+              "are undecidable",
+              "with Pablo Barceló & Diego Figueira at MFCS ‘23",
+              "title undecidable"
+            ],
+            "eventId": "2",
+            "disabled": false
+          },
+          {
+            "type": "child",
+            "name": "automatic graph",
+            "id": "automatic_graph",
+            "merged": false,
+            "children": [
+              {
+                "type": "show",
+                "id": "Automatic_graphs",
+                "name": "Automatic graphs",
+                "merged": false,
+                "keywords": [
+                  "Automatic graphs"
+                ],
+                "eventId": "1",
+                "disabled": false
+              },
+              {
+                "type": "show",
+                "id": "Def_automatic_graph",
+                "name": "Def automatic graph",
+                "merged": false,
+                "keywords": [
+                  "Automatic graph: with automatic.",
+                  "Def automatic graph"
+                ],
+                "eventId": "2",
+                "disabled": false
+              },
+              {
+                "type": "show",
+                "id": "Def_colouring",
+                "name": "Def colouring",
+                "merged": false,
+                "keywords": [
+                  "Colouring: consistent with edges.",
+                  "Def colouring"
+                ],
+                "eventId": "3",
+                "disabled": false
+              },
+              {
+                "type": "show",
+                "id": "Ex",
+                "name": "Ex",
+                "merged": false,
+                "keywords": [
+                  "Ex.",
+                  "a b aa ab ba bb",
+                  "Ex"
+                ],
+                "eventId": "4",
+                "disabled": false
+              },
+              {
+                "type": "show",
+                "id": "Colouring",
+                "name": "Colouring",
+                "merged": false,
+                "keywords": [
+                  "is a colouring.",
+                  "a b aa ab ba bb",
+                  "Colouring"
+                ],
+                "eventId": "8",
+                "disabled": false
+              },
+              {
+                "type": "show",
+                "id": "Def_regular",
+                "name": "Def regular",
+                "merged": false,
+                "keywords": [
+                  "Def. is regular when every is regular.",
+                  "Def regular"
+                ],
+                "eventId": "5",
+                "disabled": false
+              },
+              {
+                "type": "show",
+                "id": "regular",
+                "name": "regular",
+                "merged": false,
+                "keywords": [
+                  "regular"
+                ],
+                "eventId": "7",
+                "disabled": false
+              }
+            ],
+            "keywords": [
+              "automatic graph"
+            ],
+            "eventId": "3"
+          },
+          {
+            "type": "show",
+            "id": "Thm_Kocher",
+            "name": "Thm Kocher",
+            "merged": false,
+            "keywords": [
+              "Thm. (Köcher ‘14) The -colourability problem is undecidable for each .",
+              "not required to be regular",
+              "Thm Kocher"
+            ],
+            "eventId": "4",
+            "disabled": false
+          },
+          {
+            "type": "show",
+            "id": "Thm_(ours)",
+            "name": "Thm (ours)",
+            "merged": false,
+            "keywords": [
+              "Thm. The -regular colourability problem is undecidable for each .",
+              "Thm (ours)"
+            ],
+            "eventId": "5",
+            "disabled": false
+          },
+          {
+            "type": "show",
+            "id": "Group_3",
+            "name": "Question",
+            "merged": false,
+            "keywords": [
+              "Q°. What about k = “finite”?",
+              "Question"
+            ],
+            "eventId": "9",
+            "disabled": false
+          }
+        ],
+        "keywords": [
+          "graph colouring"
+        ],
+        "eventId": "10"
+      },
+      {
+        "type": "child",
+        "name": "syntactic properties",
+        "id": "decidable",
+        "merged": false,
+        "children": [
+          {
+            "type": "show",
+            "id": "Group_3",
+            "name": "title syntactic",
+            "merged": false,
+            "keywords": [
+              "are decidable",
+              "ongoing work (SmP ‘23 & Highlights ‘23)",
+              "title syntactic"
+            ],
+            "eventId": "2",
+            "disabled": false
+          },
+          {
+            "type": "show",
+            "id": "Group_5",
+            "name": "class of reg. lang",
+            "merged": false,
+            "keywords": [
+              "over",
+              "class of reg. lang"
+            ],
+            "eventId": "5",
+            "disabled": false
+          },
+          {
+            "type": "show",
+            "id": "Group_42",
+            "name": "class of auto. rel°",
+            "merged": false,
+            "keywords": [
+              "over",
+              "class of auto. rel°"
+            ],
+            "eventId": "6",
+            "disabled": false
+          },
+          {
+            "type": "show",
+            "id": "language",
+            "name": "Pic induced language",
+            "merged": false,
+            "keywords": [
+              "language",
+              "“padding symb. at the right pos°”",
+              "Pic induced language"
+            ],
+            "eventId": "21",
+            "disabled": false
+          },
+          {
+            "type": "show",
+            "id": "Pic_induced_rel",
+            "name": "Pic induced rel",
+            "merged": false,
+            "keywords": [
+              "induced relation",
+              "Pic induced rel"
+            ],
+            "eventId": "22",
+            "disabled": false
+          },
+          {
+            "type": "show",
+            "id": "Group_34",
+            "name": "group lang",
+            "merged": false,
+            "keywords": [
+              "group lang"
+            ],
+            "eventId": "19",
+            "disabled": false
+          },
+          {
+            "type": "show",
+            "id": "group_rel",
+            "name": "group rel",
+            "merged": false,
+            "keywords": [
+              "group rel°",
+              "group rel"
+            ],
+            "eventId": "20",
+            "disabled": false
+          },
+          {
+            "type": "show",
+            "id": "Text2",
+            "name": "Thm. “Being a group relations” is decidable.",
+            "merged": false,
+            "keywords": [
+              "Thm. “Being a group relations” is decidable."
+            ],
+            "eventId": "7",
+            "disabled": false
+          },
+          {
+            "type": "show",
+            "id": "Text3",
+            "name": "Proof idea: algebras",
+            "merged": false,
+            "keywords": [
+              "Proof idea: algebras"
+            ],
+            "eventId": "8",
+            "disabled": false
+          },
+          {
+            "type": "show",
+            "id": "Text4",
+            "name": "+ profinite equations",
+            "merged": false,
+            "keywords": [
+              "+ profinite equations"
+            ],
+            "eventId": "9",
+            "disabled": false
+          },
+          {
+            "type": "show",
+            "id": "Group_33",
+            "name": "is “locally” a group is globally consistent",
+            "merged": false,
+            "keywords": [
+              "is “locally” a group is globally consistent"
+            ],
+            "eventId": "10",
+            "disabled": false
+          },
+          {
+            "type": "show",
+            "id": "Group_32",
+            "name": "Conj",
+            "merged": false,
+            "keywords": [
+              "Conj"
+            ],
+            "eventId": "16",
+            "disabled": false
+          }
+        ],
+        "keywords": [
+          "syntactic properties"
+        ],
+        "eventId": "11"
       }
     ],
     "keywords": [
-      "[Copy] Problems on Automatic Graphs",
+      "[Linked] Problems on Automatic Relations",
+      "Rémi Morvan",
+      "Journée M2F · 6 Oct. 2023",
+      "[Copy] Problems on Automatic Relations",
       "main slide"
     ],
     "eventId": "root"
