@@ -56,6 +56,7 @@ function Box(x = Math.floor((Math.random() * c.width) + 1), y = Math.floor((Math
 		this.r += speed * 0.003;
 		this.x += speed;
 		this.y += this.coef * speed;
+		this.half_size *= 0.998;
 	}
 	this.draw = function() {
 		var dots = this.getDots();
@@ -89,6 +90,11 @@ function draw() {
 	ctx.clearRect(0, 0, c.width, c.height);
 	for (var i = 0; i < boxes.length; i++) {
 		boxes[i].rotate();
+	};
+	for (var i = 0; i < boxes.length; i++) {
+		if (boxes[i].half_size < 5) {
+			boxes.splice(boxes[i], 1);
+		}
 	};
 	for (var i = 0; i < boxes.length; i++) {
 		collisionDetection(i)

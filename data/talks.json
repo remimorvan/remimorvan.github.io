@@ -1,0 +1,170 @@
+[
+	{
+		"title": "Separating Automatic Relations, or: Graph Colouring for Impractical Mathematicians",
+		"date": "28/08/2023",
+		"event": "MFCS '23",
+		"eventLink": "https://mfcs2023.labri.fr/index.html",
+		"where": "Bordeaux",
+		"duration": "20min",
+		"slides": "slides/2023-mfcs/"
+	},
+	{
+		"title": "Algebras for Regular Relations",
+		"date": "27/07/2023",
+		"event": "Highlights '23",
+		"eventLink": "https://highlights-conference.org/2023/",
+		"where": "Kassel",
+		"duration": "10min",
+		"slides": "slides/2023-Highlights.pdf"
+	},
+	{
+		"title": "Algebras for Regular Relations",
+		"date": "25/06/2023",
+		"event": "Structure meets Power '23",
+		"eventLink": "https://www.cst.cam.ac.uk/conference/structure-meets-power-2023",
+		"where": "online/Boston",
+		"duration": "20min",
+		"slides": "slides/2023-SmP.pdf"
+	},
+	{
+		"title": "Approximation and Semantic Tree-width of Conjunctive Regular Path Queries",
+		"date": "21/04/2023",
+		"event": "GT DAAL '23",
+		"eventLink": "https://daal.labri.fr/",
+		"where": "Le Kremlin-Bicêtre",
+		"duration": "20min",
+		"slides": "slides/2023-DAAL.pdf"
+	},
+	{
+		"title": "Approximation and Semantic Tree-width of Conjunctive Regular Path Queries",
+		"date": "29/03/2023",
+		"event": "ICDT '23",
+		"eventLink": "http://edbticdt2023.cs.uoi.gr/",
+		"where": "online/Ioannina",
+		"duration": "25min",
+		"slides": "slides/2023-ICDT.pdf"
+	},
+	{
+		"title": "Approximation and Semantic Tree-width of Conjunctive Regular Path Queries",
+		"date": "12/01/2023",
+		"event": "MoVe Seminar",
+		"eventLink": "https://www.lis-lab.fr/move/",
+		"where": "Marseille",
+		"duration": "50min",
+		"slides": "slides/2023-MoVe.pdf"
+	},
+	{
+		"title": "Approximation and Semantic Tree-width of Conjunctive Regular Path Queries",
+		"date": "9/12/2022",
+		"event": "LINKS Seminar",
+		"eventLink": "https://team.inria.fr/links/",
+		"where": "Lille",
+		"duration": "50min",
+		"slides": "slides/LINKS-seminar-2022.pdf"
+	},
+	{
+		"title": "Approximation and Semantic Tree-width of Conjunctive Regular Path Queries",
+		"date": "6/12/2022",
+		"event": "M2F Seminar",
+		"eventLink": "https://mf.labri.fr/",
+		"where": "Bordeaux",
+		"duration": "50min",
+		"slides": "slides/M2F-seminar-2022.pdf"
+	},
+	{
+		"title": "Approximation and Semantic Tree-width of Conjunctive Regular Path Queries",
+		"date": "7/10/2022",
+		"event": "Journée M2F",
+		"eventLink": "https://mf.labri.fr/",
+		"where": "Bordeaux",
+		"duration": "8min",
+		"slides": "slides/journee-M2F-2022.pdf"
+	},
+	{
+		"title": "Quantitative Algebraic Characterisations on Truly Infinite Words",
+		"date": "1/07/2022",
+		"event": "Highlights '22",
+		"eventLink": "https://highlights-conference.org/2022/",
+		"where": "Paris",
+		"duration": "8min",
+		"slides": "slides/highlights-2022.pdf"
+	},
+	{
+		"title": "Quantitative Algebraic Characterisations on Truly Infinite Words",
+		"date": "8/06/2022",
+		"event": "EJCIM '22",
+		"eventLink": "https://ejcim2022.sciencesconf.org/",
+		"where": "Nice",
+		"duration": "25min",
+		"slides": "slides/EJCIM-2022.pdf"
+	},
+	{
+		"title": "Quantitative Algebraic Characterisations on Truly Infinite Words",
+		"date": "4/01/2022",
+		"event": "6th ANR Delta meeting",
+		"eventLink": "https://delta.labri.fr/",
+		"where": "online",
+		"duration": "20min",
+		"slides": "slides/delta-online.pdf"
+	},
+	{
+		"title": "First-order Separation over Countable Ordinals",
+		"date": "5/04/2022",
+		"event": "FoSSaCS '22",
+		"eventLink": "https://etaps.org/2022/fossacs",
+		"where": "Munich",
+		"duration": "25min",
+		"slides": "slides/fossacs22.pdf"
+	},
+	{
+		"title": "First-order Separation over Countable Ordinals",
+		"date": "7/10/2021",
+		"event": "LX Seminar",
+		"eventLink": "https://lx.labri.fr/",
+		"where": "Bordeaux",
+		"duration": "50min",
+		"slides": "slides/lx-2021.pdf"
+	},
+	{
+		"title": "First-order Separation over Countable Ordinals",
+		"date": "3/09/2021",
+		"event": "M2 internship defense",
+		"where": "Paris",
+		"duration": "20min",
+		"slides": "slides/m2-internship-defense.pdf"
+	},
+	{
+		"title": "Universal Algorithms for Parity Games and Nested Fixpoints",
+		"date": "13/02/2023",
+		"event": "Verification Seminar @ IRIF",
+		"eventLink": "https://www.irif.fr/seminaires/verif/index",
+		"where": "Paris",
+		"duration": "50min"
+	},
+	{
+		"title": "Universal Algorithms for Parity Games and Nested Fixpoints",
+		"date": "28/06/2021",
+		"event": "5th ANR Delta meeting",
+		"eventLink": "https://delta.labri.fr/",
+		"where": "Paris",
+		"duration": "20min",
+		"slides": "slides/delta-2021.pdf"
+	},
+	{
+		"title": "Universal Algorithms for Parity Games and Nested Fixpoints",
+		"date": "16/09/2020",
+		"event": "Highlights '20",
+		"eventLink": "https://web.archive.org/web/20210612121106/http://highlights-conference.org/online/",
+		"where": "online",
+		"duration": "5min",
+		"slides": "slides/highlights-2020.pdf"
+	},
+	{
+		"title": "Universal Algorithms for Parity Games and Nested Fixpoints",
+		"date": "4/09/2019",
+		"event": "M1 internship defense",
+		"where": "Cachan",
+		"duration": "20min",
+		"slides": "slides/m1-internship-defense.pdf"
+	}
+]
