@@ -444,6 +444,71 @@ span.blackboard {
   font-variant: small-caps;
 }
 
+/*
+	Slider
+	based on https://codepen.io/alvarotrigo/pen/YzEdrKj
+*/
+.toggle {
+  cursor: pointer;
+  display: inline-block;
+  position: absolute;
+  top: 35px;
+  right: 32px;
+}
+
+.toggle-switch {
+  display: inline-block;
+  background: #ccc;
+  border-radius: 16px;
+  width: 43.5px;
+  height: 24px;
+  position: relative;
+  vertical-align: middle;
+  transition: background 0.25s;
+}
+
+.toggle-switch:before,
+.toggle-switch:after {
+  content: "";
+}
+
+.toggle-switch:before {
+  display: block;
+  background: linear-gradient(to bottom, #fff 0%, #eee 100%);
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  transition: left 0.25s;
+}
+
+.toggle-switch:before {
+  box-shadow: 0 0 0 0.4px rgba(0, 0, 0, 0.1);
+}
+
+.toggle-checkbox:checked + .toggle-switch {
+  background: #22a6b3;
+}
+
+.toggle-checkbox:checked + .toggle-switch:before {
+  left: 22.5px;
+}
+
+.toggle-checkbox {
+  position: absolute;
+  visibility: hidden;
+}
+
+.toggle-label {
+  margin-right: 6px;
+  position: relative;
+  top: 1.5px;
+  /* font-weight: bold; */
+  font-variant: small-caps;
+}
+
 @media screen and (max-width: 1300px) {
   aside {
     left: calc(50vw - 400px);
@@ -583,70 +648,21 @@ span.blackboard {
     padding: 24px;
     margin: 24px 0 -12px 0;
   }
+  .toggle {
+    top: 27px;
+  }
 }
-/*
-	Slider
-	based on https://codepen.io/alvarotrigo/pen/YzEdrKj
-*/
-.toggle {
-  cursor: pointer;
-  display: inline-block;
-  position: absolute;
-  top: 35px;
-  right: 32px;
-}
-
-.toggle-switch {
-  display: inline-block;
-  background: #ccc;
-  border-radius: 16px;
-  width: 43.5px;
-  height: 24px;
-  position: relative;
-  vertical-align: middle;
-  transition: background 0.25s;
-}
-
-.toggle-switch:before,
-.toggle-switch:after {
-  content: "";
-}
-
-.toggle-switch:before {
-  display: block;
-  background: linear-gradient(to bottom, #fff 0%, #eee 100%);
-  border-radius: 50%;
-  width: 18px;
-  height: 18px;
-  position: absolute;
-  top: 3px;
-  left: 3px;
-  transition: left 0.25s;
-}
-
-.toggle-switch:before {
-  box-shadow: 0 0 0 0.4px rgba(0, 0, 0, 0.1);
-}
-
-.toggle-checkbox:checked + .toggle-switch {
-  background: #22a6b3;
-}
-
-.toggle-checkbox:checked + .toggle-switch:before {
-  left: 22.5px;
-}
-
-.toggle-checkbox {
-  position: absolute;
-  visibility: hidden;
-}
-
-.toggle-label {
-  margin-right: 6px;
-  position: relative;
-  top: 1.5px;
-  /* font-weight: bold; */
-  font-variant: small-caps;
+@media screen and (max-width: 450px) {
+  .toggle {
+    display: inline-block;
+    position: relative;
+    top: -8px;
+    left: 0px;
+    width: 100%;
+    text-align: right;
+    float: right;
+    margin-bottom: 4px;
+  }
 }
 
 /*# sourceMappingURL=design.css.map */
