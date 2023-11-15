@@ -1,0 +1,7 @@
+<svg width="1024" height="768" viewBox="0 0 1024 768" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="databases">
+<rect width="1024" height="768" fill="white"/>
+<rect id="graph_databases" opacity="0.5" x="543" y="236" width="481" height="361" fill="#FF0000"/>
+<rect id="relational_databases" opacity="0.5" y="236" width="481" height="361" fill="#FF0000"/>
+</g>
+</svg>

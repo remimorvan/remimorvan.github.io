@@ -1,5 +1,14 @@
 [
 	{
+		"title": "What's Your Thesis About? Abolishing Capitalism. (Popularization Talk)",
+		"date": "15/11/2023",
+		"event": "Sémidoc",
+		"eventLink": "https://afodib.labri.fr/semidoc",
+		"where": "Bordeaux",
+		"duration": "30min",
+		"slides": "slides/2023-semidoc-thesis/"
+	},
+	{
 		"title": "Separating Automatic Relations, or: Graph Colouring for Impractical Mathematicians",
 		"date": "28/08/2023",
 		"event": "MFCS '23",

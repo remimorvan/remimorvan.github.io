@@ -1,0 +1,1179 @@
+{
+  "version": 0.915,
+  "presentation": "Sémidoc: What's your thesis about?",
+  "slideDict": {
+    "new_slide": "new_slide",
+    "thought": "thought",
+    "empty": "empty",
+    "thought_2": "thought_2",
+    "parity_games": "parity_games",
+    "thought_3": "thought_3",
+    "don't_do": "don't_do",
+    "do": "do",
+    "empty2": "empty2",
+    "shell_companies": "shell_companies",
+    "leaks": "leaks",
+    "big_data": "big_data",
+    "databases": "databases",
+    "relational_databases": "relational_databases",
+    "graph_databases": "graph_databases",
+    "dummy_chart": "dummy_chart",
+    "leaks_part_2": "leaks_part_2",
+    "sources": "sources"
+  },
+  "tree": {
+    "type": "child",
+    "name": "main slide",
+    "id": "new_slide",
+    "merged": false,
+    "children": [
+      {
+        "type": "show",
+        "id": "Labels",
+        "name": "Labels",
+        "merged": false,
+        "keywords": [
+          "my grandfather",
+          "me",
+          "Labels"
+        ],
+        "eventId": "1",
+        "disabled": false
+      },
+      {
+        "type": "show",
+        "id": "Group_1",
+        "name": "Thought bubble 1",
+        "merged": false,
+        "keywords": [
+          "Thought bubble 1"
+        ],
+        "eventId": "8",
+        "disabled": false
+      },
+      {
+        "type": "child",
+        "name": "thought",
+        "id": "thought",
+        "merged": false,
+        "children": [
+          {
+            "type": "show",
+            "id": "Me",
+            "name": "Simon",
+            "merged": false,
+            "keywords": [
+              "Simon"
+            ],
+            "eventId": "1",
+            "disabled": false
+          },
+          {
+            "type": "show",
+            "id": "Simon_label",
+            "name": "Simon label",
+            "merged": false,
+            "keywords": [
+              "Simon",
+              "Simon label"
+            ],
+            "eventId": "2",
+            "disabled": false
+          },
+          {
+            "type": "show",
+            "id": "Simon_descr",
+            "name": "Simon descr",
+            "merged": false,
+            "keywords": [
+              "Simon descr"
+            ],
+            "eventId": "3",
+            "disabled": false
+          },
+          {
+            "type": "show",
+            "id": "Group_1",
+            "name": "Corto",
+            "merged": false,
+            "keywords": [
+              "terra etica",
+              "NOIR 75% Nicaragua",
+              "NOIR 98% Équateur",
+              "NOIR 85% Madagascar",
+              "Corto"
+            ],
+            "eventId": "7",
+            "disabled": false
+          },
+          {
+            "type": "show",
+            "id": "Corto_label",
+            "name": "Corto label",
+            "merged": false,
+            "keywords": [
+              "Corto",
+              "Corto label"
+            ],
+            "eventId": "5",
+            "disabled": false
+          },
+          {
+            "type": "child",
+            "name": "empty",
+            "id": "empty",
+            "merged": false,
+            "children": [],
+            "keywords": [
+              "empty"
+            ],
+            "eventId": "6"
+          },
+          {
+            "type": "show",
+            "id": "Group_12",
+            "name": "Corto descr",
+            "merged": false,
+            "keywords": [
+              "Corto descr"
+            ],
+            "eventId": "9",
+            "disabled": false
+          }
+        ],
+        "keywords": [
+          "thought"
+        ],
+        "eventId": "9"
+      },
+      {
+        "type": "show",
+        "id": "Thought_bubble_2",
+        "name": "Thought bubble 2",
+        "merged": false,
+        "keywords": [
+          "Thought bubble 2"
+        ],
+        "eventId": "11",
+        "disabled": false
+      },
+      {
+        "type": "child",
+        "name": "thought 2",
+        "id": "thought_2",
+        "merged": false,
+        "children": [
+          {
+            "type": "show",
+            "id": "Linked_Path_Group",
+            "name": "Linked Path Group",
+            "merged": false,
+            "keywords": [
+              "[Copy] Logic & Algebra",
+              "Linked Path Group"
+            ],
+            "eventId": "1",
+            "disabled": false
+          },
+          {
+            "type": "show",
+            "id": "ord",
+            "name": "ord",
+            "merged": false,
+            "keywords": [
+              "algebras for languages over ordinals",
+              "ord"
+            ],
+            "eventId": "2",
+            "disabled": false
+          },
+          {
+            "type": "show",
+            "id": "parity",
+            "name": "parity",
+            "merged": false,
+            "keywords": [
+              "algorithms for parity games",
+              "parity"
+            ],
+            "eventId": "4",
+            "disabled": false
+          },
+          {
+            "type": "show",
+            "id": "monads",
+            "name": "monads",
+            "merged": false,
+            "keywords": [
+              "monads (= weird shit)",
+              "monads"
+            ],
+            "eventId": "5",
+            "disabled": false
+          },
+          {
+            "type": "show",
+            "id": "???",
+            "name": "???",
+            "merged": false,
+            "keywords": [
+              "?",
+              "???"
+            ],
+            "eventId": "6",
+            "disabled": false
+          },
+          {
+            "type": "child",
+            "name": "parity games",
+            "id": "parity_games",
+            "merged": false,
+            "children": [
+              {
+                "type": "show",
+                "id": "_E2_80_9Cimportant_for_LTL_synthesis_E2_80_9D",
+                "name": "“important for LTL synthesis”",
+                "merged": false,
+                "keywords": [
+                  "“important for LTL synthesis”"
+                ],
+                "eventId": "1",
+                "disabled": false
+              },
+              {
+                "type": "show",
+                "id": "it_E2_80_99s_not_my_grand_father_doesn_E2_80_99t_care_about_LTL_synthesis",
+                "name": "it’s not my grand father doesn’t care about LTL synthesis",
+                "merged": false,
+                "keywords": [
+                  "it’s not my grand father doesn’t care about LTL synthesis"
+                ],
+                "eventId": "2",
+                "disabled": false
+              }
+            ],
+            "keywords": [
+              "parity games"
+            ],
+            "eventId": "7"
+          },
+          {
+            "type": "show",
+            "id": "are_boring_E2_80_A8for_most_people",
+            "name": "are boring for most people",
+            "merged": false,
+            "keywords": [
+              "are boring for most people"
+            ],
+            "eventId": "3",
+            "disabled": false
+          }
+        ],
+        "keywords": [
+          "thought 2"
+        ],
+        "eventId": "12"
+      },
+      {
+        "type": "show",
+        "id": "Union",
+        "name": "Thought bubble 3",
+        "merged": false,
+        "keywords": [
+          "Thought bubble 3"
+        ],
+        "eventId": "15",
+        "disabled": false
+      },
+      {
+        "type": "child",
+        "name": "thought 3",
+        "id": "thought_3",
+        "merged": false,
+        "children": [
+          {
+            "type": "show",
+            "id": "Pretending_to_solve_real-life_problems.",
+            "name": "Pretending to solve real-life problems.",
+            "merged": false,
+            "keywords": [
+              "Pretending to solve real-life problems."
+            ],
+            "eventId": "1",
+            "disabled": false
+          },
+          {
+            "type": "show",
+            "id": "If_you_have_to_lie,_make_it_interesting.",
+            "name": "If you have to lie, make it interesting.",
+            "merged": false,
+            "keywords": [
+              "If you have to lie, make it interesting."
+            ],
+            "eventId": "2",
+            "disabled": false
+          },
+          {
+            "type": "show",
+            "id": "Tell_a_story.",
+            "name": "Tell a story.",
+            "merged": false,
+            "keywords": [
+              "Tell a story."
+            ],
+            "eventId": "4",
+            "disabled": false
+          },
+          {
+            "type": "show",
+            "id": "Don_E2_80_99t_trust_researchers.",
+            "name": "Don’t trust researchers.",
+            "merged": false,
+            "keywords": [
+              "Don’t trust researchers."
+            ],
+            "eventId": "5",
+            "disabled": false
+          },
+          {
+            "type": "show",
+            "id": "Make_it_memorable_(e.g.__E2_80_9CI_save_democracy_E2_80_9D).",
+            "name": "Make it memorable (e.g. “I save democracy”).",
+            "merged": false,
+            "keywords": [
+              "Make it memorable (e.g. “I save democracy”)."
+            ],
+            "eventId": "6",
+            "disabled": false
+          },
+          {
+            "type": "show",
+            "id": "Example__I_study_the_theory_of_graph_databases.",
+            "name": "Example: I study the theory of graph databases.",
+            "merged": false,
+            "keywords": [
+              "Example: I study the theory of graph databases."
+            ],
+            "eventId": "8",
+            "disabled": false
+          },
+          {
+            "type": "child",
+            "name": "don't do",
+            "id": "don't_do",
+            "merged": false,
+            "children": [
+              {
+                "type": "show",
+                "id": "Don_E2_80_99t_do_",
+                "name": "Don’t do:",
+                "merged": false,
+                "keywords": [
+                  "Don’t do:"
+                ],
+                "eventId": "1",
+                "disabled": false
+              },
+              {
+                "type": "show",
+                "id": "I_study_conjunctive_regular_path_queries,_E2_80_A8_i.e._the_existential-positive_fragment_of_first-order_logic_with_regular_path_predicates,_over_edge-labelled_graphs.",
+                "name": "I study conjunctive regular path queries,  i.e. the existential-positive fragment of first-order logic with regular path predicates, over edge-labelled graphs.",
+                "merged": false,
+                "keywords": [
+                  "I study conjunctive regular path queries,  i.e. the existential-positive fragment of first-order logic with regular path predicates, over edge-labelled graphs."
+                ],
+                "eventId": "2",
+                "disabled": false
+              },
+              {
+                "type": "show",
+                "id": "It_is_used_to_model_human-centered_data.",
+                "name": "It is used to model human-centered data.",
+                "merged": false,
+                "keywords": [
+                  "It is used to model human-centered data."
+                ],
+                "eventId": "3",
+                "disabled": false
+              },
+              {
+                "type": "show",
+                "id": "We_showed_that_for_each_integer_k,_it_is_decidable_if_a_given_query_is_equivalent_to_a_query_of_tree-width_(resp._path-width)_at_most_k.",
+                "name": "We showed that for each integer k, it is decidable if a given query is equivalent to a query of tree-width (resp. path-width) at most k.",
+                "merged": false,
+                "keywords": [
+                  "We showed that for each integer k, it is decidable if a given query is equivalent to a query of tree-width (resp. path-width) at most k."
+                ],
+                "eventId": "5",
+                "disabled": false
+              },
+              {
+                "type": "show",
+                "id": "This_leads_to_FPT_(resp._para-NL)_algorithms_for_evaluating_queries_of_bounded_semantic_tree-width_(resp._path-width).",
+                "name": "This leads to FPT (resp. para-NL) algorithms for evaluating queries of bounded semantic tree-width (resp. path-width).",
+                "merged": false,
+                "keywords": [
+                  "This leads to FPT (resp. para-NL) algorithms for evaluating queries of bounded semantic tree-width (resp. path-width)."
+                ],
+                "eventId": "4",
+                "disabled": false
+              },
+              {
+                "type": "show",
+                "id": "Frame_1",
+                "name": "Alien + text",
+                "merged": false,
+                "keywords": [
+                  "I humans",
+                  "Hello fellow human beings!",
+                  "Alien + text"
+                ],
+                "eventId": "7",
+                "disabled": false
+              }
+            ],
+            "keywords": [
+              "don't do"
+            ],
+            "eventId": "7"
+          },
+          {
+            "type": "child",
+            "name": "do",
+            "id": "do",
+            "merged": false,
+            "children": [
+              {
+                "type": "show",
+                "id": "Do_instead_E2_80_A6",
+                "name": "Do instead…",
+                "merged": false,
+                "keywords": [
+                  "Do instead…"
+                ],
+                "eventId": "1",
+                "disabled": false
+              },
+              {
+                "type": "show",
+                "id": "3rd_April,_2016",
+                "name": "3rd April, 2016",
+                "merged": false,
+                "keywords": [
+                  "3rd April, 2016"
+                ],
+                "eventId": "15",
+                "disabled": false
+              },
+              {
+                "type": "show",
+                "id": "Group_1",
+                "name": "SZ",
+                "merged": false,
+                "keywords": [
+                  "SZ"
+                ],
+                "eventId": "16",
+                "disabled": false
+              },
+              {
+                "type": "hide",
+                "id": "Group_1",
+                "name": "SZ",
+                "merged": false,
+                "keywords": [
+                  "SZ"
+                ],
+                "eventId": "17",
+                "disabled": false
+              },
+              {
+                "type": "show",
+                "id": "big_leak",
+                "name": "big leak",
+                "merged": false,
+                "keywords": [
+                  "[Copy] biiiig leak",
+                  "[Copy] on shell companies",
+                  "big leak"
+                ],
+                "eventId": "24",
+                "disabled": false
+              },
+              {
+                "type": "hide",
+                "id": "3rd_April,_2016",
+                "name": "3rd April, 2016",
+                "merged": false,
+                "keywords": [
+                  "3rd April, 2016"
+                ],
+                "eventId": "25",
+                "disabled": false
+              },
+              {
+                "type": "child",
+                "name": "shell companies",
+                "id": "shell_companies",
+                "merged": false,
+                "children": [
+                  {
+                    "type": "show",
+                    "id": "Can_you_help_Patrick_&_Isabelle_B._hide_their_money_from_the_government?",
+                    "name": "Can you help Patrick & Isabelle B. hide their money from the government?",
+                    "merged": false,
+                    "keywords": [
+                      "Can you help Patrick & Isabelle B. hide their money from the government?"
+                    ],
+                    "eventId": "22",
+                    "disabled": false
+                  },
+                  {
+                    "type": "show",
+                    "id": "Patrick_&_Isabelle",
+                    "name": "Patrick & Isabelle",
+                    "merged": false,
+                    "keywords": [
+                      "Mairie de Levallois-Perret",
+                      "Patrick & Isabelle B.",
+                      "Patrick & Isabelle"
+                    ],
+                    "eventId": "3",
+                    "disabled": false
+                  },
+                  {
+                    "type": "show",
+                    "id": "a_villa_in_Marrakech",
+                    "name": "a villa in Marrakech",
+                    "merged": false,
+                    "keywords": [
+                      "a villa in Marrakech"
+                    ],
+                    "eventId": "4",
+                    "disabled": false
+                  },
+                  {
+                    "type": "show",
+                    "id": "langfr-2560px-Logo_DGFP-fr_5",
+                    "name": "langfr-2560px-Logo_DGFP-fr 5",
+                    "merged": false,
+                    "keywords": [
+                      "langfr-2560px-Logo_DGFP-fr 5"
+                    ],
+                    "eventId": "14",
+                    "disabled": false
+                  },
+                  {
+                    "type": "show",
+                    "id": "Group_2",
+                    "name": "Scenario 1",
+                    "merged": false,
+                    "keywords": [
+                      "buy",
+                      "taxes",
+                      "Scenario 1"
+                    ],
+                    "eventId": "6",
+                    "disabled": false
+                  },
+                  {
+                    "type": "hide",
+                    "id": "Group_2",
+                    "name": "Scenario 1",
+                    "merged": false,
+                    "keywords": [
+                      "Scenario 1"
+                    ],
+                    "eventId": "7",
+                    "disabled": false
+                  },
+                  {
+                    "type": "show",
+                    "id": "Panama",
+                    "name": "Panama",
+                    "merged": false,
+                    "keywords": [
+                      "Panama (low taxes!!!)",
+                      "Panama"
+                    ],
+                    "eventId": "8",
+                    "disabled": false
+                  },
+                  {
+                    "type": "show",
+                    "id": "gives_money_to",
+                    "name": "gives money to",
+                    "merged": false,
+                    "keywords": [
+                      "give some money to",
+                      "Bob",
+                      "gives money to"
+                    ],
+                    "eventId": "9",
+                    "disabled": false
+                  },
+                  {
+                    "type": "show",
+                    "id": "clients",
+                    "name": "clients",
+                    "merged": false,
+                    "keywords": [
+                      "Mossack Fonseca (Panamanian law firm)",
+                      "is a client of",
+                      "clients"
+                    ],
+                    "eventId": "10",
+                    "disabled": false
+                  },
+                  {
+                    "type": "show",
+                    "id": "creates",
+                    "name": "creates",
+                    "merged": false,
+                    "keywords": [
+                      "a shell company",
+                      "creates"
+                    ],
+                    "eventId": "11",
+                    "disabled": false
+                  },
+                  {
+                    "type": "show",
+                    "id": "buy_alt",
+                    "name": "buy alt",
+                    "merged": false,
+                    "keywords": [
+                      "buys",
+                      "buy alt"
+                    ],
+                    "eventId": "12",
+                    "disabled": false
+                  },
+                  {
+                    "type": "show",
+                    "id": "indirectly_own",
+                    "name": "indirectly own",
+                    "merged": false,
+                    "keywords": [
+                      "indirectly own",
+                      "indirectly own"
+                    ],
+                    "eventId": "15",
+                    "disabled": false
+                  },
+                  {
+                    "type": "show",
+                    "id": "???",
+                    "name": "???",
+                    "merged": false,
+                    "keywords": [
+                      "?",
+                      "???"
+                    ],
+                    "eventId": "13",
+                    "disabled": false
+                  }
+                ],
+                "keywords": [
+                  "shell companies"
+                ],
+                "eventId": "19"
+              },
+              {
+                "type": "child",
+                "name": "leaks",
+                "id": "leaks",
+                "merged": false,
+                "children": [
+                  {
+                    "type": "show",
+                    "id": "leaks2",
+                    "name": "leaks",
+                    "merged": false,
+                    "keywords": [
+                      "leaks"
+                    ],
+                    "eventId": "1",
+                    "disabled": false
+                  },
+                  {
+                    "type": "hide",
+                    "id": "leaks2",
+                    "name": "leaks",
+                    "merged": false,
+                    "keywords": [
+                      "leaks"
+                    ],
+                    "eventId": "2",
+                    "disabled": false
+                  },
+                  {
+                    "type": "show",
+                    "id": "Isaac",
+                    "name": "Isaac",
+                    "merged": true,
+                    "keywords": [
+                      "International Consortium of Investigative Journalists",
+                      "Isaac"
+                    ],
+                    "eventId": "3",
+                    "disabled": false
+                  },
+                  {
+                    "type": "hide",
+                    "id": "Isaac",
+                    "name": "Isaac",
+                    "merged": false,
+                    "keywords": [
+                      "Isaac"
+                    ],
+                    "eventId": "4",
+                    "disabled": false
+                  },
+                  {
+                    "type": "show",
+                    "id": "Mossack_Fonseca__Panamanian_law_firm._Created_many_shell_companies_for_many_people__Icelandic_PM_Sigmundur_Dav_C3_AD_C3_B0_Gunnlaugsson_friends_of_Vladimir_Putin,_Soci_C3_A9t_C3_A9_G_C3_A9n_C3_A9rale,_G_C3_A9rard_Autajon,_etc.",
+                    "name": "Mossack Fonseca: Panamanian law firm. Created many shell companies for many people: Icelandic PM Sigmundur Davíð Gunnlaugsson friends of Vladimir Putin, Société Générale, Gérard Autajon, etc.",
+                    "merged": false,
+                    "keywords": [
+                      "Mossack Fonseca: Panamanian law firm. Created many shell companies for many people: Icelandic PM Sigmundur Davíð Gunnlaugsson friends of Vladimir Putin, Société Générale, Gérard Autajon, etc."
+                    ],
+                    "eventId": "5",
+                    "disabled": false
+                  }
+                ],
+                "keywords": [
+                  "leaks"
+                ],
+                "eventId": "20"
+              },
+              {
+                "type": "child",
+                "name": "big data",
+                "id": "big_data",
+                "merged": false,
+                "children": [
+                  {
+                    "type": "show",
+                    "id": "Graph_size_of_leaks",
+                    "name": "Graph size of leaks",
+                    "merged": false,
+                    "keywords": [
+                      "leaks",
+                      "Cablegate / Wikileaks (2010)",
+                      "Offshore Leaks (2013)",
+                      "Luxemburg Leaks (2014)",
+                      "Swiss Leaks / HSBC files (2015)",
+                      "2 Gb",
+                      "4 Gb",
+                      "3 Gb",
+                      "260 Gb",
+                      "Graph size of leaks"
+                    ],
+                    "eventId": "1",
+                    "disabled": false
+                  },
+                  {
+                    "type": "show",
+                    "id": "Panama_chart",
+                    "name": "Panama chart",
+                    "merged": false,
+                    "keywords": [
+                      "Panama Papers (2016)",
+                      "2600 Gb",
+                      "Panama chart"
+                    ],
+                    "eventId": "5",
+                    "disabled": false
+                  },
+                  {
+                    "type": "show",
+                    "id": "2.6_Tb_=_a_looooooooot_a_few_journalists_=_not_a_lot__C2_A0_C2_A0_C2_A0_C2_A0_C2_A0_C2_A0_C2_A0_C2_A0_C2_A0_C2_A0_C2_A0_C2_A0_C2_A0_C2_A0_C2_A0_C2_A0_C2_A0_C2_A0_C2_A0_C2_A0_C2_A0_C2_A0_C2_A0_C2_A0_C2_A0",
+                    "name": "2.6 Tb = a looooooooot a few journalists = not a lot                          ",
+                    "merged": false,
+                    "keywords": [
+                      "2.6 Tb = a looooooooot a few journalists = not a lot                          "
+                    ],
+                    "eventId": "2",
+                    "disabled": false
+                  },
+                  {
+                    "type": "show",
+                    "id": "Databases!",
+                    "name": "Databases!",
+                    "merged": false,
+                    "keywords": [
+                      "Databases!"
+                    ],
+                    "eventId": "3",
+                    "disabled": false
+                  },
+                  {
+                    "type": "child",
+                    "name": "databases",
+                    "id": "databases",
+                    "merged": false,
+                    "children": [
+                      {
+                        "type": "child",
+                        "name": "relational databases",
+                        "id": "relational_databases",
+                        "merged": false,
+                        "children": [
+                          {
+                            "type": "show",
+                            "id": "Relational_databases",
+                            "name": "Relational databases",
+                            "merged": false,
+                            "keywords": [
+                              "Relational databases"
+                            ],
+                            "eventId": "1",
+                            "disabled": false
+                          },
+                          {
+                            "type": "show",
+                            "id": "17_rue_de_la_Fraude_Fiscale,_Levallois-Perret",
+                            "name": "People",
+                            "merged": false,
+                            "keywords": [
+                              "People:",
+                              "Last name",
+                              "17 rue de la Fraude Fiscale, Levallois-Perret",
+                              "Address",
+                              "First name",
+                              "Isabelle",
+                              "Patrick",
+                              "B.",
+                              "People"
+                            ],
+                            "eventId": "2",
+                            "disabled": false
+                          },
+                          {
+                            "type": "show",
+                            "id": "Attrape-moi_si_tu_peux",
+                            "name": "Companies",
+                            "merged": false,
+                            "keywords": [
+                              "Location",
+                              "Attrape-moi si tu peux",
+                              "Les Évadés de Giverny",
+                              "First name",
+                              "Isabelle",
+                              "Patrick",
+                              "Panama",
+                              "British Virgin Islands",
+                              "Comp. name",
+                              "Last name",
+                              "B.",
+                              "Companies:",
+                              "Companies"
+                            ],
+                            "eventId": "3",
+                            "disabled": false
+                          },
+                          {
+                            "type": "show",
+                            "id": "Transactions",
+                            "name": "Transactions",
+                            "merged": false,
+                            "keywords": [
+                              "Attrape-moi si tu peux",
+                              "Les Évadés de Giverny",
+                              "Creditor",
+                              "Deptor",
+                              "Amount",
+                              "500.000€",
+                              "400.000€",
+                              "Transactions:",
+                              "Les Déménageurs Frippons",
+                              "Transactions"
+                            ],
+                            "eventId": "4",
+                            "disabled": false
+                          },
+                          {
+                            "type": "show",
+                            "id": "Things_you_can_ask__all_companies_owned_by_someone_from_Levallois",
+                            "name": "Things you can ask: all companies owned by someone from Levallois",
+                            "merged": false,
+                            "keywords": [
+                              "Things you can ask: all companies owned by someone from Levallois"
+                            ],
+                            "eventId": "5",
+                            "disabled": false
+                          },
+                          {
+                            "type": "show",
+                            "id": "Things_you_cannot_ask__all_companies__E2_80_9Cinvolved_E2_80_9D_with_someone_from_Levallois",
+                            "name": "Things you cannot ask: all companies “involved” with someone from Levallois",
+                            "merged": false,
+                            "keywords": [
+                              "Things you cannot ask: all companies “involved” with someone from Levallois"
+                            ],
+                            "eventId": "7",
+                            "disabled": false
+                          }
+                        ],
+                        "keywords": [
+                          "relational databases"
+                        ],
+                        "eventId": "3"
+                      },
+                      {
+                        "type": "child",
+                        "name": "graph databases",
+                        "id": "graph_databases",
+                        "merged": false,
+                        "children": [
+                          {
+                            "type": "show",
+                            "id": "Graph_databases",
+                            "name": "Graph databases",
+                            "merged": false,
+                            "keywords": [
+                              "Graph databases"
+                            ],
+                            "eventId": "1",
+                            "disabled": false
+                          },
+                          {
+                            "type": "show",
+                            "id": "Help_the_government_catch_Patoche_&_Isa!",
+                            "name": "Help the government catch Patoche & Isa!",
+                            "merged": false,
+                            "keywords": [
+                              "Help the government catch Patoche & Isa!"
+                            ],
+                            "eventId": "2",
+                            "disabled": false
+                          },
+                          {
+                            "type": "show",
+                            "id": "Graph_database_ex",
+                            "name": "Graph database ex",
+                            "merged": false,
+                            "keywords": [
+                              "Patrick B.",
+                              "Attrape-moi si tu peux",
+                              "Paul Bismuth & co.",
+                              "Les Déménageurs Frippons",
+                              "Les Évadés de Giverny",
+                              "Isabelle B.",
+                              "some villa in Marrakech",
+                              "owns",
+                              "Muammar Gaddafi",
+                              "Nicolas S.",
+                              "Graph database ex"
+                            ],
+                            "eventId": "3",
+                            "disabled": false
+                          },
+                          {
+                            "type": "show",
+                            "id": "Graph_db__E2_82_AC",
+                            "name": "Graph db €",
+                            "merged": false,
+                            "keywords": [
+                              "€",
+                              "Graph db €"
+                            ],
+                            "eventId": "4",
+                            "disabled": false
+                          },
+                          {
+                            "type": "show",
+                            "id": "CQ",
+                            "name": "CQ",
+                            "merged": false,
+                            "keywords": [
+                              "CQs (conjunctive queries):",
+                              "€",
+                              "a (big-ish) subset of SQL",
+                              "CQ"
+                            ],
+                            "eventId": "5",
+                            "disabled": false
+                          },
+                          {
+                            "type": "show",
+                            "id": "CRPQ1",
+                            "name": "CRPQ1",
+                            "merged": false,
+                            "keywords": [
+                              "CRPQs (conjunctive regular path queries):",
+                              "€",
+                              "CRPQ1"
+                            ],
+                            "eventId": "6",
+                            "disabled": false
+                          },
+                          {
+                            "type": "show",
+                            "id": "CRPQ2",
+                            "name": "CRPQ2",
+                            "merged": false,
+                            "keywords": [
+                              "owns",
+                              "€",
+                              "CRPQ2"
+                            ],
+                            "eventId": "11",
+                            "disabled": false
+                          },
+                          {
+                            "type": "show",
+                            "id": "Graph_databases",
+                            "name": "Graph databases",
+                            "merged": false,
+                            "keywords": [
+                              "Graph databases"
+                            ],
+                            "eventId": "7",
+                            "disabled": false
+                          },
+                          {
+                            "type": "show",
+                            "id": "With_a_graph_query_language,_you_can_do__all_companies__E2_80_9Cinvolved_E2_80_9D_with_someone_from_Levallois",
+                            "name": "With a graph query language, you can do: all companies “involved” with someone from Levallois",
+                            "merged": false,
+                            "keywords": [
+                              "With a graph query language, you can do: all companies “involved” with someone from Levallois"
+                            ],
+                            "eventId": "8",
+                            "disabled": false
+                          },
+                          {
+                            "type": "show",
+                            "id": "My_thesis",
+                            "name": "My thesis",
+                            "merged": false,
+                            "keywords": [
+                              "Part of my thesis: minimizing CRPQs.",
+                              "My thesis"
+                            ],
+                            "eventId": "10",
+                            "disabled": false
+                          }
+                        ],
+                        "keywords": [
+                          "graph databases"
+                        ],
+                        "eventId": "2"
+                      }
+                    ],
+                    "keywords": [
+                      "databases"
+                    ],
+                    "eventId": "4"
+                  }
+                ],
+                "keywords": [
+                  "big data"
+                ],
+                "eventId": "21"
+              },
+              {
+                "type": "child",
+                "name": "leaks part 2",
+                "id": "leaks_part_2",
+                "merged": false,
+                "children": [
+                  {
+                    "type": "show",
+                    "id": "Citation",
+                    "name": "Citation",
+                    "merged": false,
+                    "keywords": [
+                      "Si les « Panama Papers » ont révélé l’ampleur de la fraude fiscale (…), ils ont également mis en lumière la nécessité pour les journalistes de faire collaborer leurs rédactions et de s’emparer d’outils technologiques capables de traiter et d’analyser un très grand nombre de données. — Jacques-André Fines Schlumberger",
+                      "«",
+                      "Citation"
+                    ],
+                    "eventId": "1",
+                    "disabled": false
+                  },
+                  {
+                    "type": "show",
+                    "id": "Exercise_session__Is_Azerbaijan_E2_80_99s_President_Ilham_Aliyev_naughty?_https_//neo4j.com/graphgists/the-panamapapers-example-dataset-president-of-azerbaijan/",
+                    "name": "Exercise session: Is Azerbaijan’s President Ilham Aliyev naughty? https://neo4j.com/graphgists/the-panamapapers-example-dataset-president-of-azerbaijan/",
+                    "merged": false,
+                    "keywords": [
+                      "Exercise session: Is Azerbaijan’s President Ilham Aliyev naughty? https://neo4j.com/graphgists/the-panamapapers-example-dataset-president-of-azerbaijan/"
+                    ],
+                    "eventId": "2",
+                    "disabled": false
+                  }
+                ],
+                "keywords": [
+                  "leaks part 2"
+                ],
+                "eventId": "22"
+              }
+            ],
+            "keywords": [
+              "do"
+            ],
+            "eventId": "9"
+          }
+        ],
+        "keywords": [
+          "thought 3"
+        ],
+        "eventId": "16"
+      },
+      {
+        "type": "show",
+        "id": "Text",
+        "name": "Abolishing capitalism.",
+        "merged": false,
+        "keywords": [
+          "Abolishing capitalism."
+        ],
+        "eventId": "5",
+        "disabled": false
+      },
+      {
+        "type": "child",
+        "name": "sources",
+        "id": "sources",
+        "merged": false,
+        "children": [
+          {
+            "type": "show",
+            "id": "Sources_",
+            "name": "Sources:",
+            "merged": false,
+            "keywords": [
+              "Sources:"
+            ],
+            "eventId": "1",
+            "disabled": false
+          },
+          {
+            "type": "show",
+            "id": "Shell_Companies,_ACFE_E2_80_A8https_//www.acfe.com/fraud-resources/shell-companies_Biggest_data_leaks_worldwide_as_of_November_2017,_Statistica_E2_80_A8https_//www.statista.com/statistics/531269/panama-papers-data-leak-size/__C2_AB_Panama_Papers__C2_BB___le_big_data_au_service_du_journalisme_d_E2_80_99investigation,_E2_80_A8La-REM,_Jacques-Andr_C3_A9_Fines_Schlumberger_E2_80_A8https_//la-rem.eu/2016/07/panama-papers/_Where_are_the_key_Panama_Papers_figures,_seven_years_later?,_ICIJ_E2_80_A8https_//www.icij.org/investigations/panama-papers/where-are-they-now-2023/__C2_ABPanama_Papers_C2_BB__le_riad_des_Balkany_et_les_avoirs_de_Cahuzac_mentionn_C3_A9s,_20_minutes_E2_80_A8https_//www.20minutes.fr/economie/1820393-20160405-panama-papers-riad-balkany-avoirs-_E2_80_A8cahuzac-mentionnes_Panama_Papers___Les_nouvelles_r_C3_A9v_C3_A9lations,_Cash_Impact_E2_80_A8https_//www.youtube.com/watch?v=8J7XUgqpTiw_Analyzing_the_Panama_Papers_with_Neo4j__Data_Models,_Queries_&_More,_neo4j_E2_80_A8https_//neo4j.com/blog/analyzing-panama-papers-neo4j/",
+            "name": "Shell Companies, ACFE https://www.acfe.com/fraud-resources/shell-companies Biggest data leaks worldwide as of November 2017, Statistica https://www.statista.com/statistics/531269/panama-papers-data-leak-size/ « Panama Papers » : le big data au service du journalisme d’investigation, La-REM, Jacques-André Fines Schlumberger https://la-rem.eu/2016/07/panama-papers/ Where are the key Panama Papers figures, seven years later?, ICIJ https://www.icij.org/investigations/panama-papers/where-are-they-now-2023/ «Panama Papers»: le riad des Balkany et les avoirs de Cahuzac mentionnés, 20 minutes https://www.20minutes.fr/economie/1820393-20160405-panama-papers-riad-balkany-avoirs- cahuzac-mentionnes Panama Papers : Les nouvelles révélations, Cash Impact https://www.youtube.com/watch?v=8J7XUgqpTiw Analyzing the Panama Papers with Neo4j: Data Models, Queries & More, neo4j https://neo4j.com/blog/analyzing-panama-papers-neo4j/",
+            "merged": true,
+            "keywords": [
+              "Shell Companies, ACFE https://www.acfe.com/fraud-resources/shell-companies Biggest data leaks worldwide as of November 2017, Statistica https://www.statista.com/statistics/531269/panama-papers-data-leak-size/ « Panama Papers » : le big data au service du journalisme d’investigation, La-REM, Jacques-André Fines Schlumberger https://la-rem.eu/2016/07/panama-papers/ Where are the key Panama Papers figures, seven years later?, ICIJ https://www.icij.org/investigations/panama-papers/where-are-they-now-2023/ «Panama Papers»: le riad des Balkany et les avoirs de Cahuzac mentionnés, 20 minutes https://www.20minutes.fr/economie/1820393-20160405-panama-papers-riad-balkany-avoirs- cahuzac-mentionnes Panama Papers : Les nouvelles révélations, Cash Impact https://www.youtube.com/watch?v=8J7XUgqpTiw Analyzing the Panama Papers with Neo4j: Data Models, Queries & More, neo4j https://neo4j.com/blog/analyzing-panama-papers-neo4j/"
+            ],
+            "eventId": "2",
+            "disabled": false
+          }
+        ],
+        "keywords": [
+          "sources"
+        ],
+        "eventId": "17"
+      }
+    ],
+    "keywords": [
+      "Rémi Morvan · 15 November 2023 · Sémidoc, Bordeaux",
+      "Say, Rémi… What’s your thesis about?",
+      "main slide"
+    ],
+    "eventId": "root"
+  },
+  "soundDict": {}
+}
