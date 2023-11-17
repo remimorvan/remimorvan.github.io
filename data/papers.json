@@ -1,5 +1,16 @@
 [
 	{
+		"title": "Semantic Tree-Width and Path-Width of Conjunctive Regular Path Queries",
+		"coauthors": [
+			"Diego Figueira"
+		],
+		"journal": "Submitted to LMCS (Selected Papers of ICDT '23)",
+		"journalLink": "https://lmcs.episciences.org/",
+		"year": 2023,
+		"arxiv": "https://arxiv.org/abs/2212.01679",
+		"type": "misc"
+	},
+	{
 		"title": "Separating Automatic Relations",
 		"coauthors": [
 			"Pablo Barceló",
