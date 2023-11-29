@@ -1,8 +1,8 @@
 {
-  "version": 0.915,
-  "presentation": "Sémidoc: What's your thesis about?",
+  "version": 1,
+  "presentation": "2023-semidoc-thesis",
   "slideDict": {
-    "new_slide": "new_slide",
+    "new_slide": "main_slide",
     "thought": "thought",
     "empty": "empty",
     "thought_2": "thought_2",
@@ -10,14 +10,12 @@
     "thought_3": "thought_3",
     "don't_do": "don't_do",
     "do": "do",
-    "empty2": "empty2",
     "shell_companies": "shell_companies",
     "leaks": "leaks",
     "big_data": "big_data",
     "databases": "databases",
     "relational_databases": "relational_databases",
     "graph_databases": "graph_databases",
-    "dummy_chart": "dummy_chart",
     "leaks_part_2": "leaks_part_2",
     "sources": "sources"
   },
