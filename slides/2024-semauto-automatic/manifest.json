@@ -1,0 +1,1807 @@
+{
+  "version": 1,
+  "presentation": "2024-semauto-automatic",
+  "slideDict": {
+    "new_slide3": "main_slide",
+    "automaticity": "automaticity",
+    "new_slide": "slide_mfcs",
+    "recognizable": "recognizable",
+    "separation_=_colourability": "separation_=_colourability",
+    "automatic_graph": "automatic_graph",
+    "undecidability": "undecidability",
+    "undecidability_sep": "undecidability_sep",
+    "question": "question",
+    "new_slide2": "main_slide_algebra",
+    "algebra-motivation": "algebra-motivation",
+    "V-relations2": "V-relations",
+    "basic_prop_V-relations": "basic_prop_V-relations",
+    "algebraic_language_theory": "algebraic_language_theory",
+    "three_pillars": "three_pillars",
+    "synchronous_words": "synchronous_words",
+    "empty_word": "empty_word",
+    "free_algebras_pic": "free_algebras_pic",
+    "prop_synchronous_algebras": "prop_synchronous_algebras",
+    "backtoemptyword1": "backtoemptyword1",
+    "backtoemptyword2": "backtoemptyword2"
+  },
+  "tree": {
+    "type": "child",
+    "name": "main slide",
+    "id": "new_slide3",
+    "enabled": "enabled",
+    "merged": false,
+    "children": [
+      {
+        "type": "show",
+        "id": "prism",
+        "name": "prism",
+        "merged": false,
+        "keywords": [
+          "through the prism",
+          "prism"
+        ],
+        "eventId": "4",
+        "disabled": false,
+        "enabled": "enabled"
+      },
+      {
+        "type": "show",
+        "id": "Group_3",
+        "name": "colourability",
+        "merged": false,
+        "keywords": [
+          "colourability",
+          "of graph",
+          "and algebraic",
+          "language",
+          "theory."
+        ],
+        "eventId": "5",
+        "disabled": false,
+        "enabled": "enabled"
+      },
+      {
+        "type": "child",
+        "name": "automaticity",
+        "id": "automaticity",
+        "enabled": "enabled",
+        "merged": false,
+        "children": [
+          {
+            "type": "show",
+            "id": "Def_automatic",
+            "name": "Def automatic",
+            "merged": false,
+            "keywords": [
+              "is automatic when it can be described by a synchronous automaton.",
+              "Def automatic"
+            ],
+            "eventId": "3",
+            "disabled": false,
+            "enabled": "enabled"
+          },
+          {
+            "type": "show",
+            "id": "Encoding",
+            "name": "Encoding",
+            "merged": false,
+            "keywords": [
+              "Encoding"
+            ],
+            "eventId": "4",
+            "disabled": false,
+            "enabled": "enabled"
+          },
+          {
+            "type": "show",
+            "id": "Automaton",
+            "name": "Automaton",
+            "merged": false,
+            "keywords": [
+              "accepts the identity relation.",
+              "Automaton"
+            ],
+            "eventId": "5",
+            "disabled": false,
+            "enabled": "enabled"
+          }
+        ],
+        "keywords": [
+          "automaticity"
+        ],
+        "eventId": "1",
+        "originalParams": {}
+      },
+      {
+        "type": "child",
+        "name": "slide mfcs",
+        "id": "new_slide",
+        "enabled": "enabled",
+        "merged": false,
+        "children": [
+          {
+            "type": "show",
+            "id": "title",
+            "name": "title",
+            "merged": false,
+            "keywords": [
+              "joint work w/ Pablo Barceló (Santiago de Chile) & Diego Figueira (Bordeaux)",
+              "Separating Automatic Relations",
+              "or: Graph Colouring for Impractical Mathematicians",
+              "title"
+            ],
+            "eventId": "35",
+            "disabled": false,
+            "enabled": "enabled"
+          },
+          {
+            "type": "show",
+            "id": "Group_3",
+            "name": "Main Question",
+            "merged": false,
+            "keywords": [
+              "Ques°. Can we decide if two automatic relations can be separated by a recognizable relation?",
+              "Main Question"
+            ],
+            "eventId": "30",
+            "disabled": false,
+            "enabled": "enabled"
+          },
+          {
+            "type": "child",
+            "name": "recognizable",
+            "id": "recognizable",
+            "enabled": "enabled",
+            "merged": false,
+            "children": [
+              {
+                "type": "show",
+                "id": "Automaticity",
+                "name": "Recognizability",
+                "merged": false,
+                "keywords": [
+                  "Recognizability"
+                ],
+                "eventId": "1",
+                "disabled": false,
+                "enabled": "enabled"
+              },
+              {
+                "type": "show",
+                "id": "Def_automatic",
+                "name": "Def rec",
+                "merged": false,
+                "keywords": [
+                  "regular lang.",
+                  "Recognizable relations:",
+                  "Def rec"
+                ],
+                "eventId": "2",
+                "disabled": false,
+                "enabled": "enabled"
+              },
+              {
+                "type": "show",
+                "id": "Ex",
+                "name": "Ex",
+                "merged": false,
+                "keywords": [
+                  "“same parity” “end with the same letter” identity relation",
+                  "Ex. Co-ex.",
+                  "Ex"
+                ],
+                "eventId": "3",
+                "disabled": false,
+                "enabled": "enabled"
+              },
+              {
+                "type": "show",
+                "id": "Prop._Recognizable_implies_automatic.",
+                "name": "Prop. Recognizable implies automatic.",
+                "merged": false,
+                "keywords": [
+                  "Prop. Recognizable implies automatic."
+                ],
+                "eventId": "4",
+                "disabled": false,
+                "enabled": "enabled"
+              },
+              {
+                "type": "show",
+                "id": "Prop._(Stearns__E2_80_9867_&_Valiant__E2_80_9875_&_Carton-Choffrut-Grigorieff__E2_80_9806)_Given_an_automatic_relation,_we_can_decide_if_it_is_recognizable.",
+                "name": "Prop. (Stearns ‘67 & Valiant ‘75 & Carton-Choffrut-Grigorieff ‘06) Given an automatic relation, we can decide if it is recognizable.",
+                "merged": false,
+                "keywords": [
+                  "Prop. (Stearns ‘67 & Valiant ‘75 & Carton-Choffrut-Grigorieff ‘06) Given an automatic relation, we can decide if it is recognizable."
+                ],
+                "eventId": "5",
+                "disabled": false,
+                "enabled": "enabled"
+              }
+            ],
+            "keywords": [
+              "recognizable"
+            ],
+            "eventId": "32",
+            "originalParams": {}
+          },
+          {
+            "type": "child",
+            "name": "separation = colourability",
+            "id": "separation_=_colourability",
+            "enabled": "enabled",
+            "merged": false,
+            "children": [
+              {
+                "type": "show",
+                "id": "Separation_vs._Colouring",
+                "name": "Separation vs. Colouring",
+                "merged": false,
+                "keywords": [
+                  "Separation vs. Colouring"
+                ],
+                "eventId": "1",
+                "disabled": false,
+                "enabled": "enabled"
+              },
+              {
+                "type": "show",
+                "id": "Separation_fig",
+                "name": "Separation fig",
+                "merged": false,
+                "keywords": [
+                  "automatic",
+                  "recognizable",
+                  "Aut/Rec separa- bility problem",
+                  "Separation fig"
+                ],
+                "eventId": "2",
+                "disabled": false,
+                "enabled": "enabled"
+              },
+              {
+                "type": "child",
+                "name": "automatic graph",
+                "id": "automatic_graph",
+                "enabled": "enabled",
+                "merged": false,
+                "children": [
+                  {
+                    "type": "show",
+                    "id": "Automatic_graphs",
+                    "name": "Automatic graphs",
+                    "merged": false,
+                    "keywords": [
+                      "Automatic graphs"
+                    ],
+                    "eventId": "1",
+                    "disabled": false,
+                    "enabled": "enabled"
+                  },
+                  {
+                    "type": "show",
+                    "id": "Def_automatic_graph",
+                    "name": "Def automatic graph",
+                    "merged": false,
+                    "keywords": [
+                      "Automatic graph: with automatic.",
+                      "Def automatic graph"
+                    ],
+                    "eventId": "2",
+                    "disabled": false,
+                    "enabled": "enabled"
+                  },
+                  {
+                    "type": "show",
+                    "id": "Def_colouring",
+                    "name": "Def colouring",
+                    "merged": false,
+                    "keywords": [
+                      "Colouring: consistent with edges.",
+                      "Def colouring"
+                    ],
+                    "eventId": "3",
+                    "disabled": false,
+                    "enabled": "enabled"
+                  },
+                  {
+                    "type": "show",
+                    "id": "Ex",
+                    "name": "Ex",
+                    "merged": false,
+                    "keywords": [
+                      "Ex.",
+                      "a b aa ab ba bb",
+                      "Ex"
+                    ],
+                    "eventId": "4",
+                    "disabled": false,
+                    "enabled": "enabled"
+                  },
+                  {
+                    "type": "show",
+                    "id": "Colouring",
+                    "name": "Colouring",
+                    "merged": false,
+                    "keywords": [
+                      "is a colouring.",
+                      "a b aa ab ba bb",
+                      "Colouring"
+                    ],
+                    "eventId": "8",
+                    "disabled": false,
+                    "enabled": "enabled"
+                  },
+                  {
+                    "type": "show",
+                    "id": "Def_regular",
+                    "name": "Def regular",
+                    "merged": false,
+                    "keywords": [
+                      "Def. is regular when every is regular.",
+                      "Def regular"
+                    ],
+                    "eventId": "5",
+                    "disabled": false,
+                    "enabled": "enabled"
+                  },
+                  {
+                    "type": "show",
+                    "id": "regular",
+                    "name": "regular",
+                    "merged": false,
+                    "keywords": [
+                      "regular"
+                    ],
+                    "eventId": "7",
+                    "disabled": false,
+                    "enabled": "enabled"
+                  }
+                ],
+                "keywords": [
+                  "automatic graph"
+                ],
+                "eventId": "3",
+                "originalParams": {}
+              },
+              {
+                "type": "show",
+                "id": "Group_2",
+                "name": "Reg colour pb",
+                "merged": false,
+                "keywords": [
+                  "Regular colourability problem: Does have a finite regular colouring?",
+                  "Reg colour pb"
+                ],
+                "eventId": "4",
+                "disabled": false,
+                "enabled": "enabled"
+              },
+              {
+                "type": "show",
+                "id": "Thm._These_problems_are_Turing-equivalent.",
+                "name": "Thm. These problems are Turing-equivalent.",
+                "merged": false,
+                "keywords": [
+                  "Thm. These problems are Turing-equivalent."
+                ],
+                "eventId": "5",
+                "disabled": false,
+                "enabled": "enabled"
+              },
+              {
+                "type": "show",
+                "id": "Intuition",
+                "name": "Intuition",
+                "merged": false,
+                "keywords": [
+                  "Intuition. A finite regular colouring of satisfies:",
+                  "Intuition"
+                ],
+                "eventId": "6",
+                "disabled": false,
+                "enabled": "enabled"
+              }
+            ],
+            "keywords": [
+              "separation = colourability"
+            ],
+            "eventId": "2",
+            "originalParams": {}
+          },
+          {
+            "type": "child",
+            "name": "undecidability",
+            "id": "undecidability",
+            "enabled": "enabled",
+            "merged": false,
+            "children": [
+              {
+                "type": "show",
+                "id": "Undecidability_for_fixed_k",
+                "name": "Undecidability for fixed k",
+                "merged": false,
+                "keywords": [
+                  "Undecidability for fixed k"
+                ],
+                "eventId": "1",
+                "disabled": false,
+                "enabled": "enabled"
+              },
+              {
+                "type": "show",
+                "id": "Thm_Kocher",
+                "name": "Thm Kocher",
+                "merged": false,
+                "keywords": [
+                  "Thm. (Köcher ‘14) The -colourability problem is undecidable for each .",
+                  "not required to be regular",
+                  "Thm Kocher"
+                ],
+                "eventId": "2",
+                "disabled": false,
+                "enabled": "enabled"
+              },
+              {
+                "type": "show",
+                "id": "Thm_(ours)",
+                "name": "Thm (ours)",
+                "merged": false,
+                "keywords": [
+                  "Thm. (Barceló-Figueira-M. ‘23) The -regular colourability problem is undecidable for each .",
+                  "Thm (ours)"
+                ],
+                "eventId": "3",
+                "disabled": false,
+                "enabled": "enabled"
+              },
+              {
+                "type": "show",
+                "id": "Semi-algo__Enumerate_all_regular_colourings.",
+                "name": "Semi-algo: Enumerate all regular colourings.",
+                "merged": false,
+                "keywords": [
+                  "Semi-algo: Enumerate all regular colourings."
+                ],
+                "eventId": "5",
+                "disabled": false,
+                "enabled": "enabled"
+              },
+              {
+                "type": "show",
+                "id": "Coro_RE",
+                "name": "Coro RE",
+                "merged": false,
+                "keywords": [
+                  "Coro. -regular colourability is RE.",
+                  "Coro RE"
+                ],
+                "eventId": "6",
+                "disabled": false,
+                "enabled": "enabled"
+              },
+              {
+                "type": "show",
+                "id": "Thm_Bruijn-Erdos",
+                "name": "Thm Bruijn-Erdos",
+                "merged": false,
+                "keywords": [
+                  "Thm. (de Bruijn–Erdős ‘51) A graph is -colourable iff every finite subgraph is -colourable.",
+                  "Thm Bruijn-Erdos"
+                ],
+                "eventId": "7",
+                "disabled": false,
+                "enabled": "enabled"
+              },
+              {
+                "type": "show",
+                "id": "Coro_coRE",
+                "name": "Coro coRE",
+                "merged": false,
+                "keywords": [
+                  "Coro. -colourability is coRE.",
+                  "Coro coRE"
+                ],
+                "eventId": "8",
+                "disabled": false,
+                "enabled": "enabled"
+              }
+            ],
+            "keywords": [
+              "undecidability"
+            ],
+            "eventId": "3",
+            "originalParams": {}
+          },
+          {
+            "type": "child",
+            "name": "undecidability sep",
+            "id": "undecidability_sep",
+            "enabled": "enabled",
+            "merged": false,
+            "children": [
+              {
+                "type": "show",
+                "id": "k-rec_undec",
+                "name": "k-rec undec",
+                "merged": false,
+                "keywords": [
+                  "Coro. Aut/ -Rec separability is undecidable.",
+                  "k-rec undec"
+                ],
+                "eventId": "1",
+                "disabled": false,
+                "enabled": "enabled"
+              },
+              {
+                "type": "show",
+                "id": "def_k-rec",
+                "name": "def k-rec",
+                "merged": false,
+                "keywords": [
+                  "Def. -Rec if there is a -partition of s.t.",
+                  "reg. lang. in the partition",
+                  "def k-rec"
+                ],
+                "eventId": "2",
+                "disabled": false,
+                "enabled": "enabled"
+              },
+              {
+                "type": "show",
+                "id": "k-prod_undec",
+                "name": "k-prod undec",
+                "merged": false,
+                "keywords": [
+                  "Coro. Aut/ -Prod separability is undecidable.",
+                  "= union of k products of reg. lang.",
+                  "k-prod undec"
+                ],
+                "eventId": "4",
+                "disabled": false,
+                "enabled": "enabled"
+              }
+            ],
+            "keywords": [
+              "undecidability sep"
+            ],
+            "eventId": "5",
+            "originalParams": {}
+          },
+          {
+            "type": "show",
+            "id": "finite_colorability",
+            "name": "finite colorability",
+            "merged": false,
+            "keywords": [
+              "Ques°. Can we decide if two automatic relations can be separated by a recognizable relation?",
+              "non-necessarily reg.",
+              "finite colorability"
+            ],
+            "eventId": "6",
+            "disabled": false,
+            "enabled": "enabled"
+          },
+          {
+            "type": "show",
+            "id": "Ques_C2_B0._Can_we_decide_if_two_automatic_relations_can_be_separated_by_a_recognizable_relation?",
+            "name": "unbounded cliques",
+            "merged": false,
+            "keywords": [
+              "unbounded cliques"
+            ],
+            "eventId": "11",
+            "disabled": false,
+            "enabled": "enabled"
+          },
+          {
+            "type": "show",
+            "id": "KL",
+            "name": "KL",
+            "merged": false,
+            "keywords": [
+              "KL"
+            ],
+            "eventId": "28",
+            "disabled": false,
+            "enabled": "enabled"
+          },
+          {
+            "type": "child",
+            "name": "question",
+            "id": "question",
+            "enabled": "enabled",
+            "merged": false,
+            "children": [
+              {
+                "type": "show",
+                "id": "Prop._This_graph_is_not_2-regular_colorable.",
+                "name": "Prop. This graph is not 2-regular colorable.",
+                "merged": false,
+                "keywords": [
+                  "Prop. This graph is not 2-regular colorable.",
+                  "Separation vs. Colouring"
+                ],
+                "eventId": "1",
+                "disabled": false,
+                "enabled": "enabled"
+              }
+            ],
+            "keywords": [
+              "question"
+            ],
+            "eventId": "33",
+            "originalParams": {}
+          }
+        ],
+        "keywords": [
+          "slide mfcs"
+        ],
+        "eventId": "2",
+        "originalParams": {}
+      },
+      {
+        "type": "child",
+        "name": "main slide algebra",
+        "id": "new_slide2",
+        "enabled": "enabled",
+        "merged": false,
+        "children": [
+          {
+            "type": "show",
+            "id": "title",
+            "name": "title",
+            "merged": false,
+            "keywords": [
+              "or: Algebraic Language Theory with Types & Dependency",
+              "Algebras for Automatic Relations",
+              "title"
+            ],
+            "eventId": "3",
+            "disabled": false,
+            "enabled": "enabled"
+          },
+          {
+            "type": "child",
+            "name": "algebra-motivation",
+            "id": "algebra-motivation",
+            "enabled": "enabled",
+            "merged": false,
+            "children": [
+              {
+                "type": "show",
+                "id": "Def_(Group_languages)._Lang._recognized_by_deterministic_permutation_automata.",
+                "name": "Def (Group languages). Lang. recognized by deterministic permutation automata.",
+                "merged": false,
+                "keywords": [
+                  "Def (Group languages). Lang. recognized by deterministic permutation automata."
+                ],
+                "eventId": "1",
+                "disabled": false,
+                "enabled": "enabled"
+              },
+              {
+                "type": "show",
+                "id": "Group_5",
+                "name": "is not a permutation automaton.",
+                "merged": false,
+                "keywords": [
+                  "is a permutation automaton,",
+                  "is not a permutation automaton."
+                ],
+                "eventId": "2",
+                "disabled": false,
+                "enabled": "enabled"
+              },
+              {
+                "type": "show",
+                "id": "Prop._Group_automata_are_closed_under_minimization.",
+                "name": "Prop. Group automata are closed under minimization.",
+                "merged": false,
+                "keywords": [
+                  "Prop. Group automata are closed under minimization."
+                ],
+                "eventId": "3",
+                "disabled": false,
+                "enabled": "enabled"
+              },
+              {
+                "type": "show",
+                "id": "Coro.__E2_80_9Cwords_of_even_length_E2_80_9D_is_a_group_language_but__E2_80_9Cat_least_one_letter__E2_80_98a_E2_80_99_E2_80_9D_is_not.",
+                "name": "Coro. “words of even length” is a group language but “at least one letter ‘a’” is not.",
+                "merged": false,
+                "keywords": [
+                  "Coro. “words of even length” is a group language but “at least one letter ‘a’” is not."
+                ],
+                "eventId": "4",
+                "disabled": false,
+                "enabled": "enabled"
+              },
+              {
+                "type": "show",
+                "id": "Group_8",
+                "name": "= relations recognized by deterministic synchronous permutation automata.",
+                "merged": false,
+                "keywords": [
+                  "Q°. What about group relations?",
+                  "= relations recognized by deterministic synchronous permutation automata."
+                ],
+                "eventId": "13",
+                "disabled": false,
+                "enabled": "enabled"
+              },
+              {
+                "type": "show",
+                "id": "Group_52",
+                "name": "Ex. is a group relation.",
+                "merged": false,
+                "keywords": [
+                  "Ex. is a group relation."
+                ],
+                "eventId": "14",
+                "disabled": false,
+                "enabled": "enabled"
+              },
+              {
+                "type": "show",
+                "id": "Group_4",
+                "name": "Group 4",
+                "merged": false,
+                "keywords": [
+                  "Group 4"
+                ],
+                "eventId": "16",
+                "disabled": false,
+                "enabled": "enabled"
+              },
+              {
+                "type": "show",
+                "id": "Text",
+                "name": "This automaton (seen as a “classical” DFA) also accepts           but this not a valid encoding of a pair of words.",
+                "merged": false,
+                "keywords": [
+                  "This automaton (seen as a “classical” DFA) also accepts           but this not a valid encoding of a pair of words."
+                ],
+                "eventId": "34",
+                "disabled": false,
+                "enabled": "enabled"
+              },
+              {
+                "type": "show",
+                "id": "_7Ba__5Cchoose__5Cbot_7D_7B_5Cbot__5Cchoose_a_7D",
+                "name": "{a \\choose \\bot}{\\bot \\choose a}",
+                "merged": true,
+                "keywords": [
+                  "{a \\choose \\bot}{\\bot \\choose a}"
+                ],
+                "eventId": "35",
+                "disabled": false,
+                "enabled": "enabled"
+              },
+              {
+                "type": "show",
+                "id": "Fact._The_minimal__E2_80_9Cclassical_E2_80_9D_automaton_for_is_not_a_group_automaton.",
+                "name": "Fact. The minimal “classical” automaton for is not a group automaton.",
+                "merged": false,
+                "keywords": [
+                  "Fact. The minimal “classical” automaton for is not a group automaton."
+                ],
+                "eventId": "10",
+                "disabled": false,
+                "enabled": "enabled"
+              },
+              {
+                "type": "show",
+                "id": "Coro._Deciding_if_a_relation_is_a_group_relation_is_non-trivial.",
+                "name": "Coro. Deciding if a relation is a group relation is non-trivial.",
+                "merged": false,
+                "keywords": [
+                  "Coro. Deciding if a relation is a group relation is non-trivial."
+                ],
+                "eventId": "19",
+                "disabled": false,
+                "enabled": "enabled"
+              },
+              {
+                "type": "show",
+                "id": "synchronous_automata_=_classical_automata_over__C2_A0_+_promise_that_words_are__E2_80_9Cwell-formed_E2_80_9D",
+                "name": "synchronous automata = classical automata over   + promise that words are “well-formed”",
+                "merged": false,
+                "keywords": [
+                  "synchronous automata = classical automata over   + promise that words are “well-formed”"
+                ],
+                "eventId": "12",
+                "disabled": false,
+                "enabled": "enabled"
+              }
+            ],
+            "keywords": [
+              "algebra-motivation"
+            ],
+            "eventId": "1",
+            "originalParams": {}
+          },
+          {
+            "type": "child",
+            "name": "V-relations",
+            "id": "V-relations2",
+            "enabled": "enabled",
+            "merged": false,
+            "children": [
+              {
+                "type": "show",
+                "id": "induced_relation_picture",
+                "name": "induced relation picture",
+                "merged": false,
+                "keywords": [
+                  "“padding symb. at the right pos°”",
+                  "induced relation picture"
+                ],
+                "eventId": "1",
+                "disabled": false,
+                "enabled": "enabled"
+              },
+              {
+                "type": "show",
+                "id": "semantic_of_synchronous_auto.",
+                "name": "semantic of synchronous auto.",
+                "merged": true,
+                "keywords": [
+                  "semantic of synchronous auto."
+                ],
+                "eventId": "7",
+                "disabled": false,
+                "enabled": "enabled"
+              },
+              {
+                "type": "show",
+                "id": "semantic_of__E2_80_9Cclassical_E2_80_9D_auto.",
+                "name": "semantic of “classical” auto.",
+                "merged": true,
+                "keywords": [
+                  "semantic of “classical” auto."
+                ],
+                "eventId": "8",
+                "disabled": false,
+                "enabled": "enabled"
+              },
+              {
+                "type": "show",
+                "id": "Fact._Relations_over_=_languages_over_in_which_all_words_are__E2_80_9Cwell-formed_E2_80_9D.",
+                "name": "Fact. Relations over = languages over in which all words are “well-formed”.",
+                "merged": false,
+                "keywords": [
+                  "Fact. Relations over = languages over in which all words are “well-formed”."
+                ],
+                "eventId": "3",
+                "disabled": false,
+                "enabled": "enabled"
+              },
+              {
+                "type": "show",
+                "id": "Def._A__C2_A0-relation_is_any_relation_that_can_be_written_as_for_some_.",
+                "name": "Def. A  -relation is any relation that can be written as for some .",
+                "merged": false,
+                "keywords": [
+                  "Def. A  -relation is any relation that can be written as for some .",
+                  "a class of regular languages"
+                ],
+                "eventId": "4",
+                "disabled": false,
+                "enabled": "enabled"
+              },
+              {
+                "type": "hide",
+                "id": "semantic_of_synchronous_auto.",
+                "name": "semantic of synchronous auto.",
+                "merged": false,
+                "keywords": [
+                  "semantic of synchronous auto."
+                ],
+                "eventId": "9",
+                "disabled": false,
+                "enabled": "enabled"
+              },
+              {
+                "type": "hide",
+                "id": "semantic_of__E2_80_9Cclassical_E2_80_9D_auto.",
+                "name": "semantic of “classical” auto.",
+                "merged": true,
+                "keywords": [
+                  "semantic of “classical” auto."
+                ],
+                "eventId": "10",
+                "disabled": false,
+                "enabled": "enabled"
+              },
+              {
+                "type": "show",
+                "id": "L",
+                "name": "L",
+                "merged": true,
+                "keywords": [
+                  "L"
+                ],
+                "eventId": "13",
+                "disabled": false,
+                "enabled": "enabled"
+              },
+              {
+                "type": "show",
+                "id": "_5Cmathcal_7BR_7D",
+                "name": "\\mathcal{R}",
+                "merged": true,
+                "keywords": [
+                  "\\mathcal{R}"
+                ],
+                "eventId": "14",
+                "disabled": false,
+                "enabled": "enabled"
+              },
+              {
+                "type": "show",
+                "id": "Ex._Group_relations_are_the_-relations!",
+                "name": "Ex. Group relations are the -relations!",
+                "merged": false,
+                "keywords": [
+                  "Ex. Group relations are the -relations!"
+                ],
+                "eventId": "5",
+                "disabled": false,
+                "enabled": "enabled"
+              },
+              {
+                "type": "show",
+                "id": "Group_9",
+                "name": "Ex. Automatic relations are the -relations!",
+                "merged": false,
+                "keywords": [
+                  "Ex. Automatic relations are the -relations!"
+                ],
+                "eventId": "6",
+                "disabled": false,
+                "enabled": "enabled"
+              }
+            ],
+            "keywords": [
+              "V-relations"
+            ],
+            "eventId": "2",
+            "originalParams": {}
+          },
+          {
+            "type": "child",
+            "name": "basic prop V-relations",
+            "id": "basic_prop_V-relations",
+            "enabled": "enabled",
+            "merged": false,
+            "children": [
+              {
+                "type": "show",
+                "id": "Fact._If_the_class_can_express__E2_80_9Cbeing_well-formed_E2_80_9D_and_is_closed_under_intersection,_then_the_-relations_are_exactly_the_-languages_which_are_contained_in_.",
+                "name": "Fact. If the class can express “being well-formed” and is closed under intersection, then the -relations are exactly the -languages which are contained in .",
+                "merged": false,
+                "keywords": [
+                  "Fact. If the class can express “being well-formed” and is closed under intersection, then the -relations are exactly the -languages which are contained in ."
+                ],
+                "eventId": "1",
+                "disabled": false,
+                "enabled": "enabled"
+              },
+              {
+                "type": "show",
+                "id": "Group_6",
+                "name": "Fact. If has decidable separation, then -relations are decidable.",
+                "merged": false,
+                "keywords": [
+                  "Fact. If has decidable separation, then -relations are decidable."
+                ],
+                "eventId": "2",
+                "disabled": false,
+                "enabled": "enabled"
+              }
+            ],
+            "keywords": [
+              "basic prop V-relations"
+            ],
+            "eventId": "4",
+            "originalParams": {}
+          },
+          {
+            "type": "child",
+            "name": "algebraic language theory",
+            "id": "algebraic_language_theory",
+            "enabled": "enabled",
+            "merged": false,
+            "children": [
+              {
+                "type": "show",
+                "id": "Separating_Automatic_Relations",
+                "name": "Algebraic Language Theory",
+                "merged": false,
+                "keywords": [
+                  "Algebraic Language Theory"
+                ],
+                "eventId": "10",
+                "disabled": false,
+                "enabled": "enabled"
+              },
+              {
+                "type": "show",
+                "id": "class_of_models",
+                "name": "class of models",
+                "merged": false,
+                "keywords": [
+                  "class of models"
+                ],
+                "eventId": "1",
+                "disabled": false,
+                "enabled": "enabled"
+              },
+              {
+                "type": "show",
+                "id": "gives_rise_to",
+                "name": "gives rise to",
+                "merged": false,
+                "keywords": [
+                  "give rise to",
+                  "gives rise to"
+                ],
+                "eventId": "2",
+                "disabled": false,
+                "enabled": "enabled"
+              },
+              {
+                "type": "show",
+                "id": "algebras",
+                "name": "algebras",
+                "merged": false,
+                "keywords": [
+                  "algebras"
+                ],
+                "eventId": "3",
+                "disabled": false,
+                "enabled": "enabled"
+              },
+              {
+                "type": "show",
+                "id": "recognize",
+                "name": "recognize",
+                "merged": false,
+                "keywords": [
+                  "recognize"
+                ],
+                "eventId": "4",
+                "disabled": false,
+                "enabled": "enabled"
+              },
+              {
+                "type": "show",
+                "id": "Group_3",
+                "name": "fin words",
+                "merged": false,
+                "keywords": [
+                  "languages of fin. words",
+                  "fin words"
+                ],
+                "eventId": "5",
+                "disabled": false,
+                "enabled": "enabled"
+              },
+              {
+                "type": "show",
+                "id": "Group_32",
+                "name": "semigroups",
+                "merged": true,
+                "keywords": [
+                  "set + product",
+                  "semigroups"
+                ],
+                "eventId": "6",
+                "disabled": false,
+                "enabled": "enabled"
+              },
+              {
+                "type": "child",
+                "name": "three pillars",
+                "id": "three_pillars",
+                "enabled": "enabled",
+                "merged": false,
+                "children": [
+                  {
+                    "type": "show",
+                    "id": "The_Three_Pillars",
+                    "name": "The Three Pillars",
+                    "merged": false,
+                    "keywords": [
+                      "The Three Pillars"
+                    ],
+                    "eventId": "10",
+                    "disabled": false,
+                    "enabled": "enabled"
+                  },
+                  {
+                    "type": "show",
+                    "id": "first_pillar",
+                    "name": "first pillar",
+                    "merged": false,
+                    "keywords": [
+                      "existence of syntactic semigroups   & language is regular iff its syntactic semigroup is finite",
+                      "first pillar"
+                    ],
+                    "eventId": "1",
+                    "disabled": false,
+                    "enabled": "enabled"
+                  },
+                  {
+                    "type": "show",
+                    "id": "first_pillar_ex",
+                    "name": "first pillar ex",
+                    "merged": false,
+                    "keywords": [
+                      "words of even length:",
+                      "first pillar ex"
+                    ],
+                    "eventId": "2",
+                    "disabled": false,
+                    "enabled": "enabled"
+                  },
+                  {
+                    "type": "show",
+                    "id": "second_pillar",
+                    "name": "second pillar",
+                    "merged": false,
+                    "keywords": [
+                      "correspondence between",
+                      "pseudovarieties of finite semigroups",
+                      "pseudovarieties of regular languages",
+                      "= class w/ nice closure properties",
+                      "&",
+                      "second pillar"
+                    ],
+                    "eventId": "3",
+                    "disabled": false,
+                    "enabled": "enabled"
+                  },
+                  {
+                    "type": "show",
+                    "id": "Group_33",
+                    "name": "second pillar ex",
+                    "merged": false,
+                    "keywords": [
+                      "group languages: languages recognized by finite-state permutation automata",
+                      "finite groups",
+                      "second pillar ex"
+                    ],
+                    "eventId": "4",
+                    "disabled": false,
+                    "enabled": "enabled"
+                  },
+                  {
+                    "type": "show",
+                    "id": "third_pillar",
+                    "name": "third pillar",
+                    "merged": false,
+                    "keywords": [
+                      "pseudovarieties of finite semigroups = classes of finite semigroups defined by “profinite equations”",
+                      "third pillar"
+                    ],
+                    "eventId": "5",
+                    "disabled": false,
+                    "enabled": "enabled"
+                  },
+                  {
+                    "type": "show",
+                    "id": "third_pillar_ex",
+                    "name": "third pillar ex",
+                    "merged": false,
+                    "keywords": [
+                      "finite groups = finite semigroups s.t.",
+                      "third pillar ex"
+                    ],
+                    "eventId": "8",
+                    "disabled": false,
+                    "enabled": "enabled"
+                  }
+                ],
+                "keywords": [
+                  "three pillars"
+                ],
+                "eventId": "8",
+                "originalParams": {}
+              },
+              {
+                "type": "child",
+                "name": "synchronous words",
+                "id": "synchronous_words",
+                "enabled": "enabled",
+                "merged": false,
+                "children": [
+                  {
+                    "type": "show",
+                    "id": "relations_of_finite_words_i.e._languages_of_well-formed_words",
+                    "name": "relations of finite words i.e. languages of well-formed words",
+                    "merged": false,
+                    "keywords": [
+                      "relations of finite words i.e. languages of well-formed words"
+                    ],
+                    "eventId": "1",
+                    "disabled": false,
+                    "enabled": "enabled"
+                  },
+                  {
+                    "type": "show",
+                    "id": "Reminder",
+                    "name": "Reminder",
+                    "merged": false,
+                    "keywords": [
+                      "Reminder: encoding",
+                      "Reminder"
+                    ],
+                    "eventId": "2",
+                    "disabled": false,
+                    "enabled": "enabled"
+                  },
+                  {
+                    "type": "show",
+                    "id": "Group_5",
+                    "name": "associativity",
+                    "merged": false,
+                    "keywords": [
+                      "Associativity:",
+                      "associativity"
+                    ],
+                    "eventId": "3",
+                    "disabled": false,
+                    "enabled": "enabled"
+                  },
+                  {
+                    "type": "show",
+                    "id": "Group_52",
+                    "name": "partial product",
+                    "merged": false,
+                    "keywords": [
+                      "but concatenation is not always defined…",
+                      "partial product"
+                    ],
+                    "eventId": "4",
+                    "disabled": false,
+                    "enabled": "enabled"
+                  },
+                  {
+                    "type": "show",
+                    "id": "Solution__assign_a_type_to_each_well-formed_word.",
+                    "name": "Solution: assign a type to each well-formed word.",
+                    "merged": false,
+                    "keywords": [
+                      "Solution: assign a type to each well-formed word."
+                    ],
+                    "eventId": "6",
+                    "disabled": false,
+                    "enabled": "enabled"
+                  },
+                  {
+                    "type": "show",
+                    "id": "Group_53",
+                    "name": "Concatenability is uniquely determined by the type.",
+                    "merged": false,
+                    "keywords": [
+                      "Concatenability is uniquely determined by the type."
+                    ],
+                    "eventId": "8",
+                    "disabled": false,
+                    "enabled": "enabled"
+                  },
+                  {
+                    "type": "show",
+                    "id": "What_about_the_empty_word?",
+                    "name": "What about the empty word?",
+                    "merged": false,
+                    "keywords": [
+                      "What about the empty word?"
+                    ],
+                    "eventId": "9",
+                    "disabled": false,
+                    "enabled": "enabled"
+                  },
+                  {
+                    "type": "child",
+                    "name": "empty word",
+                    "id": "empty_word",
+                    "enabled": "enabled",
+                    "merged": false,
+                    "children": [
+                      {
+                        "type": "show",
+                        "id": "Two_solutions_",
+                        "name": "Two solutions:",
+                        "merged": false,
+                        "keywords": [
+                          "Two solutions:"
+                        ],
+                        "eventId": "1",
+                        "disabled": false,
+                        "enabled": "enabled"
+                      },
+                      {
+                        "type": "show",
+                        "id": "Line_35",
+                        "name": "Line 35",
+                        "merged": true,
+                        "keywords": [
+                          "Line 35"
+                        ],
+                        "eventId": "9",
+                        "disabled": false,
+                        "enabled": "enabled"
+                      },
+                      {
+                        "type": "show",
+                        "id": "forbid_the_empty_word",
+                        "name": "forbid the empty word",
+                        "merged": false,
+                        "keywords": [
+                          "forbid the empty word"
+                        ],
+                        "eventId": "2",
+                        "disabled": false,
+                        "enabled": "enabled"
+                      },
+                      {
+                        "type": "show",
+                        "id": "one_copy_of_the_empty_word_for_each_type",
+                        "name": "one copy of the empty word for each type",
+                        "merged": false,
+                        "keywords": [
+                          "one copy of the empty word for each type"
+                        ],
+                        "eventId": "3",
+                        "disabled": false,
+                        "enabled": "enabled"
+                      },
+                      {
+                        "type": "show",
+                        "id": "+_having_a_way_to_say_that_these_elements_are_equivalent",
+                        "name": "+ having a way to say that these elements are equivalent",
+                        "merged": false,
+                        "keywords": [
+                          "+ having a way to say that these elements are equivalent"
+                        ],
+                        "eventId": "4",
+                        "disabled": false,
+                        "enabled": "enabled"
+                      },
+                      {
+                        "type": "child",
+                        "name": "free algebras pic",
+                        "id": "free_algebras_pic",
+                        "enabled": "enabled",
+                        "merged": false,
+                        "children": [
+                          {
+                            "type": "show",
+                            "id": "type_ll_to_ll",
+                            "name": "type ll to ll",
+                            "merged": false,
+                            "keywords": [
+                              "[Copy] type letter/letter",
+                              "type ll to ll"
+                            ],
+                            "eventId": "3",
+                            "disabled": false,
+                            "enabled": "enabled"
+                          },
+                          {
+                            "type": "show",
+                            "id": "type_lb_to_lb",
+                            "name": "type lb to lb",
+                            "merged": false,
+                            "keywords": [
+                              "[Copy] type letter/blank",
+                              "type lb to lb"
+                            ],
+                            "eventId": "4",
+                            "disabled": false,
+                            "enabled": "enabled"
+                          },
+                          {
+                            "type": "show",
+                            "id": "type_ll_to_lb",
+                            "name": "type ll to lb",
+                            "merged": false,
+                            "keywords": [
+                              "[Copy] type letter/letter to letter/blank",
+                              "type ll to lb"
+                            ],
+                            "eventId": "6",
+                            "disabled": false,
+                            "enabled": "enabled"
+                          },
+                          {
+                            "type": "show",
+                            "id": "type_bl_to_bl",
+                            "name": "type bl to bl",
+                            "merged": false,
+                            "keywords": [
+                              "[Copy] type blank/letter",
+                              "type bl to bl"
+                            ],
+                            "eventId": "5",
+                            "disabled": false,
+                            "enabled": "enabled"
+                          },
+                          {
+                            "type": "show",
+                            "id": "type_ll_to_bl",
+                            "name": "type ll to bl",
+                            "merged": false,
+                            "keywords": [
+                              "[Copy] type letter/letter to blank/letter",
+                              "type ll to bl"
+                            ],
+                            "eventId": "7",
+                            "disabled": false,
+                            "enabled": "enabled"
+                          },
+                          {
+                            "type": "show",
+                            "id": "Epsilons",
+                            "name": "Epsilons",
+                            "merged": false,
+                            "keywords": [
+                              "Epsilons"
+                            ],
+                            "eventId": "8",
+                            "disabled": false,
+                            "enabled": "enabled"
+                          },
+                          {
+                            "type": "show",
+                            "id": "ll_inside_ll_to_lb",
+                            "name": "ll inside ll to lb",
+                            "merged": false,
+                            "keywords": [
+                              "ll inside ll to lb"
+                            ],
+                            "eventId": "9",
+                            "disabled": false,
+                            "enabled": "enabled"
+                          },
+                          {
+                            "type": "show",
+                            "id": "lb_in_ll_to_lb",
+                            "name": "lb in ll to lb",
+                            "merged": false,
+                            "keywords": [
+                              "lb in ll to lb"
+                            ],
+                            "eventId": "10",
+                            "disabled": false,
+                            "enabled": "enabled"
+                          },
+                          {
+                            "type": "show",
+                            "id": "type_ll_in_ll_to_bl",
+                            "name": "type ll in ll to bl",
+                            "merged": false,
+                            "keywords": [
+                              "type ll in ll to bl"
+                            ],
+                            "eventId": "11",
+                            "disabled": false,
+                            "enabled": "enabled"
+                          },
+                          {
+                            "type": "show",
+                            "id": "type_bl_in_ll_to_bl",
+                            "name": "type bl in ll to bl",
+                            "merged": true,
+                            "keywords": [
+                              "type bl in ll to bl"
+                            ],
+                            "eventId": "12",
+                            "disabled": false,
+                            "enabled": "enabled"
+                          },
+                          {
+                            "type": "show",
+                            "id": "Dependency",
+                            "name": "Dependency",
+                            "merged": false,
+                            "keywords": [
+                              "Dependency"
+                            ],
+                            "eventId": "13",
+                            "disabled": false,
+                            "enabled": "enabled"
+                          }
+                        ],
+                        "keywords": [
+                          "free algebras pic"
+                        ],
+                        "eventId": "8",
+                        "originalParams": {}
+                      },
+                      {
+                        "type": "show",
+                        "id": "Def_sync_algebras",
+                        "name": "Def sync algebras",
+                        "merged": false,
+                        "keywords": [
+                          "Def (Synchronous algebras). A typed set with types",
+                          "with a partial associative product, units, and a dependency relation, s.t. blabla.",
+                          "Def sync algebras"
+                        ],
+                        "eventId": "10",
+                        "disabled": false,
+                        "enabled": "enabled"
+                      }
+                    ],
+                    "keywords": [
+                      "empty word"
+                    ],
+                    "eventId": "10",
+                    "originalParams": {}
+                  }
+                ],
+                "keywords": [
+                  "synchronous words"
+                ],
+                "eventId": "11",
+                "originalParams": {}
+              },
+              {
+                "type": "child",
+                "name": "prop synchronous algebras",
+                "id": "prop_synchronous_algebras",
+                "enabled": "enabled",
+                "merged": false,
+                "children": [
+                  {
+                    "type": "show",
+                    "id": "Group_52",
+                    "name": "title",
+                    "merged": false,
+                    "keywords": [
+                      "The Three Pillars for Automatic Relations",
+                      "and a bit more..!",
+                      "title"
+                    ],
+                    "eventId": "9",
+                    "disabled": false,
+                    "enabled": "enabled"
+                  },
+                  {
+                    "type": "show",
+                    "id": "Thm._(M.__E2_80_9824)_Every_relation_has_a_syntactic_sync._algebra._A_relation_is_automatic_iff_this_algebra_is_finite.",
+                    "name": "Thm. (M. ‘24) Every relation has a syntactic sync. algebra. A relation is automatic iff this algebra is finite.",
+                    "merged": false,
+                    "keywords": [
+                      "Thm. (M. ‘24) Every relation has a syntactic sync. algebra. A relation is automatic iff this algebra is finite."
+                    ],
+                    "eventId": "2",
+                    "disabled": false,
+                    "enabled": "enabled"
+                  },
+                  {
+                    "type": "show",
+                    "id": "Thm._(M.__E2_80_9824)_Pseudovarieties_of_auto._relations_are_in_correspondence_w/_pseudovarieties_of_sync._algebras.",
+                    "name": "Thm. (M. ‘24) Pseudovarieties of auto. relations are in correspondence w/ pseudovarieties of sync. algebras.",
+                    "merged": false,
+                    "keywords": [
+                      "Thm. (M. ‘24) Pseudovarieties of auto. relations are in correspondence w/ pseudovarieties of sync. algebras."
+                    ],
+                    "eventId": "3",
+                    "disabled": false,
+                    "enabled": "enabled"
+                  },
+                  {
+                    "type": "show",
+                    "id": "Thm._(M.__E2_80_9824)_Pseudovarieties_of_sync._algebras_are_exactly_those_described_by_profinite_dependencies.",
+                    "name": "Thm. (M. ‘24) Pseudovarieties of sync. algebras are exactly those described by profinite dependencies.",
+                    "merged": false,
+                    "keywords": [
+                      "Thm. (M. ‘24) Pseudovarieties of sync. algebras are exactly those described by profinite dependencies."
+                    ],
+                    "eventId": "4",
+                    "disabled": false,
+                    "enabled": "enabled"
+                  },
+                  {
+                    "type": "show",
+                    "id": "Exo._What_is_the_synt._synchronous_algebra_of",
+                    "name": "Exo. What is the synt. synchronous algebra of",
+                    "merged": false,
+                    "keywords": [
+                      "Exo. What is the synt. synchronous algebra of",
+                      "?"
+                    ],
+                    "eventId": "5",
+                    "disabled": false,
+                    "enabled": "enabled"
+                  },
+                  {
+                    "type": "show",
+                    "id": "Group_5",
+                    "name": "Ex. -relations are pseudovarieties of synchronous relations if is a ∗-pseudovar. of reg. lang.",
+                    "merged": false,
+                    "keywords": [
+                      "Ex. -relations are pseudovarieties of synchronous relations if is a ∗-pseudovar. of reg. lang."
+                    ],
+                    "eventId": "6",
+                    "disabled": false,
+                    "enabled": "enabled"
+                  },
+                  {
+                    "type": "show",
+                    "id": "Thm._(_E2_80_9CLifting_Theorem_E2_80_9D_M.__E2_80_9824)_A_relation_is_a_-relation_iff_all_underlying_monoids_of_its_synt._synchronous_algebra_are_in_.",
+                    "name": "Thm. (“Lifting Theorem” M. ‘24) A relation is a -relation iff all underlying monoids of its synt. synchronous algebra are in .",
+                    "merged": false,
+                    "keywords": [
+                      "Thm. (“Lifting Theorem” M. ‘24) A relation is a -relation iff all underlying monoids of its synt. synchronous algebra are in ."
+                    ],
+                    "eventId": "7",
+                    "disabled": false,
+                    "enabled": "enabled"
+                  },
+                  {
+                    "type": "show",
+                    "id": "Ex._A_relation_is_a_group-relation_iff._all_underlying_monoids_of_its_synt._synchronous_algebra_are_groups.",
+                    "name": "Ex. A relation is a group-relation iff. all underlying monoids of its synt. synchronous algebra are groups.",
+                    "merged": false,
+                    "keywords": [
+                      "Ex. A relation is a group-relation iff. all underlying monoids of its synt. synchronous algebra are groups."
+                    ],
+                    "eventId": "8",
+                    "disabled": false,
+                    "enabled": "enabled"
+                  }
+                ],
+                "keywords": [
+                  "prop synchronous algebras"
+                ],
+                "eventId": "12",
+                "originalParams": {}
+              },
+              {
+                "type": "child",
+                "name": "backtoemptyword1",
+                "id": "backtoemptyword1",
+                "enabled": "enabled",
+                "merged": false,
+                "children": [
+                  {
+                    "type": "child",
+                    "name": "backtoemptyword2",
+                    "id": "backtoemptyword2",
+                    "enabled": "enabled",
+                    "merged": false,
+                    "children": [
+                      {
+                        "type": "show",
+                        "id": "if_no_dependency_relation,_then_the_three_pillars__E2_80_A8hold,_but_-relations_are_not_pseudovarieties.",
+                        "name": "if no dependency relation, then the three pillars  hold, but -relations are not pseudovarieties.",
+                        "merged": false,
+                        "keywords": [
+                          "if no dependency relation, then the three pillars  hold, but -relations are not pseudovarieties."
+                        ],
+                        "eventId": "1",
+                        "disabled": false,
+                        "enabled": "enabled"
+                      },
+                      {
+                        "type": "show",
+                        "id": "if_dependency_relation,_then_-relations_are_E2_80_A8pseudovarieties.",
+                        "name": "if dependency relation, then -relations are pseudovarieties.",
+                        "merged": false,
+                        "keywords": [
+                          "if dependency relation, then -relations are pseudovarieties."
+                        ],
+                        "eventId": "2",
+                        "disabled": false,
+                        "enabled": "enabled"
+                      },
+                      {
+                        "type": "show",
+                        "id": "There_is_an_equivalent_of_the_lifting_theorem_in_this_setting_",
+                        "name": "There is an equivalent of the lifting theorem in this setting:",
+                        "merged": false,
+                        "keywords": [
+                          "There is an equivalent of the lifting theorem in this setting:"
+                        ],
+                        "eventId": "3",
+                        "disabled": false,
+                        "enabled": "enabled"
+                      },
+                      {
+                        "type": "show",
+                        "id": "algebraic_characterization_of_+-pseudovarieties_of_regular_languages",
+                        "name": "algebraic characterization of +-pseudovarieties of regular languages",
+                        "merged": false,
+                        "keywords": [
+                          "algebraic characterization of +-pseudovarieties of regular languages"
+                        ],
+                        "eventId": "4",
+                        "disabled": false,
+                        "enabled": "enabled"
+                      },
+                      {
+                        "type": "show",
+                        "id": "_5CRightarrow",
+                        "name": "\\Rightarrow",
+                        "merged": false,
+                        "keywords": [
+                          "\\Rightarrow"
+                        ],
+                        "eventId": "5",
+                        "disabled": false,
+                        "enabled": "enabled"
+                      },
+                      {
+                        "type": "show",
+                        "id": "algebraic_characterization_of_+-pseudovarieties_of_automatic_relations.",
+                        "name": "algebraic characterization of +-pseudovarieties of automatic relations.",
+                        "merged": false,
+                        "keywords": [
+                          "algebraic characterization of +-pseudovarieties of automatic relations."
+                        ],
+                        "eventId": "6",
+                        "disabled": false,
+                        "enabled": "enabled"
+                      },
+                      {
+                        "type": "show",
+                        "id": "But_the_theorem_is_much_more_complex.",
+                        "name": "But the theorem is much more complex.",
+                        "merged": false,
+                        "keywords": [
+                          "But the theorem is much more complex."
+                        ],
+                        "eventId": "7",
+                        "disabled": false,
+                        "enabled": "enabled"
+                      }
+                    ],
+                    "keywords": [
+                      "backtoemptyword2"
+                    ],
+                    "eventId": "1",
+                    "originalParams": {}
+                  }
+                ],
+                "keywords": [
+                  "backtoemptyword1"
+                ],
+                "eventId": "13",
+                "originalParams": {}
+              }
+            ],
+            "keywords": [
+              "algebraic language theory"
+            ],
+            "eventId": "5",
+            "originalParams": {}
+          }
+        ],
+        "keywords": [
+          "main slide algebra"
+        ],
+        "eventId": "6",
+        "originalParams": {
+          "title": {
+            "opacity": 1
+          }
+        }
+      }
+    ],
+    "keywords": [
+      "Automatic relations",
+      "Rémi Morvan",
+      "8 Mar. 2024 · SemAuto@IRIF, Paris",
+      "main slide"
+    ],
+    "eventId": "root",
+    "originalParams": {}
+  },
+  "soundDict": {}
+}

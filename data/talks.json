@@ -1,6 +1,15 @@
 [
 	{
 		"title": "Automatic relations through the prism of graph colourability and algebraic language theory",
+		"date": "28/03/2024",
+		"event": "SemAuto",
+		"eventLink": "https://www.irif.fr/seminaires/automates/index",
+		"where": "Paris",
+		"duration": "50min",
+		"slides": "slides/2024-semauto-automatic/"
+	},
+	{
+		"title": "Automatic relations through the prism of graph colourability and algebraic language theory",
 		"date": "22/02/2024",
 		"event": "LX Seminar",
 		"eventLink": "https://lx.labri.fr/",
