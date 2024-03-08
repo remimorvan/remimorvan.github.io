@@ -379,7 +379,7 @@
 <rect id="sfrac_l_l_to_sfr-1_2" x="522" y="682" width="118" height="37" fill="url(#pattern4)"/>
 <rect id="sfrac_l_b_to_sfr_2" x="722" y="682" width="122" height="37" fill="url(#pattern5)"/>
 </g>
-<rect id="empty_word" opacity="0.5" x="1116" y="503" width="702" height="395" fill="#FF0000"/>
+<rect id="empty_word" opacity="0.5" x="1116" y="503" width="702" height="394.875" fill="#FF0000"/>
 </g>
 <defs>
 <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
