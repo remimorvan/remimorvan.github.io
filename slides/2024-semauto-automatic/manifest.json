@@ -1803,12 +1803,5 @@
     "eventId": "root",
     "originalParams": {}
   },
-  "soundDict": {},
-  "live": [
-    {
-      "date": "Thu Mar 07 2024 23:58:31 GMT+0100 (heure normale d’Europe centrale)",
-      "dir": "live_recording0",
-      "steps": []
-    }
-  ]
+  "soundDict": {}
 }
