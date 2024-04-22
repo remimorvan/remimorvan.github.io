@@ -1,0 +1,17 @@
+name: Deploy By WebDAV
+on: push
+jobs:
+  deploy:
+    name: Deploy
+    runs-on: ubuntu-latest
+    steps:
+    - name: Get Latest Code
+      uses: actions/checkout@v3
+    - name: Deploy website
+      uses: XPH0816/webdav-deploy-action@v0.3
+      with:
+        url: ${{ secrets.ADDRESS }}
+        username: ${{ secrets.USERNAME }}
+        password: ${{ secrets.PASSWORD }}
+        local: "./"
+        remote: "./"
