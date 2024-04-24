@@ -1,5 +1,12 @@
 [
 	{
+		"title": "The Algebras for Automatic Relations",
+		"journal": "Preprint",
+		"year": 2024,
+		"pdf": "papers/main-algebras-relations.pdf",
+		"type": "misc"
+	},
+	{
 		"title": "Semantic Tree-Width and Path-Width of Conjunctive Regular Path Queries",
 		"coauthors": [
 			"Diego Figueira"
