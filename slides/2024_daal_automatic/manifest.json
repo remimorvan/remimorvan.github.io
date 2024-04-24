@@ -354,6 +354,19 @@
       },
       {
         "type": "show",
+        "id": "Group_8",
+        "enabled": "enabled",
+        "name": "Examples V-rel",
+        "merged": false,
+        "keywords": [
+          "Ex. Automatic relations are the -relations!",
+          "Ex. Group relations are the -relations!",
+          "Examples V-rel"
+        ],
+        "eventId": "14"
+      },
+      {
+        "type": "show",
         "id": "Goal",
         "enabled": "enabled",
         "name": "Goal",
@@ -541,7 +554,10 @@
                 "name": "Concatenability is uniquely determined by the type.",
                 "merged": false,
                 "keywords": [
-                  "Concatenability is uniquely determined by the type."
+                  "Concatenability is uniquely determined by the type.",
+                  "LB → LB",
+                  "LL → LB",
+                  "LL → LL"
                 ],
                 "eventId": "8",
                 "disabled": false,
@@ -815,9 +831,6 @@
               }
             ],
             "keywords": [
-              "LB → LB",
-              "LL → LB",
-              "LL → LL",
               "synchronous words"
             ],
             "eventId": "11",
@@ -1018,6 +1031,7 @@
                         "keywords": [
                           "Def (Positive synchronous algebras). A typed set with types",
                           "with a partial associative product, units, and a dependency relation, s.t. blabla.",
+                          "LL → LL, LL → LB, LB → LB, LL → BL, BL → BL",
                           "Def sync algebras"
                         ],
                         "eventId": "1"
@@ -1104,7 +1118,6 @@
                       }
                     ],
                     "keywords": [
-                      "LL → LL, LL → LB, LB → LB, LL → BL, BL → BL",
                       "lifting positive"
                     ],
                     "eventId": "8",
@@ -1197,19 +1210,6 @@
           "Result"
         ],
         "eventId": "13"
-      },
-      {
-        "type": "show",
-        "id": "Group_8",
-        "enabled": "enabled",
-        "name": "Examples V-rel",
-        "merged": false,
-        "keywords": [
-          "Ex. Automatic relations are the -relations!",
-          "Ex. Group relations are the -relations!",
-          "Examples V-rel"
-        ],
-        "eventId": "14"
       }
     ],
     "keywords": [
