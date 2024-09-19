@@ -1,0 +1,603 @@
+{
+  "version": 3.1,
+  "presentation": "2024-Highlights",
+  "slideDict": {
+    "new_slide": "main_slide",
+    "CRPQs": "CRPQs",
+    "title_slide": "title_slide",
+    "evaluation___minimization": "evaluation___minimization",
+    "back_to_graph_db": "back_to_graph_db",
+    "minimization": "minimization",
+    "Stability": "Stability",
+    "ex_equivalence": "ex_equivalence",
+    "proof_thm": "proof_thm"
+  },
+  "tree": {
+    "type": "child",
+    "name": "title slide",
+    "id": "title_slide",
+    "enabled": "enabled",
+    "merged": false,
+    "children": [
+      {
+        "type": "child",
+        "name": "CRPQs",
+        "id": "CRPQs",
+        "enabled": "enabled",
+        "merged": false,
+        "children": [
+          {
+            "type": "show",
+            "id": "Graph_databases",
+            "enabled": "enabled",
+            "name": "Graph databases",
+            "merged": false,
+            "keywords": [
+              "Graph databases"
+            ],
+            "eventId": "1"
+          },
+          {
+            "type": "show",
+            "id": "Graph_database",
+            "enabled": "enabled",
+            "name": "Graph database",
+            "merged": false,
+            "keywords": [
+              "person 1",
+              "paper 1",
+              "paper 2",
+              "person 2",
+              "person 4",
+              "person 3",
+              "Graph database"
+            ],
+            "eventId": "2"
+          },
+          {
+            "type": "show",
+            "id": "Graph_database_full_labels",
+            "enabled": "enabled",
+            "name": "Graph database full labels",
+            "merged": true,
+            "keywords": [
+              "wrote",
+              "Ph.D advisor of",
+              "Graph database full labels"
+            ],
+            "eventId": "3"
+          },
+          {
+            "type": "show",
+            "id": "Frame",
+            "enabled": "enabled",
+            "name": "Frame",
+            "merged": false,
+            "keywords": [
+              "Frame"
+            ],
+            "eventId": "4"
+          },
+          {
+            "type": "show",
+            "id": "CQ",
+            "enabled": "enabled",
+            "name": "CQ",
+            "merged": false,
+            "keywords": [
+              "wrote",
+              "x",
+              "z",
+              "y",
+              "∃ z.",
+              "γ(x,y) =",
+              "CQ"
+            ],
+            "eventId": "5"
+          },
+          {
+            "type": "show",
+            "id": "Conjunctive_Query__CQ_",
+            "enabled": "enabled",
+            "name": "Conjunctive Query (CQ)",
+            "merged": false,
+            "keywords": [
+              "Conjunctive Query (CQ)"
+            ],
+            "eventId": "6"
+          },
+          {
+            "type": "show",
+            "id": "C2RPQ",
+            "enabled": "enabled",
+            "name": "C2RPQ",
+            "merged": false,
+            "keywords": [
+              "x",
+              "y",
+              "δ(x,y) =",
+              "(wrote·wrote )",
+              "C2RPQ"
+            ],
+            "eventId": "7"
+          },
+          {
+            "type": "show",
+            "id": "Conjunctive__Two_Way__Regular_Path_Query__C2RPQ_",
+            "enabled": "enabled",
+            "name": "Conjunctive (Two-Way) Regular Path Query (C2RPQ)",
+            "merged": false,
+            "keywords": [
+              "Conjunctive (Two-Way) Regular Path Query (C2RPQ)"
+            ],
+            "eventId": "8"
+          }
+        ],
+        "keywords": [
+          "CRPQs"
+        ],
+        "eventId": "3",
+        "originalParams": {
+          "Graph_databases": {
+            "opacity": 1
+          },
+          "Graph_database": {
+            "opacity": 1
+          },
+          "Graph_database_full_labels": {
+            "opacity": 1
+          },
+          "Frame": {
+            "opacity": 1
+          },
+          "CQ": {
+            "opacity": 1
+          },
+          "Conjunctive_Query__CQ_": {
+            "opacity": 1
+          },
+          "C2RPQ": {
+            "opacity": 1
+          },
+          "Conjunctive__Two_Way__Regular_Path_Query__C2RPQ_": {
+            "opacity": 1
+          }
+        }
+      },
+      {
+        "type": "child",
+        "name": "evaluation & minimization",
+        "id": "evaluation___minimization",
+        "enabled": "enabled",
+        "merged": false,
+        "children": [
+          {
+            "type": "show",
+            "id": "Graph_databases",
+            "enabled": "enabled",
+            "name": "Graph databases",
+            "merged": false,
+            "keywords": [
+              "Graph databases"
+            ],
+            "eventId": "1"
+          },
+          {
+            "type": "show",
+            "id": "Graph_database",
+            "enabled": "enabled",
+            "name": "Graph database",
+            "merged": false,
+            "keywords": [
+              "person 1",
+              "paper 1",
+              "paper 2",
+              "person 2",
+              "person 4",
+              "person 3",
+              "Graph database"
+            ],
+            "eventId": "8"
+          },
+          {
+            "type": "show",
+            "id": "CQ",
+            "enabled": "enabled",
+            "name": "CQ",
+            "merged": true,
+            "keywords": [
+              "L",
+              "K",
+              "x",
+              "z",
+              "y",
+              "∃ z.",
+              "γ(x,y) =",
+              "CQ"
+            ],
+            "eventId": "3"
+          },
+          {
+            "type": "show",
+            "id": "Guess_a_mapping_from_the_query_to_the_database__Check_that_the_path_constraints_are_satisfied_",
+            "enabled": "enabled",
+            "name": "Guess a mapping from the query to the database. Check that the path constraints are satisfied.",
+            "merged": false,
+            "keywords": [
+              "Guess a mapping from the query to the database. Check that the path constraints are satisfied."
+            ],
+            "eventId": "2"
+          },
+          {
+            "type": "show",
+            "id": "mapping",
+            "enabled": "enabled",
+            "name": "mapping",
+            "merged": false,
+            "keywords": [
+              "x?",
+              "z?",
+              "y?",
+              "mapping"
+            ],
+            "eventId": "4"
+          },
+          {
+            "type": "show",
+            "id": "Group_1",
+            "enabled": "enabled",
+            "name": "possible mappings",
+            "merged": false,
+            "keywords": [
+              "possible mappings"
+            ],
+            "eventId": "5"
+          },
+          {
+            "type": "show",
+            "id": "each_check_is_in_NL",
+            "enabled": "enabled",
+            "name": "each check is in NL",
+            "merged": false,
+            "keywords": [
+              "each check is in NL"
+            ],
+            "eventId": "6"
+          }
+        ],
+        "keywords": [
+          "evaluation & minimization"
+        ],
+        "eventId": "4",
+        "originalParams": {
+          "Graph_databases": {
+            "opacity": 1
+          },
+          "Guess_a_mapping_from_the_query_to_the_database__Check_that_the_path_constraints_are_satisfied_": {
+            "opacity": 1
+          },
+          "CQ": {
+            "opacity": 1
+          },
+          "mapping": {
+            "opacity": 1
+          },
+          "Group_1": {
+            "opacity": 1
+          },
+          "each_check_is_in_NL": {
+            "opacity": 1
+          },
+          "Graph_database": {
+            "opacity": 1
+          }
+        }
+      },
+      {
+        "type": "show",
+        "id": "Goal__Make_the_query_as_small_as_possible_",
+        "enabled": "enabled",
+        "name": "Goal: Make the query as small as possible.",
+        "merged": false,
+        "keywords": [
+          "Goal: Make the query as small as possible."
+        ],
+        "eventId": "9"
+      },
+      {
+        "type": "child",
+        "name": "minimization",
+        "id": "minimization",
+        "enabled": "enabled",
+        "merged": false,
+        "children": [
+          {
+            "type": "show",
+            "id": "Input__a_C2RPQ____an_integer_k_Question__is_there_a_C2RPQ____equivalent_to____with_less_than_k_edges_",
+            "enabled": "enabled",
+            "name": "Input: a C2RPQ γ, an integer k Question: is there a C2RPQ δ, equivalent to γ, with less than k edges?",
+            "merged": false,
+            "keywords": [
+              "Input: a C2RPQ γ, an integer k Question: is there a C2RPQ δ, equivalent to γ, with less than k edges?"
+            ],
+            "eventId": "2"
+          },
+          {
+            "type": "child",
+            "name": "ex-equivalence",
+            "id": "ex_equivalence",
+            "enabled": "enabled",
+            "merged": false,
+            "children": [
+              {
+                "type": "show",
+                "id": "Group_1",
+                "enabled": "enabled",
+                "name": "where",
+                "merged": false,
+                "keywords": [
+                  "x",
+                  "z",
+                  "y",
+                  "where",
+                  "Ex.",
+                  "γ(x,y,z) ="
+                ],
+                "eventId": "3"
+              },
+              {
+                "type": "show",
+                "id": "Group_8",
+                "enabled": "enabled",
+                "name": "is equivalent to",
+                "merged": false,
+                "keywords": [
+                  "y",
+                  "x",
+                  "z",
+                  "is equivalent to",
+                  "δ(x,y,z) ="
+                ],
+                "eventId": "4"
+              }
+            ],
+            "keywords": [
+              "ex-equivalence"
+            ],
+            "eventId": "6",
+            "originalParams": {
+              "Group_1": {
+                "opacity": 1
+              },
+              "Group_8": {
+                "opacity": 1
+              }
+            }
+          },
+          {
+            "type": "show",
+            "id": "Thm__Figueira_M__Romero__24___The_minimization_problem_is_decidable___In_2ExpSpace_and_is_ExpSpace_hard__",
+            "enabled": "enabled",
+            "name": "Thm (Figueira-M.-Romero '24). The minimization problem is decidable. (In 2ExpSpace and is ExpSpace-hard.)",
+            "merged": false,
+            "keywords": [
+              "Thm (Figueira-M.-Romero '24). The minimization problem is decidable. (In 2ExpSpace and is ExpSpace-hard.)"
+            ],
+            "eventId": "5"
+          },
+          {
+            "type": "child",
+            "name": "proof-thm",
+            "id": "proof_thm",
+            "enabled": "enabled",
+            "merged": false,
+            "children": [
+              {
+                "type": "show",
+                "id": "Proof_idea",
+                "enabled": "enabled",
+                "name": "Proof idea",
+                "merged": false,
+                "keywords": [
+                  "Proof idea"
+                ],
+                "eventId": "1"
+              },
+              {
+                "type": "show",
+                "id": "Goal__Show_that_there_is_a_bounded_nb__of_possible_candidates_",
+                "enabled": "enabled",
+                "name": "Goal: Show that there is a bounded nb. of possible candidates.",
+                "merged": false,
+                "keywords": [
+                  "Goal: Show that there is a bounded nb. of possible candidates."
+                ],
+                "eventId": "2"
+              },
+              {
+                "type": "show",
+                "id": "input_query",
+                "enabled": "enabled",
+                "name": "input query",
+                "merged": false,
+                "keywords": [
+                  "input query",
+                  "many edges NFAs of size ≤ m"
+                ],
+                "eventId": "3"
+              },
+              {
+                "type": "show",
+                "id": "candidate_query",
+                "enabled": "enabled",
+                "name": "candidate query",
+                "merged": false,
+                "keywords": [
+                  "candidate for minimization",
+                  "≤ k edges no bound on the size of NFAs",
+                  "equiv. to",
+                  "candidate query"
+                ],
+                "eventId": "4"
+              },
+              {
+                "type": "show",
+                "id": "small_candidate",
+                "enabled": "enabled",
+                "name": "small candidate",
+                "merged": false,
+                "keywords": [
+                  "small candidate for minimization",
+                  "≤ k edges NFAs of size ≤ f(m)",
+                  "equiv. to (Lemma)",
+                  "small candidate"
+                ],
+                "eventId": "5"
+              }
+            ],
+            "keywords": [
+              "proof-thm"
+            ],
+            "eventId": "7",
+            "originalParams": {
+              "Proof_idea": {
+                "opacity": 1
+              },
+              "Goal__Show_that_there_is_a_bounded_nb__of_possible_candidates_": {
+                "opacity": 1
+              },
+              "input_query": {
+                "opacity": 1
+              },
+              "candidate_query": {
+                "opacity": 1
+              },
+              "small_candidate": {
+                "opacity": 1
+              }
+            }
+          },
+          {
+            "type": "show",
+            "id": "Group_1",
+            "enabled": "enabled",
+            "name": "Q°. Which properties are preserved by minimization?",
+            "merged": false,
+            "keywords": [
+              "Q°. Which properties are preserved by minimization? = stable",
+              "Q°. Which properties are preserved by minimization?"
+            ],
+            "eventId": "9"
+          },
+          {
+            "type": "child",
+            "name": "Stability",
+            "id": "Stability",
+            "enabled": "enabled",
+            "merged": false,
+            "children": [
+              {
+                "type": "show",
+                "id": "Thm__DAG_shaped_C2RPQs_are_stable_",
+                "enabled": "enabled",
+                "name": "Thm. DAG-shaped C2RPQs are stable.",
+                "merged": false,
+                "keywords": [
+                  "Thm. DAG-shaped C2RPQs are stable."
+                ],
+                "eventId": "4"
+              },
+              {
+                "type": "show",
+                "id": "Conj___Encodings_of__tree_patterns_are_stable_",
+                "enabled": "enabled",
+                "name": "Conj. (Encodings of) tree patterns are stable.",
+                "merged": false,
+                "keywords": [
+                  "Conj. (Encodings of) tree patterns are stable."
+                ],
+                "eventId": "5"
+              },
+              {
+                "type": "show",
+                "id": "Group_12",
+                "enabled": "enabled",
+                "name": "Thm (Czerwiński, Martens, Niewerth & Parys '18). Tree pattern minimization is -complete.",
+                "merged": false,
+                "keywords": [
+                  "Thm (Czerwiński, Martens, Niewerth & Parys '18). Tree pattern minimization is -complete."
+                ],
+                "eventId": "7"
+              },
+              {
+                "type": "show",
+                "id": "Group_7",
+                "enabled": "enabled",
+                "name": "Γ*",
+                "merged": false,
+                "keywords": [
+                  "a",
+                  "c",
+                  "b",
+                  "Γ",
+                  "Γ*"
+                ],
+                "eventId": "9"
+              }
+            ],
+            "keywords": [
+              "Stability"
+            ],
+            "eventId": "8",
+            "originalParams": {
+              "Thm__DAG_shaped_C2RPQs_are_stable_": {
+                "opacity": 1
+              },
+              "Conj___Encodings_of__tree_patterns_are_stable_": {
+                "opacity": 1
+              },
+              "Group_12": {
+                "opacity": 1
+              },
+              "Group_7": {
+                "opacity": 1
+              }
+            }
+          }
+        ],
+        "keywords": [
+          "minimization"
+        ],
+        "eventId": "7",
+        "originalParams": {
+          "Graph_databases": {
+            "opacity": 1
+          },
+          "Input__a_C2RPQ____an_integer_k_Question__is_there_a_C2RPQ____equivalent_to____with_less_than_k_edges_": {
+            "opacity": 1
+          },
+          "Thm__Figueira_M__Romero__24___The_minimization_problem_is_decidable___In_2ExpSpace_and_is_ExpSpace_hard__": {
+            "opacity": 1
+          },
+          "Group_1": {
+            "opacity": 1
+          }
+        }
+      }
+    ],
+    "keywords": [
+      "Minimization of Conjunctive Regular Path Queries",
+      "Rémi Morvan LaBRI, Bordeaux",
+      "20 Sept. 2024 Highlights · Bordeaux",
+      "title slide"
+    ],
+    "eventId": "root",
+    "originalParams": {
+      "Goal__Make_the_query_as_small_as_possible_": {
+        "opacity": 1
+      }
+    }
+  },
+  "treeTimeLine": [],
+  "chronicleTimeLine": []
+}
