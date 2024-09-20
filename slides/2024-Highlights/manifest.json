@@ -80,46 +80,20 @@
           },
           {
             "type": "show",
-            "id": "CQ",
+            "id": "Group_7",
             "enabled": "enabled",
-            "name": "CQ",
+            "name": "(wrote·wrote )",
             "merged": false,
             "keywords": [
-              "wrote",
-              "x",
-              "z",
-              "y",
-              "∃ z.",
               "γ(x,y) =",
-              "CQ"
-            ],
-            "eventId": "5"
-          },
-          {
-            "type": "show",
-            "id": "Conjunctive_Query__CQ_",
-            "enabled": "enabled",
-            "name": "Conjunctive Query (CQ)",
-            "merged": false,
-            "keywords": [
-              "Conjunctive Query (CQ)"
-            ],
-            "eventId": "6"
-          },
-          {
-            "type": "show",
-            "id": "C2RPQ",
-            "enabled": "enabled",
-            "name": "C2RPQ",
-            "merged": false,
-            "keywords": [
+              "z",
               "x",
               "y",
-              "δ(x,y) =",
               "(wrote·wrote )",
-              "C2RPQ"
+              "adv",
+              "∃ z."
             ],
-            "eventId": "7"
+            "eventId": "9"
           },
           {
             "type": "show",
@@ -131,6 +105,53 @@
               "Conjunctive (Two-Way) Regular Path Query (C2RPQ)"
             ],
             "eventId": "8"
+          },
+          {
+            "type": "show",
+            "id": "Guess_a_mapping_from_the_query_to_the_database__Check_that_the_path_constraints_are_satisfied_",
+            "enabled": "enabled",
+            "name": "Guess a mapping from the query to the database. Check that the path constraints are satisfied.",
+            "merged": false,
+            "keywords": [
+              "Guess a mapping from the query to the database. Check that the path constraints are satisfied."
+            ],
+            "eventId": "10"
+          },
+          {
+            "type": "show",
+            "id": "mapping2",
+            "enabled": "enabled",
+            "name": "mapping",
+            "merged": false,
+            "keywords": [
+              "x?",
+              "z?",
+              "y?",
+              "mapping"
+            ],
+            "eventId": "11"
+          },
+          {
+            "type": "show",
+            "id": "Group_1",
+            "enabled": "enabled",
+            "name": "possible mappings",
+            "merged": false,
+            "keywords": [
+              "possible mappings"
+            ],
+            "eventId": "12"
+          },
+          {
+            "type": "show",
+            "id": "each_check_is_in_NL",
+            "enabled": "enabled",
+            "name": "each check is in NL",
+            "merged": false,
+            "keywords": [
+              "each check is in NL"
+            ],
+            "eventId": "13"
           }
         ],
         "keywords": [
@@ -150,145 +171,22 @@
           "Frame": {
             "opacity": 1
           },
-          "CQ": {
-            "opacity": 1
-          },
-          "Conjunctive_Query__CQ_": {
-            "opacity": 1
-          },
-          "C2RPQ": {
-            "opacity": 1
-          },
           "Conjunctive__Two_Way__Regular_Path_Query__C2RPQ_": {
             "opacity": 1
-          }
-        }
-      },
-      {
-        "type": "child",
-        "name": "evaluation & minimization",
-        "id": "evaluation___minimization",
-        "enabled": "enabled",
-        "merged": false,
-        "children": [
-          {
-            "type": "show",
-            "id": "Graph_databases",
-            "enabled": "enabled",
-            "name": "Graph databases",
-            "merged": false,
-            "keywords": [
-              "Graph databases"
-            ],
-            "eventId": "1"
           },
-          {
-            "type": "show",
-            "id": "Graph_database",
-            "enabled": "enabled",
-            "name": "Graph database",
-            "merged": false,
-            "keywords": [
-              "person 1",
-              "paper 1",
-              "paper 2",
-              "person 2",
-              "person 4",
-              "person 3",
-              "Graph database"
-            ],
-            "eventId": "8"
-          },
-          {
-            "type": "show",
-            "id": "CQ",
-            "enabled": "enabled",
-            "name": "CQ",
-            "merged": true,
-            "keywords": [
-              "L",
-              "K",
-              "x",
-              "z",
-              "y",
-              "∃ z.",
-              "γ(x,y) =",
-              "CQ"
-            ],
-            "eventId": "3"
-          },
-          {
-            "type": "show",
-            "id": "Guess_a_mapping_from_the_query_to_the_database__Check_that_the_path_constraints_are_satisfied_",
-            "enabled": "enabled",
-            "name": "Guess a mapping from the query to the database. Check that the path constraints are satisfied.",
-            "merged": false,
-            "keywords": [
-              "Guess a mapping from the query to the database. Check that the path constraints are satisfied."
-            ],
-            "eventId": "2"
-          },
-          {
-            "type": "show",
-            "id": "mapping",
-            "enabled": "enabled",
-            "name": "mapping",
-            "merged": false,
-            "keywords": [
-              "x?",
-              "z?",
-              "y?",
-              "mapping"
-            ],
-            "eventId": "4"
-          },
-          {
-            "type": "show",
-            "id": "Group_1",
-            "enabled": "enabled",
-            "name": "possible mappings",
-            "merged": false,
-            "keywords": [
-              "possible mappings"
-            ],
-            "eventId": "5"
-          },
-          {
-            "type": "show",
-            "id": "each_check_is_in_NL",
-            "enabled": "enabled",
-            "name": "each check is in NL",
-            "merged": false,
-            "keywords": [
-              "each check is in NL"
-            ],
-            "eventId": "6"
-          }
-        ],
-        "keywords": [
-          "evaluation & minimization"
-        ],
-        "eventId": "4",
-        "originalParams": {
-          "Graph_databases": {
+          "Group_7": {
             "opacity": 1
           },
           "Guess_a_mapping_from_the_query_to_the_database__Check_that_the_path_constraints_are_satisfied_": {
             "opacity": 1
           },
-          "CQ": {
-            "opacity": 1
-          },
-          "mapping": {
+          "mapping2": {
             "opacity": 1
           },
           "Group_1": {
             "opacity": 1
           },
           "each_check_is_in_NL": {
-            "opacity": 1
-          },
-          "Graph_database": {
             "opacity": 1
           }
         }
@@ -520,17 +418,6 @@
               },
               {
                 "type": "show",
-                "id": "Group_12",
-                "enabled": "enabled",
-                "name": "Thm (Czerwiński, Martens, Niewerth & Parys '18). Tree pattern minimization is -complete.",
-                "merged": false,
-                "keywords": [
-                  "Thm (Czerwiński, Martens, Niewerth & Parys '18). Tree pattern minimization is -complete."
-                ],
-                "eventId": "7"
-              },
-              {
-                "type": "show",
                 "id": "Group_7",
                 "enabled": "enabled",
                 "name": "Γ*",
@@ -543,6 +430,17 @@
                   "Γ*"
                 ],
                 "eventId": "9"
+              },
+              {
+                "type": "show",
+                "id": "Group_12",
+                "enabled": "enabled",
+                "name": "Thm (Czerwiński, Martens, Niewerth & Parys '18). Tree pattern minimization is -complete.",
+                "merged": false,
+                "keywords": [
+                  "Thm (Czerwiński, Martens, Niewerth & Parys '18). Tree pattern minimization is -complete."
+                ],
+                "eventId": "7"
               }
             ],
             "keywords": [
