@@ -1,0 +1,113 @@
+{
+  "version": 3.1,
+  "presentation": "2024-émile",
+  "slideDict": {
+    "new_slide": "new_slide",
+    "_douard_louis": "_douard_louis",
+    "naselli": "naselli"
+  },
+  "tree": {
+    "type": "child",
+    "name": "new slide",
+    "id": "new_slide",
+    "enabled": "enabled",
+    "merged": false,
+    "children": [
+      {
+        "type": "child",
+        "name": "naselli",
+        "id": "naselli",
+        "enabled": "enabled",
+        "merged": false,
+        "children": [
+          {
+            "type": "show",
+            "id": "9782709668286_001_X_1",
+            "enabled": "enabled",
+            "name": "9782709668286-001-X 1",
+            "merged": false,
+            "keywords": [
+              "9782709668286-001-X 1"
+            ],
+            "eventId": "1"
+          },
+          {
+            "type": "show",
+            "id": "__Si_les_transfuges_de_classe_sont_devenus_des_superstars__ou_presque___c_est_avant_tout_parce_qu_ils_sont_essentiels_au_maintien_du_concept_de_hi_rarchie_sociale_bas_e_sur_le_m_rite_individuel___la_m_ritocratie__En_incarnant_la_possibilit__de_s_extraire_de_son_milieu_et_donc_de_choisir_sa_vie__ils_sont_les_personnages_principaux_d_un_conte_de_f_es__le_totem_absolu_de_la_R_publique__Mais_la_m_ritocratie_passe_un_sale_quart_d_heure__D_mont_e_par_les_sociologues__son_id_ologie_se_cogne_au_r_el___non__on_ne_change_pas_de_classe_sociale_en_France__C_est_une_loi_invisible__un_fait__Selon_l_OCDE__Organisation_de_coop_ration_et_de_d_veloppement__conomiques___il_faut_six_g_n_rations_pour_qu_une_personne_n_e_dans_une_famille_pauvre_atteigne_le_revenu_moyen__Cent_quatre_vingts_ans__Les_transfuges_de_classe__pour_qui_tout_se_joue_en_une_g_n_ration__ne_sont_que_des_exceptions____",
+            "enabled": "enabled",
+            "name": "« Si les transfuges de classe sont devenus des superstars (ou presque), c’est avant tout parce qu’ils sont essentiels au maintien du concept de hiérarchie sociale basée sur le mérite individuel : la méritocratie. En incarnant la possibilité de s’extraire de son milieu et donc de choisir sa vie, ils sont les personnages principaux d’un conte de fées, le totem absolu de la République. Mais la méritocratie passe un sale quart d’heure. Démontée par les sociologues, son idéologie se cogne au réel : non, on ne change pas de classe sociale en France. C’est une loi invisible, un fait. Selon l’OCDE (Organisation de coopération et de développement économiques), il faut six générations pour qu’une personne née dans une famille pauvre atteigne le revenu moyen. Cent quatre-vingts ans. Les transfuges de classe, pour qui tout se joue en une génération, ne sont que des exceptions.  »",
+            "merged": false,
+            "keywords": [
+              "« Si les transfuges de classe sont devenus des superstars (ou presque), c’est avant tout parce qu’ils sont essentiels au maintien du concept de hiérarchie sociale basée sur le mérite individuel : la méritocratie. En incarnant la possibilité de s’extraire de son milieu et donc de choisir sa vie, ils sont les personnages principaux d’un conte de fées, le totem absolu de la République. Mais la méritocratie passe un sale quart d’heure. Démontée par les sociologues, son idéologie se cogne au réel : non, on ne change pas de classe sociale en France. C’est une loi invisible, un fait. Selon l’OCDE (Organisation de coopération et de développement économiques), il faut six générations pour qu’une personne née dans une famille pauvre atteigne le revenu moyen. Cent quatre-vingts ans. Les transfuges de classe, pour qui tout se joue en une génération, ne sont que des exceptions.  »"
+            ],
+            "eventId": "2"
+          }
+        ],
+        "keywords": [
+          "naselli"
+        ],
+        "eventId": "2",
+        "originalParams": {
+          "9782709668286_001_X_1": {
+            "opacity": 1
+          },
+          "__Si_les_transfuges_de_classe_sont_devenus_des_superstars__ou_presque___c_est_avant_tout_parce_qu_ils_sont_essentiels_au_maintien_du_concept_de_hi_rarchie_sociale_bas_e_sur_le_m_rite_individuel___la_m_ritocratie__En_incarnant_la_possibilit__de_s_extraire_de_son_milieu_et_donc_de_choisir_sa_vie__ils_sont_les_personnages_principaux_d_un_conte_de_f_es__le_totem_absolu_de_la_R_publique__Mais_la_m_ritocratie_passe_un_sale_quart_d_heure__D_mont_e_par_les_sociologues__son_id_ologie_se_cogne_au_r_el___non__on_ne_change_pas_de_classe_sociale_en_France__C_est_une_loi_invisible__un_fait__Selon_l_OCDE__Organisation_de_coop_ration_et_de_d_veloppement__conomiques___il_faut_six_g_n_rations_pour_qu_une_personne_n_e_dans_une_famille_pauvre_atteigne_le_revenu_moyen__Cent_quatre_vingts_ans__Les_transfuges_de_classe__pour_qui_tout_se_joue_en_une_g_n_ration__ne_sont_que_des_exceptions____": {
+            "opacity": 1
+          }
+        }
+      },
+      {
+        "type": "child",
+        "name": "édouard louis",
+        "id": "_douard_louis",
+        "enabled": "enabled",
+        "merged": false,
+        "children": [
+          {
+            "type": "show",
+            "id": "9782021483048_1_75_1",
+            "enabled": "enabled",
+            "name": "9782021483048_1_75 1",
+            "merged": false,
+            "keywords": [
+              "9782021483048_1_75 1"
+            ],
+            "eventId": "1"
+          },
+          {
+            "type": "show",
+            "id": "__Une_question_s_est_impos_e_au_centre_de_ma_vie__elle_a_concentr__toutes_mes_r_flexions__occup__tous_les_moments_o__j__tais_seul_avec_moi_m_me___comment_est_ce_que_je_pouvais_prendre_ma_revanche_sur_mon_pass___par_quels_moyens___J_essayais_tout___",
+            "enabled": "enabled",
+            "name": "« Une question s'est imposée au centre de ma vie, elle a concentré toutes mes réflexions, occupé tous les moments où j'étais seul avec moi-même : comment est-ce que je pouvais prendre ma revanche sur mon passé, par quels moyens ? J'essayais tout. »",
+            "merged": false,
+            "keywords": [
+              "« Une question s'est imposée au centre de ma vie, elle a concentré toutes mes réflexions, occupé tous les moments où j'étais seul avec moi-même : comment est-ce que je pouvais prendre ma revanche sur mon passé, par quels moyens ? J'essayais tout. »"
+            ],
+            "eventId": "2"
+          }
+        ],
+        "keywords": [
+          "édouard louis"
+        ],
+        "eventId": "1",
+        "originalParams": {
+          "9782021483048_1_75_1": {
+            "opacity": 1
+          },
+          "__Une_question_s_est_impos_e_au_centre_de_ma_vie__elle_a_concentr__toutes_mes_r_flexions__occup__tous_les_moments_o__j__tais_seul_avec_moi_m_me___comment_est_ce_que_je_pouvais_prendre_ma_revanche_sur_mon_pass___par_quels_moyens___J_essayais_tout___": {
+            "opacity": 1
+          }
+        }
+      }
+    ],
+    "keywords": [
+      "La nécessité de fuir",
+      "Rémi · 22 sept. 2024",
+      "new slide"
+    ],
+    "eventId": "root",
+    "originalParams": {}
+  },
+  "treeTimeLine": [],
+  "chronicleTimeLine": []
+}
