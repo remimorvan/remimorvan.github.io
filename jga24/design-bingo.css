@@ -20,3 +20,10 @@ table.bingo td {
 		font-size: 75%;
 	}
 }
+
+@media screen and (max-width: 450px) {
+	table.bingo td {
+		padding: 2px;
+		font-size: 65%;
+	}
+}
