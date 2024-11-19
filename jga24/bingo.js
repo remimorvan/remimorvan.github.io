@@ -18,7 +18,7 @@ var cell_content = ["Quelqu'un pose la question « Et sur les graphes de tree-w
 	"Blague sur le coloriage",
 	"Quelqu'un critique ses coauteurs pendant son talk",
 	"Un talk parle la twin-width uniquement pour dire que c'est à la mode",
-	"Marthe dit « Ah… c'est mieux non ? » quand quelqu'un quite la pièce/la discussion",
+	"Marthe dit « Ah… c'est mieux non ? » quand quelqu'un quitte la pièce/la discussion",
 	"Claire propose de jouer au Zik",
 	"Clara balance une dinguerie sur son passé",
 	"« Oh mais tu devrais aller en Pologne faire un postdoc »",
