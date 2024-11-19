@@ -21,7 +21,6 @@ var cell_content = ["Quelqu'un pose la question « Et sur les graphes de tree-w
 	"Marthe dit « Ah… c'est mieux non ? » quand quelqu'un quitte la pièce/la discussion",
 	"Claire propose de jouer au Zik",
 	"Clara balance une dinguerie sur son passé",
-	"« Oh mais tu devrais aller en Pologne faire un postdoc »",
 	"Le Rubik's Cube est mentionné comme motivation pour étudier un problème de reconfiguration",
 	"Tu oses aller voir quelqu'un dont tu as bien aimé un papier pour le lui dire",
 	"« Oh mais tu devrais aller en Pologne faire un postdoc »",
