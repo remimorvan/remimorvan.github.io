@@ -1,0 +1,22 @@
+table.bingo {
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 2em;
+	max-width: 700px;
+}
+
+table.bingo,
+table.bingo td {
+	border: 1px solid black;
+	padding: 8px;
+	border-collapse: collapse;
+	text-align: center;
+	font-size: 95%;
+}
+
+@media screen and (max-width: 1300px) {
+	table.bingo td {
+		padding: 4px;
+		font-size: 75%;
+	}
+}

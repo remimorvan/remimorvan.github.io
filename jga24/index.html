@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+	<title>Rémi Morvan: JGA'24 Bingo</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="author" content="Rémi Morvan">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+
+	<link rel="stylesheet" href="/design.css">
+	<link rel="stylesheet" href="design-bingo.css">
+	<link rel="stylesheet" href="/hamburger.css">
+</head>
+
+<body>
+
+	<canvas id='boxCanvas'></canvas>
+
+	<div id="content">
+
+		<nav id="navbar-mobile">
+			<button class="hamburger hamburger--spin" type="button">
+				<span class="hamburger-box">
+					<span class="hamburger-inner"></span>
+				</span>
+			</button>
+
+			<div id="menu-container">
+				<ul id="menu-mobile">
+					<li><a href="/index.html">About</a></li>
+					<li><a href="/index.html#news">News</a></li>
+					<li><a href="/index.html#talks">Talks</a></li>
+					<li><a href="/index.html#publi">Publications</a></li>
+					<li><a href="https://github.com/remimorvan/knowledge-clustering">Knowledge-Clustering</a></li>
+					<li><a href="/teaching.html">Teaching (fr)</a></li>
+				</ul>
+			</div>
+		</nav>
+
+		<div id="relative-wrap-aside">
+			<aside>
+				<div id="header">
+					<div id="avatar"></div>
+					<div id="fake-avatar"></div>
+					<h1>Rémi Morvan</h1>
+				</div>
+
+				<nav>
+					<ul>
+						<li><a href="/index.html">About</a></li>
+						<li><a href="/index.html#news">News</a></li>
+						<li><a href="/index.html#talks">Talks</a></li>
+						<li><a href="/index.html#publi">Publications</a></li>
+						<li><a href="https://github.com/remimorvan/knowledge-clustering">Knowledge-Clustering</a></li>
+						<li><a href="/teaching.html">Teaching (fr)</a></li>
+					</ul>
+				</nav>
+
+				<div id="footer">
+					<p class="contact"><b>Contact:</b> <span class="mail"><u>x</u>@u-bordeaux.fr</span>
+						where <u>x</u> = remi.morvan</p>
+					<p class="copyright">
+						Licensed under <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.
+					</p>
+				</div>
+			</aside>
+		</div>
+
+		<main>
+
+			<header>
+				<img src="/img/photo.jpg" width="120" height="120" alt="Photo of Rémi Morvan">
+				<div>
+					<h1>Rémi Morvan</h1>
+					<p><b>Contact:</b> <span class="mail"><u>x</u>@u-bordeaux.fr</span>
+						where <u>x</u> = remi.morvan</p>
+				</div>
+			</header>
+
+			<section>
+				<article>
+					<h2>JGA '24 : Bingo</h2>
+					<p>Chaque actualisation de la page génère un nouveau bingo. Il y a des nouvelles cases par rapport au carnet papier. Prends une capture d'écran de ton bingo et coche les cases
+						comme tu peux sur ta capture d'écran. Bonnes JGA !</p>
+					<table id="bingotable" class="bingo" lang="fr">
+
+					</table>
+				</article>
+			</section>
+
+			<footer class="copyright">
+				<p>
+					Licensed under <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.
+				</p>
+			</footer>
+		</main>
+
+	</div>
+
+	<script src="/script/menu.js"></script>
+	<script src="/script/boxes.js"></script>
+	<script src="bingo.js"></script>
+
+	<script type="module" src="/script/kl.js"></script>
+</body>
+
+</html>
