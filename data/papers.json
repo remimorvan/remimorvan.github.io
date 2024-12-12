@@ -1,10 +1,10 @@
 [
 	{
 		"title": "The Algebras for Automatic Relations",
-		"journal": "Preprint",
-		"year": 2024,
+		"journal": "CSL '25",
+		"year": 2025,
 		"arxiv": "http://arxiv.org/abs/2404.15496",
-		"type": "misc"
+		"type": "conf"
 	},
 	{
 		"title": "Semantic Tree-Width and Path-Width of Conjunctive Regular Path Queries",
