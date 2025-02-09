@@ -1,5 +1,31 @@
 [
 	{
+		"title": "The Algebras for Automatic Relations",
+		"date": "14/02/2025",
+		"event": "CSL '25",
+		"eventLink": "https://csl2025.github.io/",
+		"where": "Amsterdam",
+		"duration": "25min",
+		"slides": "slides/2025-csl-automatic"
+	},
+	{
+		"title": "Residual Probabilistic Automata",
+		"date": "10/02/2025",
+		"event": "LeaLog@CSL '25",
+		"eventLink": "https://sites.google.com/view/lealog25",
+		"where": "Amsterdam",
+		"duration": "15min",
+		"slides": "slides/2025-lealog-residual"
+	},
+	{
+		"title": "Minimization of Conjunctive Regular Path Queries",
+		"date": "04/02/2025",
+		"event": "RATIO seminar",
+		"eventLink": "https://ratio.labri.fr/",
+		"where": "Bordeaux",
+		"duration": "50min"
+	},
+	{
 		"title": "Minimization of Conjunctive Regular Path Queries",
 		"date": "20/09/2024",
 		"event": "Highlights '24",

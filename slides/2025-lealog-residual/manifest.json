@@ -1,0 +1,959 @@
+{
+  "version": 3.1,
+  "presentation": "2025-lealog-residual",
+  "slideDict": {
+    "new_slide": "main_slide",
+    "Learning": "Learning",
+    "PFAs": "PFAs",
+    "Hankel___Fliess": "Hankel___Fliess",
+    "Hankel___Fliess_bis": "Hankel___Fliess_bis",
+    "Learning_residual": "Learning_residual",
+    "Hankel___Fliess_ter": "Hankel___Fliess_ter"
+  },
+  "tree": {
+    "type": "child",
+    "name": "main slide",
+    "id": "new_slide",
+    "enabled": "enabled",
+    "merged": false,
+    "children": [
+      {
+        "type": "child",
+        "name": "Learning",
+        "id": "Learning",
+        "enabled": "enabled",
+        "merged": false,
+        "children": [
+          {
+            "type": "show",
+            "id": "Teacher_thought",
+            "enabled": "enabled",
+            "name": "Teacher thought",
+            "merged": false,
+            "keywords": [
+              "models f",
+              "Teacher thought"
+            ],
+            "eventId": "1"
+          },
+          {
+            "type": "show",
+            "id": "688d05cf_cd88_4f5a_bbb3_2467d19b665b_copie",
+            "enabled": "enabled",
+            "name": "Learner thought",
+            "merged": false,
+            "keywords": [
+              "Learner thought"
+            ],
+            "eventId": "4"
+          },
+          {
+            "type": "show",
+            "id": "Queries__value_membership_f_x______equivalence",
+            "enabled": "enabled",
+            "name": "Queries: value/membership f(x) = ? equivalence",
+            "merged": false,
+            "keywords": [
+              "Queries: value/membership f(x) = ? equivalence"
+            ],
+            "eventId": "3"
+          },
+          {
+            "type": "show",
+            "id": "Group_12",
+            "enabled": "enabled",
+            "name": "Learner automaton 1",
+            "merged": false,
+            "keywords": [
+              "Learner automaton 1"
+            ],
+            "eventId": "32"
+          },
+          {
+            "type": "show",
+            "id": "models_f",
+            "enabled": "enabled",
+            "name": "models g",
+            "merged": true,
+            "keywords": [
+              "models g"
+            ],
+            "eventId": "6"
+          },
+          {
+            "type": "show",
+            "id": "equivalent__",
+            "enabled": "enabled",
+            "name": "Equivalent?",
+            "merged": false,
+            "keywords": [
+              "Equivalent?"
+            ],
+            "eventId": "7"
+          },
+          {
+            "type": "show",
+            "id": "equivalent__2",
+            "enabled": "enabled",
+            "name": "No, f(ab) ≠ g(ab).",
+            "merged": false,
+            "keywords": [
+              "No, f(ab) ≠ g(ab)."
+            ],
+            "eventId": "8"
+          },
+          {
+            "type": "hide",
+            "id": "equivalent__",
+            "enabled": "enabled",
+            "name": "Equivalent?",
+            "merged": false,
+            "keywords": [
+              "Equivalent?"
+            ],
+            "eventId": "9"
+          },
+          {
+            "type": "hide",
+            "id": "equivalent__2",
+            "enabled": "enabled",
+            "name": "No, f(ab) ≠ g(ab).",
+            "merged": true,
+            "keywords": [
+              "No, f(ab) ≠ g(ab)."
+            ],
+            "eventId": "10"
+          },
+          {
+            "type": "show",
+            "id": "f_a______f_bb_____",
+            "enabled": "enabled",
+            "name": "f(a) = ? f(bb) = ?",
+            "merged": false,
+            "keywords": [
+              "f(a) = ? f(bb) = ?"
+            ],
+            "eventId": "11"
+          },
+          {
+            "type": "show",
+            "id": "f_a____2_f_bb____1_2",
+            "enabled": "enabled",
+            "name": "f(a) = 2 f(bb) = 1/2",
+            "merged": false,
+            "keywords": [
+              "f(a) = 2 f(bb) = 1/2"
+            ],
+            "eventId": "12"
+          },
+          {
+            "type": "hide",
+            "id": "Group_12",
+            "enabled": "enabled",
+            "name": "Learner automaton 1",
+            "merged": false,
+            "keywords": [
+              "Learner automaton 1"
+            ],
+            "eventId": "33"
+          },
+          {
+            "type": "show",
+            "id": "Group_1",
+            "enabled": "enabled",
+            "name": "Learner automaton 2",
+            "merged": true,
+            "keywords": [
+              "Learner automaton 2"
+            ],
+            "eventId": "14"
+          },
+          {
+            "type": "hide",
+            "id": "f_a______f_bb_____",
+            "enabled": "enabled",
+            "name": "f(a) = ? f(bb) = ?",
+            "merged": false,
+            "keywords": [
+              "f(a) = ? f(bb) = ?"
+            ],
+            "eventId": "15"
+          },
+          {
+            "type": "hide",
+            "id": "f_a____2_f_bb____1_2",
+            "enabled": "enabled",
+            "name": "f(a) = 2 f(bb) = 1/2",
+            "merged": true,
+            "keywords": [
+              "f(a) = 2 f(bb) = 1/2"
+            ],
+            "eventId": "16"
+          },
+          {
+            "type": "show",
+            "id": "equivalent__",
+            "enabled": "enabled",
+            "name": "Equivalent?",
+            "merged": false,
+            "keywords": [
+              "Equivalent?"
+            ],
+            "eventId": "17"
+          },
+          {
+            "type": "show",
+            "id": "No__f_aaa____g_aaa__",
+            "enabled": "enabled",
+            "name": "No, f(aaa) ≠ g(aaa).",
+            "merged": false,
+            "keywords": [
+              "No, f(aaa) ≠ g(aaa)."
+            ],
+            "eventId": "18"
+          },
+          {
+            "type": "hide",
+            "id": "equivalent__",
+            "enabled": "enabled",
+            "name": "Equivalent?",
+            "merged": false,
+            "keywords": [
+              "Equivalent?"
+            ],
+            "eventId": "19"
+          },
+          {
+            "type": "hide",
+            "id": "No__f_aaa____g_aaa__",
+            "enabled": "enabled",
+            "name": "No, f(aaa) ≠ g(aaa).",
+            "merged": true,
+            "keywords": [
+              "No, f(aaa) ≠ g(aaa)."
+            ],
+            "eventId": "20"
+          },
+          {
+            "type": "show",
+            "id": "f_aba______f_bbba_____",
+            "enabled": "enabled",
+            "name": "f(aba) = ? f(bbba) = ?",
+            "merged": false,
+            "keywords": [
+              "f(aba) = ? f(bbba) = ?"
+            ],
+            "eventId": "21"
+          },
+          {
+            "type": "show",
+            "id": "f_aba____3_f_bbba____0",
+            "enabled": "enabled",
+            "name": "f(aba) = 3 f(bbba) = 0",
+            "merged": false,
+            "keywords": [
+              "f(aba) = 3 f(bbba) = 0"
+            ],
+            "eventId": "22"
+          },
+          {
+            "type": "hide",
+            "id": "Group_1",
+            "enabled": "enabled",
+            "name": "Learner automaton 2",
+            "merged": false,
+            "keywords": [
+              "Learner automaton 2"
+            ],
+            "eventId": "23"
+          },
+          {
+            "type": "show",
+            "id": "automata2",
+            "enabled": "enabled",
+            "name": "Learner automaton 3",
+            "merged": false,
+            "keywords": [
+              "Learner automaton 3"
+            ],
+            "eventId": "24"
+          },
+          {
+            "type": "hide",
+            "id": "f_aba______f_bbba_____",
+            "enabled": "enabled",
+            "name": "f(aba) = ? f(bbba) = ?",
+            "merged": false,
+            "keywords": [
+              "f(aba) = ? f(bbba) = ?"
+            ],
+            "eventId": "25"
+          },
+          {
+            "type": "hide",
+            "id": "f_aba____3_f_bbba____0",
+            "enabled": "enabled",
+            "name": "f(aba) = 3 f(bbba) = 0",
+            "merged": true,
+            "keywords": [
+              "f(aba) = 3 f(bbba) = 0"
+            ],
+            "eventId": "26"
+          },
+          {
+            "type": "show",
+            "id": "equivalent__",
+            "enabled": "enabled",
+            "name": "Equivalent?",
+            "merged": false,
+            "keywords": [
+              "Equivalent?"
+            ],
+            "eventId": "27"
+          },
+          {
+            "type": "show",
+            "id": "Yes_",
+            "enabled": "enabled",
+            "name": "Yes!",
+            "merged": false,
+            "keywords": [
+              "Yes!"
+            ],
+            "eventId": "28"
+          },
+          {
+            "type": "show",
+            "id": "Complexity__total_nb__of_queries",
+            "enabled": "enabled",
+            "name": "Complexity: total nb. of queries",
+            "merged": false,
+            "keywords": [
+              "Complexity: total nb. of queries"
+            ],
+            "eventId": "30"
+          },
+          {
+            "type": "show",
+            "id": "Results__poly__for_DFAs_hard_for_NFAs_poly__for_weighted_automata_hard_for_probabilistic_auto_",
+            "enabled": "enabled",
+            "name": "Results: poly. for DFAs hard for NFAs poly. for weighted automata hard for probabilistic auto.",
+            "merged": false,
+            "keywords": [
+              "Results: poly. for DFAs hard for NFAs poly. for weighted automata hard for probabilistic auto."
+            ],
+            "eventId": "31"
+          }
+        ],
+        "keywords": [
+          "Active Learning",
+          "Teacher",
+          "Learner",
+          "Learning"
+        ],
+        "eventId": "2",
+        "originalParams": {
+          "Teacher_thought": {
+            "opacity": 1
+          },
+          "Queries__value_membership_f_x______equivalence": {
+            "opacity": 1
+          },
+          "688d05cf_cd88_4f5a_bbb3_2467d19b665b_copie": {
+            "opacity": 1
+          },
+          "automata": {
+            "opacity": 1
+          },
+          "models_f": {
+            "opacity": 1
+          },
+          "equivalent__": {
+            "opacity": 1
+          },
+          "equivalent__2": {
+            "opacity": 1
+          },
+          "f_a______f_bb_____": {
+            "opacity": 1
+          },
+          "f_a____2_f_bb____1_2": {
+            "opacity": 1
+          },
+          "Group_1": {
+            "opacity": 1
+          },
+          "No__f_aaa____g_aaa__": {
+            "opacity": 1
+          },
+          "f_aba______f_bbba_____": {
+            "opacity": 1
+          },
+          "f_aba____3_f_bbba____0": {
+            "opacity": 1
+          },
+          "automata2": {
+            "opacity": 1
+          },
+          "Yes_": {
+            "opacity": 1
+          },
+          "Complexity__total_nb__of_queries": {
+            "opacity": 1
+          },
+          "Results__poly__for_DFAs_hard_for_NFAs_poly__for_weighted_automata_hard_for_probabilistic_auto_": {
+            "opacity": 1
+          },
+          "Group_12": {
+            "opacity": 1
+          }
+        }
+      },
+      {
+        "type": "show",
+        "id": "Little_Prince_1",
+        "enabled": "enabled",
+        "name": "Little-Prince-elephant",
+        "merged": false,
+        "keywords": [
+          "Little-Prince-elephant"
+        ],
+        "eventId": "4"
+      },
+      {
+        "type": "child",
+        "name": "PFAs",
+        "id": "PFAs",
+        "enabled": "enabled",
+        "merged": false,
+        "children": [
+          {
+            "type": "show",
+            "id": "Group_1",
+            "enabled": "enabled",
+            "name": "gen probabilistic auto",
+            "merged": false,
+            "keywords": [
+              "(generative) probabilistic automata",
+              "-automata",
+              "gen probabilistic auto"
+            ],
+            "eventId": "11"
+          },
+          {
+            "type": "show",
+            "id": "PFA",
+            "enabled": "enabled",
+            "name": "PFA",
+            "merged": false,
+            "keywords": [
+              "a: α",
+              "a: β",
+              "1-α",
+              "1-β",
+              "½",
+              "PFA"
+            ],
+            "eventId": "2"
+          },
+          {
+            "type": "child",
+            "name": "Hankel & Fliess",
+            "id": "Hankel___Fliess",
+            "enabled": "enabled",
+            "merged": false,
+            "children": [
+              {
+                "type": "show",
+                "id": "Goal",
+                "enabled": "enabled",
+                "name": "Goal",
+                "merged": false,
+                "keywords": [
+                  "Goal: Characterise -rationality of -functions... and -rationality of -functions.",
+                  "Goal"
+                ],
+                "eventId": "1"
+              },
+              {
+                "type": "show",
+                "id": "Group_2",
+                "enabled": "enabled",
+                "name": "Def Hankel",
+                "merged": false,
+                "keywords": [
+                  "Def. Hankel matrix of",
+                  "s.t.",
+                  ".",
+                  "Def Hankel"
+                ],
+                "eventId": "2"
+              },
+              {
+                "type": "show",
+                "id": "Group_3",
+                "enabled": "enabled",
+                "name": "Thm Fliess",
+                "merged": false,
+                "keywords": [
+                  "Thm. (Fliess, '74) If is a field, then",
+                  "is the min. nb of states of an -automaton for f.",
+                  "Thm Fliess"
+                ],
+                "eventId": "3"
+              },
+              {
+                "type": "show",
+                "id": "Group_1",
+                "enabled": "enabled",
+                "name": "Over … what is the rank?",
+                "merged": false,
+                "keywords": [
+                  "Over … what is the rank?"
+                ],
+                "eventId": "4"
+              },
+              {
+                "type": "show",
+                "id": "_begin_pmatrix__cos__theta_0____sin__theta_0_____cos__theta_1____sin__theta_1_____cos__theta_2____sin__theta_2_____cos__theta_3____sin__theta_3_____cos__theta_4____sin__theta_4__________vdots__end_pmatrix_",
+                "enabled": "enabled",
+                "name": "\\begin{pmatrix}\ncos(\\theta_0) & sin(\\theta_0) \\\\\ncos(\\theta_1) & sin(\\theta_1) \\\\\ncos(\\theta_2) & sin(\\theta_2) \\\\\ncos(\\theta_3) & sin(\\theta_3) \\\\\ncos(\\theta_4) & sin(\\theta_4) \\\\\n⋮ & \\vdots\n\\end{pmatrix}",
+                "merged": true,
+                "keywords": [
+                  "\\begin{pmatrix}\ncos(\\theta_0) & sin(\\theta_0) \\\\\ncos(\\theta_1) & sin(\\theta_1) \\\\\ncos(\\theta_2) & sin(\\theta_2) \\\\\ncos(\\theta_3) & sin(\\theta_3) \\\\\ncos(\\theta_4) & sin(\\theta_4) \\\\\n⋮ & \\vdots\n\\end{pmatrix}"
+                ],
+                "eventId": "5"
+              },
+              {
+                "type": "show",
+                "id": "Vectors",
+                "enabled": "enabled",
+                "name": "Vectors",
+                "merged": true,
+                "keywords": [
+                  "Vectors"
+                ],
+                "eventId": "6"
+              },
+              {
+                "type": "show",
+                "id": "_external__rank__generators_are_arbitrary_vectors___2",
+                "enabled": "enabled",
+                "name": "“external” rank: generators are arbitrary vectors = 2",
+                "merged": false,
+                "keywords": [
+                  "“external” rank: generators are arbitrary vectors = 2"
+                ],
+                "eventId": "7"
+              },
+              {
+                "type": "show",
+                "id": "Similar_thm__for_arbitrary_semirings_using_the_external_rank__see_Daviaud___Johnson__25__",
+                "enabled": "enabled",
+                "name": "Similar thm. for arbitrary semirings using the external rank (see Daviaud & Johnson '25).",
+                "merged": false,
+                "keywords": [
+                  "Similar thm. for arbitrary semirings using the external rank (see Daviaud & Johnson '25)."
+                ],
+                "eventId": "9"
+              }
+            ],
+            "keywords": [
+              "Linear(ish) Algebra",
+              "Hankel & Fliess"
+            ],
+            "eventId": "10",
+            "originalParams": {
+              "Goal": {
+                "opacity": 1
+              },
+              "Group_2": {
+                "opacity": 1
+              },
+              "Group_3": {
+                "opacity": 1
+              },
+              "Group_1": {
+                "opacity": 1
+              },
+              "_begin_pmatrix__cos__theta_0____sin__theta_0_____cos__theta_1____sin__theta_1_____cos__theta_2____sin__theta_2_____cos__theta_3____sin__theta_3_____cos__theta_4____sin__theta_4__________vdots__end_pmatrix_": {
+                "opacity": 1
+              },
+              "Vectors": {
+                "opacity": 1
+              },
+              "_external__rank__generators_are_arbitrary_vectors___2": {
+                "opacity": 1
+              },
+              "_internal__rank__generators_must_be_rows______a_k_a__residual_rank": {
+                "opacity": 1
+              },
+              "Similar_thm__for_arbitrary_semirings_using_the_external_rank__see_Daviaud___Johnson__25__": {
+                "opacity": 1
+              }
+            }
+          },
+          {
+            "type": "show",
+            "id": "learning_is_hard__Vavasis__09_",
+            "enabled": "enabled",
+            "name": "learning is hard (Vavasis '09)",
+            "merged": false,
+            "keywords": [
+              "learning is hard (Vavasis '09)"
+            ],
+            "eventId": "8"
+          },
+          {
+            "type": "show",
+            "id": "deterministic_probabilistic_automata",
+            "enabled": "enabled",
+            "name": "deterministic probabilistic automata",
+            "merged": false,
+            "keywords": [
+              "deterministic probabilistic automata"
+            ],
+            "eventId": "3"
+          },
+          {
+            "type": "show",
+            "id": "DFA",
+            "enabled": "enabled",
+            "name": "det PFA",
+            "merged": false,
+            "keywords": [
+              "a: ½",
+              "a: ⅓",
+              "b: ½",
+              "b: ⅓",
+              "1",
+              "⅓",
+              "det PFA"
+            ],
+            "eventId": "4"
+          },
+          {
+            "type": "show",
+            "id": "poly__learning_is_trivial",
+            "enabled": "enabled",
+            "name": "polytime learning is trivial",
+            "merged": false,
+            "keywords": [
+              "polytime learning is trivial"
+            ],
+            "eventId": "9"
+          },
+          {
+            "type": "show",
+            "id": "residual_probabilistic_automata",
+            "enabled": "enabled",
+            "name": "residual probabilistic automata",
+            "merged": false,
+            "keywords": [
+              "residual probabilistic automata"
+            ],
+            "eventId": "5"
+          },
+          {
+            "type": "show",
+            "id": "_subsetneq2",
+            "enabled": "enabled",
+            "name": "\\subsetneq",
+            "merged": true,
+            "keywords": [
+              "\\subsetneq"
+            ],
+            "eventId": "6"
+          },
+          {
+            "type": "show",
+            "id": "_subsetneq",
+            "enabled": "enabled",
+            "name": "\\subsetneq",
+            "merged": true,
+            "keywords": [
+              "\\subsetneq"
+            ],
+            "eventId": "7"
+          },
+          {
+            "type": "show",
+            "id": "def_res_auto",
+            "enabled": "enabled",
+            "name": "def res auto",
+            "merged": false,
+            "keywords": [
+              "Def. (Esposito, Lemay, Denis, Dupont, '02) An automaton is residual when for every state q, there exists u ∈ Σ* such that : : non-zero proba : zero proba (p ≠ q)",
+              "def res auto"
+            ],
+            "eventId": "13"
+          },
+          {
+            "type": "child",
+            "name": "Hankel & Fliess bis",
+            "id": "Hankel___Fliess_bis",
+            "enabled": "enabled",
+            "merged": false,
+            "children": [
+              {
+                "type": "show",
+                "id": "_internal__rank__generators_must_be_rows______a_k_a__residual_rank",
+                "enabled": "enabled",
+                "name": "“internal” rank: generators must be rows = +∞ a.k.a. residual rank",
+                "merged": false,
+                "keywords": [
+                  "“internal” rank: generators must be rows = +∞ a.k.a. residual rank"
+                ],
+                "eventId": "1"
+              },
+              {
+                "type": "show",
+                "id": "Similar_thm__for_arbitrary_semirings_using_the_external_rank__see_Daviaud___Johnson__25__",
+                "enabled": "enabled",
+                "name": "Similar thm. for arbitrary semirings using the external rank (see Daviaud & Johnson '25).",
+                "merged": false,
+                "keywords": [
+                  "Similar thm. for arbitrary semirings using the external rank (see Daviaud & Johnson '25)."
+                ],
+                "eventId": "2"
+              }
+            ],
+            "keywords": [
+              "Hankel & Fliess bis"
+            ],
+            "eventId": "12",
+            "originalParams": {
+              "_internal__rank__generators_must_be_rows______a_k_a__residual_rank": {
+                "opacity": 1
+              },
+              "Similar_thm__for_arbitrary_semirings_using_the_external_rank__see_Daviaud___Johnson__25__": {
+                "opacity": 1
+              }
+            }
+          },
+          {
+            "type": "child",
+            "name": "Learning residual",
+            "id": "Learning_residual",
+            "enabled": "enabled",
+            "merged": false,
+            "children": [
+              {
+                "type": "show",
+                "id": "Thm___Esposito__Lemay__Denis__Dupont___02__Passive_learning_can_be_done_in_polytime_",
+                "enabled": "enabled",
+                "name": "Thm. (Esposito, Lemay, Denis, Dupont, '02) Passive learning can be done in polytime.",
+                "merged": false,
+                "keywords": [
+                  "Thm. (Esposito, Lemay, Denis, Dupont, '02) Passive learning can be done in polytime."
+                ],
+                "eventId": "1"
+              },
+              {
+                "type": "show",
+                "id": "Thm___this_talk__Active_learning_with_polynomially_many_queries_",
+                "enabled": "enabled",
+                "name": "Thm. (this talk) Active learning with polynomially many queries.",
+                "merged": false,
+                "keywords": [
+                  "Thm. (this talk) Active learning with polynomially many queries."
+                ],
+                "eventId": "2"
+              },
+              {
+                "type": "show",
+                "id": "Promise_pb",
+                "enabled": "enabled",
+                "name": "Promise pb",
+                "merged": false,
+                "keywords": [
+                  "Lemma. Given a -automaton , with the promise that it is equiv. to a residual -automaton, we can compute the minimal residual -automaton equivalent to it.",
+                  "Promise pb"
+                ],
+                "eventId": "3"
+              },
+              {
+                "type": "show",
+                "id": "Decide_residual",
+                "enabled": "enabled",
+                "name": "Decide residual",
+                "merged": false,
+                "keywords": [
+                  "Lemma. Residuality among -automaton is decidable.",
+                  "Decide residual"
+                ],
+                "eventId": "4"
+              },
+              {
+                "type": "show",
+                "id": "Algo",
+                "enabled": "enabled",
+                "name": "Algo",
+                "merged": false,
+                "keywords": [
+                  "Active learning algo: Learn as a -automaton. When doing equivalence queries, transform it to a residual -automaton.",
+                  "Algo"
+                ],
+                "eventId": "5"
+              },
+              {
+                "type": "show",
+                "id": "Z_learning",
+                "enabled": "enabled",
+                "name": "Z-learning",
+                "merged": false,
+                "keywords": [
+                  "Similar trick for learning -automata. (Buna-Marginean, Cheval, Shirmohammadi & Worrell '24)",
+                  "Z-learning"
+                ],
+                "eventId": "6"
+              },
+              {
+                "type": "show",
+                "id": "Open_question",
+                "enabled": "enabled",
+                "name": "Open question",
+                "merged": false,
+                "keywords": [
+                  "Open question. Given a -automaton, decide if it is equivalent to a residual -automaton.",
+                  "Open question"
+                ],
+                "eventId": "7"
+              }
+            ],
+            "keywords": [
+              "Learning Residual Probabilistic Automata",
+              "Learning residual"
+            ],
+            "eventId": "14",
+            "originalParams": {
+              "Thm___Esposito__Lemay__Denis__Dupont___02__Passive_learning_can_be_done_in_polytime_": {
+                "opacity": 1
+              },
+              "Thm___this_talk__Active_learning_with_polynomially_many_queries_": {
+                "opacity": 1
+              },
+              "Promise_pb": {
+                "opacity": 1
+              },
+              "Decide_residual": {
+                "opacity": 1
+              },
+              "Algo": {
+                "opacity": 1
+              },
+              "Z_learning": {
+                "opacity": 1
+              },
+              "Open_question": {
+                "opacity": 1
+              }
+            }
+          },
+          {
+            "type": "child",
+            "name": "Hankel & Fliess ter",
+            "id": "Hankel___Fliess_ter",
+            "enabled": "enabled",
+            "merged": false,
+            "children": [
+              {
+                "type": "show",
+                "id": "_internal__rank__generators_must_be_rows______a_k_a__residual_rank",
+                "enabled": "enabled",
+                "name": "“internal” rank: generators must be rows = +∞ a.k.a. residual rank",
+                "merged": false,
+                "keywords": [
+                  "“internal” rank: generators must be rows = +∞ a.k.a. residual rank"
+                ],
+                "eventId": "1"
+              },
+              {
+                "type": "show",
+                "id": "Text",
+                "enabled": "enabled",
+                "name": "Open problem: efficient active learning of limit-residual automata.",
+                "merged": false,
+                "keywords": [
+                  "Open problem: efficient active learning of limit-residual automata."
+                ],
+                "eventId": "2"
+              }
+            ],
+            "keywords": [
+              "Hankel & Fliess ter"
+            ],
+            "eventId": "15",
+            "originalParams": {
+              "_internal__rank__generators_must_be_rows______a_k_a__residual_rank": {
+                "opacity": 1
+              },
+              "Text": {
+                "opacity": 1
+              }
+            }
+          }
+        ],
+        "keywords": [
+          "Probabilistic Automata",
+          "PFAs"
+        ],
+        "eventId": "3",
+        "originalParams": {
+          "PFA": {
+            "opacity": 1
+          },
+          "deterministic_probabilistic_automata": {
+            "opacity": 1
+          },
+          "DFA": {
+            "opacity": 1
+          },
+          "residual_probabilistic_automata": {
+            "opacity": 1
+          },
+          "_subsetneq2": {
+            "opacity": 1
+          },
+          "_subsetneq": {
+            "opacity": 1
+          },
+          "learning_is_hard__Vavasis__09_": {
+            "opacity": 1
+          },
+          "poly__learning_is_trivial": {
+            "opacity": 1
+          },
+          "Group_1": {
+            "opacity": 1
+          },
+          "def_res_auto": {
+            "opacity": 1
+          }
+        }
+      }
+    ],
+    "keywords": [
+      "[Copy] Residual Probabilistic Automata",
+      "[Linked] Residual Probabilistic Automata",
+      "Nathanaël Fijalkow, Arthur Gall, Arka Ghosh & Rémi Morvan",
+      "My drawing was not a picture of a hat. It was a picture of a boa constrictor digesting an elephant. But since the grown-ups were not able to understand it, I drew the inside of a boa constrictor, so that the grown-ups could see it clearly. They always need to have things explained.",
+      "LaBRI, Bordeaux",
+      "LaBRI, Bordeaux & ENS Lyon",
+      "LaBRI, Bordeaux & U. Warsaw",
+      "LeaLog@CSL '25 · 10 Feb. 2025",
+      "main slide"
+    ],
+    "eventId": "root",
+    "originalParams": {
+      "Little_Prince_1_1": {
+        "opacity": 1
+      },
+      "Little_Prince_1": {
+        "opacity": 1
+      }
+    }
+  },
+  "treeTimeLine": [],
+  "chronicleTimeLine": []
+}
