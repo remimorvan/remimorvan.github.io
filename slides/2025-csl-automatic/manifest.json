@@ -884,6 +884,7 @@
                 "name": "Thm. (“Lifting Theorem” M. ‘24) A relation is a -relation iff all underlying monoids of its synt. synchronous algebra are in .",
                 "merged": false,
                 "keywords": [
+                  "Thm. A relation is a -relation iff all underlying monoids of its synt. synchronous algebra are in .",
                   "Thm. (“Lifting Theorem” M. ‘24) A relation is a -relation iff all underlying monoids of its synt. synchronous algebra are in ."
                 ],
                 "eventId": "7",
@@ -909,12 +910,6 @@
             "eventId": "12",
             "originalParams": {
               "Thm._(M.__E2_80_9824)_Every_relation_has_a_syntactic_sync._algebra._A_relation_is_automatic_iff_this_algebra_is_finite.": {
-                "opacity": 1
-              },
-              "Thm._(M.__E2_80_9824)_Pseudovarieties_of_auto._relations_are_in_correspondence_w/_pseudovarieties_of_sync._algebras.": {
-                "opacity": 1
-              },
-              "Thm._(M.__E2_80_9824)_Pseudovarieties_of_sync._algebras_are_exactly_those_described_by_profinite_dependencies.": {
                 "opacity": 1
               },
               "Group_52": {
