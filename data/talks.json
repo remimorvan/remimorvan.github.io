@@ -1,5 +1,14 @@
 [
 	{
+		"title": "Relative Membership of Regular Languages",
+		"date": "31/03/2025",
+		"event": "Categories for Automata and Language Theory",
+		"eventLink": "https://www.dagstuhl.de/en/seminars/seminar-calendar/seminar-details/25141",
+		"where": "Dagstuhl",
+		"duration": "25min",
+		"slides": "slides/2025-dagstuhl-relative-membership"
+	},
+	{
 		"title": "The Algebras for Automatic Relations",
 		"date": "14/02/2025",
 		"event": "CSL '25",
