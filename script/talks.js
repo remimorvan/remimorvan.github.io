@@ -32,7 +32,7 @@ function getLiFromSorted(talk, short) {
 	if ("eventLink" in talk) {
 		myLi.innerHTML = `<span class="talkConferenceSorted"><a href="${talk.eventLink}">${talk.event}</a></span>, `;
 	} else {
-		myLi.innerHTML = `<span class="talkConferenceSorted">${talk.event}</span>`;
+		myLi.innerHTML = `<span class="talkConferenceSorted">${talk.event}</span>, `;
 	}
 	myLi.innerHTML += `<span class="talkDateSorted">${printDate(talk.date)}</span>`;
 	if (!short) {
