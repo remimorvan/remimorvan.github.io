@@ -1,5 +1,14 @@
 [
 	{
+		"title": "Minimization of Conjunctive Regular Path Queries",
+		"date": "28/05/2025",
+		"event": "Finite Model Theory",
+		"eventLink": "https://fmt25.labri.fr/",
+		"where": "Les Houches",
+		"duration": "15min",
+		"slides": "slides/2025-fmt-minimizing-crpq"
+	},
+	{
 		"title": "Relative Membership of Regular Languages",
 		"date": "31/03/2025",
 		"event": "Categories for Automata and Language Theory",

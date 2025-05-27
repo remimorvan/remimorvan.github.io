@@ -1,0 +1,917 @@
+{
+  "version": 3.1,
+  "presentation": "Minimizing CRPQs @ FMT25",
+  "slideDict": {
+    "new_slide": "new_slide",
+    "crpq__problem": "crpq__problem",
+    "minimization_crpq": "minimization_crpq",
+    "min_by_crpq": "min_by_crpq",
+    "Equivalence": "Equivalence",
+    "Minimization_union": "Minimization_union",
+    "Proving_hardness": "Proving_hardness",
+    "Segment_graph_of_core": "Segment_graph_of_core"
+  },
+  "tree": {
+    "type": "child",
+    "name": "new slide",
+    "id": "new_slide",
+    "enabled": "enabled",
+    "merged": false,
+    "children": [
+      {
+        "type": "child",
+        "name": "crpq: problem",
+        "id": "crpq__problem",
+        "enabled": "enabled",
+        "merged": false,
+        "children": [
+          {
+            "type": "show",
+            "id": "Gdb",
+            "enabled": "enabled",
+            "name": "Gdb",
+            "merged": false,
+            "keywords": [
+              "Graph databases:",
+              "Gdb"
+            ],
+            "eventId": "1"
+          },
+          {
+            "type": "show",
+            "id": "CRPQ",
+            "enabled": "enabled",
+            "name": "CRPQ",
+            "merged": false,
+            "keywords": [
+              "Conjunctive Regular Path Queries:",
+              "conjunctions existential quant° regular paths",
+              "CRPQ"
+            ],
+            "eventId": "2"
+          },
+          {
+            "type": "show",
+            "id": "Eval",
+            "enabled": "enabled",
+            "name": "Eval",
+            "merged": false,
+            "keywords": [
+              "Evaluation of a CRPQ with k atoms:",
+              "database size",
+              "Eval"
+            ],
+            "eventId": "3"
+          },
+          {
+            "type": "show",
+            "id": "Goal__minimize_a__nb__atoms__",
+            "enabled": "enabled",
+            "name": "Goal: minimize a (nb. atoms)!",
+            "merged": false,
+            "keywords": [
+              "Goal: minimize a (nb. atoms)!"
+            ],
+            "eventId": "4"
+          }
+        ],
+        "keywords": [
+          "crpq: problem"
+        ],
+        "eventId": "2",
+        "originalParams": {
+          "Gdb": {
+            "opacity": 1
+          },
+          "CRPQ": {
+            "opacity": 1
+          },
+          "Eval": {
+            "opacity": 1
+          },
+          "Goal__minimize_a__nb__atoms__": {
+            "opacity": 1
+          }
+        }
+      },
+      {
+        "type": "show",
+        "id": "Decision_problem",
+        "enabled": "enabled",
+        "name": "Decision problem",
+        "merged": false,
+        "keywords": [
+          "Minimization problem.",
+          "Input: a CRPQ γ, and k ≥ 1, Question: is there δ ≡ γ with less than k atoms?",
+          "Decision problem"
+        ],
+        "eventId": "3"
+      },
+      {
+        "type": "show",
+        "id": "Group_2",
+        "enabled": "enabled",
+        "name": "Related work. min° of CQs: NP-c (~ Chandra & Merlin '77) min° of tree patterns: -c (Czerwiński, Martens, Niewerth  & Parys · PODS '16 & JACM '18) min° tree-width of CRPQs: 2ExpSpace & ExpSpace-h (Barceló, Romero & Vardi · PODS '13 & SIAM '16 Figueira & M. · ICDT '23 & LMCS '25)",
+        "merged": false,
+        "keywords": [
+          "Related work. min° of CQs: NP-c (~ Chandra & Merlin '77) min° of tree patterns: -c (Czerwiński, Martens, Niewerth  & Parys · PODS '16 & JACM '18) min° tree-width of CRPQs: 2ExpSpace & ExpSpace-h (Barceló, Romero & Vardi · PODS '13 & SIAM '16 Figueira & M. · ICDT '23 & LMCS '25)",
+          "Related work. min° of CQs: NP-c (~ Chandra & Merlin '77) min° of tree patterns: -c (Czerwiński, Martens, Niewerth  & Parys · PODS '16 & JACM '18) min° tree-width of CRPQs: 2ExpSpace & ExpSpace-h (Barceló, Romero & Vardi · PODS '13 & SIAM '16 Figueira & M. · ICDT '23 & LMCS '25)"
+        ],
+        "eventId": "6"
+      },
+      {
+        "type": "child",
+        "name": "Equivalence",
+        "id": "Equivalence",
+        "enabled": "enabled",
+        "merged": false,
+        "children": [
+          {
+            "type": "hide",
+            "id": "1",
+            "enabled": "enabled",
+            "name": "1",
+            "merged": false,
+            "keywords": [
+              "1"
+            ],
+            "eventId": "3"
+          },
+          {
+            "type": "hide",
+            "id": "2",
+            "enabled": "enabled",
+            "name": "2",
+            "merged": false,
+            "keywords": [
+              "2"
+            ],
+            "eventId": "4"
+          },
+          {
+            "type": "hide",
+            "id": "3",
+            "enabled": "enabled",
+            "name": "3",
+            "merged": false,
+            "keywords": [
+              "3"
+            ],
+            "eventId": "5"
+          },
+          {
+            "type": "hide",
+            "id": "4",
+            "enabled": "enabled",
+            "name": "4",
+            "merged": false,
+            "keywords": [
+              "4"
+            ],
+            "eventId": "6"
+          },
+          {
+            "type": "show",
+            "id": "Thm__Equivalence_is_ExpSpace_complete___Florescu__Levy___Suciu___PODS__98_Calvanese__De_Giacomo__Lenzerini____Vardi___KR__00_",
+            "enabled": "enabled",
+            "name": "Thm. Equivalence is ExpSpace-complete. (Florescu, Levy & Suciu · PODS '98 Calvanese, De Giacomo, Lenzerini, & Vardi · KR '00)",
+            "merged": false,
+            "keywords": [
+              "Thm. Equivalence is ExpSpace-complete. (Florescu, Levy & Suciu · PODS '98 Calvanese, De Giacomo, Lenzerini, & Vardi · KR '00)"
+            ],
+            "eventId": "7"
+          }
+        ],
+        "keywords": [
+          "Equivalence of CRPQs is not so easy…",
+          "Equivalence"
+        ],
+        "eventId": "7",
+        "originalParams": {
+          "1": {
+            "opacity": 1
+          },
+          "2": {
+            "opacity": 1
+          },
+          "3": {
+            "opacity": 1
+          },
+          "4": {
+            "opacity": 1
+          },
+          "Thm__Equivalence_is_ExpSpace_complete___Florescu__Levy___Suciu___PODS__98_Calvanese__De_Giacomo__Lenzerini____Vardi___KR__00_": {
+            "opacity": 1
+          }
+        }
+      },
+      {
+        "type": "child",
+        "name": "minimization crpq",
+        "id": "minimization_crpq",
+        "enabled": "enabled",
+        "merged": false,
+        "children": [
+          {
+            "type": "child",
+            "name": "min by crpq",
+            "id": "min_by_crpq",
+            "enabled": "enabled",
+            "merged": false,
+            "children": [
+              {
+                "type": "show",
+                "id": "Proof_idea__there_are_finitely_many_candidates_",
+                "enabled": "enabled",
+                "name": "Proof idea: small model property (there are finitely many candidates).",
+                "merged": false,
+                "keywords": [
+                  "Proof idea: small model property (there are finitely many candidates)."
+                ],
+                "eventId": "1"
+              },
+              {
+                "type": "show",
+                "id": "Lemma_",
+                "enabled": "enabled",
+                "name": "Lemma.",
+                "merged": false,
+                "keywords": [
+                  "Lemma."
+                ],
+                "eventId": "2"
+              },
+              {
+                "type": "show",
+                "id": "input_CRPQ",
+                "enabled": "enabled",
+                "name": "input CRPQ",
+                "merged": true,
+                "keywords": [
+                  "a",
+                  "b",
+                  "(ac)+",
+                  "b+",
+                  "c",
+                  "(a+b)+",
+                  "(cc)+",
+                  "aaa+",
+                  "b(bb)*",
+                  "automata of size ≤ m",
+                  "input CRPQ"
+                ],
+                "eventId": "3"
+              },
+              {
+                "type": "show",
+                "id": "if_it_is_equivalent_to",
+                "enabled": "enabled",
+                "name": "if it is equivalent to",
+                "merged": false,
+                "keywords": [
+                  "if it is equivalent to"
+                ],
+                "eventId": "4"
+              },
+              {
+                "type": "show",
+                "id": "witness",
+                "enabled": "enabled",
+                "name": "witness",
+                "merged": true,
+                "keywords": [
+                  "nb. of atoms ≤ k",
+                  "L1",
+                  "L0",
+                  "L2",
+                  "L3",
+                  "witness"
+                ],
+                "eventId": "5"
+              },
+              {
+                "type": "show",
+                "id": "__then_it_is_equivalent_to",
+                "enabled": "enabled",
+                "name": "… then it is equivalent to",
+                "merged": false,
+                "keywords": [
+                  "… then it is equivalent to"
+                ],
+                "eventId": "6"
+              },
+              {
+                "type": "show",
+                "id": "small_witness",
+                "enabled": "enabled",
+                "name": "small witness",
+                "merged": true,
+                "keywords": [
+                  "automata of size ≤ f(m)",
+                  "nb. of atoms ≤ k",
+                  "K1",
+                  "K0",
+                  "K2",
+                  "K3",
+                  "small witness"
+                ],
+                "eventId": "7"
+              },
+              {
+                "type": "show",
+                "id": "input_of_miz__problem",
+                "enabled": "enabled",
+                "name": "input of miz° problem",
+                "merged": false,
+                "keywords": [
+                  "input of miz° problem"
+                ],
+                "eventId": "8"
+              },
+              {
+                "type": "show",
+                "id": "positive_witness",
+                "enabled": "enabled",
+                "name": "positive witness",
+                "merged": true,
+                "keywords": [
+                  "positive witness"
+                ],
+                "eventId": "9"
+              },
+              {
+                "type": "show",
+                "id": "small_positive_witness",
+                "enabled": "enabled",
+                "name": "small positive witness",
+                "merged": true,
+                "keywords": [
+                  "small positive witness"
+                ],
+                "eventId": "10"
+              }
+            ],
+            "keywords": [
+              "min by crpq"
+            ],
+            "eventId": "1",
+            "originalParams": {
+              "Proof_idea__there_are_finitely_many_candidates_": {
+                "opacity": 1
+              },
+              "Lemma_": {
+                "opacity": 1
+              },
+              "input_CRPQ": {
+                "opacity": 1
+              },
+              "if_it_is_equivalent_to": {
+                "opacity": 1
+              },
+              "witness": {
+                "opacity": 1
+              },
+              "__then_it_is_equivalent_to": {
+                "opacity": 1
+              },
+              "small_witness": {
+                "opacity": 1
+              },
+              "input_of_miz__problem": {
+                "opacity": 1
+              },
+              "positive_witness": {
+                "opacity": 1
+              },
+              "small_positive_witness": {
+                "opacity": 1
+              }
+            }
+          },
+          {
+            "type": "show",
+            "id": "is_2ExpSpace",
+            "enabled": "enabled",
+            "name": "Minimization is 2ExpSpace",
+            "merged": false,
+            "keywords": [
+              "Minimization is 2ExpSpace"
+            ],
+            "eventId": "3"
+          },
+          {
+            "type": "show",
+            "id": "Line_1",
+            "enabled": "enabled",
+            "name": "Line 1",
+            "merged": false,
+            "keywords": [
+              "Line 1"
+            ],
+            "eventId": "2"
+          },
+          {
+            "type": "child",
+            "name": "Minimization union",
+            "id": "Minimization_union",
+            "enabled": "enabled",
+            "merged": false,
+            "children": [
+              {
+                "type": "show",
+                "id": "Lemma__There_exists_a_CRPQ___that_is__not_equivalent_to_a_single_CRPQ___with_k_atoms_equivalent_to_a_union_of_CRPQ__1____2_each_with_k_atoms_",
+                "enabled": "enabled",
+                "name": "Lemma. There exists a CRPQ γ that is: not equivalent to a single CRPQ δ with k atoms equivalent to a union of CRPQ δ1 ∨ δ2 each with k atoms.",
+                "merged": false,
+                "keywords": [
+                  "Lemma. There exists a CRPQ γ that is: not equivalent to a single CRPQ δ with k atoms equivalent to a union of CRPQ δ1 ∨ δ2 each with k atoms."
+                ],
+                "eventId": "1"
+              },
+              {
+                "type": "show",
+                "id": "Thm__Every_CRPQ___has_a_maximal_under_approximation_by_finite_unions_of_CRPQs_with_at_most_k_atoms_",
+                "enabled": "enabled",
+                "name": "Thm. Every CRPQ γ has a maximal under-approximation by finite unions of CRPQs with at most k atoms.",
+                "merged": false,
+                "keywords": [
+                  "Thm. Every CRPQ γ has a maximal under-approximation by finite unions of CRPQs with at most k atoms."
+                ],
+                "eventId": "2"
+              },
+              {
+                "type": "show",
+                "id": "gamma",
+                "enabled": "enabled",
+                "name": "gamma",
+                "merged": false,
+                "keywords": [
+                  "γ",
+                  "gamma"
+                ],
+                "eventId": "7"
+              },
+              {
+                "type": "show",
+                "id": "under_approx",
+                "enabled": "enabled",
+                "name": "under approx",
+                "merged": false,
+                "keywords": [
+                  "maximal under-app°",
+                  "under approx"
+                ],
+                "eventId": "8"
+              },
+              {
+                "type": "show",
+                "id": "subquery",
+                "enabled": "enabled",
+                "name": "subquery",
+                "merged": false,
+                "keywords": [
+                  "δ ⊆ γ w/ ≤ k atoms",
+                  "subquery"
+                ],
+                "eventId": "9"
+              }
+            ],
+            "keywords": [
+              "Minimization union"
+            ],
+            "eventId": "4",
+            "originalParams": {
+              "Lemma__There_exists_a_CRPQ___that_is__not_equivalent_to_a_single_CRPQ___with_k_atoms_equivalent_to_a_union_of_CRPQ__1____2_each_with_k_atoms_": {
+                "opacity": 1
+              },
+              "Thm__Every_CRPQ___has_a_maximal_under_approximation_by_finite_unions_of_CRPQs_with_at_most_k_atoms_": {
+                "opacity": 1
+              },
+              "gamma": {
+                "opacity": 1
+              },
+              "under_approx": {
+                "opacity": 1
+              },
+              "subquery": {
+                "opacity": 1
+              }
+            }
+          },
+          {
+            "type": "show",
+            "id": "Minimization_is_2ExpSpace",
+            "enabled": "enabled",
+            "name": "Minimization by union",
+            "merged": false,
+            "keywords": [
+              "Minimization by union"
+            ],
+            "eventId": "5"
+          },
+          {
+            "type": "hide",
+            "id": "is_2ExpSpace",
+            "enabled": "enabled",
+            "name": "Minimization is 2ExpSpace",
+            "merged": false,
+            "keywords": [
+              "Minimization is 2ExpSpace"
+            ],
+            "eventId": "6"
+          },
+          {
+            "type": "show",
+            "id": "Minimization_is_2ExpSpace2",
+            "enabled": "enabled",
+            "name": "Minimization is 2ExpSpace + lowerbound",
+            "merged": true,
+            "keywords": [
+              "Minimization is 2ExpSpace + lowerbound"
+            ],
+            "eventId": "7"
+          },
+          {
+            "type": "hide",
+            "id": "Minimization_is_2ExpSpace",
+            "enabled": "enabled",
+            "name": "Minimization by union",
+            "merged": true,
+            "keywords": [
+              "Minimization by union"
+            ],
+            "eventId": "8"
+          },
+          {
+            "type": "show",
+            "id": "Minimization_by_union___lowerbound",
+            "enabled": "enabled",
+            "name": "Minimization by union + lowerbound",
+            "merged": true,
+            "keywords": [
+              "Minimization by union + lowerbound"
+            ],
+            "eventId": "9"
+          },
+          {
+            "type": "child",
+            "name": "Proving hardness",
+            "id": "Proving_hardness",
+            "enabled": "enabled",
+            "merged": false,
+            "children": [
+              {
+                "type": "show",
+                "id": "Q___Given____how_can_we_prove_that_it_is_not_equivalent_to_a_CRPQ_with_at_most_k_atoms_",
+                "enabled": "enabled",
+                "name": "Q°. Given γ, how can we prove that it is not equivalent to a UCRPQ with at most k atoms?",
+                "merged": false,
+                "keywords": [
+                  "Q°. Given γ, how can we prove that it is not equivalent to a UCRPQ with at most k atoms?"
+                ],
+                "eventId": "1"
+              },
+              {
+                "type": "show",
+                "id": "to_a_CRPQ_of_tree_width_at_most_k_",
+                "enabled": "enabled",
+                "name": "to a UCRPQ of tree-width at most k?",
+                "merged": false,
+                "keywords": [
+                  "to a UCRPQ of tree-width at most k?"
+                ],
+                "eventId": "2"
+              },
+              {
+                "type": "show",
+                "id": "Semantical_Structure_Theorem_",
+                "enabled": "enabled",
+                "name": "Semantical Structure Theorem.",
+                "merged": false,
+                "keywords": [
+                  "Semantical Structure Theorem."
+                ],
+                "eventId": "3"
+              },
+              {
+                "type": "show",
+                "id": "Given_a_UCRPQ____if_its_semantics_contains_a_complex_pattern__then_any_UCRPQ_equivalent_to___must_be_complex_",
+                "enabled": "enabled",
+                "name": "Given a UCRPQ Γ, if its semantics contains a complex pattern, then any UCRPQ equivalent to Γ must be complex.",
+                "merged": true,
+                "keywords": [
+                  "Given a UCRPQ Γ, if its semantics contains a complex pattern, then any UCRPQ equivalent to Γ must be complex."
+                ],
+                "eventId": "4"
+              },
+              {
+                "type": "show",
+                "id": "Complexity__a_class_of_graphs_closed_under_minors__E_g___at_most_k_atoms__or_tree_width_at_most_k_",
+                "enabled": "enabled",
+                "name": "Complexity: a class of graphs closed under minors. E.g.: at most k atoms, or tree-width at most k.",
+                "merged": false,
+                "keywords": [
+                  "Complexity: a class of graphs closed under minors. E.g.: at most k atoms, or tree-width at most k."
+                ],
+                "eventId": "6"
+              },
+              {
+                "type": "show",
+                "id": "Complex_pattern_containment__there_exists_a_canonical_database_G_of___s_t____G_is_hom_minimal__amongst_canonical_databases___the_segment_graph_of_the_core_of_G_is_complex_",
+                "enabled": "enabled",
+                "name": "Complex pattern containment: there exists a canonical database G of Γ s.t. : G is hom-minimal (amongst canonical databases), the segment graph of the core of G is complex.",
+                "merged": false,
+                "keywords": [
+                  "Complex pattern containment: there exists a canonical database G of Γ s.t. : G is hom-minimal (amongst canonical databases), the segment graph of the core of G is complex."
+                ],
+                "eventId": "7"
+              },
+              {
+                "type": "child",
+                "name": "Segment graph of core",
+                "id": "Segment_graph_of_core",
+                "enabled": "enabled",
+                "merged": false,
+                "children": [
+                  {
+                    "type": "show",
+                    "id": "UCRPQ",
+                    "enabled": "enabled",
+                    "name": "UCRPQ",
+                    "merged": false,
+                    "keywords": [
+                      "a UCRPQ γ1 ∨ … ∨ γn",
+                      "UCRPQ"
+                    ],
+                    "eventId": "1"
+                  },
+                  {
+                    "type": "show",
+                    "id": "select_disjunct",
+                    "enabled": "enabled",
+                    "name": "select disjunct",
+                    "merged": false,
+                    "keywords": [
+                      "select a disjunct",
+                      "select disjunct"
+                    ],
+                    "eventId": "2"
+                  },
+                  {
+                    "type": "show",
+                    "id": "Group_10",
+                    "enabled": "enabled",
+                    "name": "a crpq",
+                    "merged": false,
+                    "keywords": [
+                      "b",
+                      "a",
+                      "ab≥4d3",
+                      "c",
+                      "(bb)+",
+                      "d≥3",
+                      "γi =",
+                      "a crpq"
+                    ],
+                    "eventId": "12"
+                  },
+                  {
+                    "type": "show",
+                    "id": "cdb",
+                    "enabled": "enabled",
+                    "name": "cdb",
+                    "merged": false,
+                    "keywords": [
+                      "canonical database",
+                      "cdb"
+                    ],
+                    "eventId": "4"
+                  },
+                  {
+                    "type": "show",
+                    "id": "Group_11",
+                    "enabled": "enabled",
+                    "name": "acdb",
+                    "merged": false,
+                    "keywords": [
+                      "b",
+                      "d",
+                      "a",
+                      "c",
+                      "acdb"
+                    ],
+                    "eventId": "16"
+                  },
+                  {
+                    "type": "show",
+                    "id": "core",
+                    "enabled": "enabled",
+                    "name": "core",
+                    "merged": false,
+                    "keywords": [
+                      "core"
+                    ],
+                    "eventId": "6"
+                  },
+                  {
+                    "type": "show",
+                    "id": "Group_6",
+                    "enabled": "enabled",
+                    "name": "a core",
+                    "merged": false,
+                    "keywords": [
+                      "b",
+                      "d",
+                      "a",
+                      "c",
+                      "a core"
+                    ],
+                    "eventId": "7"
+                  },
+                  {
+                    "type": "show",
+                    "id": "ident_segments",
+                    "enabled": "enabled",
+                    "name": "ident segments",
+                    "merged": false,
+                    "keywords": [
+                      "identify segments",
+                      "ident segments"
+                    ],
+                    "eventId": "8"
+                  },
+                  {
+                    "type": "show",
+                    "id": "Group_7",
+                    "enabled": "enabled",
+                    "name": "Group 7",
+                    "merged": false,
+                    "keywords": [
+                      "Group 7"
+                    ],
+                    "eventId": "9"
+                  },
+                  {
+                    "type": "show",
+                    "id": "seg_graph",
+                    "enabled": "enabled",
+                    "name": "seg graph",
+                    "merged": false,
+                    "keywords": [
+                      "segment graph",
+                      "seg graph"
+                    ],
+                    "eventId": "10"
+                  },
+                  {
+                    "type": "show",
+                    "id": "Group_9",
+                    "enabled": "enabled",
+                    "name": "Group 9",
+                    "merged": false,
+                    "keywords": [
+                      "Group 9"
+                    ],
+                    "eventId": "11"
+                  },
+                  {
+                    "type": "show",
+                    "id": "Group_10",
+                    "enabled": "enabled",
+                    "name": "a crpq",
+                    "merged": false,
+                    "keywords": [
+                      "a crpq"
+                    ],
+                    "eventId": "17"
+                  }
+                ],
+                "keywords": [
+                  "Segment graph of core"
+                ],
+                "eventId": "5",
+                "originalParams": {
+                  "UCRPQ": {
+                    "opacity": 1
+                  },
+                  "select_disjunct": {
+                    "opacity": 1
+                  },
+                  "cdb": {
+                    "opacity": 1
+                  },
+                  "core": {
+                    "opacity": 1
+                  },
+                  "Group_6": {
+                    "opacity": 1
+                  },
+                  "ident_segments": {
+                    "opacity": 1
+                  },
+                  "Group_7": {
+                    "opacity": 1
+                  },
+                  "seg_graph": {
+                    "opacity": 1
+                  },
+                  "Group_9": {
+                    "opacity": 1
+                  },
+                  "Group_10": {
+                    "opacity": 1
+                  },
+                  "Group_11": {
+                    "opacity": 1
+                  }
+                }
+              }
+            ],
+            "keywords": [
+              "Proving hardness.",
+              "Proving hardness"
+            ],
+            "eventId": "10",
+            "originalParams": {
+              "Q___Given____how_can_we_prove_that_it_is_not_equivalent_to_a_CRPQ_with_at_most_k_atoms_": {
+                "opacity": 1
+              },
+              "to_a_CRPQ_of_tree_width_at_most_k_": {
+                "opacity": 1
+              },
+              "Semantical_Structure_Theorem_": {
+                "opacity": 1
+              },
+              "Given_a_UCRPQ____if_its_semantics_contains_a_complex_pattern__then_any_UCRPQ_equivalent_to___must_be_complex_": {
+                "opacity": 1
+              },
+              "Complexity__a_class_of_graphs_closed_under_minors__E_g___at_most_k_atoms__or_tree_width_at_most_k_": {
+                "opacity": 1
+              },
+              "Complex_pattern_containment__there_exists_a_canonical_database_G_of___s_t____G_is_hom_minimal__amongst_canonical_databases___the_segment_graph_of_the_core_of_G_is_complex_": {
+                "opacity": 1
+              }
+            }
+          }
+        ],
+        "keywords": [
+          "Minimization is decidable",
+          "minimization crpq"
+        ],
+        "eventId": "5",
+        "originalParams": {
+          "Line_1": {
+            "opacity": 1
+          },
+          "is_2ExpSpace": {
+            "opacity": 1
+          },
+          "Minimization_is_2ExpSpace": {
+            "opacity": 1
+          },
+          "Minimization_is_2ExpSpace2": {
+            "opacity": 1
+          },
+          "Minimization_by_union___lowerbound": {
+            "opacity": 1
+          }
+        }
+      },
+      {
+        "type": "show",
+        "id": "thesis",
+        "enabled": "enabled",
+        "name": "thesis",
+        "merged": false,
+        "keywords": [
+          "Check out my thesis!!!",
+          "The seventh theorem will surprise you!",
+          "No credit card needed.",
+          "thesis"
+        ],
+        "eventId": "8"
+      }
+    ],
+    "keywords": [
+      "Minimizing Conjunctive",
+      "Regular Path Queries",
+      "Rémi Morvan · LaBRI, Bordeaux jww/ Diego Figueira & Miguel Romero",
+      "28 June 2025 FMT · Les Houches",
+      "new slide"
+    ],
+    "eventId": "root",
+    "originalParams": {
+      "Decision_problem": {
+        "opacity": 1
+      },
+      "Group_2": {
+        "opacity": 1
+      },
+      "thesis": {
+        "opacity": 1
+      }
+    }
+  },
+  "treeTimeLine": [],
+  "chronicleTimeLine": []
+}
