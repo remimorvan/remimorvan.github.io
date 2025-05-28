@@ -1,16 +1,22 @@
 [
 	{
 		"title": "Minimizing Conjunctive Regular Path Queries",
+		"coauthors": [
+			"Diego Figueira",
+			"Miguel Romero"
+		],
 		"journal": "PODS '25",
 		"year": 2025,
 		"arxiv": "https://arxiv.org/abs/2504.00612",
-		"type": "conf"
+		"type": "conf",
+		"note": "Distinguished Paper Award"
 	},
 	{
 		"title": "The Algebras for Automatic Relations",
 		"journal": "CSL '25",
 		"year": 2025,
 		"arxiv": "http://arxiv.org/abs/2404.15496",
+		"doi": "https://doi.org/10.4230/LIPIcs.CSL.2025.21",
 		"type": "conf"
 	},
 	{
@@ -22,6 +28,7 @@
 		"journalLink": "https://lmcs.episciences.org/",
 		"year": 2025,
 		"arxiv": "https://arxiv.org/abs/2212.01679",
+		"doi": "https://doi.org/10.46298/lmcs-21(1:21)2025",
 		"type": "journal"
 	},
 	{

@@ -114,7 +114,7 @@
         "name": "Related work. min° of CQs: NP-c (~ Chandra & Merlin '77) min° of tree patterns: -c (Czerwiński, Martens, Niewerth  & Parys · PODS '16 & JACM '18) min° tree-width of CRPQs: 2ExpSpace & ExpSpace-h (Barceló, Romero & Vardi · PODS '13 & SIAM '16 Figueira & M. · ICDT '23 & LMCS '25)",
         "merged": false,
         "keywords": [
-          "Related work. min° of CQs: NP-c (~ Chandra & Merlin '77) min° of tree patterns: -c (Czerwiński, Martens, Niewerth  & Parys · PODS '16 & JACM '18) min° tree-width of CRPQs: 2ExpSpace & ExpSpace-h (Barceló, Romero & Vardi · PODS '13 & SIAM '16 Figueira & M. · ICDT '23 & LMCS '25)",
+          "Related work. min° of CQs: NP-c (~ Chandra & Merlin '77) min° of tree patterns: -c (Czerwiński, Martens, Niewerth  & Parys · PODS '16 & JACM '18)",
           "Related work. min° of CQs: NP-c (~ Chandra & Merlin '77) min° of tree patterns: -c (Czerwiński, Martens, Niewerth  & Parys · PODS '16 & JACM '18) min° tree-width of CRPQs: 2ExpSpace & ExpSpace-h (Barceló, Romero & Vardi · PODS '13 & SIAM '16 Figueira & M. · ICDT '23 & LMCS '25)"
         ],
         "eventId": "6"
@@ -554,6 +554,18 @@
             "eventId": "9"
           },
           {
+            "type": "show",
+            "id": "sre",
+            "enabled": "enabled",
+            "name": "sre",
+            "merged": false,
+            "keywords": [
+              "It is -complete if restricted to CRPQs with simple regular expressions (a1 + … + an or a+).",
+              "sre"
+            ],
+            "eventId": "11"
+          },
+          {
             "type": "child",
             "name": "Proving hardness",
             "id": "Proving_hardness",
@@ -874,8 +886,22 @@
           },
           "Minimization_by_union___lowerbound": {
             "opacity": 1
+          },
+          "sre": {
+            "opacity": 1
           }
         }
+      },
+      {
+        "type": "show",
+        "id": "Related_work__min__of_CQs__NP_c____Chandra___Merlin__77__min__of_tree_patterns___c__Czerwi_ski__Martens__Niewerth___Parys___PODS__16___JACM__18__min__tree_width_of_CRPQs__2ExpSpace___ExpSpace_h__Barcel___Romero___Vardi___PODS__13___SIAM__16_Figueira___M____ICDT__23___LMCS__25_",
+        "enabled": "enabled",
+        "name": "min° tree-width of CRPQs: 2ExpSpace & ExpSpace-h (Barceló, Romero & Vardi · PODS '13 & SIAM '16 Figueira & M. · ICDT '23 & LMCS '25)",
+        "merged": false,
+        "keywords": [
+          "min° tree-width of CRPQs: 2ExpSpace & ExpSpace-h (Barceló, Romero & Vardi · PODS '13 & SIAM '16 Figueira & M. · ICDT '23 & LMCS '25)"
+        ],
+        "eventId": "9"
       },
       {
         "type": "show",
@@ -896,7 +922,7 @@
       "Minimizing Conjunctive",
       "Regular Path Queries",
       "Rémi Morvan · LaBRI, Bordeaux jww/ Diego Figueira & Miguel Romero",
-      "28 June 2025 FMT · Les Houches",
+      "28 May 2025 FMT · Les Houches",
       "new slide"
     ],
     "eventId": "root",
@@ -908,6 +934,9 @@
         "opacity": 1
       },
       "thesis": {
+        "opacity": 1
+      },
+      "Related_work__min__of_CQs__NP_c____Chandra___Merlin__77__min__of_tree_patterns___c__Czerwi_ski__Martens__Niewerth___Parys___PODS__16___JACM__18__min__tree_width_of_CRPQs__2ExpSpace___ExpSpace_h__Barcel___Romero___Vardi___PODS__13___SIAM__16_Figueira___M____ICDT__23___LMCS__25_": {
         "opacity": 1
       }
     }
