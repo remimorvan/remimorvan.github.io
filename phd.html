@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+	<title>Rémi Morvan: Ph.D. Thesis</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="author" content="Rémi Morvan">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+
+	<link rel="stylesheet" href="design.css">
+	<link rel="stylesheet" href="hamburger.css">
+</head>
+
+<body>
+
+	<canvas id='boxCanvas'></canvas>
+
+	<div id="content">
+
+		<nav id="navbar-mobile">
+			<button class="hamburger hamburger--spin" type="button">
+				<span class="hamburger-box">
+					<span class="hamburger-inner"></span>
+				</span>
+			</button>
+
+			<div id="menu-container">
+				<ul id="menu-mobile">
+					<li><a href="index.html">About</a></li>
+					<li><a href="index.html#news">News</a></li>
+					<li><a href="index.html#talks">Talks</a></li>
+					<li><a href="index.html#publi">Publications</a></li>
+					<li><a href="https://github.com/remimorvan/knowledge-clustering">Knowledge-Clustering</a></li>
+					<li><a href="phd.html">Ph.D. Thesis</a></li>
+					<li><a href="teaching.html">Teaching (fr)</a></li>
+				</ul>
+			</div>
+		</nav>
+
+		<div id="relative-wrap-aside">
+			<aside>
+				<div id="header">
+					<div id="avatar"></div>
+					<div id="fake-avatar"></div>
+					<h1>Rémi Morvan</h1>
+				</div>
+
+				<nav>
+					<ul>
+						<li><a href="index.html">About</a></li>
+						<li><a href="index.html#news">News</a></li>
+						<li><a href="index.html#talks">Talks</a></li>
+						<li><a href="index.html#publi">Publications</a></li>
+						<li><a href="https://github.com/remimorvan/knowledge-clustering">Knowledge-Clustering</a></li>
+						<li><a href="phd.html">Ph.D. Thesis</a></li>
+						<li><a href="teaching.html">Teaching (fr)</a></li>
+					</ul>
+				</nav>
+
+				<div id="footer">
+					<p class="contact"><b>Contact:</b> <span class="mail"><u>x</u>@u-bordeaux.fr</span>
+						where <u>x</u> = remi.morvan</p>
+					<p class="copyright">
+						Licensed under <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.
+					</p>
+				</div>
+			</aside>
+		</div>
+
+		<main>
+
+			<header>
+				<img src="img/photo.jpg" width="120" height="120" alt="Photo of Rémi Morvan">
+				<div>
+					<h1>Rémi Morvan</h1>
+					<p><b>Contact:</b> <span class="mail"><u>x</u>@u-bordeaux.fr</span>
+						where <u>x</u> = remi.morvan</p>
+				</div>
+			</header>
+
+			<section>
+				<article id="thesis">
+					<h2>Ph.D. Thesis</h2>
+					<p>My thesis is entitled <b><i>Homomorphism Problems in Graph Databases and Automatic Structures</i></b> and was supervised by
+						<a class="kl">Diego Figueira</a> and <a class="kl">Nathanaël Fijalkow</a>.
+						You can <b class="important"><a href="thesis/thesis-morvan-2025-05-22.pdf">download the latest version here</a></b> (2025-05-22).
+					</p>
+					<p>
+						<i>Abstract.</i>
+						This thesis investigates the central role of homomorphism problems—structure-preserving
+						maps—in two complementary domains: database querying over finite, graph-shaped data,
+						and constraint solving over (potentially infinite) structures.
+						Building on the well-known equivalence between conjunctive query evaluation and homo-
+						morphism existence, the first part focuses on conjunctive regular path queries, a standard
+						extension of conjunctive queries that incorporates regular-path predicates. We study the
+						fundamental problem of query minimization under two measures: the number of atoms
+						(constraints) and the tree-width of the query graph. In both cases, we prove the problem to
+						be decidable, and provide efficient algorithms for a large fragment of queries used in practice.
+						The second part of the thesis lifts homomorphism problems to automatic structures, which
+						are infinite structures describable by finite automata. We highlight a dichotomy, between
+						homomorphism problems over automatic structures that are decidable in non-deterministic
+						logarithmic space, and those that are undecidable—proving to be the more common case.
+						In contrast to this prevalence of undecidability, we then focus on the language-theoretic
+						properties of these structures, and show, relying on a novel algebraic language theory, that for
+						any well-behaved logic (a pseudovariety), whether an automatic structure can be described
+						in this logic is decidable.
+					</p>
+					<p><i>Composition of the jury.</i>
+					<ul>
+						<li><b>Mikołaj Bojańczyk</b> (Uniwersytet Warszawski): reviewer & examiner</li>
+						<li><b>Wim Martens</b> (Universität Bayreuth): reviewer & examiner</li>
+						<li><b>Antoine Amarilli</b> (Inria, Lille): examiner</li>
+						<li><b>Balder ten Cate</b> (Universiteit van Amsterdam): examiner</li>
+						<li><b>Bartek Klin</b> (University of Oxford): examiner</li>
+						<li><b>Anca Muscholl</b> (Université de Bordeaux): examiner</li>
+						<li><b>Sophie Tison</b> (Université de Lille): examiner</li>
+						<li><b>Diego Figueira</b> (CNRS, Bordeaux): supervisor</li>
+						<li><b>Nathanaël Fijalkow</b> (CNRS, Bordeaux): co-supervisor</li>
+					</ul>
+					</p>
+				</article>
+
+				<article id="defence">
+					<h2>Defence</h2>
+					<p>
+						My defence will take place on <b>Thursday, 3rd July 2025</b>
+						in LaBRI's amphitheatre (Bâtiment A27, Domaine universitaire, 351 cours de la Libération, 33405 Talence).
+					</p>
+					<p>
+						You can assist to the defence online via the following <b>Zoom link</b>:
+						todo.
+					</p>
+					<p>
+						<b>Tentative program for the day:</b>
+					<ul>
+						<li>
+							14:00 – 14:45: Defence (presentation).
+						</li>
+						<li>
+							14:45 – <i>16:00</i>: Defence (questions).
+						</li>
+						<li>
+							<i>16:00 – 17:00</i>:
+							Jury deliberation.
+						</li>
+						<li>
+							<i>17:00 – 18:30:</i>
+							Food & drinks in LaBRI's atrium (first floor).
+						</li>
+						<li>
+							from 19:00: TBD (probably a bar or "apéro" on the riverside).
+						</li>
+					</ul>
+					The timestamps in italics are vague estimations
+					and will depend on the jury.
+					</p>
+				</article>
+			</section>
+
+			<footer class="copyright">
+				<p>
+					Licensed under <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.
+				</p>
+			</footer>
+		</main>
+
+	</div>
+
+	<script src="script/menu.js"></script>
+	<script src="script/boxes.js"></script>
+
+	<script type="module" src="script/kl.js"></script>
+</body>
+
+</html>
