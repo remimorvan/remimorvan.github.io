@@ -24,7 +24,8 @@
     "hom_on_automatic": "hom_on_automatic",
     "apart_": "apart_",
     "dichotomy_automatic": "dichotomy_automatic",
-    "open_question": "open_question"
+    "open_question": "open_question",
+    "crpq_global_slide": "crpq_global_slide"
   },
   "tree": {
     "type": "child",
@@ -1402,504 +1403,537 @@
         "eventId": "99"
       },
       {
-        "type": "show",
-        "id": "Contribution_1___w__Figueira___Romero__A_2ExpSpace_algorithm_for_deciding_if_a_CRPQ_is_equivalent_to_a_CRPQ_of_at_most_k_atoms_",
-        "enabled": "enabled",
-        "name": "Contribution 1. (w/ Figueira & Romero) A 2ExpSpace algorithm for deciding if a CRPQ is equivalent to a CRPQ of at most k atoms.",
-        "merged": false,
-        "keywords": [
-          "Contribution 1. (w/ Figueira & Romero) A 2ExpSpace algorithm for deciding if a CRPQ is equivalent to a CRPQ of at most k atoms."
-        ],
-        "eventId": "76"
-      },
-      {
         "type": "child",
-        "name": "contr 1",
-        "id": "contr_1",
+        "name": "crpq global slide",
+        "id": "crpq_global_slide",
         "enabled": "enabled",
         "merged": false,
         "children": [
           {
             "type": "show",
-            "id": "Decision_problem",
+            "id": "Contribution_1___w__Figueira___Romero__A_2ExpSpace_algorithm_for_deciding_if_a_CRPQ_is_equivalent_to_a_CRPQ_of_at_most_k_atoms_",
             "enabled": "enabled",
-            "name": "Decision problem",
+            "name": "Contribution 1. (w/ Figueira & Romero) A 2ExpSpace algorithm for deciding if a CRPQ is equivalent to a CRPQ of at most k atoms.",
             "merged": false,
             "keywords": [
-              "Minimization problem",
-              "Input: a CRPQ γ, and k ≥ 1, Question: is there δ ≡ γ with less than k atoms?",
-              "Decision problem"
+              "Contribution 1. (w/ Figueira & Romero) A 2ExpSpace algorithm for deciding if a CRPQ is equivalent to a CRPQ of at most k atoms."
             ],
             "eventId": "1"
           },
           {
-            "type": "show",
-            "id": "why_",
-            "enabled": "enabled",
-            "name": "why?",
-            "merged": false,
-            "keywords": [
-              "why?"
-            ],
-            "eventId": "2"
-          },
-          {
-            "type": "show",
-            "id": "Eval",
-            "enabled": "enabled",
-            "name": "Eval",
-            "merged": false,
-            "keywords": [
-              "Evaluation of a CRPQ with k atoms:",
-              "database size",
-              "Eval"
-            ],
-            "eventId": "3"
-          },
-          {
             "type": "child",
-            "name": "proof contr 1",
-            "id": "proof_contr_1",
+            "name": "contr 1",
+            "id": "contr_1",
             "enabled": "enabled",
             "merged": false,
             "children": [
               {
                 "type": "show",
-                "id": "Lemma_",
+                "id": "Decision_problem",
                 "enabled": "enabled",
-                "name": "Lemma.",
+                "name": "Decision problem",
                 "merged": false,
                 "keywords": [
-                  "Lemma."
+                  "Minimization problem",
+                  "Input: a CRPQ γ, and k ≥ 1, Question: is there δ ≡ γ with less than k atoms?",
+                  "Decision problem"
                 ],
                 "eventId": "1"
               },
               {
                 "type": "show",
-                "id": "input_CRPQ",
+                "id": "why_",
                 "enabled": "enabled",
-                "name": "input CRPQ",
-                "merged": true,
+                "name": "why?",
+                "merged": false,
                 "keywords": [
-                  "a",
-                  "b",
-                  "(ac)+",
-                  "b+",
-                  "c",
-                  "(a+b)+",
-                  "(cc)+",
-                  "aaa+",
-                  "b(bb)*",
-                  "size of automata ≤ m",
-                  "input CRPQ"
+                  "why?"
                 ],
                 "eventId": "2"
               },
               {
                 "type": "show",
-                "id": "input_of_miz__problem",
+                "id": "Eval",
                 "enabled": "enabled",
-                "name": "input of miz° problem",
-                "merged": true,
+                "name": "Eval",
+                "merged": false,
                 "keywords": [
-                  "input of miz° problem"
+                  "Evaluation of a CRPQ with k atoms:",
+                  "database size",
+                  "Eval"
+                ],
+                "eventId": "3"
+              },
+              {
+                "type": "child",
+                "name": "proof contr 1",
+                "id": "proof_contr_1",
+                "enabled": "enabled",
+                "merged": false,
+                "children": [
+                  {
+                    "type": "show",
+                    "id": "Lemma_",
+                    "enabled": "enabled",
+                    "name": "Lemma.",
+                    "merged": false,
+                    "keywords": [
+                      "Lemma."
+                    ],
+                    "eventId": "1"
+                  },
+                  {
+                    "type": "show",
+                    "id": "input_CRPQ",
+                    "enabled": "enabled",
+                    "name": "input CRPQ",
+                    "merged": true,
+                    "keywords": [
+                      "a",
+                      "b",
+                      "(ac)+",
+                      "b+",
+                      "c",
+                      "(a+b)+",
+                      "(cc)+",
+                      "aaa+",
+                      "b(bb)*",
+                      "size of automata ≤ m",
+                      "input CRPQ"
+                    ],
+                    "eventId": "2"
+                  },
+                  {
+                    "type": "show",
+                    "id": "input_of_miz__problem",
+                    "enabled": "enabled",
+                    "name": "input of miz° problem",
+                    "merged": true,
+                    "keywords": [
+                      "input of miz° problem"
+                    ],
+                    "eventId": "3"
+                  },
+                  {
+                    "type": "show",
+                    "id": "if_it_is_equivalent_to2",
+                    "enabled": "enabled",
+                    "name": "if it is equivalent to",
+                    "merged": false,
+                    "keywords": [
+                      "if it is equivalent to"
+                    ],
+                    "eventId": "4"
+                  },
+                  {
+                    "type": "show",
+                    "id": "witness",
+                    "enabled": "enabled",
+                    "name": "witness",
+                    "merged": true,
+                    "keywords": [
+                      "nb. of atoms ≤ k",
+                      "L1",
+                      "L0",
+                      "L2",
+                      "L3",
+                      "witness"
+                    ],
+                    "eventId": "5"
+                  },
+                  {
+                    "type": "show",
+                    "id": "positive_witness",
+                    "enabled": "enabled",
+                    "name": "positive witness",
+                    "merged": true,
+                    "keywords": [
+                      "positive witness"
+                    ],
+                    "eventId": "6"
+                  },
+                  {
+                    "type": "show",
+                    "id": "if_it_is_equivalent_to",
+                    "enabled": "enabled",
+                    "name": "if it is equivalent to",
+                    "merged": true,
+                    "keywords": [
+                      "if it is equivalent to"
+                    ],
+                    "eventId": "7"
+                  },
+                  {
+                    "type": "show",
+                    "id": "__then_it_is_equivalent_to",
+                    "enabled": "enabled",
+                    "name": "… then it is equivalent to",
+                    "merged": false,
+                    "keywords": [
+                      "… then it is equivalent to"
+                    ],
+                    "eventId": "8"
+                  },
+                  {
+                    "type": "show",
+                    "id": "small_witness",
+                    "enabled": "enabled",
+                    "name": "small witness",
+                    "merged": false,
+                    "keywords": [
+                      "size of automata ≤ f(m)",
+                      "nb. of atoms ≤ k",
+                      "K1",
+                      "K0",
+                      "K2",
+                      "K3",
+                      "small witness"
+                    ],
+                    "eventId": "9"
+                  },
+                  {
+                    "type": "show",
+                    "id": "small_positive_witness",
+                    "enabled": "enabled",
+                    "name": "small positive witness",
+                    "merged": false,
+                    "keywords": [
+                      "small positive witness"
+                    ],
+                    "eventId": "10"
+                  }
+                ],
+                "keywords": [
+                  "Proof idea: small model property (there are finitely many candidates).",
+                  "proof contr 1"
+                ],
+                "eventId": "4",
+                "originalParams": {
+                  "Lemma_": {
+                    "opacity": 1
+                  },
+                  "input_CRPQ": {
+                    "opacity": 1
+                  },
+                  "input_of_miz__problem": {
+                    "opacity": 1
+                  },
+                  "if_it_is_equivalent_to2": {
+                    "opacity": 1
+                  },
+                  "witness": {
+                    "opacity": 1
+                  },
+                  "positive_witness": {
+                    "opacity": 1
+                  },
+                  "if_it_is_equivalent_to": {
+                    "opacity": 1
+                  },
+                  "__then_it_is_equivalent_to": {
+                    "opacity": 1
+                  },
+                  "small_witness": {
+                    "opacity": 1
+                  },
+                  "small_positive_witness": {
+                    "opacity": 1
+                  }
+                }
+              }
+            ],
+            "keywords": [
+              "contr 1"
+            ],
+            "eventId": "2",
+            "originalParams": {
+              "Decision_problem": {
+                "opacity": 1
+              },
+              "why_": {
+                "opacity": 1
+              },
+              "Eval": {
+                "opacity": 1
+              }
+            }
+          },
+          {
+            "type": "child",
+            "name": "contre-ex union",
+            "id": "contre_ex_union",
+            "enabled": "enabled",
+            "merged": false,
+            "children": [
+              {
+                "type": "show",
+                "id": "LHS",
+                "enabled": "enabled",
+                "name": "LHS",
+                "merged": false,
+                "keywords": [
+                  "x",
+                  "y",
+                  "z",
+                  "a",
+                  "b+",
+                  "a(bb)+",
+                  "ab(bb)*",
+                  "!",
+                  "LHS"
+                ],
+                "eventId": "1"
+              },
+              {
+                "type": "show",
+                "id": "is_not_equivalent_to_any_CRPQ_with_any_at_most_4_atoms",
+                "enabled": "enabled",
+                "name": "is not equivalent to any CRPQ with any at most 4 atoms",
+                "merged": false,
+                "keywords": [
+                  "is not equivalent to any CRPQ with any at most 4 atoms"
+                ],
+                "eventId": "2"
+              },
+              {
+                "type": "show",
+                "id": "is_equivalent_to",
+                "enabled": "enabled",
+                "name": "is equivalent to",
+                "merged": false,
+                "keywords": [
+                  "is equivalent to"
                 ],
                 "eventId": "3"
               },
               {
                 "type": "show",
-                "id": "if_it_is_equivalent_to2",
+                "id": "RHS",
                 "enabled": "enabled",
-                "name": "if it is equivalent to",
+                "name": "RHS",
                 "merged": false,
                 "keywords": [
-                  "if it is equivalent to"
+                  "x",
+                  "y",
+                  "z",
+                  "a",
+                  "ab(bb)*",
+                  "!",
+                  "(bb)+",
+                  "a(bb)+",
+                  "b(bb)*",
+                  "union",
+                  "RHS"
                 ],
                 "eventId": "4"
-              },
-              {
-                "type": "show",
-                "id": "witness",
-                "enabled": "enabled",
-                "name": "witness",
-                "merged": true,
-                "keywords": [
-                  "nb. of atoms ≤ k",
-                  "L1",
-                  "L0",
-                  "L2",
-                  "L3",
-                  "witness"
-                ],
-                "eventId": "5"
-              },
-              {
-                "type": "show",
-                "id": "positive_witness",
-                "enabled": "enabled",
-                "name": "positive witness",
-                "merged": true,
-                "keywords": [
-                  "positive witness"
-                ],
-                "eventId": "6"
-              },
-              {
-                "type": "show",
-                "id": "if_it_is_equivalent_to",
-                "enabled": "enabled",
-                "name": "if it is equivalent to",
-                "merged": true,
-                "keywords": [
-                  "if it is equivalent to"
-                ],
-                "eventId": "7"
-              },
-              {
-                "type": "show",
-                "id": "__then_it_is_equivalent_to",
-                "enabled": "enabled",
-                "name": "… then it is equivalent to",
-                "merged": false,
-                "keywords": [
-                  "… then it is equivalent to"
-                ],
-                "eventId": "8"
-              },
-              {
-                "type": "show",
-                "id": "small_witness",
-                "enabled": "enabled",
-                "name": "small witness",
-                "merged": false,
-                "keywords": [
-                  "size of automata ≤ f(m)",
-                  "nb. of atoms ≤ k",
-                  "K1",
-                  "K0",
-                  "K2",
-                  "K3",
-                  "small witness"
-                ],
-                "eventId": "9"
-              },
-              {
-                "type": "show",
-                "id": "small_positive_witness",
-                "enabled": "enabled",
-                "name": "small positive witness",
-                "merged": false,
-                "keywords": [
-                  "small positive witness"
-                ],
-                "eventId": "10"
               }
             ],
             "keywords": [
-              "Proof idea: small model property (there are finitely many candidates).",
-              "proof contr 1"
+              "an interesting example…",
+              "contre-ex union"
             ],
-            "eventId": "4",
+            "eventId": "3",
             "originalParams": {
-              "Lemma_": {
+              "LHS": {
                 "opacity": 1
               },
-              "input_CRPQ": {
+              "is_not_equivalent_to_any_CRPQ_with_any_at_most_4_atoms": {
                 "opacity": 1
               },
-              "input_of_miz__problem": {
+              "is_equivalent_to": {
                 "opacity": 1
               },
-              "if_it_is_equivalent_to2": {
-                "opacity": 1
-              },
-              "witness": {
-                "opacity": 1
-              },
-              "positive_witness": {
-                "opacity": 1
-              },
-              "if_it_is_equivalent_to": {
-                "opacity": 1
-              },
-              "__then_it_is_equivalent_to": {
-                "opacity": 1
-              },
-              "small_witness": {
-                "opacity": 1
-              },
-              "small_positive_witness": {
+              "RHS": {
                 "opacity": 1
               }
             }
-          }
-        ],
-        "keywords": [
-          "contr 1"
-        ],
-        "eventId": "84",
-        "originalParams": {
-          "Decision_problem": {
-            "opacity": 1
           },
-          "why_": {
-            "opacity": 1
-          },
-          "Eval": {
-            "opacity": 1
-          }
-        }
-      },
-      {
-        "type": "child",
-        "name": "contre-ex union",
-        "id": "contre_ex_union",
-        "enabled": "enabled",
-        "merged": false,
-        "children": [
           {
             "type": "show",
-            "id": "LHS",
+            "id": "Contribution_2___w__Figueira___Romero__An_ExpSpace_algorithm_for_deciding_if_a_CRPQ_is_equivalent_to_a_finite_union_of_CRPQ_of_at_most_k_atoms_",
             "enabled": "enabled",
-            "name": "LHS",
+            "name": "Contribution 2. (w/ Figueira & Romero) An ExpSpace algorithm for deciding if a CRPQ is equivalent to a finite union of CRPQ of at most k atoms.",
             "merged": false,
             "keywords": [
-              "x",
-              "y",
-              "z",
-              "a",
-              "b+",
-              "a(bb)+",
-              "ab(bb)*",
-              "!",
-              "LHS"
-            ],
-            "eventId": "1"
-          },
-          {
-            "type": "show",
-            "id": "is_not_equivalent_to_any_CRPQ_with_any_at_most_4_atoms",
-            "enabled": "enabled",
-            "name": "is not equivalent to any CRPQ with any at most 4 atoms",
-            "merged": false,
-            "keywords": [
-              "is not equivalent to any CRPQ with any at most 4 atoms"
-            ],
-            "eventId": "2"
-          },
-          {
-            "type": "show",
-            "id": "is_equivalent_to",
-            "enabled": "enabled",
-            "name": "is equivalent to",
-            "merged": false,
-            "keywords": [
-              "is equivalent to"
-            ],
-            "eventId": "3"
-          },
-          {
-            "type": "show",
-            "id": "RHS",
-            "enabled": "enabled",
-            "name": "RHS",
-            "merged": false,
-            "keywords": [
-              "x",
-              "y",
-              "z",
-              "a",
-              "ab(bb)*",
-              "!",
-              "(bb)+",
-              "a(bb)+",
-              "b(bb)*",
-              "union",
-              "RHS"
-            ],
-            "eventId": "4"
-          }
-        ],
-        "keywords": [
-          "an interesting example…",
-          "contre-ex union"
-        ],
-        "eventId": "77",
-        "originalParams": {
-          "LHS": {
-            "opacity": 1
-          },
-          "is_not_equivalent_to_any_CRPQ_with_any_at_most_4_atoms": {
-            "opacity": 1
-          },
-          "is_equivalent_to": {
-            "opacity": 1
-          },
-          "RHS": {
-            "opacity": 1
-          }
-        }
-      },
-      {
-        "type": "show",
-        "id": "Contribution_2___w__Figueira___Romero__An_ExpSpace_algorithm_for_deciding_if_a_CRPQ_is_equivalent_to_a_finite_union_of_CRPQ_of_at_most_k_atoms_",
-        "enabled": "enabled",
-        "name": "Contribution 2. (w/ Figueira & Romero) An ExpSpace algorithm for deciding if a CRPQ is equivalent to a finite union of CRPQ of at most k atoms.",
-        "merged": false,
-        "keywords": [
-          "Contribution 2. (w/ Figueira & Romero) An ExpSpace algorithm for deciding if a CRPQ is equivalent to a finite union of CRPQ of at most k atoms."
-        ],
-        "eventId": "78"
-      },
-      {
-        "type": "show",
-        "id": "Contribution_3___w__Figueira__An_2ExpSpace_algorithm_for_deciding_if_a_CRPQ_is_equivalent_to_a_finite_union_of_CRPQ_of_tree_width__resp__path_width__at_most_k_",
-        "enabled": "enabled",
-        "name": "Contribution 3. (w/ Figueira) An 2ExpSpace algorithm for deciding if a CRPQ is equivalent to a finite union of CRPQ of tree-width (resp. path-width) at most k.",
-        "merged": false,
-        "keywords": [
-          "Contribution 3. (w/ Figueira) An 2ExpSpace algorithm for deciding if a CRPQ is equivalent to a finite union of CRPQ of tree-width (resp. path-width) at most k."
-        ],
-        "eventId": "79"
-      },
-      {
-        "type": "show",
-        "id": "Text",
-        "enabled": "enabled",
-        "name": "(Proven for k=1 by Barceló, Romero & Vardi.)",
-        "merged": true,
-        "keywords": [
-          "(Proven for k=1 by Barceló, Romero & Vardi.)"
-        ],
-        "eventId": "106"
-      },
-      {
-        "type": "child",
-        "name": "maximal under-approximation",
-        "id": "maximal_under_approximation",
-        "enabled": "enabled",
-        "merged": false,
-        "children": [
-          {
-            "type": "show",
-            "id": "Group_102",
-            "enabled": "enabled",
-            "name": "underapprox.",
-            "merged": false,
-            "keywords": [
-              "k atoms",
-              "underapprox.",
-              "maximal"
-            ],
-            "eventId": "1"
-          },
-          {
-            "type": "show",
-            "id": "3_items",
-            "enabled": "enabled",
-            "name": "3 items",
-            "merged": true,
-            "keywords": [
-              "3 items"
-            ],
-            "eventId": "2"
-          },
-          {
-            "type": "show",
-            "id": "gamma",
-            "enabled": "enabled",
-            "name": "gamma",
-            "merged": false,
-            "keywords": [
-              "γ",
-              "gamma"
-            ],
-            "eventId": "3"
-          },
-          {
-            "type": "show",
-            "id": "under_approx",
-            "enabled": "enabled",
-            "name": "under approx",
-            "merged": false,
-            "keywords": [
-              "maximal under-app°",
-              "under approx"
+              "Contribution 2. (w/ Figueira & Romero) An ExpSpace algorithm for deciding if a CRPQ is equivalent to a finite union of CRPQ of at most k atoms."
             ],
             "eventId": "4"
           },
           {
             "type": "show",
-            "id": "subquery",
+            "id": "Contribution_3___w__Figueira__An_2ExpSpace_algorithm_for_deciding_if_a_CRPQ_is_equivalent_to_a_finite_union_of_CRPQ_of_tree_width__resp__path_width__at_most_k_",
             "enabled": "enabled",
-            "name": "subquery",
+            "name": "Contribution 3. (w/ Figueira) An 2ExpSpace algorithm for deciding if a CRPQ is equivalent to a finite union of CRPQ of tree-width (resp. path-width) at most k.",
             "merged": false,
             "keywords": [
-              "δ ⊆ γ w/ ≤ k atoms",
-              "subquery"
+              "Contribution 3. (w/ Figueira) An 2ExpSpace algorithm for deciding if a CRPQ is equivalent to a finite union of CRPQ of tree-width (resp. path-width) at most k."
             ],
             "eventId": "5"
           },
           {
             "type": "show",
-            "id": "Thm__Every_CRPQ___has_a_maximal_under_approximation_by_finite_unions_of_CRPQs_with_at_most_k_atoms_2",
+            "id": "Text",
             "enabled": "enabled",
-            "name": "Thm. Every CRPQ γ has a maximal under-approximation by finite unions of CRPQs with at most k atoms.",
-            "merged": false,
+            "name": "(Proven for k=1 by Barceló, Romero & Vardi.)",
+            "merged": true,
             "keywords": [
-              "Thm. Every CRPQ γ has a maximal under-approximation by finite unions of CRPQs with at most k atoms."
+              "(Proven for k=1 by Barceló, Romero & Vardi.)"
             ],
             "eventId": "6"
+          },
+          {
+            "type": "child",
+            "name": "maximal under-approximation",
+            "id": "maximal_under_approximation",
+            "enabled": "enabled",
+            "merged": false,
+            "children": [
+              {
+                "type": "show",
+                "id": "Group_102",
+                "enabled": "enabled",
+                "name": "underapprox.",
+                "merged": false,
+                "keywords": [
+                  "k atoms",
+                  "underapprox.",
+                  "maximal"
+                ],
+                "eventId": "1"
+              },
+              {
+                "type": "show",
+                "id": "3_items",
+                "enabled": "enabled",
+                "name": "3 items",
+                "merged": true,
+                "keywords": [
+                  "3 items"
+                ],
+                "eventId": "2"
+              },
+              {
+                "type": "show",
+                "id": "gamma",
+                "enabled": "enabled",
+                "name": "gamma",
+                "merged": false,
+                "keywords": [
+                  "γ",
+                  "gamma"
+                ],
+                "eventId": "3"
+              },
+              {
+                "type": "show",
+                "id": "under_approx",
+                "enabled": "enabled",
+                "name": "under approx",
+                "merged": false,
+                "keywords": [
+                  "maximal under-app°",
+                  "under approx"
+                ],
+                "eventId": "4"
+              },
+              {
+                "type": "show",
+                "id": "subquery",
+                "enabled": "enabled",
+                "name": "subquery",
+                "merged": false,
+                "keywords": [
+                  "δ ⊆ γ w/ ≤ k atoms",
+                  "subquery"
+                ],
+                "eventId": "5"
+              },
+              {
+                "type": "show",
+                "id": "Thm__Every_CRPQ___has_a_maximal_under_approximation_by_finite_unions_of_CRPQs_with_at_most_k_atoms_2",
+                "enabled": "enabled",
+                "name": "Thm. Every CRPQ γ has a maximal under-approximation by finite unions of CRPQs with at most k atoms.",
+                "merged": false,
+                "keywords": [
+                  "Thm. Every CRPQ γ has a maximal under-approximation by finite unions of CRPQs with at most k atoms."
+                ],
+                "eventId": "6"
+              }
+            ],
+            "keywords": [
+              "Thm. Every CRPQ γ has a maximal under-approximation by finite unions of CRPQs with at most k atoms.",
+              "maximal under-approximation"
+            ],
+            "eventId": "7",
+            "originalParams": {
+              "Group_102": {
+                "opacity": 1
+              },
+              "3_items": {
+                "opacity": 1
+              },
+              "gamma": {
+                "opacity": 1
+              },
+              "under_approx": {
+                "opacity": 1
+              },
+              "subquery": {
+                "opacity": 1
+              },
+              "Thm__Every_CRPQ___has_a_maximal_under_approximation_by_finite_unions_of_CRPQs_with_at_most_k_atoms_2": {
+                "opacity": 1
+              }
+            }
+          },
+          {
+            "type": "show",
+            "id": "Group_6",
+            "enabled": "enabled",
+            "name": "Contribution 4",
+            "merged": false,
+            "keywords": [
+              "Contribution 4. (w/ Figueira & Romero) Efficient ( ) algorithms for CRPQs over languages of the form a, a*.",
+              "Contribution 4"
+            ],
+            "eventId": "8"
+          },
+          {
+            "type": "show",
+            "id": "Contribution_4__Semantical_Structure_Theorem____w__Figueira___Romero__A_2ExpSpace_algorithm_for_deciding_if_a_CRPQ_is_equivalent_to_a_CRPQ_of_at_most_k_atoms_",
+            "enabled": "enabled",
+            "name": "Contribution 5 “Semantical Structure Theorem”. (w/ Figueira & Romero) Sufficient condition to prove hardness results.",
+            "merged": false,
+            "keywords": [
+              "Contribution 5 “Semantical Structure Theorem”. (w/ Figueira & Romero) Sufficient condition to prove hardness results."
+            ],
+            "eventId": "9"
           }
         ],
         "keywords": [
-          "Thm. Every CRPQ γ has a maximal under-approximation by finite unions of CRPQs with at most k atoms.",
-          "maximal under-approximation"
+          "crpq global slide"
         ],
-        "eventId": "80",
+        "eventId": "108",
         "originalParams": {
-          "Group_102": {
+          "Contribution_1___w__Figueira___Romero__A_2ExpSpace_algorithm_for_deciding_if_a_CRPQ_is_equivalent_to_a_CRPQ_of_at_most_k_atoms_": {
             "opacity": 1
           },
-          "3_items": {
+          "Contribution_2___w__Figueira___Romero__An_ExpSpace_algorithm_for_deciding_if_a_CRPQ_is_equivalent_to_a_finite_union_of_CRPQ_of_at_most_k_atoms_": {
             "opacity": 1
           },
-          "gamma": {
+          "Contribution_3___w__Figueira__An_2ExpSpace_algorithm_for_deciding_if_a_CRPQ_is_equivalent_to_a_finite_union_of_CRPQ_of_tree_width__resp__path_width__at_most_k_": {
             "opacity": 1
           },
-          "under_approx": {
+          "Text": {
             "opacity": 1
           },
-          "subquery": {
+          "Group_6": {
             "opacity": 1
           },
-          "Thm__Every_CRPQ___has_a_maximal_under_approximation_by_finite_unions_of_CRPQs_with_at_most_k_atoms_2": {
+          "Contribution_4__Semantical_Structure_Theorem____w__Figueira___Romero__A_2ExpSpace_algorithm_for_deciding_if_a_CRPQ_is_equivalent_to_a_CRPQ_of_at_most_k_atoms_": {
             "opacity": 1
           }
         }
-      },
-      {
-        "type": "show",
-        "id": "Group_6",
-        "enabled": "enabled",
-        "name": "Contribution 4",
-        "merged": false,
-        "keywords": [
-          "Contribution 4. (w/ Figueira & Romero) Efficient ( ) algorithms for CRPQs over languages of the form a, a*.",
-          "Contribution 4"
-        ],
-        "eventId": "100"
-      },
-      {
-        "type": "show",
-        "id": "Contribution_4__Semantical_Structure_Theorem____w__Figueira___Romero__A_2ExpSpace_algorithm_for_deciding_if_a_CRPQ_is_equivalent_to_a_CRPQ_of_at_most_k_atoms_",
-        "enabled": "enabled",
-        "name": "Contribution 5 “Semantical Structure Theorem”. (w/ Figueira & Romero) Sufficient condition to prove hardness results.",
-        "merged": false,
-        "keywords": [
-          "Contribution 5 “Semantical Structure Theorem”. (w/ Figueira & Romero) Sufficient condition to prove hardness results."
-        ],
-        "eventId": "101"
       },
       {
         "type": "show",
@@ -1908,7 +1942,7 @@
         "name": "Solution",
         "merged": false,
         "keywords": [
-          "We designed algorithm for optimizing CRPQs wrt. the most relevant parameters.",
+          "We designed algorithms for optimizing CRPQs wrt. the most relevant parameters.",
           "Solution"
         ],
         "eventId": "102"
@@ -2718,15 +2752,6 @@
       "Goal__Optimize_queries_": {
         "opacity": 1
       },
-      "Contribution_1___w__Figueira___Romero__A_2ExpSpace_algorithm_for_deciding_if_a_CRPQ_is_equivalent_to_a_CRPQ_of_at_most_k_atoms_": {
-        "opacity": 1
-      },
-      "Contribution_2___w__Figueira___Romero__An_ExpSpace_algorithm_for_deciding_if_a_CRPQ_is_equivalent_to_a_finite_union_of_CRPQ_of_at_most_k_atoms_": {
-        "opacity": 1
-      },
-      "Contribution_3___w__Figueira__An_2ExpSpace_algorithm_for_deciding_if_a_CRPQ_is_equivalent_to_a_finite_union_of_CRPQ_of_tree_width__resp__path_width__at_most_k_": {
-        "opacity": 1
-      },
       "Group_62": {
         "opacity": 1
       },
@@ -2744,9 +2769,6 @@
       "Problem": {
         "opacity": 1
       },
-      "Group_6": {
-        "opacity": 1
-      },
       "Contribution_4__Semantical_Structure_Theorem____w__Figueira___Romero__A_2ExpSpace_algorithm_for_deciding_if_a_CRPQ_is_equivalent_to_a_CRPQ_of_at_most_k_atoms_": {
         "opacity": 1
       },
@@ -2757,9 +2779,6 @@
         "opacity": 1
       },
       "Question": {
-        "opacity": 1
-      },
-      "Text": {
         "opacity": 1
       }
     }
