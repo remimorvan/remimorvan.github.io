@@ -1,5 +1,14 @@
 [
 	{
+		"title": "Homomorphisms Problems in Graph Databases and Automatic Structures",
+		"date": "03/07/2025",
+		"event": "PhD Defence",
+		"eventLink": "/phd.html",
+		"where": "Bordeaux",
+		"duration": "45min",
+		"slides": "slides/2025-phd-defence"
+	},
+	{
 		"title": "Minimizing Conjunctive Regular Path Queries",
 		"date": "28/05/2025",
 		"event": "Finite Model Theory",
