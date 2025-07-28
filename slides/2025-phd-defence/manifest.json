@@ -1790,19 +1790,6 @@
             "children": [
               {
                 "type": "show",
-                "id": "Group_102",
-                "enabled": "enabled",
-                "name": "underapprox.",
-                "merged": false,
-                "keywords": [
-                  "k atoms",
-                  "underapprox.",
-                  "maximal"
-                ],
-                "eventId": "1"
-              },
-              {
-                "type": "show",
                 "id": "3_items",
                 "enabled": "enabled",
                 "name": "3 items",
@@ -2396,7 +2383,7 @@
             "name": "Thm Kocher",
             "merged": false,
             "keywords": [
-              "Thm. (Köcher ‘14) The -colourability problem is undecidable for each .",
+              "Thm. (Köcher ‘14) The k-colourability problem is undecidable for each k ≥ 2.",
               "Thm Kocher"
             ],
             "eventId": "2"
@@ -2465,7 +2452,7 @@
                 "name": "k-prod undec",
                 "merged": false,
                 "keywords": [
-                  "Coro. Aut/ -Prod separability is undecidable.",
+                  "Coro. Aut/k-Prod separability is undecidable.",
                   "= union of k products of reg. lang.",
                   "k-prod undec"
                 ],
