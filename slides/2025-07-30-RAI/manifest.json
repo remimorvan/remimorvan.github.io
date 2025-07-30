@@ -1,0 +1,2675 @@
+{
+  "version": 3.1,
+  "presentation": "2025-07-30-RAI",
+  "slideDict": {
+    "new_slide": "new_slide",
+    "homomorphisms": "homomorphisms",
+    "phylogenetic_tree": "phylogenetic_tree",
+    "graph_database": "graph_database",
+    "database_goal": "database_goal",
+    "database_as_hom": "database_as_hom",
+    "optimizing_cq": "optimizing_cq",
+    "query_for_graph_databases": "query_for_graph_databases",
+    "crpq_global_slide": "crpq_global_slide",
+    "contr_1": "contr_1",
+    "proof_contr_1": "proof_contr_1",
+    "contre_ex_union": "contre_ex_union",
+    "maximal_under_approximation": "maximal_under_approximation",
+    "logic_programming_concept": "logic_programming_concept",
+    "logic_programming_as_hom": "logic_programming_as_hom",
+    "zoom_back_database_as_hom": "zoom_back_database_as_hom",
+    "dichotomy_theorem": "dichotomy_theorem",
+    "automatic_structures": "automatic_structures",
+    "hom_on_automatic": "hom_on_automatic",
+    "apart_": "apart_",
+    "dichotomy_automatic": "dichotomy_automatic",
+    "open_question": "open_question",
+    "and_beyond": "and_beyond",
+    "example": "example"
+  },
+  "tree": {
+    "type": "child",
+    "name": "main slide",
+    "id": "new_slide",
+    "enabled": "enabled",
+    "merged": false,
+    "children": [
+      {
+        "type": "child",
+        "name": "homomorphisms",
+        "id": "homomorphisms",
+        "enabled": "enabled",
+        "merged": false,
+        "children": [
+          {
+            "type": "show",
+            "id": "structures",
+            "enabled": "enabled",
+            "name": "structures",
+            "merged": false,
+            "keywords": [
+              "structures"
+            ],
+            "eventId": "10"
+          },
+          {
+            "type": "child",
+            "name": "phylogenetic tree",
+            "id": "phylogenetic_tree",
+            "enabled": "enabled",
+            "merged": false,
+            "children": [],
+            "keywords": [
+              "phylogenetic tree"
+            ],
+            "eventId": "8",
+            "originalParams": {
+              "Phylogenetic_tree_bis": {
+                "opacity": 1
+              },
+              "ancestors": {
+                "opacity": 1
+              },
+              "Phylogenetic_tree": {
+                "opacity": 1
+              }
+            }
+          },
+          {
+            "type": "child",
+            "name": "graph database",
+            "id": "graph_database",
+            "enabled": "enabled",
+            "merged": false,
+            "children": [
+              {
+                "type": "show",
+                "id": "wrote",
+                "enabled": "enabled",
+                "name": "wrote",
+                "merged": false,
+                "keywords": [
+                  "wrote"
+                ],
+                "eventId": "1"
+              },
+              {
+                "type": "show",
+                "id": "advised",
+                "enabled": "enabled",
+                "name": "advised",
+                "merged": false,
+                "keywords": [
+                  "advised"
+                ],
+                "eventId": "2"
+              }
+            ],
+            "keywords": [
+              "author1",
+              "author2",
+              "author3",
+              "author4",
+              "author5",
+              "paper1",
+              "paper2",
+              "paper3",
+              "graph database"
+            ],
+            "eventId": "9",
+            "originalParams": {
+              "wrote": {
+                "opacity": 1
+              },
+              "advised": {
+                "opacity": 1
+              }
+            }
+          },
+          {
+            "type": "show",
+            "id": "graph__set_of_elements___arrows_between_them",
+            "enabled": "enabled",
+            "name": "graph: set of elements & arrows between them",
+            "merged": false,
+            "keywords": [
+              "graph: set of elements & arrows between them"
+            ],
+            "eventId": "11"
+          },
+          {
+            "type": "show",
+            "id": "homomorphisms2",
+            "enabled": "enabled",
+            "name": "transformations",
+            "merged": false,
+            "keywords": [
+              "transformations"
+            ],
+            "eventId": "4"
+          },
+          {
+            "type": "show",
+            "id": "homomorphism_",
+            "enabled": "enabled",
+            "name": "homomorphism: a function f between elements s.t. if x → y then f(x) → f(y).",
+            "merged": false,
+            "keywords": [
+              "homomorphism: a function f between elements s.t. if x → y then f(x) → f(y)."
+            ],
+            "eventId": "12"
+          },
+          {
+            "type": "show",
+            "id": "Group_2",
+            "enabled": "enabled",
+            "name": "LHS",
+            "merged": false,
+            "keywords": [
+              "a",
+              "b",
+              "LHS"
+            ],
+            "eventId": "13"
+          },
+          {
+            "type": "show",
+            "id": "Group_3",
+            "enabled": "enabled",
+            "name": "RHS",
+            "merged": false,
+            "keywords": [
+              "a",
+              "b",
+              "RHS"
+            ],
+            "eventId": "14"
+          },
+          {
+            "type": "show",
+            "id": "Group_9",
+            "enabled": "enabled",
+            "name": "hom",
+            "merged": false,
+            "keywords": [
+              "hom"
+            ],
+            "eventId": "15"
+          },
+          {
+            "type": "show",
+            "id": "Line_19",
+            "enabled": "enabled",
+            "name": "Line 19",
+            "merged": false,
+            "keywords": [
+              "Line 19"
+            ],
+            "eventId": "17"
+          },
+          {
+            "type": "show",
+            "id": "homomorphisms3",
+            "enabled": "enabled",
+            "name": "homomorphisms",
+            "merged": false,
+            "keywords": [
+              "homomorphisms"
+            ],
+            "eventId": "18"
+          },
+          {
+            "type": "show",
+            "id": "Input__Two_graphs_G_and_H_Question__Is_there_a_homomorphism_from_G_to_H_",
+            "enabled": "enabled",
+            "name": "Input: Two graphs G and H Question: Is there a homomorphism from G to H?",
+            "merged": true,
+            "keywords": [
+              "Input: Two graphs G and H Question: Is there a homomorphism from G to H?"
+            ],
+            "eventId": "19"
+          },
+          {
+            "type": "show",
+            "id": "Group_92",
+            "enabled": "enabled",
+            "name": "Complexity",
+            "merged": false,
+            "keywords": [
+              "Naive enumeration algo: . NP-complete in general.",
+              "no efficient algo",
+              "Complexity"
+            ],
+            "eventId": "20"
+          }
+        ],
+        "keywords": [
+          "homomorphisms"
+        ],
+        "eventId": "57",
+        "originalParams": {
+          "homomorphisms2": {
+            "opacity": 1
+          },
+          "structures": {
+            "opacity": 1
+          },
+          "graph__set_of_elements___arrows_between_them": {
+            "opacity": 1
+          },
+          "homomorphism_": {
+            "opacity": 1
+          },
+          "Group_2": {
+            "opacity": 1
+          },
+          "Group_3": {
+            "opacity": 1
+          },
+          "Group_9": {
+            "opacity": 1
+          },
+          "Line_19": {
+            "opacity": 1
+          },
+          "homomorphisms3": {
+            "opacity": 1
+          },
+          "Input__Two_graphs_G_and_H_Question__Is_there_a_homomorphism_from_G_to_H_": {
+            "opacity": 1
+          },
+          "Group_92": {
+            "opacity": 1
+          }
+        }
+      },
+      {
+        "type": "show",
+        "id": "database_theory",
+        "enabled": "enabled",
+        "name": "database theory",
+        "merged": false,
+        "keywords": [
+          "database theory"
+        ],
+        "eventId": "13"
+      },
+      {
+        "type": "show",
+        "id": "Goal__Optimize_queries_",
+        "enabled": "enabled",
+        "name": "Goal: Optimize queries.",
+        "merged": false,
+        "keywords": [
+          "Goal: Optimize queries."
+        ],
+        "eventId": "68"
+      },
+      {
+        "type": "child",
+        "name": "database goal",
+        "id": "database_goal",
+        "enabled": "enabled",
+        "merged": false,
+        "children": [
+          {
+            "type": "show",
+            "id": "Ellipse_22",
+            "enabled": "enabled",
+            "name": "pacman",
+            "merged": false,
+            "keywords": [
+              "pacman"
+            ],
+            "eventId": "16"
+          },
+          {
+            "type": "show",
+            "id": "Rectangle_5",
+            "enabled": "enabled",
+            "name": "Simulation background",
+            "merged": true,
+            "keywords": [
+              "Simulation background"
+            ],
+            "eventId": "17"
+          },
+          {
+            "type": "animate",
+            "id": "Ellipse_22",
+            "enabled": "enabled",
+            "name": "pacman",
+            "merged": false,
+            "keywords": [
+              "pacman"
+            ],
+            "eventId": "1",
+            "params": {
+              "x": 204,
+              "y": 137
+            }
+          },
+          {
+            "type": "animate",
+            "id": "Ellipse_22",
+            "enabled": "enabled",
+            "name": "pacman",
+            "merged": false,
+            "keywords": [
+              "pacman"
+            ],
+            "eventId": "2",
+            "params": {
+              "x": 67,
+              "y": 137
+            }
+          },
+          {
+            "type": "animate",
+            "id": "Ellipse_22",
+            "enabled": "enabled",
+            "name": "pacman",
+            "merged": false,
+            "keywords": [
+              "pacman"
+            ],
+            "eventId": "3",
+            "params": {
+              "x": 67,
+              "y": 69
+            }
+          },
+          {
+            "type": "animate",
+            "id": "Ellipse_22",
+            "enabled": "enabled",
+            "name": "pacman",
+            "merged": false,
+            "keywords": [
+              "pacman"
+            ],
+            "eventId": "4",
+            "params": {
+              "x": -69,
+              "y": 69
+            }
+          },
+          {
+            "type": "animate",
+            "id": "Ellipse_22",
+            "enabled": "enabled",
+            "name": "pacman",
+            "merged": false,
+            "keywords": [
+              "pacman"
+            ],
+            "eventId": "5",
+            "params": {
+              "x": 0,
+              "y": 69
+            }
+          },
+          {
+            "type": "animate",
+            "id": "Ellipse_22",
+            "enabled": "enabled",
+            "name": "pacman",
+            "merged": false,
+            "keywords": [
+              "pacman"
+            ],
+            "eventId": "6",
+            "params": {
+              "x": 0,
+              "y": 0
+            }
+          },
+          {
+            "type": "show",
+            "id": "Group_42",
+            "enabled": "enabled",
+            "name": "path",
+            "merged": false,
+            "keywords": [
+              "path"
+            ],
+            "eventId": "10"
+          },
+          {
+            "type": "show",
+            "id": "Rectangle_6",
+            "enabled": "enabled",
+            "name": "Rectangle 6",
+            "merged": false,
+            "keywords": [
+              "Rectangle 6"
+            ],
+            "eventId": "11"
+          },
+          {
+            "type": "show",
+            "id": "inefficient_",
+            "enabled": "enabled",
+            "name": "inefficient!",
+            "merged": true,
+            "keywords": [
+              "inefficient!"
+            ],
+            "eventId": "12"
+          },
+          {
+            "type": "show",
+            "id": "optimization",
+            "enabled": "enabled",
+            "name": "optimization",
+            "merged": false,
+            "keywords": [
+              "optimization"
+            ],
+            "eventId": "13"
+          },
+          {
+            "type": "show",
+            "id": "sparql_query",
+            "enabled": "enabled",
+            "name": "sparql query",
+            "merged": false,
+            "keywords": [
+              "Code line numbers",
+              "SELECT ?drugLabel ?geneLabel ?biological_processLabel ?diseaseLabel WHERE { ?drug wdt:P129 ?gene_product. ?gene wdt:P688 ?gene_product. ?disease wdt:P2293 ?gene. ?disease wdt:P279* wd:Q12078. ?gene_product wdt:P682 ?biological_process. ?biological_process (wdt:P361|wdt:P279)* wd:Q189101. SERVICE wikibase:label { bd:serviceParam wikibase:language \"en\" . } } LIMIT 1000",
+              "“Find drugs for cancers that target genes related to cell proliferation” (source: wikidata.org)",
+              "sparql query"
+            ],
+            "eventId": "14"
+          },
+          {
+            "type": "show",
+            "id": "optimal_",
+            "enabled": "enabled",
+            "name": "optimal?",
+            "merged": false,
+            "keywords": [
+              "optimal?"
+            ],
+            "eventId": "15"
+          }
+        ],
+        "keywords": [
+          "Text",
+          "move up",
+          "move right",
+          "move left * 2",
+          "database goal"
+        ],
+        "eventId": "67",
+        "originalParams": {
+          "Ellipse_22": {
+            "x": 203,
+            "y": 206,
+            "opacity": 1
+          },
+          "Group_42": {
+            "opacity": 1
+          },
+          "Rectangle_6": {
+            "opacity": 1
+          },
+          "inefficient_": {
+            "opacity": 1
+          },
+          "optimization": {
+            "opacity": 1
+          },
+          "sparql_query": {
+            "opacity": 1
+          },
+          "optimal_": {
+            "opacity": 1
+          },
+          "Rectangle_5": {
+            "opacity": 1
+          }
+        }
+      },
+      {
+        "type": "child",
+        "name": "database as hom",
+        "id": "database_as_hom",
+        "enabled": "enabled",
+        "merged": false,
+        "children": [
+          {
+            "type": "show",
+            "id": "database",
+            "enabled": "enabled",
+            "name": "database",
+            "merged": false,
+            "keywords": [
+              "database"
+            ],
+            "eventId": "5"
+          },
+          {
+            "type": "show",
+            "id": "db",
+            "enabled": "enabled",
+            "name": "db",
+            "merged": true,
+            "keywords": [
+              "author1",
+              "author2",
+              "author3",
+              "author4",
+              "author5",
+              "paper1",
+              "paper3",
+              "paper2",
+              "wrote",
+              "advised",
+              "db"
+            ],
+            "eventId": "6"
+          },
+          {
+            "type": "show",
+            "id": "_all_pairs_of_co_authors_",
+            "enabled": "enabled",
+            "name": "“all pairs of co-authors”",
+            "merged": false,
+            "keywords": [
+              "“all pairs of co-authors”"
+            ],
+            "eventId": "7"
+          },
+          {
+            "type": "show",
+            "id": "in_SQL__SELECT_____FROM_____WHERE____",
+            "enabled": "enabled",
+            "name": "in SQL: SELECT ... FROM ... WHERE ...",
+            "merged": false,
+            "keywords": [
+              "in SQL: SELECT ... FROM ... WHERE ..."
+            ],
+            "eventId": "8"
+          },
+          {
+            "type": "show",
+            "id": "CQ___informal",
+            "enabled": "enabled",
+            "name": "CQ + informal",
+            "merged": false,
+            "keywords": [
+              "a",
+              "a'",
+              "p",
+              "wrote",
+              "CQ + informal"
+            ],
+            "eventId": "9"
+          },
+          {
+            "type": "show",
+            "id": "query",
+            "enabled": "enabled",
+            "name": "query",
+            "merged": false,
+            "keywords": [
+              "query"
+            ],
+            "eventId": "10"
+          },
+          {
+            "type": "show",
+            "id": "conjunctive",
+            "enabled": "enabled",
+            "name": "conjunctive",
+            "merged": false,
+            "keywords": [
+              "conjunctive"
+            ],
+            "eventId": "11"
+          },
+          {
+            "type": "show",
+            "id": "as_a_homomorphism_problem",
+            "enabled": "enabled",
+            "name": "as a homomorphism problem",
+            "merged": false,
+            "keywords": [
+              "as a homomorphism problem"
+            ],
+            "eventId": "3"
+          },
+          {
+            "type": "hide",
+            "id": "_",
+            "enabled": "enabled",
+            "name": "…",
+            "merged": true,
+            "keywords": [
+              "…"
+            ],
+            "eventId": "4"
+          },
+          {
+            "type": "show",
+            "id": "output___author1__author2___",
+            "enabled": "enabled",
+            "name": "output: (author1, author2) ✓",
+            "merged": false,
+            "keywords": [
+              "output: (author1, author2) ✓"
+            ],
+            "eventId": "12"
+          },
+          {
+            "type": "show",
+            "id": "Arrow_19",
+            "enabled": "enabled",
+            "name": "Arrow 19",
+            "merged": true,
+            "keywords": [
+              "Arrow 19"
+            ],
+            "eventId": "13"
+          },
+          {
+            "type": "show",
+            "id": "Arrow_21",
+            "enabled": "enabled",
+            "name": "Arrow 21",
+            "merged": true,
+            "keywords": [
+              "Arrow 21"
+            ],
+            "eventId": "14"
+          },
+          {
+            "type": "show",
+            "id": "Arrow_22",
+            "enabled": "enabled",
+            "name": "Arrow 22",
+            "merged": true,
+            "keywords": [
+              "Arrow 22"
+            ],
+            "eventId": "15"
+          },
+          {
+            "type": "hide",
+            "id": "Arrow_19",
+            "enabled": "enabled",
+            "name": "Arrow 19",
+            "merged": false,
+            "keywords": [
+              "Arrow 19"
+            ],
+            "eventId": "16"
+          },
+          {
+            "type": "hide",
+            "id": "Arrow_21",
+            "enabled": "enabled",
+            "name": "Arrow 21",
+            "merged": true,
+            "keywords": [
+              "Arrow 21"
+            ],
+            "eventId": "17"
+          },
+          {
+            "type": "hide",
+            "id": "Arrow_22",
+            "enabled": "enabled",
+            "name": "Arrow 22",
+            "merged": true,
+            "keywords": [
+              "Arrow 22"
+            ],
+            "eventId": "18"
+          },
+          {
+            "type": "show",
+            "id": "_author1__author3___",
+            "enabled": "enabled",
+            "name": "(author1, author3) ✗",
+            "merged": false,
+            "keywords": [
+              "(author1, author3) ✗"
+            ],
+            "eventId": "19"
+          },
+          {
+            "type": "show",
+            "id": "Arrow_19",
+            "enabled": "enabled",
+            "name": "Arrow 19",
+            "merged": true,
+            "keywords": [
+              "Arrow 19"
+            ],
+            "eventId": "20"
+          },
+          {
+            "type": "show",
+            "id": "_2",
+            "enabled": "enabled",
+            "name": "?",
+            "merged": true,
+            "keywords": [
+              "?"
+            ],
+            "eventId": "21"
+          },
+          {
+            "type": "show",
+            "id": "Arrow_24",
+            "enabled": "enabled",
+            "name": "Arrow 24",
+            "merged": true,
+            "keywords": [
+              "Arrow 24"
+            ],
+            "eventId": "22"
+          },
+          {
+            "type": "show",
+            "id": "Arrow_23",
+            "enabled": "enabled",
+            "name": "Arrow 23",
+            "merged": true,
+            "keywords": [
+              "Arrow 23"
+            ],
+            "eventId": "23"
+          }
+        ],
+        "keywords": [
+          "database querying",
+          "…",
+          "database as hom"
+        ],
+        "eventId": "66",
+        "originalParams": {
+          "_": {
+            "opacity": 1
+          },
+          "as_a_homomorphism_problem": {
+            "opacity": 1
+          },
+          "database": {
+            "opacity": 1
+          },
+          "db": {
+            "opacity": 1
+          },
+          "_all_pairs_of_co_authors_": {
+            "opacity": 1
+          },
+          "in_SQL__SELECT_____FROM_____WHERE____": {
+            "opacity": 1
+          },
+          "CQ___informal": {
+            "opacity": 1
+          },
+          "query": {
+            "opacity": 1
+          },
+          "conjunctive": {
+            "opacity": 1
+          },
+          "output___author1__author2___": {
+            "opacity": 1
+          },
+          "Arrow_19": {
+            "opacity": 1
+          },
+          "Arrow_21": {
+            "opacity": 1
+          },
+          "Arrow_22": {
+            "opacity": 1
+          },
+          "_author1__author3___": {
+            "opacity": 1
+          },
+          "_2": {
+            "opacity": 1
+          },
+          "Arrow_24": {
+            "opacity": 1
+          },
+          "Arrow_23": {
+            "opacity": 1
+          }
+        }
+      },
+      {
+        "type": "child",
+        "name": "optimizing cq",
+        "id": "optimizing_cq",
+        "enabled": "enabled",
+        "merged": false,
+        "children": [
+          {
+            "type": "show",
+            "id": "Thm__For_every_conjunctive_query__there_exists_a_unique_minimal_equivalent_query_",
+            "enabled": "enabled",
+            "name": "Thm. For every conjunctive query, there exists a unique minimal equivalent query.",
+            "merged": false,
+            "keywords": [
+              "Thm. For every conjunctive query, there exists a unique minimal equivalent query."
+            ],
+            "eventId": "1"
+          },
+          {
+            "type": "show",
+            "id": "Group_4",
+            "enabled": "enabled",
+            "name": "query",
+            "merged": false,
+            "keywords": [
+              "a",
+              "a'",
+              "p",
+              "p'",
+              "wrote",
+              "query"
+            ],
+            "eventId": "2"
+          },
+          {
+            "type": "show",
+            "id": "core",
+            "enabled": "enabled",
+            "name": "core",
+            "merged": false,
+            "keywords": [
+              "a",
+              "a'",
+              "p",
+              "wrote",
+              "core"
+            ],
+            "eventId": "3"
+          },
+          {
+            "type": "show",
+            "id": "dbs",
+            "enabled": "enabled",
+            "name": "dbs",
+            "merged": false,
+            "keywords": [
+              "database 1",
+              "database 2",
+              "database 3",
+              "database 4",
+              "database 5",
+              "dbs"
+            ],
+            "eventId": "4"
+          },
+          {
+            "type": "show",
+            "id": "eval_query",
+            "enabled": "enabled",
+            "name": "eval query",
+            "merged": false,
+            "keywords": [
+              "eval query"
+            ],
+            "eventId": "5"
+          },
+          {
+            "type": "hide",
+            "id": "eval_query",
+            "enabled": "enabled",
+            "name": "eval query",
+            "merged": false,
+            "keywords": [
+              "eval query"
+            ],
+            "eventId": "6"
+          },
+          {
+            "type": "show",
+            "id": "eval_core",
+            "enabled": "enabled",
+            "name": "eval core",
+            "merged": false,
+            "keywords": [
+              "eval core"
+            ],
+            "eventId": "7"
+          }
+        ],
+        "keywords": [
+          "database querying",
+          "optimizing cq"
+        ],
+        "eventId": "73",
+        "originalParams": {
+          "Thm__For_every_conjunctive_query__there_exists_a_unique_minimal_equivalent_query_": {
+            "opacity": 1
+          },
+          "Group_4": {
+            "opacity": 1
+          },
+          "core": {
+            "opacity": 1
+          },
+          "dbs": {
+            "opacity": 1
+          },
+          "eval_query": {
+            "opacity": 1
+          },
+          "eval_core": {
+            "opacity": 1
+          }
+        }
+      },
+      {
+        "type": "child",
+        "name": "query for graph databases",
+        "id": "query_for_graph_databases",
+        "enabled": "enabled",
+        "merged": false,
+        "children": [
+          {
+            "type": "show",
+            "id": "db",
+            "enabled": "enabled",
+            "name": "db",
+            "merged": false,
+            "keywords": [
+              "author1",
+              "author2",
+              "author3",
+              "author4",
+              "author5",
+              "paper1",
+              "paper3",
+              "paper2",
+              "wrote",
+              "advised",
+              "db"
+            ],
+            "eventId": "1"
+          },
+          {
+            "type": "show",
+            "id": "_all_people_that_wrote_a_paper_with_one_of_their_ancestors_",
+            "enabled": "enabled",
+            "name": "“all people that wrote a paper with one of their ancestors”",
+            "merged": false,
+            "keywords": [
+              "“all people that wrote a paper with one of their ancestors”"
+            ],
+            "eventId": "2"
+          },
+          {
+            "type": "show",
+            "id": "CQ___informal",
+            "enabled": "enabled",
+            "name": "CQ + informal",
+            "merged": false,
+            "keywords": [
+              "a",
+              "a'",
+              "advised+",
+              "p",
+              "wrote",
+              "CQ + informal"
+            ],
+            "eventId": "3"
+          },
+          {
+            "type": "show",
+            "id": "Def",
+            "enabled": "enabled",
+            "name": "Def",
+            "merged": false,
+            "keywords": [
+              "Conjunctive regular path queries = conjunctive queries + regular languages",
+              "Def.",
+              "Def"
+            ],
+            "eventId": "4"
+          },
+          {
+            "type": "show",
+            "id": "Ex__Useful_to_query____bibliographies___biological_data___classifications___etc_",
+            "enabled": "enabled",
+            "name": "Ex. Useful to query: - bibliographies - biological data - classifications - etc.",
+            "merged": false,
+            "keywords": [
+              "Ex. Useful to query: - bibliographies - biological data - classifications - etc."
+            ],
+            "eventId": "5"
+          }
+        ],
+        "keywords": [
+          "query languages for graph databases",
+          "“conjunctive regular path queries”",
+          "query for graph databases"
+        ],
+        "eventId": "74",
+        "originalParams": {
+          "db": {
+            "opacity": 1
+          },
+          "_all_people_that_wrote_a_paper_with_one_of_their_ancestors_": {
+            "opacity": 1
+          },
+          "CQ___informal": {
+            "opacity": 1
+          },
+          "Def": {
+            "opacity": 1
+          },
+          "Ex__Useful_to_query____bibliographies___biological_data___classifications___etc_": {
+            "opacity": 1
+          }
+        }
+      },
+      {
+        "type": "show",
+        "id": "Problem",
+        "enabled": "enabled",
+        "name": "Problem",
+        "merged": false,
+        "keywords": [
+          "Pb. There is no unique minimal conjunctive regular path queries.",
+          "Problem"
+        ],
+        "eventId": "99"
+      },
+      {
+        "type": "child",
+        "name": "crpq global slide",
+        "id": "crpq_global_slide",
+        "enabled": "enabled",
+        "merged": false,
+        "children": [
+          {
+            "type": "show",
+            "id": "Contribution_1___w__Figueira___Romero__A_2ExpSpace_algorithm_for_deciding_if_a_CRPQ_is_equivalent_to_a_CRPQ_of_at_most_k_atoms_",
+            "enabled": "enabled",
+            "name": "Contribution 1. (w/ Figueira & Romero) A 2ExpSpace algorithm for deciding if a CRPQ is equivalent to a CRPQ of at most k atoms.",
+            "merged": false,
+            "keywords": [
+              "Contribution 1. (w/ Figueira & Romero) A 2ExpSpace algorithm for deciding if a CRPQ is equivalent to a CRPQ of at most k atoms."
+            ],
+            "eventId": "1"
+          },
+          {
+            "type": "child",
+            "name": "contr 1",
+            "id": "contr_1",
+            "enabled": "enabled",
+            "merged": false,
+            "children": [
+              {
+                "type": "show",
+                "id": "Decision_problem",
+                "enabled": "enabled",
+                "name": "Decision problem",
+                "merged": false,
+                "keywords": [
+                  "Minimization problem",
+                  "Input: a CRPQ γ, and k ≥ 1, Question: is there δ ≡ γ with less than k atoms?",
+                  "Decision problem"
+                ],
+                "eventId": "1"
+              },
+              {
+                "type": "show",
+                "id": "why_",
+                "enabled": "enabled",
+                "name": "why?",
+                "merged": false,
+                "keywords": [
+                  "why?"
+                ],
+                "eventId": "2"
+              },
+              {
+                "type": "show",
+                "id": "Eval",
+                "enabled": "enabled",
+                "name": "Eval",
+                "merged": false,
+                "keywords": [
+                  "Evaluation of a CRPQ with k atoms:",
+                  "database size",
+                  "Eval"
+                ],
+                "eventId": "3"
+              },
+              {
+                "type": "child",
+                "name": "proof contr 1",
+                "id": "proof_contr_1",
+                "enabled": "enabled",
+                "merged": false,
+                "children": [
+                  {
+                    "type": "show",
+                    "id": "Lemma_",
+                    "enabled": "enabled",
+                    "name": "Lemma.",
+                    "merged": false,
+                    "keywords": [
+                      "Lemma."
+                    ],
+                    "eventId": "1"
+                  },
+                  {
+                    "type": "show",
+                    "id": "input_CRPQ",
+                    "enabled": "enabled",
+                    "name": "input CRPQ",
+                    "merged": true,
+                    "keywords": [
+                      "a",
+                      "b",
+                      "(ac)+",
+                      "b+",
+                      "c",
+                      "(a+b)+",
+                      "(cc)+",
+                      "aaa+",
+                      "b(bb)*",
+                      "size of automata ≤ m",
+                      "input CRPQ"
+                    ],
+                    "eventId": "2"
+                  },
+                  {
+                    "type": "show",
+                    "id": "input_of_miz__problem",
+                    "enabled": "enabled",
+                    "name": "input of miz° problem",
+                    "merged": true,
+                    "keywords": [
+                      "input of miz° problem"
+                    ],
+                    "eventId": "3"
+                  },
+                  {
+                    "type": "show",
+                    "id": "if_it_is_equivalent_to2",
+                    "enabled": "enabled",
+                    "name": "if it is equivalent to",
+                    "merged": false,
+                    "keywords": [
+                      "if it is equivalent to"
+                    ],
+                    "eventId": "4"
+                  },
+                  {
+                    "type": "show",
+                    "id": "witness",
+                    "enabled": "enabled",
+                    "name": "witness",
+                    "merged": true,
+                    "keywords": [
+                      "nb. of atoms ≤ k",
+                      "L1",
+                      "L0",
+                      "L2",
+                      "L3",
+                      "witness"
+                    ],
+                    "eventId": "5"
+                  },
+                  {
+                    "type": "show",
+                    "id": "positive_witness",
+                    "enabled": "enabled",
+                    "name": "positive witness",
+                    "merged": true,
+                    "keywords": [
+                      "positive witness"
+                    ],
+                    "eventId": "6"
+                  },
+                  {
+                    "type": "show",
+                    "id": "if_it_is_equivalent_to",
+                    "enabled": "enabled",
+                    "name": "if it is equivalent to",
+                    "merged": true,
+                    "keywords": [
+                      "if it is equivalent to"
+                    ],
+                    "eventId": "7"
+                  },
+                  {
+                    "type": "show",
+                    "id": "__then_it_is_equivalent_to",
+                    "enabled": "enabled",
+                    "name": "… then it is equivalent to",
+                    "merged": false,
+                    "keywords": [
+                      "… then it is equivalent to"
+                    ],
+                    "eventId": "8"
+                  },
+                  {
+                    "type": "show",
+                    "id": "small_witness",
+                    "enabled": "enabled",
+                    "name": "small witness",
+                    "merged": false,
+                    "keywords": [
+                      "size of automata ≤ f(m)",
+                      "nb. of atoms ≤ k",
+                      "K1",
+                      "K0",
+                      "K2",
+                      "K3",
+                      "small witness"
+                    ],
+                    "eventId": "9"
+                  },
+                  {
+                    "type": "show",
+                    "id": "small_positive_witness",
+                    "enabled": "enabled",
+                    "name": "small positive witness",
+                    "merged": false,
+                    "keywords": [
+                      "small positive witness"
+                    ],
+                    "eventId": "10"
+                  }
+                ],
+                "keywords": [
+                  "Proof idea: small model property (there are finitely many candidates).",
+                  "proof contr 1"
+                ],
+                "eventId": "4",
+                "originalParams": {
+                  "Lemma_": {
+                    "opacity": 1
+                  },
+                  "input_CRPQ": {
+                    "opacity": 1
+                  },
+                  "input_of_miz__problem": {
+                    "opacity": 1
+                  },
+                  "if_it_is_equivalent_to2": {
+                    "opacity": 1
+                  },
+                  "witness": {
+                    "opacity": 1
+                  },
+                  "positive_witness": {
+                    "opacity": 1
+                  },
+                  "if_it_is_equivalent_to": {
+                    "opacity": 1
+                  },
+                  "__then_it_is_equivalent_to": {
+                    "opacity": 1
+                  },
+                  "small_witness": {
+                    "opacity": 1
+                  },
+                  "small_positive_witness": {
+                    "opacity": 1
+                  }
+                }
+              }
+            ],
+            "keywords": [
+              "contr 1"
+            ],
+            "eventId": "2",
+            "originalParams": {
+              "Decision_problem": {
+                "opacity": 1
+              },
+              "why_": {
+                "opacity": 1
+              },
+              "Eval": {
+                "opacity": 1
+              }
+            }
+          },
+          {
+            "type": "child",
+            "name": "contre-ex union",
+            "id": "contre_ex_union",
+            "enabled": "enabled",
+            "merged": false,
+            "children": [
+              {
+                "type": "show",
+                "id": "LHS",
+                "enabled": "enabled",
+                "name": "LHS",
+                "merged": false,
+                "keywords": [
+                  "x",
+                  "y",
+                  "z",
+                  "a",
+                  "b+",
+                  "a(bb)+",
+                  "ab(bb)*",
+                  "!",
+                  "LHS"
+                ],
+                "eventId": "1"
+              },
+              {
+                "type": "show",
+                "id": "is_not_equivalent_to_any_CRPQ_with_any_at_most_4_atoms",
+                "enabled": "enabled",
+                "name": "is not equivalent to any CRPQ with any at most 4 atoms",
+                "merged": false,
+                "keywords": [
+                  "is not equivalent to any CRPQ with any at most 4 atoms"
+                ],
+                "eventId": "2"
+              },
+              {
+                "type": "show",
+                "id": "is_equivalent_to",
+                "enabled": "enabled",
+                "name": "is equivalent to",
+                "merged": false,
+                "keywords": [
+                  "is equivalent to"
+                ],
+                "eventId": "3"
+              },
+              {
+                "type": "show",
+                "id": "RHS",
+                "enabled": "enabled",
+                "name": "RHS",
+                "merged": false,
+                "keywords": [
+                  "x",
+                  "y",
+                  "z",
+                  "a",
+                  "ab(bb)*",
+                  "!",
+                  "(bb)+",
+                  "a(bb)+",
+                  "b(bb)*",
+                  "union",
+                  "RHS"
+                ],
+                "eventId": "4"
+              }
+            ],
+            "keywords": [
+              "an interesting example…",
+              "contre-ex union"
+            ],
+            "eventId": "3",
+            "originalParams": {
+              "LHS": {
+                "opacity": 1
+              },
+              "is_not_equivalent_to_any_CRPQ_with_any_at_most_4_atoms": {
+                "opacity": 1
+              },
+              "is_equivalent_to": {
+                "opacity": 1
+              },
+              "RHS": {
+                "opacity": 1
+              }
+            }
+          },
+          {
+            "type": "show",
+            "id": "Contribution_2___w__Figueira___Romero__An_ExpSpace_algorithm_for_deciding_if_a_CRPQ_is_equivalent_to_a_finite_union_of_CRPQ_of_at_most_k_atoms_",
+            "enabled": "enabled",
+            "name": "Contribution 2. (w/ Figueira & Romero) An ExpSpace algorithm for deciding if a CRPQ is equivalent to a finite union of CRPQ of at most k atoms.",
+            "merged": false,
+            "keywords": [
+              "Contribution 2. (w/ Figueira & Romero) An ExpSpace algorithm for deciding if a CRPQ is equivalent to a finite union of CRPQ of at most k atoms."
+            ],
+            "eventId": "4"
+          },
+          {
+            "type": "show",
+            "id": "Contribution_3___w__Figueira__An_2ExpSpace_algorithm_for_deciding_if_a_CRPQ_is_equivalent_to_a_finite_union_of_CRPQ_of_tree_width__resp__path_width__at_most_k_",
+            "enabled": "enabled",
+            "name": "Contribution 3. (w/ Figueira) An 2ExpSpace algorithm for deciding if a CRPQ is equivalent to a finite union of CRPQ of tree-width (resp. path-width) at most k.",
+            "merged": false,
+            "keywords": [
+              "Contribution 3. (w/ Figueira) An 2ExpSpace algorithm for deciding if a CRPQ is equivalent to a finite union of CRPQ of tree-width (resp. path-width) at most k."
+            ],
+            "eventId": "5"
+          },
+          {
+            "type": "show",
+            "id": "Text",
+            "enabled": "enabled",
+            "name": "(Proven for k=1 by Barceló, Romero & Vardi.)",
+            "merged": true,
+            "keywords": [
+              "(Proven for k=1 by Barceló, Romero & Vardi.)"
+            ],
+            "eventId": "6"
+          },
+          {
+            "type": "child",
+            "name": "maximal under-approximation",
+            "id": "maximal_under_approximation",
+            "enabled": "enabled",
+            "merged": false,
+            "children": [
+              {
+                "type": "show",
+                "id": "3_items",
+                "enabled": "enabled",
+                "name": "3 items",
+                "merged": true,
+                "keywords": [
+                  "3 items"
+                ],
+                "eventId": "2"
+              },
+              {
+                "type": "show",
+                "id": "gamma",
+                "enabled": "enabled",
+                "name": "gamma",
+                "merged": false,
+                "keywords": [
+                  "γ",
+                  "gamma"
+                ],
+                "eventId": "3"
+              },
+              {
+                "type": "show",
+                "id": "under_approx",
+                "enabled": "enabled",
+                "name": "under approx",
+                "merged": false,
+                "keywords": [
+                  "maximal under-app°",
+                  "under approx"
+                ],
+                "eventId": "4"
+              },
+              {
+                "type": "show",
+                "id": "subquery",
+                "enabled": "enabled",
+                "name": "subquery",
+                "merged": false,
+                "keywords": [
+                  "δ ⊆ γ w/ ≤ k atoms",
+                  "subquery"
+                ],
+                "eventId": "5"
+              },
+              {
+                "type": "show",
+                "id": "Thm__Every_CRPQ___has_a_maximal_under_approximation_by_finite_unions_of_CRPQs_with_at_most_k_atoms_2",
+                "enabled": "enabled",
+                "name": "Thm. Every CRPQ γ has a maximal under-approximation by finite unions of CRPQs with at most k atoms.",
+                "merged": false,
+                "keywords": [
+                  "Thm. Every CRPQ γ has a maximal under-approximation by finite unions of CRPQs with at most k atoms."
+                ],
+                "eventId": "6"
+              }
+            ],
+            "keywords": [
+              "Thm. Every CRPQ γ has a maximal under-approximation by finite unions of CRPQs with at most k atoms.",
+              "maximal under-approximation"
+            ],
+            "eventId": "7",
+            "originalParams": {
+              "Group_102": {
+                "opacity": 1
+              },
+              "3_items": {
+                "opacity": 1
+              },
+              "gamma": {
+                "opacity": 1
+              },
+              "under_approx": {
+                "opacity": 1
+              },
+              "subquery": {
+                "opacity": 1
+              },
+              "Thm__Every_CRPQ___has_a_maximal_under_approximation_by_finite_unions_of_CRPQs_with_at_most_k_atoms_2": {
+                "opacity": 1
+              }
+            }
+          },
+          {
+            "type": "show",
+            "id": "Group_6",
+            "enabled": "enabled",
+            "name": "Contribution 4",
+            "merged": false,
+            "keywords": [
+              "Contribution 4. (w/ Figueira & Romero) Efficient ( ) algorithms for CRPQs over languages of the form a, a*.",
+              "Contribution 4"
+            ],
+            "eventId": "8"
+          },
+          {
+            "type": "show",
+            "id": "Contribution_4__Semantical_Structure_Theorem____w__Figueira___Romero__A_2ExpSpace_algorithm_for_deciding_if_a_CRPQ_is_equivalent_to_a_CRPQ_of_at_most_k_atoms_",
+            "enabled": "enabled",
+            "name": "Contribution 5 “Semantical Structure Theorem”. (w/ Figueira & Romero) Sufficient condition to prove hardness results.",
+            "merged": false,
+            "keywords": [
+              "Contribution 5 “Semantical Structure Theorem”. (w/ Figueira & Romero) Sufficient condition to prove hardness results."
+            ],
+            "eventId": "9"
+          }
+        ],
+        "keywords": [
+          "crpq global slide"
+        ],
+        "eventId": "108",
+        "originalParams": {
+          "Contribution_1___w__Figueira___Romero__A_2ExpSpace_algorithm_for_deciding_if_a_CRPQ_is_equivalent_to_a_CRPQ_of_at_most_k_atoms_": {
+            "opacity": 1
+          },
+          "Contribution_2___w__Figueira___Romero__An_ExpSpace_algorithm_for_deciding_if_a_CRPQ_is_equivalent_to_a_finite_union_of_CRPQ_of_at_most_k_atoms_": {
+            "opacity": 1
+          },
+          "Contribution_3___w__Figueira__An_2ExpSpace_algorithm_for_deciding_if_a_CRPQ_is_equivalent_to_a_finite_union_of_CRPQ_of_tree_width__resp__path_width__at_most_k_": {
+            "opacity": 1
+          },
+          "Text": {
+            "opacity": 1
+          },
+          "Group_6": {
+            "opacity": 1
+          },
+          "Contribution_4__Semantical_Structure_Theorem____w__Figueira___Romero__A_2ExpSpace_algorithm_for_deciding_if_a_CRPQ_is_equivalent_to_a_CRPQ_of_at_most_k_atoms_": {
+            "opacity": 1
+          }
+        }
+      },
+      {
+        "type": "show",
+        "id": "Problem2",
+        "enabled": "enabled",
+        "name": "Solution",
+        "merged": false,
+        "keywords": [
+          "We designed algorithms for optimizing CRPQs wrt. the most relevant parameters.",
+          "Solution"
+        ],
+        "eventId": "102"
+      },
+      {
+        "type": "show",
+        "id": "Group_62",
+        "enabled": "enabled",
+        "name": "Alice to other side",
+        "merged": false,
+        "keywords": [
+          "Alice to other side"
+        ],
+        "eventId": "86"
+      },
+      {
+        "type": "hide",
+        "id": "Group_62",
+        "enabled": "enabled",
+        "name": "Alice to other side",
+        "merged": false,
+        "keywords": [
+          "Alice to other side"
+        ],
+        "eventId": "88"
+      },
+      {
+        "type": "show",
+        "id": "Group_63",
+        "enabled": "enabled",
+        "name": "Alice on other side",
+        "merged": true,
+        "keywords": [
+          "Alice on other side"
+        ],
+        "eventId": "87"
+      },
+      {
+        "type": "show",
+        "id": "logic_programming__constraint_satisfaction_problems_",
+        "enabled": "enabled",
+        "name": "logic programming (constraint satisfaction problems)",
+        "merged": false,
+        "keywords": [
+          "logic programming (constraint satisfaction problems)"
+        ],
+        "eventId": "14"
+      },
+      {
+        "type": "child",
+        "name": "logic programming concept",
+        "id": "logic_programming_concept",
+        "enabled": "enabled",
+        "merged": false,
+        "children": [
+          {
+            "type": "show",
+            "id": "Group_4",
+            "enabled": "enabled",
+            "name": "instructions",
+            "merged": false,
+            "keywords": [
+              "move up",
+              "move right",
+              "move left * 2",
+              "instructions"
+            ],
+            "eventId": "1"
+          },
+          {
+            "type": "show",
+            "id": "Algorithms_usually_describe_how_a_problem_should_be_solved_",
+            "enabled": "enabled",
+            "name": "Algorithms usually describe how a problem should be solved.",
+            "merged": true,
+            "keywords": [
+              "Algorithms usually describe how a problem should be solved."
+            ],
+            "eventId": "2"
+          },
+          {
+            "type": "show",
+            "id": "Logic_programming__describe_what_is_the_problem__what_are_the_constraints_",
+            "enabled": "enabled",
+            "name": "Logic programming: describe what is the problem, what are the constraints.",
+            "merged": false,
+            "keywords": [
+              "Logic programming: describe what is the problem, what are the constraints."
+            ],
+            "eventId": "3"
+          },
+          {
+            "type": "show",
+            "id": "Sudoku",
+            "enabled": "enabled",
+            "name": "Sudoku",
+            "merged": false,
+            "keywords": [
+              "Example: sudoku.",
+              "Sudoku"
+            ],
+            "eventId": "4"
+          },
+          {
+            "type": "show",
+            "id": "3_SAT",
+            "enabled": "enabled",
+            "name": "3-SAT",
+            "merged": false,
+            "keywords": [
+              "Example: 3-SAT solving.",
+              "satisfiable?",
+              "3-SAT"
+            ],
+            "eventId": "5"
+          }
+        ],
+        "keywords": [
+          "logic programming concept"
+        ],
+        "eventId": "90",
+        "originalParams": {
+          "Group_4": {
+            "opacity": 1
+          },
+          "Algorithms_usually_describe_how_a_problem_should_be_solved_": {
+            "opacity": 1
+          },
+          "Logic_programming__describe_what_is_the_problem__what_are_the_constraints_": {
+            "opacity": 1
+          },
+          "Sudoku": {
+            "opacity": 1
+          },
+          "3_SAT": {
+            "opacity": 1
+          },
+          "Hom_pb": {
+            "opacity": 1
+          }
+        }
+      },
+      {
+        "type": "child",
+        "name": "logic programming as hom",
+        "id": "logic_programming_as_hom",
+        "enabled": "enabled",
+        "merged": false,
+        "children": [
+          {
+            "type": "show",
+            "id": "Group_7",
+            "enabled": "enabled",
+            "name": "Example: 3-colouring. Colour the vertices in such a way that no two adjacent vertices have the same colour, using at most 3 colours.",
+            "merged": false,
+            "keywords": [
+              "Example: 3-colouring. Colour the vertices in such a way that no two adjacent vertices have the same colour, using at most 3 colours."
+            ],
+            "eventId": "1"
+          },
+          {
+            "type": "show",
+            "id": "Group_6",
+            "enabled": "enabled",
+            "name": "3-colouring bis",
+            "merged": false,
+            "keywords": [
+              "hom",
+              "3-colouring bis"
+            ],
+            "eventId": "2"
+          },
+          {
+            "type": "show",
+            "id": "Hom_pb",
+            "enabled": "enabled",
+            "name": "Hom pb",
+            "merged": false,
+            "keywords": [
+              "These problems correspond to homomorphisms problems, where: the left-hand side encodes the data, the right-hand side encodes the constraints.",
+              "Hom pb"
+            ],
+            "eventId": "3"
+          }
+        ],
+        "keywords": [
+          "logic programming as hom"
+        ],
+        "eventId": "91",
+        "originalParams": {
+          "Group_7": {
+            "opacity": 1
+          },
+          "Group_6": {
+            "opacity": 1
+          },
+          "Hom_pb": {
+            "opacity": 1
+          }
+        }
+      },
+      {
+        "type": "show",
+        "id": "data_to_logic",
+        "enabled": "enabled",
+        "name": "data to logic",
+        "merged": false,
+        "keywords": [
+          "hom",
+          "data to logic"
+        ],
+        "eventId": "92"
+      },
+      {
+        "type": "child",
+        "name": "zoom back database as hom",
+        "id": "zoom_back_database_as_hom",
+        "enabled": "enabled",
+        "merged": false,
+        "children": [],
+        "keywords": [
+          "zoom back database as hom"
+        ],
+        "eventId": "95",
+        "originalParams": {}
+      },
+      {
+        "type": "show",
+        "id": "data_to_logic2",
+        "enabled": "enabled",
+        "name": "logic to data",
+        "merged": false,
+        "keywords": [
+          "hom",
+          "logic to data"
+        ],
+        "eventId": "94"
+      },
+      {
+        "type": "show",
+        "id": "Dichotomy_Theorem__Bulatov__17___Zhuk__17___Any_such_problem_is_either_in_P_or_is_NP_complete_",
+        "enabled": "enabled",
+        "name": "Dichotomy Theorem (Bulatov '17 & Zhuk '17). Any such problem is either in P or is NP-complete.",
+        "merged": false,
+        "keywords": [
+          "Dichotomy Theorem (Bulatov '17 & Zhuk '17). Any such problem is either in P or is NP-complete."
+        ],
+        "eventId": "103"
+      },
+      {
+        "type": "child",
+        "name": "dichotomy theorem",
+        "id": "dichotomy_theorem",
+        "enabled": "enabled",
+        "merged": false,
+        "children": [
+          {
+            "type": "show",
+            "id": "For_any_fixed_target_structure_H__the_problem_of_whether_a_graph_G_admits_a_homomorphism_to_H_is_either_P_or_NP_complete_",
+            "enabled": "enabled",
+            "name": "For any fixed target structure H, the problem of whether a graph G admits a homomorphism to H is either P or NP-complete.",
+            "merged": false,
+            "keywords": [
+              "For any fixed target structure H, the problem of whether a graph G admits a homomorphism to H is either P or NP-complete."
+            ],
+            "eventId": "1"
+          },
+          {
+            "type": "show",
+            "id": "Group_6",
+            "enabled": "enabled",
+            "name": "Example. It is NP-complete for .",
+            "merged": false,
+            "keywords": [
+              "Example. It is NP-complete for ."
+            ],
+            "eventId": "2"
+          },
+          {
+            "type": "show",
+            "id": "Group_62",
+            "enabled": "enabled",
+            "name": "Group 6",
+            "merged": true,
+            "keywords": [
+              "Group 6"
+            ],
+            "eventId": "3"
+          }
+        ],
+        "keywords": [
+          "dichotomy theorem"
+        ],
+        "eventId": "96",
+        "originalParams": {
+          "For_any_fixed_target_structure_H__the_problem_of_whether_a_graph_G_admits_a_homomorphism_to_H_is_either_P_or_NP_complete_": {
+            "opacity": 1
+          },
+          "Group_6": {
+            "opacity": 1
+          },
+          "Group_62": {
+            "opacity": 1
+          }
+        }
+      },
+      {
+        "type": "show",
+        "id": "Question",
+        "enabled": "enabled",
+        "name": "Question",
+        "merged": false,
+        "keywords": [
+          "Q°. These problems handle finite data. What about infinite structures?",
+          "Question"
+        ],
+        "eventId": "104"
+      },
+      {
+        "type": "child",
+        "name": "automatic structures",
+        "id": "automatic_structures",
+        "enabled": "enabled",
+        "merged": false,
+        "children": [
+          {
+            "type": "show",
+            "id": "Goal__Finite_description_of_some_infinite_structures_",
+            "enabled": "enabled",
+            "name": "Goal. Finite description of some infinite structures.",
+            "merged": false,
+            "keywords": [
+              "Goal. Finite description of some infinite structures."
+            ],
+            "eventId": "1"
+          },
+          {
+            "type": "show",
+            "id": "Group_7",
+            "enabled": "enabled",
+            "name": "Infinite structures arise as: configurations of computational models mathematical “universes”",
+            "merged": false,
+            "keywords": [
+              "why?",
+              "Infinite structures arise as: configurations of computational models mathematical “universes”"
+            ],
+            "eventId": "7"
+          },
+          {
+            "type": "show",
+            "id": "Group_10",
+            "enabled": "enabled",
+            "name": "Ex tree",
+            "merged": false,
+            "keywords": [
+              "a b",
+              "aa ab ba bb",
+              "ε",
+              "Ex. infinite binary tree",
+              "Ex tree"
+            ],
+            "eventId": "6"
+          }
+        ],
+        "keywords": [
+          "automatic graphs/structures",
+          "automatic structures"
+        ],
+        "eventId": "97",
+        "originalParams": {
+          "Goal__Finite_description_of_some_infinite_structures_": {
+            "opacity": 1
+          },
+          "Group_10": {
+            "opacity": 1
+          },
+          "Group_7": {
+            "opacity": 1
+          }
+        }
+      },
+      {
+        "type": "child",
+        "name": "hom on automatic",
+        "id": "hom_on_automatic",
+        "enabled": "enabled",
+        "merged": false,
+        "children": [
+          {
+            "type": "show",
+            "id": "Group_9",
+            "enabled": "enabled",
+            "name": "Ex. 2-colouring.",
+            "merged": false,
+            "keywords": [
+              "Ex. 2-colouring.",
+              "a b",
+              "aa ab ba bb",
+              "ε"
+            ],
+            "eventId": "1"
+          },
+          {
+            "type": "show",
+            "id": "Thm_Kocher",
+            "enabled": "enabled",
+            "name": "Thm Kocher",
+            "merged": false,
+            "keywords": [
+              "Thm. (Köcher ‘14) The k-colourability problem is undecidable for each k ≥ 2.",
+              "Thm Kocher"
+            ],
+            "eventId": "2"
+          },
+          {
+            "type": "show",
+            "id": "Def_regular",
+            "enabled": "enabled",
+            "name": "Def regular",
+            "merged": false,
+            "keywords": [
+              "Def. A homomorphism f from to H is regular when for every h ∈ H, f-1[h] is a regular language.",
+              "an automatic graph",
+              "Def regular"
+            ],
+            "eventId": "3"
+          },
+          {
+            "type": "show",
+            "id": "Contribution_6___w__Barcel____Figueira__The_k_regular_colourability_problem_is_undecidable_over_automatic_graphs_for_each_k___2_",
+            "enabled": "enabled",
+            "name": "Contribution 6. (w/ Barceló & Figueira) The k-regular colourability problem is undecidable over automatic graphs for each k ≥ 2.",
+            "merged": false,
+            "keywords": [
+              "Contribution 6. (w/ Barceló & Figueira) The k-regular colourability problem is undecidable over automatic graphs for each k ≥ 2."
+            ],
+            "eventId": "4"
+          },
+          {
+            "type": "show",
+            "id": "Contribution_7___w__Cuverlier__A_dichotomy_theorem_for_automatic_structures_",
+            "enabled": "enabled",
+            "name": "Contribution 7. (w/ Cuverlier) A dichotomy theorem for automatic structures.",
+            "merged": false,
+            "keywords": [
+              "Contribution 7. (w/ Cuverlier) A dichotomy theorem for automatic structures."
+            ],
+            "eventId": "6"
+          },
+          {
+            "type": "child",
+            "name": "dichotomy automatic",
+            "id": "dichotomy_automatic",
+            "enabled": "enabled",
+            "merged": false,
+            "children": [
+              {
+                "type": "show",
+                "id": "Let_H_be_a_finite_structure__TFAE__H_has_finite_duality__Hom_Aut__H__is_decidable__Homreg_Aut__H__is_decidable__Hom_Aut__H____Homreg_Aut__H__",
+                "enabled": "enabled",
+                "name": "Let H be a finite structure. TFAE: H has finite duality; Hom(Aut, H) is decidable; Homreg(Aut, H) is decidable; Hom(Aut, H) = Homreg(Aut, H). When decidable, these problems are in fact in NL.",
+                "merged": false,
+                "keywords": [
+                  "Let H be a finite structure. TFAE: H has finite duality; Hom(Aut, H) is decidable; Homreg(Aut, H) is decidable; Hom(Aut, H) = Homreg(Aut, H). When decidable, these problems are in fact in NL."
+                ],
+                "eventId": "1"
+              },
+              {
+                "type": "show",
+                "id": "Group_9",
+                "enabled": "enabled",
+                "name": "dec pb",
+                "merged": false,
+                "keywords": [
+                  "Hom(Aut, H). input: an automatic graph G question: is there a homomorphism from G to H?",
+                  "dec pb"
+                ],
+                "eventId": "4"
+              }
+            ],
+            "keywords": [
+              "dichotomy automatic"
+            ],
+            "eventId": "7",
+            "originalParams": {
+              "Let_H_be_a_finite_structure__TFAE__H_has_finite_duality__Hom_Aut__H__is_decidable__Homreg_Aut__H__is_decidable__Hom_Aut__H____Homreg_Aut__H__": {
+                "opacity": 1
+              },
+              "Group_9": {
+                "opacity": 1
+              },
+              "Group_92": {
+                "opacity": 1
+              },
+              "Ex_finite_duality": {
+                "opacity": 1
+              }
+            }
+          },
+          {
+            "type": "show",
+            "id": "Text",
+            "enabled": "enabled",
+            "name": "Contribution 8. We develop an algebraic language theory for automatic relations.",
+            "merged": false,
+            "keywords": [
+              "Contribution 8. We develop an algebraic language theory for automatic relations."
+            ],
+            "eventId": "8"
+          }
+        ],
+        "keywords": [
+          "problems on automatic graphs",
+          "hom on automatic"
+        ],
+        "eventId": "98",
+        "originalParams": {
+          "Group_9": {
+            "opacity": 1
+          },
+          "Thm_Kocher": {
+            "opacity": 1
+          },
+          "Def_regular": {
+            "opacity": 1
+          },
+          "Contribution_6___w__Barcel____Figueira__The_k_regular_colourability_problem_is_undecidable_over_automatic_graphs_for_each_k___2_": {
+            "opacity": 1
+          },
+          "Contribution_7___w__Cuverlier__A_dichotomy_theorem_for_automatic_structures_": {
+            "opacity": 1
+          },
+          "Text": {
+            "opacity": 1
+          },
+          "Contribution_8__We_develop_an_algebraic_language_theory_for_automatic_relations_": {
+            "opacity": 1
+          }
+        }
+      },
+      {
+        "type": "child",
+        "name": "open question",
+        "id": "open_question",
+        "enabled": "enabled",
+        "merged": false,
+        "children": [
+          {
+            "type": "show",
+            "id": "Research_direction__Understand_what_makes_a_query__hard___i_e__not_expressible_as_a_finite_union_of_CRPQs_with_at_most_k_atoms_______of_tree_width_at_most_k__etc_",
+            "enabled": "enabled",
+            "name": "Research direction. Understand what makes a query “hard”, i.e. not expressible as a finite union of CRPQs with at most k atoms, –''– of tree-width at most k, etc.",
+            "merged": false,
+            "keywords": [
+              "Research direction. Understand what makes a query “hard”, i.e. not expressible as a finite union of CRPQs with at most k atoms, –''– of tree-width at most k, etc."
+            ],
+            "eventId": "1"
+          },
+          {
+            "type": "show",
+            "id": "Partial_solution___semantical_structure_theorem__",
+            "enabled": "enabled",
+            "name": "Partial solution: “semantical structure theorem”.",
+            "merged": false,
+            "keywords": [
+              "Partial solution: “semantical structure theorem”."
+            ],
+            "eventId": "2"
+          },
+          {
+            "type": "show",
+            "id": "Where_to_look__lower_bound_proofs_for_UCPRQ_minimization__profinite_databases_",
+            "enabled": "enabled",
+            "name": "Where to look: lower bound proofs for UCPRQ minimization, profinite databases.",
+            "merged": false,
+            "keywords": [
+              "Where to look: lower bound proofs for UCPRQ minimization, profinite databases."
+            ],
+            "eventId": "3"
+          }
+        ],
+        "keywords": [
+          "easy v.s. hard CRPQs",
+          "open question"
+        ],
+        "eventId": "107",
+        "originalParams": {
+          "Research_direction__Understand_what_makes_a_query__hard___i_e__not_expressible_as_a_finite_union_of_CRPQs_with_at_most_k_atoms_______of_tree_width_at_most_k__etc_": {
+            "opacity": 1
+          },
+          "Partial_solution___semantical_structure_theorem__": {
+            "opacity": 1
+          },
+          "Where_to_look__lower_bound_proofs_for_UCPRQ_minimization__profinite_databases_": {
+            "opacity": 1
+          }
+        }
+      },
+      {
+        "type": "hide",
+        "id": "Group_63",
+        "enabled": "enabled",
+        "name": "Alice on other side",
+        "merged": false,
+        "keywords": [
+          "Alice on other side"
+        ],
+        "eventId": "110"
+      },
+      {
+        "type": "child",
+        "name": "and beyond",
+        "id": "and_beyond",
+        "enabled": "enabled",
+        "merged": false,
+        "children": [
+          {
+            "type": "show",
+            "id": "and_beyond__Pysemigroup_2_0",
+            "enabled": "enabled",
+            "name": "and beyond: Pysemigroup 2.0",
+            "merged": false,
+            "keywords": [
+              "and beyond: Pysemigroup 2.0"
+            ],
+            "eventId": "1"
+          },
+          {
+            "type": "show",
+            "id": "_with_Charles_Paperman_",
+            "enabled": "enabled",
+            "name": "(with Charles Paperman)",
+            "merged": true,
+            "keywords": [
+              "(with Charles Paperman)"
+            ],
+            "eventId": "9"
+          },
+          {
+            "type": "show",
+            "id": "What__Interactive_encyclopedia_of_classes_of_regular_languages_",
+            "enabled": "enabled",
+            "name": "What? Interactive encyclopedia of classes of regular languages.",
+            "merged": false,
+            "keywords": [
+              "What? Interactive encyclopedia of classes of regular languages."
+            ],
+            "eventId": "2"
+          },
+          {
+            "type": "show",
+            "id": "For_whom__Researchers__students_",
+            "enabled": "enabled",
+            "name": "For whom? Researchers & students.",
+            "merged": false,
+            "keywords": [
+              "For whom? Researchers & students."
+            ],
+            "eventId": "3"
+          },
+          {
+            "type": "show",
+            "id": "Why__Compile_all_knowledge_into_a_single_project",
+            "enabled": "enabled",
+            "name": "Why? Compile all knowledge into a single project",
+            "merged": false,
+            "keywords": [
+              "Why? Compile all knowledge into a single project"
+            ],
+            "eventId": "4"
+          },
+          {
+            "type": "show",
+            "id": "Make_this_knowledge_effective",
+            "enabled": "enabled",
+            "name": "Make this knowledge effective",
+            "merged": false,
+            "keywords": [
+              "Make this knowledge effective"
+            ],
+            "eventId": "5"
+          },
+          {
+            "type": "show",
+            "id": "Help_researchers__dis_prove_conjectures_",
+            "enabled": "enabled",
+            "name": "Help researchers (dis)prove conjectures.",
+            "merged": false,
+            "keywords": [
+              "Help researchers (dis)prove conjectures."
+            ],
+            "eventId": "6"
+          },
+          {
+            "type": "show",
+            "id": "Find_inconsistencies_in_the_litterature_",
+            "enabled": "enabled",
+            "name": "Find inconsistencies in the litterature.",
+            "merged": false,
+            "keywords": [
+              "Find inconsistencies in the litterature."
+            ],
+            "eventId": "7"
+          },
+          {
+            "type": "child",
+            "name": "example",
+            "id": "example",
+            "enabled": "enabled",
+            "merged": false,
+            "children": [
+              {
+                "type": "show",
+                "id": "_ab______a_aa__b__",
+                "enabled": "enabled",
+                "name": "(ab)* + (a(aa)*b)*",
+                "merged": false,
+                "keywords": [
+                  "(ab)* + (a(aa)*b)*"
+                ],
+                "eventId": "1"
+              },
+              {
+                "type": "show",
+                "id": "belongs_to_",
+                "enabled": "enabled",
+                "name": "belongs to?",
+                "merged": false,
+                "keywords": [
+                  "belongs to?"
+                ],
+                "eventId": "2"
+              },
+              {
+                "type": "show",
+                "id": "Arrow_56",
+                "enabled": "enabled",
+                "name": "Arrow 56",
+                "merged": true,
+                "keywords": [
+                  "Arrow 56"
+                ],
+                "eventId": "3"
+              },
+              {
+                "type": "show",
+                "id": "Rectangle_15",
+                "enabled": "enabled",
+                "name": "Rectangle 15",
+                "merged": true,
+                "keywords": [
+                  "Rectangle 15"
+                ],
+                "eventId": "4"
+              },
+              {
+                "type": "show",
+                "id": "a_class_of_regexp",
+                "enabled": "enabled",
+                "name": "a class of regexp",
+                "merged": true,
+                "keywords": [
+                  "a class of regexp"
+                ],
+                "eventId": "5"
+              },
+              {
+                "type": "show",
+                "id": "algorithm_n_1",
+                "enabled": "enabled",
+                "name": "algorithm n°1",
+                "merged": true,
+                "keywords": [
+                  "algorithm n°1"
+                ],
+                "eventId": "6"
+              },
+              {
+                "type": "show",
+                "id": "written_by_the_devs",
+                "enabled": "enabled",
+                "name": "written by the devs",
+                "merged": false,
+                "keywords": [
+                  "written by the devs"
+                ],
+                "eventId": "7"
+              },
+              {
+                "type": "show",
+                "id": "Group_7",
+                "enabled": "enabled",
+                "name": "pysemigroup 1.0",
+                "merged": true,
+                "keywords": [
+                  "pysemigroup 1.0"
+                ],
+                "eventId": "8"
+              },
+              {
+                "type": "show",
+                "id": "and_the_community",
+                "enabled": "enabled",
+                "name": "and the community",
+                "merged": false,
+                "keywords": [
+                  "and the community"
+                ],
+                "eventId": "9"
+              },
+              {
+                "type": "show",
+                "id": "algorithm_n_2",
+                "enabled": "enabled",
+                "name": "algorithm n°2",
+                "merged": false,
+                "keywords": [
+                  "algorithm n°2"
+                ],
+                "eventId": "10"
+              },
+              {
+                "type": "show",
+                "id": "Group_72",
+                "enabled": "enabled",
+                "name": "another class",
+                "merged": false,
+                "keywords": [
+                  "algorithm n°3",
+                  "another(?) class",
+                  "another class"
+                ],
+                "eventId": "11"
+              },
+              {
+                "type": "show",
+                "id": "equivalent_",
+                "enabled": "enabled",
+                "name": "equivalent?",
+                "merged": false,
+                "keywords": [
+                  "equivalent?"
+                ],
+                "eventId": "12"
+              },
+              {
+                "type": "show",
+                "id": "Arrow_57",
+                "enabled": "enabled",
+                "name": "Arrow 57",
+                "merged": true,
+                "keywords": [
+                  "Arrow 57"
+                ],
+                "eventId": "13"
+              },
+              {
+                "type": "show",
+                "id": "store",
+                "enabled": "enabled",
+                "name": "store",
+                "merged": false,
+                "keywords": [
+                  "store"
+                ],
+                "eventId": "14"
+              },
+              {
+                "type": "show",
+                "id": "Arrow_58",
+                "enabled": "enabled",
+                "name": "Arrow 58",
+                "merged": false,
+                "keywords": [
+                  "Arrow 58"
+                ],
+                "eventId": "15"
+              },
+              {
+                "type": "show",
+                "id": "Frame2",
+                "enabled": "enabled",
+                "name": "Frame",
+                "merged": true,
+                "keywords": [
+                  "Frame"
+                ],
+                "eventId": "16"
+              },
+              {
+                "type": "show",
+                "id": "use",
+                "enabled": "enabled",
+                "name": "use",
+                "merged": false,
+                "keywords": [
+                  "use"
+                ],
+                "eventId": "17"
+              },
+              {
+                "type": "show",
+                "id": "Arrow_59",
+                "enabled": "enabled",
+                "name": "Arrow 59",
+                "merged": true,
+                "keywords": [
+                  "Arrow 59"
+                ],
+                "eventId": "18"
+              }
+            ],
+            "keywords": [
+              "example"
+            ],
+            "eventId": "8",
+            "originalParams": {
+              "_ab______a_aa__b__": {
+                "opacity": 1
+              },
+              "belongs_to_": {
+                "opacity": 1
+              },
+              "Arrow_56": {
+                "opacity": 1
+              },
+              "Rectangle_15": {
+                "opacity": 1
+              },
+              "a_class_of_regexp": {
+                "opacity": 1
+              },
+              "algorithm_n_1": {
+                "opacity": 1
+              },
+              "written_by_the_devs": {
+                "opacity": 1
+              },
+              "Group_7": {
+                "opacity": 1
+              },
+              "and_the_community": {
+                "opacity": 1
+              },
+              "algorithm_n_2": {
+                "opacity": 1
+              },
+              "Group_72": {
+                "opacity": 1
+              },
+              "equivalent_": {
+                "opacity": 1
+              },
+              "Arrow_57": {
+                "opacity": 1
+              },
+              "store": {
+                "opacity": 1
+              },
+              "Arrow_58": {
+                "opacity": 1
+              },
+              "Frame2": {
+                "opacity": 1
+              },
+              "use": {
+                "opacity": 1
+              },
+              "Arrow_59": {
+                "opacity": 1
+              }
+            }
+          }
+        ],
+        "keywords": [
+          "and beyond"
+        ],
+        "eventId": "111",
+        "originalParams": {
+          "and_beyond__Pysemigroup_2_0": {
+            "opacity": 1
+          },
+          "What__Interactive_encyclopedia_of_classes_of_regular_languages_": {
+            "opacity": 1
+          },
+          "For_whom__Researchers__students_": {
+            "opacity": 1
+          },
+          "Why__Compile_all_knowledge_into_a_single_project": {
+            "opacity": 1
+          },
+          "Make_this_knowledge_effective": {
+            "opacity": 1
+          },
+          "Help_researchers__dis_prove_conjectures_": {
+            "opacity": 1
+          },
+          "Find_inconsistencies_in_the_litterature_": {
+            "opacity": 1
+          },
+          "_with_Charles_Paperman_": {
+            "opacity": 1
+          }
+        }
+      }
+    ],
+    "keywords": [
+      "[Copy] Homomorphisms Problems in",
+      "[Copy] Graph Databases and Automatic Structures",
+      "[Copy] 3rd July 2025",
+      "[Copy] Rémi Morvan",
+      "[Copy] LaBRI, Bordeaux",
+      "[Copy] Ph.D. Defense",
+      "[Copy] PhD Defence · Bordeaux ·",
+      "[Copy] 30th July 2025",
+      "[Copy] RelationalAI",
+      "main slide"
+    ],
+    "eventId": "root",
+    "originalParams": {
+      "database_theory": {
+        "opacity": 1
+      },
+      "logic_programming__constraint_satisfaction_problems_": {
+        "opacity": 1
+      },
+      "Goal__Optimize_queries_": {
+        "opacity": 1
+      },
+      "Group_62": {
+        "opacity": 1
+      },
+      "Group_63": {
+        "opacity": 1,
+        "x": -158.51953125,
+        "y": 54
+      },
+      "data_to_logic": {
+        "opacity": 1
+      },
+      "data_to_logic2": {
+        "opacity": 1
+      },
+      "Problem": {
+        "opacity": 1
+      },
+      "Problem2": {
+        "opacity": 1
+      },
+      "Dichotomy_Theorem__Bulatov__17___Zhuk__17___Any_such_problem_is_either_in_P_or_is_NP_complete_": {
+        "opacity": 1
+      },
+      "Question": {
+        "opacity": 1
+      }
+    }
+  },
+  "treeTimeLine": [],
+  "chronicleTimeLine": []
+}
