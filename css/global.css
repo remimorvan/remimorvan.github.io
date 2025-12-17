@@ -27,6 +27,7 @@ body {
   padding: 0;
   margin: 0;
   width: 100vw;
+  min-width: 340px;
 }
 
 h2,
@@ -53,7 +54,7 @@ figure {
   margin-right: auto;
 }
 figure img {
-  border-radius: 8pt;
+  border-radius: 8px;
 }
 
 figure.in-list {
@@ -289,8 +290,8 @@ footer p::before {
 }
 
 div.highlight pre {
-  border-radius: 8pt;
-  padding: 4pt 8pt;
+  border-radius: 8px;
+  padding: 4px 8px;
   overflow-x: scroll;
 }
 
@@ -301,62 +302,62 @@ code {
 /* --- 
   Update font size depending on screen width
 --- */
-@media (1920pt <= width) {
+@media (1920px <= width) {
   :root {
     --title-font-size: calc(
-    	20pt * 1.44
+    	20px * 1.44
     );
     --main-font-size: calc(
-    	12pt * 1.44
+    	12px * 1.44
     );
   }
 }
-@media (1200pt <= width < 1920pt) {
+@media (1200px <= width < 1920px) {
   :root {
     --title-font-size: calc(
-    	20pt * 1.2
+    	20px * 1.2
     );
     --main-font-size: calc(
-    	12pt * 1.2
+    	12px * 1.2
     );
   }
 }
-@media (680pt <= width < 1200pt) {
+@media (800px <= width < 1200px) {
   :root {
-    --title-font-size: 20pt;
-    --main-font-size: 12pt;
+    --title-font-size: 20px;
+    --main-font-size: 12px;
   }
 }
-@media (420pt <= width < 680pt) {
+@media (540px <= width < 800px) {
   .small {
     display: inline;
   }
   :root {
     --title-font-size: calc(
-    	20pt * 0.9
+    	20px * 0.9
     );
     --main-font-size: calc(
-    	12pt * 0.9
+    	12px * 0.9
     );
   }
 }
-@media (320pt <= width < 420pt) {
+@media (440px <= width < 540px) {
   :root {
     --title-font-size: calc(
-    	20pt * 0.81
+    	20px * 0.81
     );
     --main-font-size: calc(
-    	12pt * 0.81
+    	12px * 0.81
     );
   }
 }
-@media (width < 320pt) {
+@media (width < 440px) {
   :root {
     --title-font-size: calc(
-    	20pt * 0.73
+    	20px * 0.73
     );
     --main-font-size: calc(
-    	12pt * 0.73
+    	12px * 0.73
     );
   }
 }

@@ -9,6 +9,7 @@ body {
 	padding: 0;
 	margin: 0;
 	width: 100vw;
+	min-width: $threshold-min;
 }
 
 h2,
@@ -35,7 +36,7 @@ figure {
 	margin-right: auto;
 
 	img {
-		border-radius: 8pt;
+		border-radius: 8px;
 	}
 }
 
@@ -306,8 +307,8 @@ footer {
 }
 
 div.highlight pre {
-	border-radius: 8pt;
-	padding: 4pt 8pt;
+	border-radius: 8px;
+	padding: 4px 8px;
 	overflow-x: scroll;
 }
 

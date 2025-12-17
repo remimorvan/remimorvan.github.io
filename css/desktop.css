@@ -19,7 +19,7 @@
   font-weight: 400;
   src: url("../fonts/schoolbell-v18-latin-regular.woff2") format("woff2");
 }
-@media (520pt <= width) {
+@media (640px <= width) {
   main {
     position: relative;
     width: calc(100% - 18em - 3em);
@@ -102,13 +102,13 @@
     padding-right: 2.185em;
   }
 }
-@media (520pt <= width < 800pt) {
+@media (640px <= width < 1000px) {
   article {
     width: calc(100% - 3em);
     min-width: calc(100% - 3em);
   }
 }
-@media (800pt <= width) {
+@media (1000px <= width) {
   main {
     padding-left: 1.5em;
     padding-right: 1.5em;

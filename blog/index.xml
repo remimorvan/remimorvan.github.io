@@ -10,9 +10,9 @@
     <atom:link href="https://morvan.xyz/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Porting your LaTeX package in LaTeXML</title>
-      <link>https://morvan.xyz/blog/knowledge-latexml/</link>
+      <link>https://morvan.xyz/blog/latexml-knowledge/</link>
       <pubDate>Wed, 17 Dec 2025 12:35:58 +0100</pubDate>
-      <guid>https://morvan.xyz/blog/knowledge-latexml/</guid>
+      <guid>https://morvan.xyz/blog/latexml-knowledge/</guid>
       <description>I&amp;rsquo;ve starting porting the {{&lt;kl&gt;}}knowledge package{{&lt;/kl&gt;}} in {{&lt;kl&gt;}}LaTeXML{{&lt;/kl&gt;}}. This entry explains the beginning of this journey, in the hope of helping others to port their LaTeX package in {{&lt;kl&gt;}}LaTeXML{{&lt;/kl&gt;}}.</description>
     </item>
   </channel>

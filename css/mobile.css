@@ -19,7 +19,7 @@
   font-weight: 400;
   src: url("../fonts/schoolbell-v18-latin-regular.woff2") format("woff2");
 }
-@media (width < 520pt) {
+@media (width < 640px) {
   body {
     min-height: 100vh;
     display: flex;
@@ -161,7 +161,7 @@
     text-align: center;
   }
 }
-@media (width < 680pt) {
+@media (width < 800px) {
   article figure {
     width: 100%;
   }
