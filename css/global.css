@@ -1,0 +1,364 @@
+@font-face {
+  font-display: swap;
+  font-family: "Inconsolata";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/inconsolata-v36-latin-regular.woff2") format("woff2");
+}
+@font-face {
+  font-display: swap;
+  font-family: "Inconsolata";
+  font-style: normal;
+  font-weight: 800;
+  src: url("../fonts/inconsolata-v36-latin-800.woff2") format("woff2");
+}
+@font-face {
+  font-display: swap;
+  font-family: "Schoolbell";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/schoolbell-v18-latin-regular.woff2") format("woff2");
+}
+body {
+  background: #141519;
+  color: #e6ebe0;
+  font-family: "Inconsolata";
+  font-size: var(--main-font-size);
+  padding: 0;
+  margin: 0;
+  width: 100vw;
+}
+
+h2,
+h3,
+h4 {
+  font-family: "Schoolbell";
+}
+
+h2 {
+  font-size: var(--title-font-size);
+}
+
+h3 {
+  font-size: calc((2 * var(--title-font-size) + var(--main-font-size)) / 3);
+}
+
+h4 {
+  font-size: calc((var(--title-font-size) + 2 * var(--main-font-size)) / 3);
+}
+
+figure {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+figure img {
+  border-radius: 8pt;
+}
+
+figure.in-list {
+  float: left;
+  height: 8em;
+  width: 8em;
+  margin-top: 0;
+  margin-right: 2em;
+  margin-bottom: 1em;
+}
+figure.in-list img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+ul.sparse li {
+  margin: 1em 0 1em 2.6em;
+}
+
+ul {
+  padding-left: 0;
+}
+ul li {
+  list-style: none;
+  margin: 0.5em 0 0.5em 2.6em;
+}
+ul li::before {
+  content: "";
+  background-image: url("../img/bullet.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  transition: rotate 0.4s;
+  display: inline-block;
+  width: 0.6em;
+  height: 0.6em;
+  vertical-align: middle;
+  position: relative;
+  top: -0.1em;
+  margin-left: -1.6em;
+  margin-right: 1em;
+}
+ul li:hover::before {
+  rotate: 108deg;
+  transition: rotate 0.4s;
+}
+
+ul.itemGrouped li::before {
+  width: 0;
+  background: none;
+  margin: 0;
+}
+ul.itemGrouped li {
+  margin: 0.7em 0 0.7em 0em;
+}
+
+a {
+  color: inherit !important;
+  text-decoration: underline dotted;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.center {
+  text-align: center;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.email,
+.arxiv,
+.emph {
+  color: #e58e26;
+}
+
+.doi {
+  color: #079992;
+}
+
+.award {
+  color: #b71540;
+  font-style: italic;
+}
+
+button {
+  background: none;
+  border: none;
+  font-family: "Schoolbell";
+  font-size: var(--main-font-size);
+  color: #e6ebe0 !important;
+  transition: rotate 0.4s;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+button::before {
+  content: "";
+  background-image: var(--button-type, url("../img/link.svg"));
+  transition: rotate 0.4s;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  display: inline-block;
+  width: 3em;
+  height: 3em;
+  vertical-align: middle;
+  margin-top: -0.1em;
+  margin-right: 1em;
+}
+
+button:hover:before {
+  rotate: 360deg;
+  transition: rotate 0.4s;
+}
+
+span.grouping {
+  width: 100%;
+  display: inline-block;
+  position: relative;
+  text-align: right;
+  top: -3.4em;
+  max-height: 0;
+  float: right;
+}
+
+input[type=checkbox]:not(.hamburger) {
+  display: none;
+}
+
+input[type=checkbox]:not(.hamburger) + label {
+  font-family: "Schoolbell";
+}
+
+input[type=checkbox]:not(.hamburger) + label:before {
+  content: "";
+  background-image: url("../img/checkbox-unchecked.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  transition: rotate 0.4s;
+  display: inline-block;
+  height: 2em;
+  width: 2em;
+  vertical-align: middle;
+  margin-top: -0.2em;
+  margin-right: 1em;
+}
+
+input[type=checkbox]:not(.hamburger) + label:hover {
+  cursor: pointer;
+}
+
+input[type=checkbox]:not(.hamburger) + label:hover:before {
+  rotate: 360deg;
+  transition: rotate 0.4s;
+}
+
+input[type=checkbox]:checked:not(.hamburger) + label:before {
+  background-image: url("../img/checkbox-checked.svg");
+}
+
+nav #portrait {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0;
+}
+nav #portrait #portrait-border {
+  position: absolute;
+  height: 12.6em;
+  width: 12.6em;
+  top: 0;
+  left: 2.7em;
+  z-index: 2;
+  transition: rotate 0.4s;
+}
+nav #portrait #portrait-picture {
+  height: 10.332em;
+  width: 10.332em;
+  position: absolute;
+  top: 0.9em;
+  left: 3.6em;
+  z-index: 1;
+}
+nav #portrait:hover #portrait-border {
+  rotate: 108deg;
+  transition: rotate 0.4s;
+}
+nav #menu #menu-container li {
+  font-family: "Schoolbell";
+  font-size: 120%;
+  font-weight: 400;
+}
+nav #menu #menu-container li.here a,
+nav #menu #menu-container li:hover a {
+  color: #e58e26 !important;
+}
+
+main {
+  padding: 1em 1.5em;
+}
+main article {
+  margin: 1em 1.5em;
+}
+
+article > *:first-child {
+  margin-top: 0;
+}
+article > *:last-child {
+  margin-bottom: 0;
+}
+
+footer a {
+  text-decoration: none;
+}
+footer p {
+  vertical-align: baseline;
+}
+footer p::before {
+  content: "";
+  background: url("../img/footer.svg") no-repeat 0 0;
+  background-size: 100% 100%;
+  display: inline-block;
+  width: 3.13em;
+  height: 1em;
+  margin-right: 0.5em;
+  vertical-align: middle;
+  margin-top: -0.1em;
+}
+
+div.highlight pre {
+  border-radius: 8pt;
+  padding: 4pt 8pt;
+  overflow-x: scroll;
+}
+
+code {
+  font-size: 0.9em;
+}
+
+/* --- 
+  Update font size depending on screen width
+--- */
+@media (1920pt <= width) {
+  :root {
+    --title-font-size: calc(
+    	20pt * 1.44
+    );
+    --main-font-size: calc(
+    	12pt * 1.44
+    );
+  }
+}
+@media (1200pt <= width < 1920pt) {
+  :root {
+    --title-font-size: calc(
+    	20pt * 1.2
+    );
+    --main-font-size: calc(
+    	12pt * 1.2
+    );
+  }
+}
+@media (680pt <= width < 1200pt) {
+  :root {
+    --title-font-size: 20pt;
+    --main-font-size: 12pt;
+  }
+}
+@media (420pt <= width < 680pt) {
+  .small {
+    display: inline;
+  }
+  :root {
+    --title-font-size: calc(
+    	20pt * 0.9
+    );
+    --main-font-size: calc(
+    	12pt * 0.9
+    );
+  }
+}
+@media (320pt <= width < 420pt) {
+  :root {
+    --title-font-size: calc(
+    	20pt * 0.81
+    );
+    --main-font-size: calc(
+    	12pt * 0.81
+    );
+  }
+}
+@media (width < 320pt) {
+  :root {
+    --title-font-size: calc(
+    	20pt * 0.73
+    );
+    --main-font-size: calc(
+    	12pt * 0.73
+    );
+  }
+}
+
+/*# sourceMappingURL=global.css.map */

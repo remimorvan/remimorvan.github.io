@@ -1,275 +1,379 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+	<head>
+	<meta name="generator" content="Hugo 0.142.0">
+		<meta charset="utf-8" />
+		<meta http-equiv="x-ua-compatible" content="ie=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="description" content="Rémi Morvan's personal website" />
+		<meta name="author" content="Rémi Morvan" />
 
-<head>
-	<title>Rémi Morvan</title>
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-	<meta name="author" content="Rémi Morvan">
-	<meta name="keywords" content="Rémi Morvan, computer science, logic, automata, database, game, knowledge-clustering, knowledge">
-	<meta name="description" content="Personnal webpage of Rémi Morvan, PhD student at LaBRI, Université de Bordeaux.">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Rémi Morvan - Home</title>
 
-	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+		<link rel="stylesheet" href="/css/global.css" />
+		<link rel="stylesheet" href="/css/desktop.css" />
+		<link rel="stylesheet" href="/css/mobile.css" />
+		
+		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+		<link rel="manifest" href="/site.webmanifest">
+	</head>
 
-	<link rel="stylesheet" href="design.css">
-	<link rel="stylesheet" href="hamburger.css">
-
-</head>
-
-<body>
-
-	<canvas id='boxCanvas'></canvas>
-
-	<div id="content">
-
-		<nav id="navbar-mobile">
-			<button class="hamburger hamburger--spin" type="button">
-				<span class="hamburger-box">
-					<span class="hamburger-inner"></span>
-				</span>
-			</button>
-
-			<div id="menu-container">
-				<ul id="menu-mobile">
-					<li><a href="index.html">About</a></li>
-					<li><a href="index.html#news">News</a></li>
-					<li><a href="index.html#talks">Talks</a></li>
-					<li><a href="index.html#publi">Publications</a></li>
-					<li><a href="https://github.com/remimorvan/knowledge-clustering">Knowledge-Clustering</a></li>
-					<li><a href="phd.html">Ph.D. Thesis</a></li>
-					<li><a href="teaching.html">Teaching (fr)</a></li>
-				</ul>
+	<body>
+		<nav>
+			<div id="portrait">
+				<img src="/img/photo-border.svg" id="portrait-border" />
+				<img src="/img/remi.png" id="portrait-picture" />
+			</div>
+			<h1>
+				<a href="/">
+					<img
+						src="/img/logo-mobile.svg"
+						alt="Rémi Morvan"
+						id="logo-mobile"
+					/>
+					<img
+						src="/img/logo-desktop.svg"
+						alt="Rémi Morvan"
+						id="logo-desktop"
+					/>
+				</a>
+			</h1>
+			<div id="menu">
+				<input id="menu-box" class="hamburger" type="checkbox" />
+				<label class="hamburger-container" for="menu-box">
+					<div class="hamburger-button"></div>
+				</label>
+				<div id="menu-container">
+					<ul>
+						
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+								<li
+									class="
+										here
+									"
+								>
+									<a href="/"
+										>Home</a
+									>
+								</li>
+							
+						
+							
+								<li
+									class=""
+								>
+									<a href="/blog/"
+										>Blog</a
+									>
+								</li>
+							
+						
+							
+								<li
+									class=""
+								>
+									<a href="/research/"
+										>Research</a
+									>
+								</li>
+							
+						
+							
+								<li
+									class=""
+								>
+									<a href="/projects/"
+										>Projects</a
+									>
+								</li>
+							
+						
+							
+								<li
+									class=""
+								>
+									<a href="/phd/"
+										>PhD Thesis</a
+									>
+								</li>
+							
+						
+							
+								<li
+									class=""
+								>
+									<a href="/teaching/"
+										>Teaching</a
+									>
+								</li>
+							
+						
+					</ul>
+				</div>
 			</div>
 		</nav>
 
-		<div id="relative-wrap-aside">
-			<aside>
-				<div id="header">
-					<div id="avatar"></div>
-					<div id="fake-avatar"></div>
-					<h1>Rémi Morvan</h1>
-				</div>
-
-				<nav>
-					<ul>
-						<li><a href="index.html">About</a></li>
-						<li><a href="index.html#news">News</a></li>
-						<li><a href="index.html#talks">Talks</a></li>
-						<li><a href="index.html#publi">Publications</a></li>
-						<li><a href="https://github.com/remimorvan/knowledge-clustering">Knowledge-Clustering</a></li>
-						<li><a href="phd.html">Ph.D. Thesis</a></li>
-						<li><a href="teaching.html">Teaching (fr)</a></li>
-					</ul>
-				</nav>
-
-				<div id="footer">
-					<p class="contact"><b>Contact:</b> <span class="mail"><u>x</u>@u-bordeaux.fr</span>
-						where <u>x</u> = remi.morvan</p>
-					<p class="copyright">
-						Licensed under <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.
-					</p>
-				</div>
-			</aside>
-		</div>
-
 		<main>
-
-			<header>
-				<img src="img/photo.jpg" width="120" height="120" alt="Photo of Rémi Morvan">
-				<div>
-					<h1>Rémi Morvan</h1>
-					<p><b>Contact:</b> <span class="mail"><u>x</u>@u-bordeaux.fr</span>
-						where <u>x</u> = remi.morvan</p>
-				</div>
-			</header>
-
-			<section>
-				<a id="about" class="anchor"></a>
-				<article>
-					<h2>About me</h2>
-					<p>Since September 2021, I am a <strong>Ph.D. student
-							at <a href="https://www.labri.fr/">LaBRI</a>,
-							<a href="https://www.u-bordeaux.fr/">Université de Bordeaux</a></strong>,
-						under the supervision of
-						<a class="kl">Diego Figueira</a> and
-						<a class="kl">Nathanaël Fijalkow</a>,
-						in the <a href="https://www.labri.fr/en/formal-methods-and-models">Formal Methods and Models department</a>, in the
-						<a href="https://ratio.labri.fr/">RATIO</a>,
-						<a href="https://lx.labri.fr/">LX</a>
-						and <a href="https://synth.labri.fr/">Synth</a> teams.
-					</p>
-					<p>
-						<b>CV:</b> <a href="cv-morvan-en.pdf">in English</a> / <a href="cv-morvan-fr.pdf">in French</a>.<br>
-						<b>Contact:</b> <span class="mail"><u>x</u>@u-bordeaux.fr</span> where <u>x</u> = remi.morvan (in French or in English).
-					</p>
-					<p>
-						I am interested in <b><span class="important">logic</span></b>
-						with an emphasis on <b><i>database theory</i>, <i>automata</i>, <i>algebraic language theory</i> and <i>finite model theory</i></b>.
-					</p>
-					<h3>Current responsibilities:</h3>
-					<ul>
-						<li>Member of <b><a class="kl">LaBRI</a>'s scientific council</b>.</li>
-						<li>Substitute member of the <b>council of the <a href="https://www.u-bordeaux.fr/recherche/structures-de-recherche/departements-de-recherche/SIN">STEM department of
-									Univ. Bordeaux</a></b>.</li>
-					</ul>
-				</article>
-
-				<a id="news" class="anchor"></a>
-				<article>
-					<h2>News</h2>
-					<ul>
-						<li class="important">May 2025: I sent <b><a href="phd.html">my thesis</a></b> to the jury!
-							You can find this <i>preliminary version</i> as well
-							as information on the defence <a href="phd.html">here</a>.
-						</li>
-						<li>May 2025: We developed a small puzzle game with some friends
-							in 48 hours: you can <b><a href="https://taissir.itch.io/reverse-heist">play online</a></b>!
-						</li>
-						<li class="important">Apr. 2025: <b><i>Distinguished Paper
-									Award</i></b> at PODS '25 for <a href="https://arxiv.org/abs/2504.00612">Minimizing Conjunctive Regular Path Queries</a>!
-						</li>
-						<li>Mar. 2025:
-							<b><a href="https://arxiv.org/abs/2212.01679">Semantic Tree-Width and Path-Width of Conjunctive Regular Path Queries</a></b> is now published.
-						</li>
-						<li>Feb. 2025: <b><a href="https://arxiv.org/abs/2504.00612">Minimizing Conjunctive Regular Path Queries</a></b> has been accepted to PODS '25!</li>
-						<li>Dec. 2024: I've begun the redaction of my thesis...</li>
-						<li>Oct. 2024: <b><a href="https://arxiv.org/abs/2404.15496">The Algebras for Automatic Relations</a></b> has been accepted to CSL.</li>
-						<!-- <li>
-							Aug 2024: We are co-organizing the <b><a class="kl">Workshop on Algebraic Methods in Automata Theory</a></b> with <a class="kl">Thomas Colcombet</a> at Highlights '24.
-							Do not hesitate to get in touch if you are interested!
-
-						</li> -->
-						<!-- <li>
-							June 2024: Antoine Cuvelier is starting an internship on the homomorphism problem on automatic graphs.
-						</li> -->
-						<!-- <li>
-							Feb 2024: I'm co-organizing the <b><a class="kl">ATLAS '24</a> workshop on automata, logic and algebra</b>, in Rennes, on 23—25 April.
-						</li> -->
-					</ul>
-
-					<div class="row">
-						<div class="column">
-							<h3>Recent publications</h3>
-							<div id="recentPublications">
-							</div>
-							<span class="important goto">
-								<a href="#publi">See all publications</a>
-							</span>
-						</div>
-						<div class="column">
-							<h3>Recent talks</h3>
-							<div id="recentTalks">
-							</div>
-							<span class="important goto">
-								<a href="#talks">See all talks</a>
-							</span>
-						</div>
-					</div>
-				</article>
-
-				<article>
-					<h2>Improving the way we do research</h2>
-					<p style="margin-bottom: 0px;">
-						<span style="float: right">
-							<a href="https://tcs4f.org" style="display: inline-block;
-						background-color: white; border: 2px solid #CCCCCC;
-						padding: 5px; margin: 0px 20px 0px 0px; border-radius: 5px;">
-								<img src="https://tcs4f.org/themes/tcs4f/img/logo_short.svg" alt="Theoretical Computer Scientists for Future" width="100">
-							</a>
-						</span>
-						I support the <a href="https://tcs4f.org">Theoretical Computer Scientists for Future</a> initiative. In particular, I do not take the plane, unless for long visits in a country
-						not accessible by train.
-					</p>
-					<p style="margin-bottom: 0px;">
-						Some interesting webpages:
-					</p>
-					<ul style="margin-top: 0px;">
-						<li>
-							<a href="https://a3nm.net/work/research/wrong">Antoine's "What's wrong with academia?"</a>
-						</li>
-						<li>
-							<a href="https://www.mimuw.edu.pl/~bojan/posts/how-to-improve-your-citations-with-one-simple-trick">Mikołaj's "How to improve your citations"</a>
-						</li>
-						<li>
-							<a href="https://games-automata-play.com/blog/advice/">
-								Nath's astuces de grand-mère
-							</a>
-						</li>
-					</ul>
-				</article>
+			
+	<article class="fullwidth" @>
+		<h2>About me</h2>
+		
 
 
-				<a id="knowledge" class="anchor"></a>
-				<article>
-					<h2>Knowledge (links)</h2>
-					<p>
-					<ul>
-						<li>
-							the <a href="https://ctan.org/pkg/knowledge"><b>knowledge</b></a> LaTeX package;
-						</li>
-						<li>
-							<a href="https://github.com/remimorvan/knowledge-clustering"><b>knowledge-clustering</b></a>:
-							an easy-to-use command-line tool I developed to <b>automate the use of knowledge</b>;
-						</li>
-						<li>
-							<a href="https://github.com/remimorvan/knowledge-examples"><b>knowledge-examples</b></a>: a minimal example for knowledge and a <b>tutorial</b> for both knowledge and
-							knowledge-clustering.
-						</li>
-					</ul>
-					</p>
-					<blockquote>
-						I never thought I would meet someone this excited about knowledge!
-						<cite>
-							Thomas C.
-						</cite>
-					</blockquote>
-				</article>
 
-				<a id="talks" class="anchor"></a>
-				<article id="talksArticle">
-					<h2>Talks</h2>
 
-					<label class="toggle">
-						<span class="toggle-label">Group by title</span>
-						<input class="toggle-checkbox" type="checkbox" id="checkboxGroupTalks" checked>
-						<div class="toggle-switch"></div>
-					</label>
 
-					<div id="talksArticleContent"></div>
-				</article>
 
-				<a id="publi" class="anchor"></a>
-				<article id="publications">
-					<h2>Publications</h2>
 
-					<label class="toggle">
-						<span class="toggle-label">Group by type</span>
-						<input class="toggle-checkbox" type="checkbox" id="checkboxGroupPapers">
-						<div class="toggle-switch"></div>
-					</label>
 
-					<div id="publicationsArticleContent"></div>
-				</article>
 
-			</section>
 
-			<footer class="copyright">
-				<p>
-					Licensed under <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.
-				</p>
-			</footer>
+
+
+<p>I am currently a <strong>freelance software engineer</strong>, working on the <a href="projects/latexml-knowledge">LaTeXML*knowledge project</a>.</p>
+<p>From September 2021 to August 2025, I was a Ph.D. student at LaBRI, Université de Bordeaux, under the supervision of <em><a href="https://www.labri.fr/perso/dfigueir/">Diego Figueira</a></em> and <em><a href="https://games-automata-play.com/">Nathanaël Fijalkow</a></em>. My thesis, <a href="/phd"><strong><em>Homomorphism Problems in Graph Databases and Automatic Structures</em></strong></a>,
+focuses on optimizing graph database queries and studying constraint satisfaction problems over automatic structures.</p>
+<p><strong>Email: <span class="emph"><u>x</u>@morvan.xyz</span> where <span class="emph"><u>x</u> = remi</span></strong>.</p>
+<div class="center">
+	<a href="/remi-morvan-en.pdf">
+	<button style='--button-type: url("../img/download.svg")'
+		>download my short resume</button
+	>
+	</a>
+</div>
+
+
+	</article>
+	<article>
+		<h2>News</h2>
+		<ul>
+			
+			
+			
+				
+				<li
+					>Oct 2025:
+					I&rsquo;ve started working on the <a href="projects/latexml-knowledge">LaTeXML*knowledge project</a> as a freelance engineer.</li
+				>
+			
+				
+				<li
+					>Oct 2025:
+					I&rsquo;ve accepted to be part of the programme committee of <a href="https://edbticdt2027.github.io/">ICDT &lsquo;27</a>.</li
+				>
+			
+				
+				<li
+					>Oct 2025:
+					The final version of my thesis has been accepted by the university. You can find it <a href="/thesis/thesis-morvan-2025-10-08.pdf">here</a>.</li
+				>
+			
+			
+			
+			
+				
+			
+				
+			
+				
+			
+				
+					
+				
+			
+				
+			
+				
+			
+				
+					
+				
+			
+			
+			
+				<li>Jul 2025: I successfully defended my thesis!</li>
+			
+				<li>Apr 2025: <span class="emph">Distinguished Paper Award</span> at PODS &lsquo;25 for <a href="https://arxiv.org/abs/2504.00612"><em>Minimizing Conjunctive Regular Path Queries</em></a>.</li>
+			
+		</ul>
+		<div class="center">
+	<a href="/news">
+	<button style='--button-type: url("../img/article.svg")'
+		>see all news</button
+	>
+	</a>
+</div>
+
+	</article>
+	<article>
+		<h2>Blog</h2>
+		<ul>
+			
+				<li
+					><strong
+						><a href="/blog/knowledge-latexml/">Porting your LaTeX package in LaTeXML</a></strong
+					>
+					· Dec 17, 2025<br />
+					
+	I&rsquo;ve starting porting the <a href="https://ctan.org/pkg/knowledge">knowledge package</a> in <a href="https://github.com/brucemiller/LaTeXML">LaTeXML</a>. This entry explains the beginning of this journey, in the hope of helping others to port their LaTeX package in <a href="https://github.com/brucemiller/LaTeXML">LaTeXML</a>.
+
+</li
+				>
+			
+		</ul>
+		<div class="center">
+	<a href="/blog">
+	<button style='--button-type: url("../img/blog.svg")'
+		>see all posts</button
+	>
+	</a>
+</div>
+
+	</article>
+	<article>
+		<h2>Projects</h2>
+		<ul>
+			
+			
+				<li
+					><strong
+						><a href="/projects/knowledge-latexml/">knowledge*LaTeXML</a></strong
+					><br />
+					
+	Contributing to the LaTeXML software to add support for the knowledge package.
+
+</li
+				>
+			
+				<li
+					><strong
+						><a href="/projects/knowledge-clustering/">knowledge-clustering</a></strong
+					><br />
+					
+	A command-line assistance tool to facilitate the use of the knowledge LaTeX package.
+
+</li
+				>
+			
+				<li
+					><strong
+						><a href="/projects/pysemigroup2/">Pysemigroup 2.0</a></strong
+					><br />
+					
+	Collaborative database project dedicated to visualizing and comparing research results in automata theory.
+
+</li
+				>
+			
+				<li
+					><strong
+						><a href="/projects/reverse-heist/">Reverse Heist</a></strong
+					><br />
+					
+	A puzzle game made in 72h with Godot. Your goal: to pull off a heist, except that you&rsquo;ll not be stealing anything…
+
+</li
+				>
+			
+		</ul>
+		<div class="center">
+	<a href="/projects">
+	<button style='--button-type: url("../img/projects.svg")'
+		>see all projects</button
+	>
+	</a>
+</div>
+
+	</article>
+	<article>
+		<h2>Research</h2>
+		<p><strong>Last papers:</strong></p>
+		
+		<ul>
+			
+				
+<li><strong>Homomorphism Problems in Graph Databases and Automatic Structures</strong>, 2025<br/>
+	Ph.D. thesis
+	 · 
+	<span class="arxiv"><a href="https://arxiv.org/abs/2510.07422">arXiv</a></span>
+	 · 
+	<span class="doi"><a href="https://theses.hal.science/tel-05316424">doi</a></span>
+	
+</li>
+			
+				
+<li><strong>Minimizing Conjunctive Regular Path Queries</strong>, 2025<br/>
+	PODS &#39;25
+	 · 
+	<span class="arxiv"><a href="https://arxiv.org/abs/2504.00612">arXiv</a></span>
+	 · 
+	<span class="doi"><a href="https://doi.org/10.1145/3725237">doi</a></span>
+	<br/><span class="award">Distinguished Paper Award</span>
+</li>
+			
+		</ul>
+		<p><strong>Last talk:</strong></p>
+		
+		<ul>
+			
+				
+<li><strong>Relational AI</strong> · 30 Jul 2025
+	<br/>
+	<i>Homomorphisms Problems in Graph Databases and Automatic Structures, and Beyond</i><br/>
+	online · 45min
+	
+		· <span class="emph"><a href="/slides/2025-07-30-RAI">slides</a></span>
+	
+</li>
+			
+		</ul>
+		<div class="center">
+	<a href="/research">
+	<button style='--button-type: url("../img/article.svg")'
+		>see all publications &amp; talks</button
+	>
+	</a>
+</div>
+
+	</article>
+
 		</main>
 
-	</div>
-
-	<script src="script/menu.js"></script>
-	<script src="script/boxes.js"></script>
-
-	<script type="module" src="script/publications.js"></script>
-	<script type="module" src="script/talks.js"></script>
-	<script type="module" src="script/kl.js"></script>
-</body>
-
+		<footer>
+			
+				<p>
+					<a href="https://creativecommons.org/licenses/by/4.0/">
+						CC BY 4.0
+					</a>
+					Rémi Morvan.
+				</p>
+			
+		</footer>
+		<script src="/js/scripts.js"></script>
+	</body>
 </html>

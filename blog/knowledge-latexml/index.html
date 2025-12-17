@@ -1,0 +1,525 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="x-ua-compatible" content="ie=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="description" content="Rémi Morvan's personal website" />
+		<meta name="author" content="Rémi Morvan" />
+
+		<title>Rémi Morvan - Porting your LaTeX package in LaTeXML</title>
+
+		<link rel="stylesheet" href="/css/global.css" />
+		<link rel="stylesheet" href="/css/desktop.css" />
+		<link rel="stylesheet" href="/css/mobile.css" />
+		
+		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+		<link rel="manifest" href="/site.webmanifest">
+	</head>
+
+	<body>
+		<nav>
+			<div id="portrait">
+				<img src="/img/photo-border.svg" id="portrait-border" />
+				<img src="/img/remi.png" id="portrait-picture" />
+			</div>
+			<h1>
+				<a href="/">
+					<img
+						src="/img/logo-mobile.svg"
+						alt="Rémi Morvan"
+						id="logo-mobile"
+					/>
+					<img
+						src="/img/logo-desktop.svg"
+						alt="Rémi Morvan"
+						id="logo-desktop"
+					/>
+				</a>
+			</h1>
+			<div id="menu">
+				<input id="menu-box" class="hamburger" type="checkbox" />
+				<label class="hamburger-container" for="menu-box">
+					<div class="hamburger-button"></div>
+				</label>
+				<div id="menu-container">
+					<ul>
+						
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+								<li
+									class=""
+								>
+									<a href="/"
+										>Home</a
+									>
+								</li>
+							
+						
+							
+								<li
+									class=""
+								>
+									<a href="/blog/"
+										>Blog</a
+									>
+								</li>
+							
+						
+							
+								<li
+									class=""
+								>
+									<a href="/research/"
+										>Research</a
+									>
+								</li>
+							
+						
+							
+								<li
+									class=""
+								>
+									<a href="/projects/"
+										>Projects</a
+									>
+								</li>
+							
+						
+							
+								<li
+									class=""
+								>
+									<a href="/phd/"
+										>PhD Thesis</a
+									>
+								</li>
+							
+						
+							
+								<li
+									class=""
+								>
+									<a href="/teaching/"
+										>Teaching</a
+									>
+								</li>
+							
+						
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+		<main>
+			
+	<article class="fullwidth">
+		<h2>Porting your LaTeX package in LaTeXML</h2>
+		<p><strong>Summary: </strong>I&rsquo;ve starting porting the <a href="https://ctan.org/pkg/knowledge">knowledge package</a> in <a href="https://github.com/brucemiller/LaTeXML">LaTeXML</a>. This entry explains the beginning of this journey, in the hope of helping others to port their LaTeX package in <a href="https://github.com/brucemiller/LaTeXML">LaTeXML</a>.</p>
+		
+			<figure>
+				<img src="/projects/knowledge-latexml.jpg" width="100%"/>
+			</figure>
+		
+		
+		
+
+
+
+
+
+
+
+
+
+
+
+
+<p>The goal of this document is to supplement <a href="https://math.nist.gov/~BMiller/LaTeXML/manual/">LaTeXML&rsquo;s manual</a>
+with a concrete simplified example of porting a LaTeX package in LaTeXML.
+You are hence encouraged to read Chapters 1 to 4 of the manual before reading this entry.</p>
+<h3 id="a-toy-version-of-knowledge">A toy version of knowledge</h3>
+<p>For the purpose of this entry, I will describe an extremely simplified version of the LaTeX <a href="https://ctan.org/pkg/knowledge">knowledge package</a>, called toy-knowledge, and that I will then port in <a href="https://github.com/brucemiller/LaTeXML">LaTeXML</a>.
+The goal of knowledge is to easily insert internal hyperlinks: this way, when the reader encounters a
+technical notion (say in a scientific document), then they can simply click on it to see its definition.</p>
+<p>In toy-knowledge, we will use the following syntax to indicate that &ldquo;some string&rdquo; is a
+technical term that should be clickable.</p>
+<div class="highlight"><pre tabindex="0" style="color:#abb2bf;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-latex" data-lang="latex"><span style="display:flex;"><span><span style="color:#c678dd">\kl</span><span style="color:#e5c07b">{</span>some string<span style="color:#e5c07b">}</span>
+</span></span></code></pre></div><p>This command should print the text &ldquo;some string&rdquo;, and produce a link to its definition.
+The definition of &ldquo;some string&rdquo; should be indicated with the following command.</p>
+<div class="highlight"><pre tabindex="0" style="color:#abb2bf;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-latex" data-lang="latex"><span style="display:flex;"><span><span style="color:#c678dd">\intro</span><span style="color:#e5c07b">{</span>some string<span style="color:#e5c07b">}</span>
+</span></span></code></pre></div><p>The last feature we want to implement is synonyms: you want to have a way to say
+that &ldquo;foo&rdquo; and &ldquo;bar&rdquo; are synonyms, so that if you write</p>
+<div class="highlight"><pre tabindex="0" style="color:#abb2bf;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-latex" data-lang="latex"><span style="display:flex;"><span><span style="color:#c678dd">\intro</span><span style="color:#e5c07b">{</span>foo<span style="color:#e5c07b">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#c678dd">\kl</span><span style="color:#e5c07b">{</span>bar<span style="color:#e5c07b">}</span>
+</span></span></code></pre></div><p>then the link of <code>\kl{bar}</code> will actually refer to the definition
+<code>\intro{foo}</code>. This will be permitted by the following syntax.</p>
+<div class="highlight"><pre tabindex="0" style="color:#abb2bf;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-latex" data-lang="latex"><span style="display:flex;"><span><span style="color:#c678dd">\knowledge</span><span style="color:#e5c07b">{</span>foo<span style="color:#e5c07b">}{</span>notion<span style="color:#e5c07b">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#c678dd">\knowledge</span><span style="color:#e5c07b">{</span>bar<span style="color:#e5c07b">}{</span>link=foo<span style="color:#e5c07b">}</span>
+</span></span></code></pre></div><p>Every knowledge (something that is either the source or destination of a link)
+must be declared using the <code>\knowledge</code> command. We can either identify it
+is a new notion with the <code>notion</code> keyword, or make it a reference to an already defined
+notion with the <code>link=…</code> keyword.</p>
+<p>Just like in the original <a href="https://ctan.org/pkg/knowledge">knowledge package</a>, we would like
+to allow the user to potentially define the knowledges <em>after</em> using them,
+and so</p>
+<div class="highlight"><pre tabindex="0" style="color:#abb2bf;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-latex" data-lang="latex"><span style="display:flex;"><span><span style="color:#c678dd">\intro</span><span style="color:#e5c07b">{</span>foo<span style="color:#e5c07b">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#c678dd">\kl</span><span style="color:#e5c07b">{</span>bar<span style="color:#e5c07b">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#c678dd">\knowledge</span><span style="color:#e5c07b">{</span>foo<span style="color:#e5c07b">}{</span>notion<span style="color:#e5c07b">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#c678dd">\knowledge</span><span style="color:#e5c07b">{</span>bar<span style="color:#e5c07b">}{</span>link=foo<span style="color:#e5c07b">}</span>
+</span></span></code></pre></div><p>just produce exactly the same document as</p>
+<div class="highlight"><pre tabindex="0" style="color:#abb2bf;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-latex" data-lang="latex"><span style="display:flex;"><span><span style="color:#c678dd">\knowledge</span><span style="color:#e5c07b">{</span>foo<span style="color:#e5c07b">}{</span>notion<span style="color:#e5c07b">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#c678dd">\knowledge</span><span style="color:#e5c07b">{</span>bar<span style="color:#e5c07b">}{</span>link=foo<span style="color:#e5c07b">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#c678dd">\intro</span><span style="color:#e5c07b">{</span>foo<span style="color:#e5c07b">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#c678dd">\kl</span><span style="color:#e5c07b">{</span>bar<span style="color:#e5c07b">}</span>
+</span></span></code></pre></div><h3 id="a-short-introduction-to-latexml">A short introduction to LaTeXML</h3>
+<p><a href="https://github.com/brucemiller/LaTeXML">LaTeXML</a> is a LaTeX-to-HTML transpiler. The difficult part in the job is to actually
+produce XML from LaTeX (with <code>latexml</code>): once you&rsquo;ve generated the XML, you can then easily generate HTML5
+or alike (using <code>latexmlpost</code>).</p>
+<figure><img src="https://math.nist.gov/~BMiller/LaTeXML/manual/architecture/figures/digestion.svg"
+    alt="LaTeXML architecture" width="100%"><figcaption>
+      <p>The LaTeXML architecture <a href="https://math.nist.gov/~BMiller/LaTeXML/manual/architecture/">[source]</a></p>
+    </figcaption>
+</figure>
+
+<p>To port toy-knowledge, we will work on LaTeX-to-XML transpiler <code>latexml</code>, in other words, we
+will not touch the post-processing phase.
+The differences phases of LaTeXML can be summed up as follows:</p>
+<ul>
+<li>The <strong>mouth</strong> converts the input LaTeX into a list of <em>tokens</em>. This is the first step of
+parsing LaTeX. A token is usually a character (somethings a string) together with some
+semantical information on its nature. Examples of tokens include <code>T_BEGIN</code> and <code>T_END</code>,
+representing <code>{</code> and <code>}</code> respectively, <code>T_LETTER('z')</code>, <code>T_OTHER('(')</code>,
+or <code>T_CS('\textbf')</code>. &ldquo;CS&rdquo; stands for control sequences: these correspond to LaTeX
+commands, without their arguments.</li>
+<li>The <strong>gullet</strong> expands the tokens and does parsing. <em>Expansion</em> is the LaTeX process
+of replacing (or rather… expanding) macros. For instance, if you have a LaTeX command
+<div class="highlight"><pre tabindex="0" style="color:#abb2bf;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-latex" data-lang="latex"><span style="display:flex;"><span><span style="color:#c678dd">\newcommand\foo</span><span style="color:#e5c07b">{</span><span style="color:#c678dd">\textsf</span><span style="color:#e5c07b">{</span>foo<span style="color:#e5c07b">}}</span>
+</span></span></code></pre></div>then during the <em>expansion</em> phase, whenever you&rsquo;ve used the command <code>\foo</code>, it will be
+replaced by <code>\textsf{foo}</code>.</li>
+<li>The <strong>stomach</strong> then takes care of the
+<span class="emph"><strong>digestion</strong></span>,
+which is the process
+of transforming tokens into <strong>boxes</strong> and <strong>whatsits</strong>. Boxes represent simple
+elements (for instance a letter that should be printed), while whatsits
+are used to generate XML tags.</li>
+<li>The <strong>intestines</strong> take care of <span class="emph"><strong>construction</strong></span>,
+which transforms <strong>boxes</strong> and <strong>whatsits</strong> into a document object model (<strong>DOM</strong>)
+that represents the <strong>syntax tree</strong> of your XML document.</li>
+<li>The <strong>rewriter</strong> allows you to define arbitrary rewriting procedures on this tree.
+You could imagine things like
+&ldquo;if there are two consecutive <code>ref</code> tags with the same link, then merge
+them into single tag&rdquo;.</li>
+<li>Finally, the <strong>serializer</strong> simply serializes your tree: it converts the XML syntax
+tree into a linear structure, namely your final XML document.</li>
+</ul>
+<p>Importantly,
+these phases are sequential document-wide, in the sense the whole document goes through
+the <strong>gullet</strong> before going to the <strong>stomach</strong>.</p>
+<h3 id="perl">Perl</h3>
+<p>LaTeXML is written in Perl.
+If you&rsquo;re not familiar with this language, to be able to understand the code in the
+rest of the blog post, you might want to know that it is dynamically typed, but
+differentiates scalars (<code>$</code>) from arrays (<code>@</code>) and from hashes (<code>%</code> ; hashes correspond to what you might know as dictionaries).
+Functions are called <em>subroutines</em>, and they receive their arguments in an argument array called <code>@_</code>.</p>
+<p>Consider the following piece of code.</p>
+<div class="highlight"><pre tabindex="0" style="color:#abb2bf;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-perl" data-lang="perl"><span style="display:flex;"><span><span style="color:#c678dd">sub</span> <span style="color:#61afef;font-weight:bold">foo</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#c678dd">my</span> (<span style="color:#e06c75">$a</span>, <span style="color:#e06c75">$b</span>) <span style="color:#56b6c2">=</span> <span style="color:#e06c75">@_</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#c678dd">my</span> <span style="color:#e06c75">$c</span> <span style="color:#56b6c2">=</span> <span style="color:#e06c75">$a</span> <span style="color:#56b6c2">+</span> <span style="color:#d19a66">2</span><span style="color:#56b6c2">*</span><span style="color:#e06c75">$b</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#c678dd">if</span> (<span style="color:#e06c75">$c</span> <span style="color:#56b6c2">&gt;=</span> <span style="color:#d19a66">0</span>) {
+</span></span><span style="display:flex;"><span>    <span style="color:#c678dd">return</span> <span style="color:#e06c75">$c</span>;
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>  <span style="color:#c678dd">return</span> <span style="color:#56b6c2">-</span><span style="color:#e06c75">$c</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#e5c07b">printf</span> <span style="color:#e06c75">foo</span>(<span style="color:#d19a66">3</span>, <span style="color:#d19a66">4</span>);
+</span></span></code></pre></div><p>It defines that <em>subroutine</em> <code>foo</code> that expects two scalars as arguments, that we call <code>$a</code>
+and <code>$b</code>. It computes <code>$a + 2*$b</code>, and returns its absolute value.
+By default, Perl returns the value of the last instruction, so the last keyword <code>return</code>
+could actually be omitted.</p>
+<h3 id="porting-toy-knowledge-in-latexml">Porting toy-knowledge in LaTeXML</h3>
+<h4 id="when">When?</h4>
+<p>As mention <a href="https://math.nist.gov/~BMiller/LaTeXML/manual/customization/latexml/">in the manual</a>, to port our package, we will define a Perl module <code>toy-knowledge.sty.ltxml</code>
+in the <code>lib/LaTeXML/Package/</code> directory.</p>
+<p>The first question is to identify <strong>at what phase</strong> we should deal with each command.</p>
+<ul>
+<li><code>\kl</code> should produce a link. In XML, this can be done with the <code>&lt;ref&gt;</code> tag.</li>
+<li><code>\intro</code> behaves exactly as <code>\kl</code>, except that we want to specify the <em>destination</em> of a link rather than its <em>source</em>: we will use the <code>&lt;anchor&gt;</code> tag.</li>
+<li><code>\knowledge</code> does not produce any XML tag. Rather, it gives us some information that we will
+use internally to resolve links. Moreover, we want this information to be handled <strong>before</strong> we&rsquo;re processing the <code>\kl</code> and <code>\intro</code> commands.</li>
+</ul>
+<p>Given these constraints, it is natural to choose <code>\kl</code> and <code>\intro</code> to be
+processed during <strong>construction</strong>: this is the phase where we actually produce
+the XML. On the other hand, <code>\knowledge</code> can be processed during <strong>digestion</strong>:
+this phase happens strictly before construction, but late enough that
+we&rsquo;ve already parsed the document.</p>
+<p>LaTeXML comes equipped with functions that will precisely allow us
+to handle these commands: <a href="https://math.nist.gov/~BMiller/LaTeXML/manual/modules/LaTeXML_Package.html#A3.S0.I9.ix1"><code>DefPrimitive</code></a> to deal with digestion,
+and <a href="https://math.nist.gov/~BMiller/LaTeXML/manual/modules/LaTeXML_Package.html#A3.S0.I11.ix1"><code>DefConstructor</code></a> to deal with construction.
+Next, we need to find a way to share information across the document: we will
+need it since <code>\knowledge</code> will provide with information (synonyms) that we will want to
+use later with <code>\kl</code> and <code>\intro</code>.
+This can be done with <a href="https://math.nist.gov/~BMiller/LaTeXML/manual/modules/LaTeXML_Package.html#A3.S0.I21.ix2"><code>AssignValue</code></a>/<a href="https://math.nist.gov/~BMiller/LaTeXML/manual/idx.html"><code>LookupValue</code></a> that essentially defines (resp. looks up the value of) a global variable
+shared across the document. Rather than values, you can also have a global hash
+with <a href="https://math.nist.gov/~BMiller/LaTeXML/manual/modules/LaTeXML_Package.html#A3.S0.I21.ix8"><code>AssignMapping</code></a>/<a href="https://math.nist.gov/~BMiller/LaTeXML/manual/modules/LaTeXML_Package.html#A3.S0.I21.ix7"><code>LookupMapping</code></a>.</p>
+<p>So globally, here is what we want to do:</p>
+<ul>
+<li>During <em>digestion</em>, we want to handle <code>\knowledge</code> commands.
+We will store synonyms in a hash: its keys will be knowledges, and its value will
+be its parent knowledge (or itself if it has none). For instance,
+<div class="highlight"><pre tabindex="0" style="color:#abb2bf;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-latex" data-lang="latex"><span style="display:flex;"><span><span style="color:#c678dd">\knowledge</span><span style="color:#e5c07b">{</span>foo<span style="color:#e5c07b">}{</span>notion<span style="color:#e5c07b">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#c678dd">\knowledge</span><span style="color:#e5c07b">{</span>bar<span style="color:#e5c07b">}{</span>link=foo<span style="color:#e5c07b">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#c678dd">\knowledge</span><span style="color:#e5c07b">{</span>quuz<span style="color:#e5c07b">}{</span>link=bar<span style="color:#e5c07b">}</span>
+</span></span></code></pre></div>will produce a hash that maps &ldquo;foo&rdquo; to &ldquo;foo&rdquo;, &ldquo;bar&rdquo; to &ldquo;foo&rdquo; and &ldquo;quuz&rdquo; to &ldquo;bar&rdquo;.
+I propose to call this hash <code>KL:knowledges</code>.</li>
+<li>During <em>construction</em>, we will produce XML <code>&lt;anchor&gt;</code> tags. For <code>\kl</code>, they will be
+link source (meaning that they will have a <code>ref</code> attribute, pointing to their
+destination), and for <code>\intro</code>, they will be link targets (meaning that they will have a <code>labels</code> attribute).</li>
+</ul>
+<h4 id="the-mapping-of-knowledges">The mapping of knowledges</h4>
+<div class="highlight"><pre tabindex="0" style="color:#abb2bf;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-perl" data-lang="perl"><span style="display:flex;"><span><span style="color:#e06c75">DefPrimitive</span>(<span style="color:#98c379">&#39;\knowledge{}{}&#39;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#c678dd">sub</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#c678dd">my</span> (<span style="color:#e06c75">$stomach</span>, <span style="color:#e06c75">$kl</span>, <span style="color:#e06c75">$keyword</span>) <span style="color:#56b6c2">=</span> <span style="color:#e06c75">@_</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#c678dd">if</span> (<span style="color:#e06c75">$keyword</span><span style="color:#56b6c2">-&gt;</span><span style="color:#e06c75">toString</span>() <span style="color:#56b6c2">=~</span><span style="color:#98c379"> /^link=(.*)$/</span>) {
+</span></span><span style="display:flex;"><span>      <span style="color:#c678dd">my</span> <span style="color:#e06c75">$link</span> <span style="color:#56b6c2">=</span> <span style="color:#e06c75">$1</span>;
+</span></span><span style="display:flex;"><span>      <span style="color:#e06c75">AssignMapping</span>(<span style="color:#98c379">&#39;KL:knowledges&#39;</span>, <span style="color:#e06c75">$kl</span><span style="color:#56b6c2">-&gt;</span><span style="color:#e06c75">toString</span>(), <span style="color:#e06c75">$link</span>);  
+</span></span><span style="display:flex;"><span>    } <span style="color:#c678dd">elsif</span> (<span style="color:#e06c75">$keyword</span><span style="color:#56b6c2">-&gt;</span><span style="color:#e06c75">toString</span>() <span style="color:#56b6c2">eq</span> <span style="color:#98c379">&#39;notion&#39;</span>) {
+</span></span><span style="display:flex;"><span>      <span style="color:#e06c75">AssignMapping</span>(<span style="color:#98c379">&#39;KL:knowledges&#39;</span>, <span style="color:#e06c75">$kl</span><span style="color:#56b6c2">-&gt;</span><span style="color:#e06c75">toString</span>(), <span style="color:#e06c75">$kl</span><span style="color:#56b6c2">-&gt;</span><span style="color:#e06c75">toString</span>());  
+</span></span><span style="display:flex;"><span>    } <span style="color:#c678dd">else</span> {
+</span></span><span style="display:flex;"><span>      <span style="color:#e06c75">Error</span>(<span style="color:#98c379">&#39;expected&#39;</span>, <span style="color:#98c379">&#39;notion or link=&#39;</span>, <span style="color:#e06c75">$stomach</span>, <span style="color:#98c379">&#34;Second argument of \\knowledge should be &#39;notion&#39; or &#39;link=…&#39;.&#34;</span>);
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>    <span style="color:#c678dd">return</span> <span style="color:#e5c07b">undef</span>;
+</span></span><span style="display:flex;"><span>});
+</span></span></code></pre></div><p>In its most elementary form, <a href="https://math.nist.gov/~BMiller/LaTeXML/manual/modules/LaTeXML_Package.html#A3.S0.I9.ix1"><code>DefPrimitive</code></a> takes two arguments</p>
+<ul>
+<li>a <em>prototype</em>, here <code>\knowledge{}{}</code>, which means that whenever we encounter the control sequence <code>\knowledge</code>,
+we expect it to be followed by two arguments (<code>{}</code>)</li>
+<li>a <em>replacement code</em>, which is a subroutine that takes the current state of the stomach and the parsed arguments<br>
+(here there are two arguments, that we call <code>$kl</code> and <code>keyword</code>). This subroutine will be executed during
+<em>digestion</em>, usually returns nothing (<code>return undef;</code>, although it could return Boxes or Whatsits).</li>
+</ul>
+<p>Here, the <em>replacement code</em> does the following: first,
+it tries to match the second argument to the regular expression <code>link=(.*)</code>.</p>
+<ul>
+<li>If successful, it defines a new scalar <code>$link</code> with the value of the first group (<code>$1</code>) of the regexp.
+in this context, <code>$link</code> will hence contain the argument, stripped of its prefix <code>link=</code>. We then assign
+the value of <code>$link</code> to the first argument in the mapping <code>KL:knowledges</code>.</li>
+<li>Otherwise, it checks if the second argument is the string &ldquo;notion&rdquo;,
+in which case, in the mapping <code>KL:knowledges</code>, we map the first argument to itself.</li>
+<li>Lastly, we raise an error, of type &ldquo;expected&rdquo;.</li>
+</ul>
+<p>Note that this is executed at <em>digestion</em>, and so the arguments will have already been parsed: they are not strings,
+but lists of tokens. This is why we need to use the method <code>-&gt;toString()</code>.</p>
+<p>For instance, if the LaTeX document contains</p>
+<div class="highlight"><pre tabindex="0" style="color:#abb2bf;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-latex" data-lang="latex"><span style="display:flex;"><span><span style="color:#c678dd">\knowledge</span><span style="color:#e5c07b">{</span>foo<span style="color:#e5c07b">}{</span>notion<span style="color:#e5c07b">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#c678dd">\knowledge</span><span style="color:#e5c07b">{</span>bar<span style="color:#e5c07b">}{</span>link=foo<span style="color:#e5c07b">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#c678dd">\knowledge</span><span style="color:#e5c07b">{</span>quuz<span style="color:#e5c07b">}{</span>link=bar<span style="color:#e5c07b">}</span>
+</span></span></code></pre></div><p>then the mapping &lsquo;KL:knowledges&rsquo; will map &ldquo;foo&rdquo; to &ldquo;foo&rdquo;, &ldquo;bar&rdquo; to &ldquo;foo&rdquo; and &ldquo;quuz&rdquo; to &ldquo;bar&rdquo;.</p>
+<p>Now, to deal with links, given a set of knowledges that are synonyms,
+we want to assign to this class a unique identifier. Naturally, we choose the first notion of the class
+that was defined. It can be computed by iteratively following the <code>link</code>. For instance, the identifier of
+&ldquo;quuz&rdquo; will be &ldquo;foo&rdquo; since &ldquo;quuz&rdquo; links to &ldquo;bar&rdquo; which in turn links to &ldquo;foo&rdquo;, which has the keyword <code>notion</code>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#abb2bf;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-perl" data-lang="perl"><span style="display:flex;"><span><span style="color:#c678dd">sub</span> <span style="color:#61afef;font-weight:bold">getIdOfKnowledge</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#c678dd">my</span> (<span style="color:#e06c75">$kl</span>) <span style="color:#56b6c2">=</span> <span style="color:#e06c75">@_</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#c678dd">if</span> (<span style="color:#c678dd">my</span> <span style="color:#e06c75">$link</span> <span style="color:#56b6c2">=</span> <span style="color:#e06c75">LookupMapping</span>(<span style="color:#98c379">&#39;KL:knowledges&#39;</span>, <span style="color:#e06c75">$kl</span>)) {
+</span></span><span style="display:flex;"><span>    <span style="color:#c678dd">if</span> (<span style="color:#e06c75">$link</span> <span style="color:#56b6c2">eq</span> <span style="color:#e06c75">$kl</span>) {
+</span></span><span style="display:flex;"><span>      <span style="color:#c678dd">return</span> <span style="color:#e06c75">$kl</span>;
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>    <span style="color:#c678dd">return</span> <span style="color:#e06c75">getIdOfKnowledge</span>(<span style="color:#e06c75">$link</span>);
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>  <span style="color:#c678dd">return</span> <span style="color:#e5c07b">undef</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>All three scalars <code>getIdOfKnowledge(&quot;foo&quot;)</code>, <code>getIdOfKnowledge(&quot;bar&quot;)</code>, and <code>getIdOfKnowledge(&quot;quuz&quot;)</code>
+will be equal to &ldquo;foo&rdquo;.</p>
+<h4 id="inserting-links">Inserting links</h4>
+<p>Now we simply need to produce refs and anchors from <code>\kl</code> and <code>\intro</code> during <em>construction</em>.
+The syntax of <a href="https://math.nist.gov/~BMiller/LaTeXML/manual/modules/LaTeXML_Package.html#A3.S0.I11.ix1"><code>DefConstructor</code></a> is similar to that of <code>DefPrimitive</code> except that the first argument of the replacement subroutine
+is not the stomach but the <em>document</em>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#abb2bf;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-perl" data-lang="perl"><span style="display:flex;"><span><span style="color:#e06c75">DefConstructor</span>(<span style="color:#98c379">&#39;\kl{}&#39;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#c678dd">sub</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#c678dd">my</span> (<span style="color:#e06c75">$document</span>, <span style="color:#e06c75">$kl</span>) <span style="color:#56b6c2">=</span> <span style="color:#e06c75">@_</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#c678dd">my</span> <span style="color:#e06c75">$klId</span> <span style="color:#56b6c2">=</span> <span style="color:#e06c75">getIdOfKnowledge</span>(<span style="color:#e06c75">$kl</span><span style="color:#56b6c2">-&gt;</span><span style="color:#e06c75">toString</span>());
+</span></span><span style="display:flex;"><span>    <span style="color:#e06c75">$document</span><span style="color:#56b6c2">-&gt;</span><span style="color:#e06c75">openElement</span>(<span style="color:#98c379">&#34;ltx:ref&#34;</span>, (<span style="color:#e06c75">labelref</span> <span style="color:#56b6c2">=&gt;</span> <span style="color:#e06c75">$klId</span>, <span style="color:#e06c75">class</span> <span style="color:#56b6c2">=&gt;</span> <span style="color:#98c379">&#34;kl&#34;</span>));
+</span></span><span style="display:flex;"><span>    <span style="color:#e06c75">$document</span><span style="color:#56b6c2">-&gt;</span><span style="color:#e06c75">absorb</span>(<span style="color:#e06c75">$kl</span><span style="color:#56b6c2">-&gt;</span><span style="color:#e06c75">toString</span>());
+</span></span><span style="display:flex;"><span>    <span style="color:#e06c75">$document</span><span style="color:#56b6c2">-&gt;</span><span style="color:#e06c75">closeElement</span>(<span style="color:#98c379">&#34;ltx:ref&#34;</span>);
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>);
+</span></span></code></pre></div><p>This produces in the document, an XML tag <code>&lt;ref&gt;&lt;/ref&gt;</code> with two attributes:</p>
+<ul>
+<li>&ldquo;label,ref&rdquo;, which is set to the id of the knowledge,</li>
+<li>&ldquo;class&rdquo;, set to &ldquo;kl&rdquo;.
+The content of the tag will be the argument of the <code>\kl{}</code>.</li>
+</ul>
+<p>For instance,</p>
+<div class="highlight"><pre tabindex="0" style="color:#abb2bf;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-latex" data-lang="latex"><span style="display:flex;"><span>Some <span style="color:#c678dd">\kl</span><span style="color:#e5c07b">{</span>quuz<span style="color:#e5c07b">}</span> test.
+</span></span></code></pre></div><p>will produce the following XML</p>
+<div class="highlight"><pre tabindex="0" style="color:#abb2bf;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-xml" data-lang="xml"><span style="display:flex;"><span><span style="color:#e06c75">&lt;para&gt;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#e06c75">&lt;p&gt;</span>
+</span></span><span style="display:flex;"><span>    Some <span style="color:#e06c75">&lt;ref</span> <span style="color:#e06c75">class=</span><span style="color:#98c379">&#34;kl&#34;</span> <span style="color:#e06c75">labelref=</span><span style="color:#98c379">&#34;foo&#34;</span><span style="color:#e06c75">&gt;</span>quuz<span style="color:#e06c75">&lt;/ref&gt;</span> test.
+</span></span><span style="display:flex;"><span>  <span style="color:#e06c75">&lt;/p&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#e06c75">&lt;/para&gt;</span>
+</span></span></code></pre></div><p>In fact, it can happen that <code>$klId</code> is undefined, which will happen it the LaTeX document did not
+define the knowledge we are trying to use. In this case, we could want to still produce some valid
+text, but with a warning. You would also like to ensure that this is processed in &rsquo;text&rsquo; mode (as opposed to &lsquo;math&rsquo;),
+which can be done by adding the <code>mode =&gt; 'text'</code>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#abb2bf;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-perl" data-lang="perl"><span style="display:flex;"><span><span style="color:#e06c75">DefConstructor</span>(<span style="color:#98c379">&#39;\kl{}&#39;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#c678dd">sub</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#c678dd">my</span> (<span style="color:#e06c75">$document</span>, <span style="color:#e06c75">$kl</span>) <span style="color:#56b6c2">=</span> <span style="color:#e06c75">@_</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#c678dd">my</span> <span style="color:#e06c75">$klStr</span> <span style="color:#56b6c2">=</span> <span style="color:#e06c75">$kl</span><span style="color:#56b6c2">-&gt;</span><span style="color:#e06c75">toString</span>();
+</span></span><span style="display:flex;"><span>    <span style="color:#c678dd">if</span> (<span style="color:#c678dd">my</span> <span style="color:#e06c75">$klId</span> <span style="color:#56b6c2">=</span> <span style="color:#e06c75">getIdOfKnowledge</span>(<span style="color:#e06c75">$klStr</span>)) {
+</span></span><span style="display:flex;"><span>      <span style="color:#e06c75">$document</span><span style="color:#56b6c2">-&gt;</span><span style="color:#e06c75">openElement</span>(<span style="color:#98c379">&#34;ltx:ref&#34;</span>, (<span style="color:#e06c75">labelref</span> <span style="color:#56b6c2">=&gt;</span> <span style="color:#e06c75">$klId</span>, <span style="color:#e06c75">class</span> <span style="color:#56b6c2">=&gt;</span> <span style="color:#98c379">&#34;kl&#34;</span>));
+</span></span><span style="display:flex;"><span>      <span style="color:#e06c75">$document</span><span style="color:#56b6c2">-&gt;</span><span style="color:#e06c75">absorb</span>(<span style="color:#e06c75">$klStr</span>);
+</span></span><span style="display:flex;"><span>      <span style="color:#e06c75">$document</span><span style="color:#56b6c2">-&gt;</span><span style="color:#e06c75">closeElement</span>(<span style="color:#98c379">&#34;ltx:ref&#34;</span>);
+</span></span><span style="display:flex;"><span>    } <span style="color:#c678dd">else</span> {
+</span></span><span style="display:flex;"><span>      <span style="color:#e06c75">$document</span><span style="color:#56b6c2">-&gt;</span><span style="color:#e06c75">openElement</span>(<span style="color:#98c379">&#34;ltx:text&#34;</span>, (<span style="color:#e06c75">class</span> <span style="color:#56b6c2">=&gt;</span> <span style="color:#98c379">&#34;kl-warning&#34;</span>));
+</span></span><span style="display:flex;"><span>      <span style="color:#e06c75">$document</span><span style="color:#56b6c2">-&gt;</span><span style="color:#e06c75">absorb</span>(<span style="color:#e06c75">$klStr</span>);
+</span></span><span style="display:flex;"><span>      <span style="color:#e06c75">$document</span><span style="color:#56b6c2">-&gt;</span><span style="color:#e06c75">closeElement</span>(<span style="color:#98c379">&#34;ltx:text&#34;</span>);
+</span></span><span style="display:flex;"><span>      <span style="color:#e06c75">Warn</span>(<span style="color:#98c379">&#34;ignore&#34;</span>, <span style="color:#98c379">&#34;\\kl&#34;</span>, <span style="color:#e06c75">$document</span><span style="color:#56b6c2">-&gt;</span><span style="color:#e06c75">getElement</span>(), <span style="color:#98c379">&#34;Undefined knowledge &#39;$klStr&#39;.&#34;</span>);
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>  },
+</span></span><span style="display:flex;"><span>  <span style="color:#e06c75">mode</span> <span style="color:#56b6c2">=&gt;</span> <span style="color:#98c379">&#39;text&#39;</span>
+</span></span><span style="display:flex;"><span>);
+</span></span></code></pre></div><p>Introductions are dealt with similarly, except that we produce <code>&lt;anchor&gt;</code> tags with labels.</p>
+<div class="highlight"><pre tabindex="0" style="color:#abb2bf;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-perl" data-lang="perl"><span style="display:flex;"><span><span style="color:#e06c75">DefConstructor</span>(<span style="color:#98c379">&#39;\intro{}&#39;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#c678dd">sub</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#c678dd">my</span> (<span style="color:#e06c75">$document</span>, <span style="color:#e06c75">$kl</span>) <span style="color:#56b6c2">=</span> <span style="color:#e06c75">@_</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#c678dd">my</span> <span style="color:#e06c75">$klStr</span> <span style="color:#56b6c2">=</span> <span style="color:#e06c75">$kl</span><span style="color:#56b6c2">-&gt;</span><span style="color:#e06c75">toString</span>();
+</span></span><span style="display:flex;"><span>    <span style="color:#c678dd">if</span> (<span style="color:#c678dd">my</span> <span style="color:#e06c75">$klId</span> <span style="color:#56b6c2">=</span> <span style="color:#e06c75">getIdOfKnowledge</span>(<span style="color:#e06c75">$klStr</span>)) {
+</span></span><span style="display:flex;"><span>      <span style="color:#e06c75">$document</span><span style="color:#56b6c2">-&gt;</span><span style="color:#e06c75">openElement</span>(<span style="color:#98c379">&#34;ltx:anchor&#34;</span>, (<span style="color:#e06c75">labels</span> <span style="color:#56b6c2">=&gt;</span> <span style="color:#e06c75">$klId</span>, <span style="color:#e06c75">class</span> <span style="color:#56b6c2">=&gt;</span> <span style="color:#98c379">&#34;kl-intro&#34;</span>));
+</span></span><span style="display:flex;"><span>      <span style="color:#e06c75">$document</span><span style="color:#56b6c2">-&gt;</span><span style="color:#e06c75">absorb</span>(<span style="color:#e06c75">$klStr</span>);
+</span></span><span style="display:flex;"><span>      <span style="color:#e06c75">$document</span><span style="color:#56b6c2">-&gt;</span><span style="color:#e06c75">closeElement</span>(<span style="color:#98c379">&#34;ltx:anchor&#34;</span>);
+</span></span><span style="display:flex;"><span>    } <span style="color:#c678dd">else</span> {
+</span></span><span style="display:flex;"><span>      <span style="color:#e06c75">$document</span><span style="color:#56b6c2">-&gt;</span><span style="color:#e06c75">openElement</span>(<span style="color:#98c379">&#34;ltx:text&#34;</span>, (<span style="color:#e06c75">class</span> <span style="color:#56b6c2">=&gt;</span> <span style="color:#98c379">&#34;kl-intro&#34;</span>));
+</span></span><span style="display:flex;"><span>      <span style="color:#e06c75">$document</span><span style="color:#56b6c2">-&gt;</span><span style="color:#e06c75">absorb</span>(<span style="color:#e06c75">$klStr</span>);
+</span></span><span style="display:flex;"><span>      <span style="color:#e06c75">$document</span><span style="color:#56b6c2">-&gt;</span><span style="color:#e06c75">closeElement</span>(<span style="color:#98c379">&#34;ltx:text&#34;</span>);
+</span></span><span style="display:flex;"><span>      <span style="color:#e06c75">Warn</span>(<span style="color:#98c379">&#34;ignore&#34;</span>, <span style="color:#98c379">&#34;\\kl&#34;</span>, <span style="color:#e06c75">$document</span><span style="color:#56b6c2">-&gt;</span><span style="color:#e06c75">getElement</span>(), <span style="color:#98c379">&#34;Undefined knowledge `$klStr`.&#34;</span>);
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>  },
+</span></span><span style="display:flex;"><span>  <span style="color:#e06c75">mode</span> <span style="color:#56b6c2">=&gt;</span> <span style="color:#98c379">&#39;text&#39;</span>
+</span></span><span style="display:flex;"><span>);
+</span></span></code></pre></div><h4 id="an-example">An example</h4>
+<p>Consider the following LaTeX document.</p>
+<div class="highlight"><pre tabindex="0" style="color:#abb2bf;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-latex" data-lang="latex"><span style="display:flex;"><span><span style="color:#c678dd">\documentclass</span><span style="color:#e5c07b">{</span>article<span style="color:#e5c07b">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#c678dd">\usepackage</span><span style="color:#e06c75">[utf8]</span><span style="color:#e5c07b">{</span>inputenc<span style="color:#e5c07b">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#c678dd">\usepackage</span><span style="color:#e06c75">[T1]</span><span style="color:#e5c07b">{</span>fontenc<span style="color:#e5c07b">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#c678dd">\usepackage</span><span style="color:#e5c07b">{</span>toy-knowledge<span style="color:#e5c07b">}</span> 
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#c678dd">\begin</span><span style="color:#e5c07b">{</span>document<span style="color:#e5c07b">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>A <span style="color:#c678dd">\intro</span><span style="color:#e5c07b">{</span>puma<span style="color:#e5c07b">}</span>, also called <span style="color:#c678dd">\kl</span><span style="color:#e5c07b">{</span>mountain lion<span style="color:#e5c07b">}</span>,
+</span></span><span style="display:flex;"><span>is a kind of big cat.
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#c678dd">\kl</span><span style="color:#e5c07b">{</span>Mountain lions<span style="color:#e5c07b">}</span> live in America.
+</span></span><span style="display:flex;"><span>Some <span style="color:#c678dd">\kl</span><span style="color:#e5c07b">{</span>undefined<span style="color:#e5c07b">}</span> knowledge.
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#c678dd">\knowledge</span><span style="color:#e5c07b">{</span>puma<span style="color:#e5c07b">}{</span>notion<span style="color:#e5c07b">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#c678dd">\knowledge</span><span style="color:#e5c07b">{</span>mountain lion<span style="color:#e5c07b">}{</span>link=puma<span style="color:#e5c07b">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#c678dd">\knowledge</span><span style="color:#e5c07b">{</span>Mountain lions<span style="color:#e5c07b">}{</span>link=mountain lion<span style="color:#e5c07b">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#c678dd">\end</span><span style="color:#e5c07b">{</span>document<span style="color:#e5c07b">}</span>
+</span></span></code></pre></div><p>Running <code>latexml</code> on it, together with the <code>toy-knowledge.sty.ltxml</code> binding we just defined,
+produces the following XML document.</p>
+<div class="highlight"><pre tabindex="0" style="color:#abb2bf;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-xml" data-lang="xml"><span style="display:flex;"><span><span style="color:#7f848e">&lt;?xml version=&#34;1.0&#34; encoding=&#34;UTF-8&#34;?&gt;</span>
+</span></span><span style="display:flex;"><span>(…)
+</span></span><span style="display:flex;"><span><span style="color:#e06c75">&lt;document</span> <span style="color:#e06c75">xmlns=</span><span style="color:#98c379">&#34;http://dlmf.nist.gov/LaTeXML&#34;</span><span style="color:#e06c75">&gt;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#e06c75">&lt;resource</span> <span style="color:#e06c75">src=</span><span style="color:#98c379">&#34;LaTeXML.css&#34;</span> <span style="color:#e06c75">type=</span><span style="color:#98c379">&#34;text/css&#34;</span><span style="color:#e06c75">/&gt;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#e06c75">&lt;resource</span> <span style="color:#e06c75">src=</span><span style="color:#98c379">&#34;ltx-article.css&#34;</span> <span style="color:#e06c75">type=</span><span style="color:#98c379">&#34;text/css&#34;</span><span style="color:#e06c75">/&gt;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#e06c75">&lt;para</span> <span style="color:#e06c75">xml:id=</span><span style="color:#98c379">&#34;p1&#34;</span><span style="color:#e06c75">&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#e06c75">&lt;p&gt;</span>A <span style="color:#e06c75">&lt;anchor</span> <span style="color:#e06c75">class=</span><span style="color:#98c379">&#34;kl-intro&#34;</span> <span style="color:#e06c75">labels=</span><span style="color:#98c379">&#34;puma&#34;</span> <span style="color:#e06c75">xml:id=</span><span style="color:#98c379">&#34;p1.1&#34;</span><span style="color:#e06c75">&gt;</span>puma<span style="color:#e06c75">&lt;/anchor&gt;</span>, also called <span style="color:#e06c75">&lt;ref</span> <span style="color:#e06c75">class=</span><span style="color:#98c379">&#34;kl&#34;</span> <span style="color:#e06c75">labelref=</span><span style="color:#98c379">&#34;puma&#34;</span><span style="color:#e06c75">&gt;</span>mountain lion<span style="color:#e06c75">&lt;/ref&gt;</span>,
+</span></span><span style="display:flex;"><span>is a kind of big cat.<span style="color:#e06c75">&lt;/p&gt;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#e06c75">&lt;/para&gt;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#e06c75">&lt;para</span> <span style="color:#e06c75">xml:id=</span><span style="color:#98c379">&#34;p2&#34;</span><span style="color:#e06c75">&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#e06c75">&lt;p&gt;&lt;ref</span> <span style="color:#e06c75">class=</span><span style="color:#98c379">&#34;kl&#34;</span> <span style="color:#e06c75">labelref=</span><span style="color:#98c379">&#34;puma&#34;</span><span style="color:#e06c75">&gt;</span>Mountain lions<span style="color:#e06c75">&lt;/ref&gt;</span> live in America.
+</span></span><span style="display:flex;"><span>Some <span style="color:#e06c75">&lt;text</span> <span style="color:#e06c75">class=</span><span style="color:#98c379">&#34;kl-warning&#34;</span><span style="color:#e06c75">&gt;</span>undefined<span style="color:#e06c75">&lt;/text&gt;</span> knowledge.<span style="color:#e06c75">&lt;/p&gt;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#e06c75">&lt;/para&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#e06c75">&lt;/document&gt;</span>
+</span></span></code></pre></div><p>Perhaps it is worth noting the anchor</p>
+<div class="highlight"><pre tabindex="0" style="color:#abb2bf;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-xml" data-lang="xml"><span style="display:flex;"><span><span style="color:#e06c75">&lt;anchor</span> <span style="color:#e06c75">class=</span><span style="color:#98c379">&#34;kl-intro&#34;</span> <span style="color:#e06c75">labels=</span><span style="color:#98c379">&#34;puma&#34;</span> <span style="color:#e06c75">xml:id=</span><span style="color:#98c379">&#34;p1.1&#34;</span><span style="color:#e06c75">&gt;</span>puma<span style="color:#e06c75">&lt;/anchor&gt;</span>
+</span></span></code></pre></div><p>which has an <code>xml:id</code> attribute: this is because LaTeXML automatically assigns an <code>xml:id</code> attribute
+to every tag with <code>labels</code>.</p>
+<p>In turn, using <code>latexmlpost</code> on this document will produce the following HTML code.</p>
+<div class="highlight"><pre tabindex="0" style="color:#abb2bf;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span><span style="color:#7f848e">&lt;!DOCTYPE html&gt;</span>&lt;<span style="color:#e06c75">html</span> <span style="color:#e06c75">lang</span><span style="color:#56b6c2">=</span><span style="color:#98c379">&#34;en&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#e06c75">head</span>&gt;(…)&lt;/<span style="color:#e06c75">head</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#e06c75">body</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#e06c75">div</span> <span style="color:#e06c75">class</span><span style="color:#56b6c2">=</span><span style="color:#98c379">&#34;ltx_page_main&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#e06c75">div</span> <span style="color:#e06c75">class</span><span style="color:#56b6c2">=</span><span style="color:#98c379">&#34;ltx_page_content&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>  &lt;<span style="color:#e06c75">article</span> <span style="color:#e06c75">class</span><span style="color:#56b6c2">=</span><span style="color:#98c379">&#34;ltx_document&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#e06c75">div</span> <span style="color:#e06c75">id</span><span style="color:#56b6c2">=</span><span style="color:#98c379">&#34;p1&#34;</span> <span style="color:#e06c75">class</span><span style="color:#56b6c2">=</span><span style="color:#98c379">&#34;ltx_para&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>      &lt;<span style="color:#e06c75">p</span> <span style="color:#e06c75">class</span><span style="color:#56b6c2">=</span><span style="color:#98c379">&#34;ltx_p&#34;</span>&gt;A &lt;<span style="color:#e06c75">a</span> <span style="color:#e06c75">name</span><span style="color:#56b6c2">=</span><span style="color:#98c379">&#34;p1.1&#34;</span> <span style="color:#e06c75">id</span><span style="color:#56b6c2">=</span><span style="color:#98c379">&#34;p1.1&#34;</span> <span style="color:#e06c75">class</span><span style="color:#56b6c2">=</span><span style="color:#98c379">&#34;ltx_anchor kl-intro&#34;</span>&gt;puma&lt;/<span style="color:#e06c75">a</span>&gt;, also called &lt;<span style="color:#e06c75">a</span> <span style="color:#e06c75">href</span><span style="color:#56b6c2">=</span><span style="color:#98c379">&#34;#p1.1&#34;</span> <span style="color:#e06c75">title</span><span style="color:#56b6c2">=</span><span style="color:#98c379">&#34;puma&#34;</span> <span style="color:#e06c75">class</span><span style="color:#56b6c2">=</span><span style="color:#98c379">&#34;ltx_ref kl&#34;</span>&gt;mountain lion&lt;/<span style="color:#e06c75">a</span>&gt;,
+</span></span><span style="display:flex;"><span>      is a kind of big cat.&lt;/<span style="color:#e06c75">p</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;/<span style="color:#e06c75">div</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#e06c75">div</span> <span style="color:#e06c75">id</span><span style="color:#56b6c2">=</span><span style="color:#98c379">&#34;p2&#34;</span> <span style="color:#e06c75">class</span><span style="color:#56b6c2">=</span><span style="color:#98c379">&#34;ltx_para&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>      &lt;<span style="color:#e06c75">p</span> <span style="color:#e06c75">class</span><span style="color:#56b6c2">=</span><span style="color:#98c379">&#34;ltx_p&#34;</span>&gt;&lt;<span style="color:#e06c75">a</span> <span style="color:#e06c75">href</span><span style="color:#56b6c2">=</span><span style="color:#98c379">&#34;#p1.1&#34;</span> <span style="color:#e06c75">title</span><span style="color:#56b6c2">=</span><span style="color:#98c379">&#34;puma&#34;</span> <span style="color:#e06c75">class</span><span style="color:#56b6c2">=</span><span style="color:#98c379">&#34;ltx_ref kl&#34;</span>&gt;Mountain lions&lt;/<span style="color:#e06c75">a</span>&gt; live in America.
+</span></span><span style="display:flex;"><span>      Some &lt;<span style="color:#e06c75">span</span> <span style="color:#e06c75">class</span><span style="color:#56b6c2">=</span><span style="color:#98c379">&#34;ltx_text kl-warning&#34;</span>&gt;undefined&lt;/<span style="color:#e06c75">span</span>&gt; knowledge.&lt;/<span style="color:#e06c75">p</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;/<span style="color:#e06c75">div</span>&gt;
+</span></span><span style="display:flex;"><span>  &lt;/<span style="color:#e06c75">article</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#e06c75">div</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#e06c75">footer</span> <span style="color:#e06c75">class</span><span style="color:#56b6c2">=</span><span style="color:#98c379">&#34;ltx_page_footer&#34;</span>&gt;(…)&lt;/<span style="color:#e06c75">footer</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#e06c75">div</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#e06c75">body</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#e06c75">html</span>&gt;
+</span></span></code></pre></div><p>As expected, both <code>mountain lion</code> and <code>Mountain lions</code> link to <code>puma</code>.</p>
+<h3 id="conclusion">Conclusion</h3>
+<p>Naturally the toy example given here could be improved. On the LaTeXML side, we could
+look at <code>latexmlpost</code> to change the CSS and display the intro/kl with special colors
+by using the classes <code>kl</code>, <code>kl-intro</code>, <code>kl-warning</code> and <code>kl-intro-warning</code>.
+The trivial implementation of the union-find structure we gave for defined knowledges can naturally be greatly optimized. With our implement, there could also be circular links.</p>
+<p>More importantly, I would like to conclude with a few things I learned during my last month working with LaTeXML:</p>
+<ul>
+<li>Always start by asking yourself <strong>at which phase</strong> (e.g. <em>digestion</em> v.s. <em>construction</em>) of the process you should work.</li>
+<li>If you don&rsquo;t find enough details in the manual, check out the code: there are many helpful comments, and it is actually much more readable that I originally expected (once you get used to reading Perl).</li>
+<li>While LLMs are essentially useless at producing correct bindings, they are fantastic at pointing out which features/functions of LaTeXML you can use to achieve a specific goal.</li>
+</ul>
+<div class="center">
+	<a href="https://github.com/remimorvan/LaTeXMLxKnowledge/">
+	<button style='--button-type: url("../img/link.svg")'
+		>see the knowledge*LaTeXML project on Github</button
+	>
+	</a>
+</div>
+
+
+	</article>
+
+		</main>
+
+		<footer>
+			
+				<p>
+					<a href="https://creativecommons.org/licenses/by/4.0/">
+						CC BY 4.0
+					</a>
+					Rémi Morvan.
+				</p>
+			
+		</footer>
+		<script src="/js/scripts.js"></script>
+	</body>
+</html>

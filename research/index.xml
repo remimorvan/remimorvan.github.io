@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Researches on Rémi Morvan</title>
+    <link>http://localhost:1313/research/</link>
+    <description>Recent content in Researches on Rémi Morvan</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <atom:link href="http://localhost:1313/research/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Research</title>
+      <link>http://localhost:1313/research/research/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/research/research/</guid>
+      <description>&lt;p&gt;My research is mainly focused on &lt;strong&gt;&lt;span class=&#34;emph&#34;&gt;logic&lt;/span&gt;&lt;/strong&gt;, with an emphasis on &lt;em&gt;database theory, automata, algebraic language theory and finite model theory&lt;/em&gt;.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

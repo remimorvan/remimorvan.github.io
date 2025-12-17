@@ -1,0 +1,140 @@
+@use "utilities" as *;
+
+@media ($threshold-mobile <=width) {
+	// Desktop
+
+	main {
+		position: relative;
+		width: calc(100% - $side-width - 3em);
+		left: $side-width;
+
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	nav {
+		position: fixed;
+		overflow-y: scroll;
+		height: 100%;
+		width: $side-width;
+		left: 0;
+		top: 0;
+		border-right: $border-color $border-size solid;
+
+		#portrait {
+			left: calc(0.15 * (0.7 * $side-width) - 2em);
+			top: calc($side-width * 0.35);
+		}
+
+		h1 {
+			display: inline-block;
+			vertical-align: middle;
+			position: absolute;
+			left: calc($side-width / 6);
+			top: 0.25em;
+			font-size: var(--main-font-size);
+
+			#logo-desktop {
+				display: inline-block;
+				width: calc($side-width / 2);
+			}
+
+			#logo-mobile {
+				display: none;
+			}
+		}
+
+		#menu {
+			position: relative;
+			top: calc($side-width);
+			padding-bottom: 2.5em;
+
+			#menu-box {
+				display: none;
+			}
+
+			#menu-container {
+				li {
+					display: table;
+					margin: 0;
+					padding: 0.4em 1.5em 0.4em calc($side-width / 6 / 1.2);
+				}
+
+				li::before {
+					display: none;
+				}
+
+				li.here::after {
+					content: "";
+					background-image: url("../img/bullet-emph.svg");
+					background-repeat: no-repeat;
+					background-size: 100%;
+					transition: rotate $transition-time;
+
+					display: inline-block;
+					width: 1em;
+					height: 1em;
+					position: relative;
+					top: 0.15em;
+					left: 0.35em;
+				}
+
+				li.here:hover::after {
+					rotate: 36 + 72deg;
+					transition: rotate $transition-time;
+				}
+
+				a {
+					text-decoration: none;
+				}
+			}
+		}
+	}
+
+	footer {
+		font-size: 80%;
+		background-color: $background-color;
+
+		position: fixed;
+		width: $side-width;
+		bottom: 0;
+		padding-top: 1em;
+		padding-left: calc($side-width / 6 / 0.8 - 3.13em / 2);
+		padding-right: calc($side-width / 6 / 0.8 - 3.13em / 2);
+	}
+}
+
+@media ($threshold-mobile <=width < $threshold-two-col) {
+	// Desktop ; one column display.
+	article {
+		width: calc(100% - 3em);
+		min-width: calc(100% - 3em);
+	}
+}
+
+@media ($threshold-two-col <=width) {
+	main {
+		padding-left: 1.5em;
+		padding-right: 1.5em;
+	}
+
+	// Desktop ; Two column display.
+	article:not(.fullwidth) {
+		width: calc(50% - 3em);
+		min-width: calc(50% - 3em);
+	}
+
+	article.fullwidth {
+		width: calc(100% - 3em);
+		min-width: calc(100% - 3em);
+
+		figure {
+			width: 60%;
+		}
+
+		div.highlight pre {
+			margin-left: 2em;
+			margin-right: 2em;
+		}
+	}
+}

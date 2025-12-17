@@ -1,0 +1,398 @@
+@use "utilities" as *;
+
+body {
+	background: $background-color;
+	color: $foreground-color;
+	font-family: $main-font;
+	font-size: var(--main-font-size);
+
+	padding: 0;
+	margin: 0;
+	width: 100vw;
+}
+
+h2,
+h3,
+h4 {
+	font-family: $title-font;
+}
+
+h2 {
+	font-size: var(--title-font-size);
+}
+
+h3 {
+	font-size: calc((2 * var(--title-font-size) + var(--main-font-size)) / 3);
+}
+
+h4 {
+	font-size: calc((var(--title-font-size) + 2 * var(--main-font-size)) / 3);
+}
+
+figure {
+	width: 70%;
+	margin-left: auto;
+	margin-right: auto;
+
+	img {
+		border-radius: 8pt;
+	}
+}
+
+figure.in-list {
+	float: left;
+	height: 8em;
+	width: 8em;
+	margin-top: 0;
+	margin-right: 2em;
+	margin-bottom: 1em;
+
+	img {
+		object-fit: cover;
+		height: 100%;
+		width: 100%;
+	}
+}
+
+ul.sparse {
+	li {
+		margin: 1em 0 1em 2.6em;
+	}
+}
+
+ul {
+	padding-left: 0;
+
+	li {
+		list-style: none;
+		margin: 0.5em 0 0.5em 2.6em;
+	}
+
+	li::before {
+		content: "";
+		background-image: url("../img/bullet.svg");
+		background-repeat: no-repeat;
+		background-size: 100%;
+		transition: rotate $transition-time;
+
+		display: inline-block;
+		width: 0.6em;
+		height: 0.6em;
+		vertical-align: middle;
+		position: relative;
+		top: -0.1em;
+		margin-left: -1.6em;
+		margin-right: 1em;
+	}
+
+	li:hover::before {
+		rotate: 36 + 72deg;
+		transition: rotate $transition-time;
+	}
+}
+
+ul.itemGrouped {
+	li::before {
+		width: 0;
+		background: none;
+		margin: 0;
+	}
+
+	li {
+		margin: 0.7em 0 0.7em 0em;
+	}
+}
+
+a {
+	color: inherit !important;
+	text-decoration: underline dotted;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+.center {
+	text-align: center;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.email,
+.arxiv,
+.emph {
+	color: $emph-color;
+}
+
+.doi {
+	color: $secondary-color;
+}
+
+.award {
+	color: $tertiary-color;
+	font-style: italic;
+}
+
+button {
+	background: none;
+	border: none;
+	font-family: $title-font;
+	font-size: var(--main-font-size);
+	color: $foreground-color !important;
+
+	transition: rotate $transition-time;
+}
+
+button:hover {
+	cursor: pointer;
+}
+
+button::before {
+	content: "";
+	background-image: var(--button-type, url("../img/link.svg"));
+	transition: rotate $transition-time;
+	background-repeat: no-repeat;
+	background-size: 100%;
+
+	display: inline-block;
+	width: 3em;
+	height: 3em;
+	vertical-align: middle;
+	margin-top: -0.1em;
+	margin-right: 1em;
+}
+
+button:hover:before {
+	rotate: 360deg;
+	transition: rotate $transition-time;
+}
+
+span.grouping {
+	width: 100%;
+	display: inline-block;
+	position: relative;
+	text-align: right;
+	top: -3.4em;
+	max-height: 0;
+	float: right;
+}
+
+input[type="checkbox"]:not(.hamburger) {
+	display: none;
+}
+
+input[type="checkbox"]:not(.hamburger) + label {
+	font-family: $title-font;
+}
+
+input[type="checkbox"]:not(.hamburger) + label:before {
+	content: "";
+	background-image: url("../img/checkbox-unchecked.svg");
+	background-repeat: no-repeat;
+	background-size: 100%;
+	transition: rotate $transition-time;
+
+	display: inline-block;
+	height: 2em;
+	width: 2em;
+	vertical-align: middle;
+	margin-top: -0.2em;
+	margin-right: 1em;
+}
+
+input[type="checkbox"]:not(.hamburger) + label:hover {
+	cursor: pointer;
+}
+
+input[type="checkbox"]:not(.hamburger) + label:hover:before {
+	rotate: 360deg;
+	transition: rotate $transition-time;
+}
+
+input[type="checkbox"]:checked:not(.hamburger) + label:before {
+	background-image: url("../img/checkbox-checked.svg");
+}
+
+nav {
+	#portrait {
+		position: relative;
+		display: inline-block;
+		vertical-align: middle;
+		margin: 0;
+
+		#portrait-border {
+			position: absolute;
+			height: 0.7 * $side-width;
+			width: 0.7 * $side-width;
+			top: 0;
+			left: calc(0.15 * $side-width);
+			z-index: 2;
+			transition: rotate $transition-time;
+		}
+
+		#portrait-picture {
+			height: calc(0.82 * (0.7 * $side-width));
+			width: calc(0.82 * (0.7 * $side-width));
+			position: absolute;
+			top: calc(0.05 * $side-width);
+			left: calc(0.2 * $side-width);
+			z-index: 1;
+		}
+	}
+
+	#portrait:hover #portrait-border {
+		rotate: 36+72deg;
+		transition: rotate $transition-time;
+	}
+
+	#menu {
+		#menu-container {
+			li {
+				font-family: $title-font;
+				font-size: 120%;
+				font-weight: 400;
+			}
+
+			li.here a,
+			li:hover a {
+				color: $emph-color !important;
+			}
+		}
+	}
+}
+
+main {
+	padding: 1em 1.5em;
+
+	article {
+		margin: 1em 1.5em;
+	}
+}
+
+article {
+	> *:first-child {
+		margin-top: 0;
+	}
+
+	> *:last-child {
+		margin-bottom: 0;
+	}
+}
+
+footer {
+	a {
+		text-decoration: none;
+	}
+
+	p {
+		vertical-align: baseline;
+	}
+
+	// https://stackoverflow.com/a/14697069
+	p::before {
+		content: "";
+		background: url("../img/footer.svg") no-repeat 0 0;
+		background-size: 100% 100%;
+
+		display: inline-block;
+		width: 3.13em;
+		height: 1em;
+		margin-right: 0.5em;
+		vertical-align: middle;
+		margin-top: -0.1em;
+	}
+}
+
+div.highlight pre {
+	border-radius: 8pt;
+	padding: 4pt 8pt;
+	overflow-x: scroll;
+}
+
+code {
+	font-size: 0.9em;
+}
+
+/* --- 
+  Update font size depending on screen width
+--- */
+
+@media ($threshold-very-large-font <=width) {
+	// Very large screens
+
+	:root {
+		--title-font-size: calc(
+			#{$title-font-size-abs} * #{$size-factor-very-large-screen}
+		);
+		--main-font-size: calc(
+			#{$main-font-size-abs} * #{$size-factor-very-large-screen}
+		);
+	}
+}
+
+@media ($threshold-large-font <=width < $threshold-very-large-font) {
+	// Large screens
+
+	:root {
+		--title-font-size: calc(
+			#{$title-font-size-abs} * #{$size-factor-large-screen}
+		);
+		--main-font-size: calc(
+			#{$main-font-size-abs} * #{$size-factor-large-screen}
+		);
+	}
+}
+
+@media ($threshold-small-font <=width < $threshold-large-font) {
+	// Normal sized screens
+
+	:root {
+		--title-font-size: #{$title-font-size-abs};
+		--main-font-size: #{$main-font-size-abs};
+	}
+}
+
+@media ($threshold-very-small-font <=width < $threshold-small-font) {
+	// Small screens
+
+	.small {
+		display: inline;
+	}
+
+	:root {
+		--title-font-size: calc(
+			#{$title-font-size-abs} * #{$size-factor-small-screen}
+		);
+		--main-font-size: calc(
+			#{$main-font-size-abs} * #{$size-factor-small-screen}
+		);
+	}
+}
+
+@media ($threshold-tiny-font <=width < $threshold-very-small-font) {
+	// Very small screens
+
+	:root {
+		--title-font-size: calc(
+			#{$title-font-size-abs} * #{$size-factor-very-small-screen}
+		);
+		--main-font-size: calc(
+			#{$main-font-size-abs} * #{$size-factor-very-small-screen}
+		);
+	}
+}
+
+@media (width < $threshold-tiny-font) {
+	// Tiny screens
+
+	:root {
+		--title-font-size: calc(
+			#{$title-font-size-abs} * #{$size-factor-tiny-screen}
+		);
+		--main-font-size: calc(
+			#{$main-font-size-abs} * #{$size-factor-tiny-screen}
+		);
+	}
+}

@@ -1,0 +1,60 @@
+// Fonts
+$title-font: "Schoolbell";
+$main-font: "Inconsolata";
+
+// Font sizes
+$title-font-size-abs: 20pt;
+$main-font-size-abs: 12pt;
+$size-factor-very-large-screen: 1.44;
+$size-factor-large-screen: 1.2;
+$size-factor-small-screen: 0.9;
+$size-factor-very-small-screen: 0.81;
+$size-factor-tiny-screen: 0.73;
+
+$side-width: 18em; // width of nav on side
+
+// Threshold to switch between styles
+$threshold-very-large-font: 1920pt;
+$threshold-large-font: 1200pt;
+$threshold-two-col: 800pt; // Above: desktop, 2 cols; below: desktop, 1col
+$threshold-small-font: 680pt;
+$threshold-mobile: 520pt; // Above: desktop, 1col; below: desktop, 1col
+$threshold-very-small-font: 420pt;
+$threshold-tiny-font: 320pt;
+
+// Colour palette
+$background-color: #141519;
+$border-color: #090909;
+$foreground-color: #e6ebe0;
+$emph-color: #e58e26;
+$secondary-color: #079992;
+$tertiary-color: #b71540;
+
+// Misc
+$transition-time: 0.4s;
+$border-size: 0.28em;
+
+// Defining fonts
+@font-face {
+	font-display: swap;
+	font-family: "Inconsolata";
+	font-style: normal;
+	font-weight: 400;
+	src: url("../fonts/inconsolata-v36-latin-regular.woff2") format("woff2");
+}
+
+@font-face {
+	font-display: swap;
+	font-family: "Inconsolata";
+	font-style: normal;
+	font-weight: 800;
+	src: url("../fonts/inconsolata-v36-latin-800.woff2") format("woff2");
+}
+
+@font-face {
+	font-display: swap;
+	font-family: "Schoolbell";
+	font-style: normal;
+	font-weight: 400;
+	src: url("../fonts/schoolbell-v18-latin-regular.woff2") format("woff2");
+}

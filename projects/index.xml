@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Projects on Rémi Morvan</title>
+    <link>https://morvan.xyz/projects/</link>
+    <description>Recent content in Projects on Rémi Morvan</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <atom:link href="https://morvan.xyz/projects/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>atomPython</title>
+      <link>https://morvan.xyz/projects/atompython/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://morvan.xyz/projects/atompython/</guid>
+      <description>A platform for simulating double-auction markets to study the behaviour of artificial agents.</description>
+    </item>
+    <item>
+      <title>knowledge-clustering</title>
+      <link>https://morvan.xyz/projects/knowledge-clustering/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://morvan.xyz/projects/knowledge-clustering/</guid>
+      <description>A command-line assistance tool to facilitate the use of the knowledge LaTeX package.</description>
+    </item>
+    <item>
+      <title>knowledge*LaTeXML</title>
+      <link>https://morvan.xyz/projects/knowledge-latexml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://morvan.xyz/projects/knowledge-latexml/</guid>
+      <description>Contributing to the LaTeXML software to add support for the knowledge package.</description>
+    </item>
+    <item>
+      <title>Pysemigroup 2.0</title>
+      <link>https://morvan.xyz/projects/pysemigroup2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://morvan.xyz/projects/pysemigroup2/</guid>
+      <description>Collaborative database project dedicated to visualizing and comparing research results in automata theory.</description>
+    </item>
+    <item>
+      <title>Reverse Heist</title>
+      <link>https://morvan.xyz/projects/reverse-heist/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://morvan.xyz/projects/reverse-heist/</guid>
+      <description>A puzzle game made in 72h with Godot. Your goal: to pull off a heist, except that you&amp;rsquo;ll not be stealing anything…</description>
+    </item>
+  </channel>
+</rss>
