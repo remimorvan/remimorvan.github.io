@@ -28,6 +28,7 @@ body {
   margin: 0;
   width: 100vw;
   min-width: 340px;
+  line-height: 1.2;
 }
 
 h2,
@@ -305,27 +306,27 @@ code {
 @media (1920px <= width) {
   :root {
     --title-font-size: calc(
-    	20px * 1.44
+    	22px * 1.44
     );
     --main-font-size: calc(
-    	12px * 1.44
+    	13px * 1.44
     );
   }
 }
 @media (1200px <= width < 1920px) {
   :root {
     --title-font-size: calc(
-    	20px * 1.2
+    	22px * 1.2
     );
     --main-font-size: calc(
-    	12px * 1.2
+    	13px * 1.2
     );
   }
 }
 @media (800px <= width < 1200px) {
   :root {
-    --title-font-size: 20px;
-    --main-font-size: 12px;
+    --title-font-size: 22px;
+    --main-font-size: 13px;
   }
 }
 @media (540px <= width < 800px) {
@@ -334,30 +335,30 @@ code {
   }
   :root {
     --title-font-size: calc(
-    	20px * 0.9
+    	22px * 0.9
     );
     --main-font-size: calc(
-    	12px * 0.9
+    	13px * 0.9
     );
   }
 }
 @media (440px <= width < 540px) {
   :root {
     --title-font-size: calc(
-    	20px * 0.81
+    	22px * 0.81
     );
     --main-font-size: calc(
-    	12px * 0.81
+    	13px * 0.81
     );
   }
 }
 @media (width < 440px) {
   :root {
     --title-font-size: calc(
-    	20px * 0.73
+    	22px * 0.73
     );
     --main-font-size: calc(
-    	12px * 0.73
+    	13px * 0.73
     );
   }
 }
