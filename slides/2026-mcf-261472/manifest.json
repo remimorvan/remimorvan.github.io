@@ -1,0 +1,976 @@
+{
+  "version": 3.1,
+  "presentation": "2026-audition-mcf-11mai",
+  "slideDict": {
+    "new_slide": "main_slide",
+    "ENS_LaBRI": "ENS_LaBRI",
+    "ENS_enseignement": "ENS_enseignement",
+    "thesis": "thesis",
+    "projet_enseignement": "projet_enseignement",
+    "projet_recherche": "projet_recherche",
+    "BDD___pang_nome": "BDD___pang_nome",
+    "relativisation": "relativisation",
+    "pratique_recherche": "pratique_recherche",
+    "zoom_DBG": "zoom_DBG"
+  },
+  "tree": {
+    "type": "child",
+    "name": "main slide",
+    "id": "new_slide",
+    "enabled": "enabled",
+    "merged": false,
+    "children": [
+      {
+        "type": "show",
+        "id": "categories",
+        "enabled": "enabled",
+        "name": "categories",
+        "merged": false,
+        "keywords": [
+          "[Copy] recherche",
+          "[Copy] enseignement",
+          "categories"
+        ],
+        "eventId": "24"
+      },
+      {
+        "type": "show",
+        "id": "Ellipse_51",
+        "enabled": "enabled",
+        "name": "focus enseignement",
+        "merged": true,
+        "keywords": [
+          "focus enseignement"
+        ],
+        "eventId": "25"
+      },
+      {
+        "type": "child",
+        "name": "ENS-LaBRI enseignement",
+        "id": "ENS_enseignement",
+        "enabled": "enabled",
+        "merged": false,
+        "children": [
+          {
+            "type": "show",
+            "id": "M2FeSup__Master_Formation___l_Enseignement_Sup_rieur_en_Math_matiques__Agr_gation_de_maths_option_info__Colles_de_math_matiques_en_MPSI_Lyc_e_Saint_Louis",
+            "enabled": "enabled",
+            "name": "M2FeSup (Master Formation à l'Enseignement Supérieur en Mathématiques) Agrégation de maths option info  Colles de mathématiques en MPSI Lycée Saint-Louis",
+            "merged": false,
+            "keywords": [
+              "M2FeSup (Master Formation à l'Enseignement Supérieur en Mathématiques) Agrégation de maths option info  Colles de mathématiques en MPSI Lycée Saint-Louis"
+            ],
+            "eventId": "3"
+          },
+          {
+            "type": "show",
+            "id": "th_se_TD",
+            "enabled": "enabled",
+            "name": "thèse TD",
+            "merged": false,
+            "keywords": [
+              "236heqTD · enseignements diversifiés",
+              "public :  Univ. Bordeaux Enseirb-Matméca",
+              "sujets :  info fondamentale programmation bases de données machine learning (co-création de l'UE)",
+              "thèse TD"
+            ],
+            "eventId": "4"
+          },
+          {
+            "type": "show",
+            "id": "M2FeSup__Master_Formation___l_Enseignement_Sup_rieur_en_Math_matiques__Agr_gation_de_maths_option_info__Colles_de_math_matiques_en_MPSI_Lyc_e_Saint_Louis2",
+            "enabled": "enabled",
+            "name": "thèse encadrement",
+            "merged": true,
+            "keywords": [
+              "thèse encadrement"
+            ],
+            "eventId": "5"
+          }
+        ],
+        "keywords": [
+          "ENS-LaBRI enseignement"
+        ],
+        "eventId": "7",
+        "originalParams": {
+          "M2FeSup__Master_Formation___l_Enseignement_Sup_rieur_en_Math_matiques__Agr_gation_de_maths_option_info__Colles_de_math_matiques_en_MPSI_Lyc_e_Saint_Louis": {
+            "opacity": 1
+          },
+          "th_se_TD": {
+            "opacity": 1
+          },
+          "M2FeSup__Master_Formation___l_Enseignement_Sup_rieur_en_Math_matiques__Agr_gation_de_maths_option_info__Colles_de_math_matiques_en_MPSI_Lyc_e_Saint_Louis2": {
+            "opacity": 1
+          }
+        }
+      },
+      {
+        "type": "show",
+        "id": "Colles_d_informatique_en_MP2I_Lyc_e_Montaigne",
+        "enabled": "enabled",
+        "name": "Colles d'informatique en MP2I Lycée Montaigne",
+        "merged": false,
+        "keywords": [
+          "Colles d'informatique en MP2I Lycée Montaigne"
+        ],
+        "eventId": "8"
+      },
+      {
+        "type": "child",
+        "name": "projet enseignement",
+        "id": "projet_enseignement",
+        "enabled": "enabled",
+        "merged": false,
+        "children": [
+          {
+            "type": "show",
+            "id": "Licence",
+            "enabled": "enabled",
+            "name": "Licence",
+            "merged": false,
+            "keywords": [
+              "Enseignement en licence",
+              "BCC 1 UE Introductives  Appréhender les approches disciplinaires pour cerner leurs spécificités et leurs complémentarités BCC 2 Développement pro/perso Préparer son projet professionnel et savoir le valoriser BCC 3 Modèles & Algorithmes  Faire un choix de modèles et algorithmes adaptés à la résolution  de problème BCC 4 Langages de Programmation Mise en œuvre de langages de programmation BCC 5 Architectures Appréhender les architectures matérielles et logicielles support BCC 6 Données Organiser et gérer des données BCC 7 Approfondissement Approfondir ses connaissances disciplinaires BCC 8 Gestion (MIAGE) Appréhender les Systèmes d'Information des Entreprises",
+              "?",
+              "+ projets interdisciplinaires maths-info (L3 maths-info)",
+              "Licence"
+            ],
+            "eventId": "1"
+          },
+          {
+            "type": "show",
+            "id": "master",
+            "enabled": "enabled",
+            "name": "master",
+            "merged": false,
+            "keywords": [
+              "Enseignement en master",
+              "Programmation avancée (M1) UE bases de données · pluridisciplinarité Introduction à l'IA (M2, parcours non-IA) …",
+              "master"
+            ],
+            "eventId": "2"
+          },
+          {
+            "type": "show",
+            "id": "p_dagogie",
+            "enabled": "enabled",
+            "name": "pédagogie",
+            "merged": false,
+            "keywords": [
+              "Méthodes pédagogiques",
+              "méthodes vs. résultats → live coding LLMs → projet + soutenance / TPs notés",
+              "pédagogie"
+            ],
+            "eventId": "3"
+          }
+        ],
+        "keywords": [
+          "projet enseignement"
+        ],
+        "eventId": "9",
+        "originalParams": {
+          "Licence": {
+            "opacity": 1
+          },
+          "master": {
+            "opacity": 1
+          },
+          "p_dagogie": {
+            "opacity": 1
+          }
+        }
+      },
+      {
+        "type": "show",
+        "id": "Group_12",
+        "enabled": "enabled",
+        "name": "focus recherche",
+        "merged": false,
+        "keywords": [
+          "focus recherche"
+        ],
+        "eventId": "26"
+      },
+      {
+        "type": "hide",
+        "id": "Ellipse_51",
+        "enabled": "enabled",
+        "name": "focus enseignement",
+        "merged": true,
+        "keywords": [
+          "focus enseignement"
+        ],
+        "eventId": "27"
+      },
+      {
+        "type": "child",
+        "name": "ENS-LaBRI recherche",
+        "id": "ENS_LaBRI",
+        "enabled": "enabled",
+        "merged": false,
+        "children": [
+          {
+            "type": "show",
+            "id": "Group_122",
+            "enabled": "enabled",
+            "name": "MPRI (Master Parisien de Recherche en Informatique)  Stage de M1 à Univ. Warwick en théorie des automates & jeux  Stage de M2 à l'IRIF (Univ. Paris Cité) en logique & théorie des automates",
+            "merged": false,
+            "keywords": [
+              "MPRI (Master Parisien de Recherche en Informatique)  Stage de M1 à Univ. Warwick en théorie des automates & jeux  Stage de M2 à l'IRIF (Univ. Paris Cité) en logique & théorie des automates",
+              "stages"
+            ],
+            "eventId": "14"
+          },
+          {
+            "type": "show",
+            "id": "Group_12",
+            "enabled": "enabled",
+            "name": "thesis-title",
+            "merged": false,
+            "keywords": [
+              "thesis-title",
+              "thesis-title colored"
+            ],
+            "eventId": "13"
+          },
+          {
+            "type": "show",
+            "id": "potatoes",
+            "enabled": "enabled",
+            "name": "potatoes",
+            "merged": false,
+            "keywords": [
+              "potatoes"
+            ],
+            "eventId": "9"
+          },
+          {
+            "type": "child",
+            "name": "thesis",
+            "id": "thesis",
+            "enabled": "enabled",
+            "merged": false,
+            "children": [
+              {
+                "type": "show",
+                "id": "Group_1",
+                "enabled": "enabled",
+                "name": "Étude de requêtes sur les BDD graphes.",
+                "merged": false,
+                "keywords": [
+                  "Requêtes sur les BDD graphes",
+                  "Étude de requêtes sur les BDD graphes."
+                ],
+                "eventId": "1"
+              },
+              {
+                "type": "show",
+                "id": "ICDT__23___LMCS__25___d_cidabilit__de_l__quivalence_avec_une_requ_te_de_petite_tree_width_path_width_PODS__25__Distinguished_Paper_Award____d_cidabilit__de_l__quivalence_avec_une_requ_te_de_petite_taille____conditions_de_non_exprimabilit____minimalit_",
+                "enabled": "enabled",
+                "name": "ICDT '23 & LMCS '25 : décidabilité de l'équivalence avec une requête de petite tree-width/path-width PODS '25 (Distinguished Paper Award) : décidabilité de l'équivalence avec une requête de petite taille  & conditions de non-exprimabilité  /minimalité",
+                "merged": false,
+                "keywords": [
+                  "ICDT '23 & LMCS '25 : décidabilité de l'équivalence avec une requête de petite tree-width/path-width PODS '25 (Distinguished Paper Award) : décidabilité de l'équivalence avec une requête de petite taille  & conditions de non-exprimabilité  /minimalité"
+                ],
+                "eventId": "2"
+              },
+              {
+                "type": "show",
+                "id": "Structures_automatiques",
+                "enabled": "enabled",
+                "name": "Structures automatiques",
+                "merged": false,
+                "keywords": [
+                  "Structures automatiques"
+                ],
+                "eventId": "3"
+              },
+              {
+                "type": "show",
+                "id": "Group_12",
+                "enabled": "enabled",
+                "name": "MFCS '23 : indécidabilité de la 2-coloration régulière & lien avec pbs. de séparation",
+                "merged": false,
+                "keywords": [
+                  "MFCS '23 CSL '25 (seul auteur) Preprint (co-écrit a/ stagiaire)",
+                  "MFCS '23 : indécidabilité de la 2-coloration régulière & lien avec pbs. de séparation"
+                ],
+                "eventId": "5"
+              }
+            ],
+            "keywords": [
+              "thesis"
+            ],
+            "eventId": "8",
+            "originalParams": {
+              "Group_1": {
+                "opacity": 1
+              },
+              "ICDT__23___LMCS__25___d_cidabilit__de_l__quivalence_avec_une_requ_te_de_petite_tree_width_path_width_PODS__25__Distinguished_Paper_Award____d_cidabilit__de_l__quivalence_avec_une_requ_te_de_petite_taille____conditions_de_non_exprimabilit____minimalit_": {
+                "opacity": 1
+              },
+              "Structures_automatiques": {
+                "opacity": 1
+              },
+              "Text": {
+                "opacity": 1
+              },
+              "Group_12": {
+                "opacity": 1
+              }
+            }
+          }
+        ],
+        "keywords": [
+          "ENS-LaBRI recherche"
+        ],
+        "eventId": "6",
+        "originalParams": {
+          "MPRI__Master_Parisien_de_Recherche_en_Informatique___Stage_de_M1___Univ__Warwick_en_th_orie_des_automates___jeux__Stage_de_M2___l_IRIF__Univ__Paris_Cit___en_logique___th_orie_des_automates": {
+            "opacity": 1
+          },
+          "potatoes": {
+            "opacity": 0.5
+          },
+          "Group_12": {
+            "opacity": 1
+          },
+          "Group_122": {
+            "opacity": 1
+          }
+        }
+      },
+      {
+        "type": "show",
+        "id": "Pratique_recherche",
+        "enabled": "enabled",
+        "name": "Pratique recherche",
+        "merged": false,
+        "keywords": [
+          "[Copy] pratique de la recherche",
+          "Pratique recherche"
+        ],
+        "eventId": "29"
+      },
+      {
+        "type": "hide",
+        "id": "Group_12",
+        "enabled": "enabled",
+        "name": "focus recherche",
+        "merged": true,
+        "keywords": [
+          "focus recherche"
+        ],
+        "eventId": "28"
+      },
+      {
+        "type": "child",
+        "name": "pratique recherche",
+        "id": "pratique_recherche",
+        "enabled": "enabled",
+        "merged": false,
+        "children": [
+          {
+            "type": "show",
+            "id": "vie",
+            "enabled": "enabled",
+            "name": "vie",
+            "merged": false,
+            "keywords": [
+              "co-responsable séminaire LX création & co-orga ATLAS '24 membre PC ICDT '27 membre PC LICS '27",
+              "vie institutionnelle & scientifique",
+              "président AFoDIB membre CS LaBRI",
+              "vie"
+            ],
+            "eventId": "1"
+          },
+          {
+            "type": "show",
+            "id": "science",
+            "enabled": "enabled",
+            "name": "science",
+            "merged": false,
+            "keywords": [
+              "science bas-carbone & accessible",
+              "science"
+            ],
+            "eventId": "2"
+          }
+        ],
+        "keywords": [
+          "pratique recherche"
+        ],
+        "eventId": "15",
+        "originalParams": {
+          "vie": {
+            "opacity": 1
+          },
+          "science": {
+            "opacity": 1
+          }
+        }
+      },
+      {
+        "type": "child",
+        "name": "projet recherche",
+        "id": "projet_recherche",
+        "enabled": "enabled",
+        "merged": false,
+        "children": [
+          {
+            "type": "child",
+            "name": "BDD & pangénome",
+            "id": "BDD___pang_nome",
+            "enabled": "enabled",
+            "merged": false,
+            "children": [
+              {
+                "type": "show",
+                "id": "Giraffe",
+                "enabled": "enabled",
+                "name": "Stego",
+                "merged": false,
+                "keywords": [
+                  "Stego"
+                ],
+                "eventId": "10"
+              },
+              {
+                "type": "show",
+                "id": "s_quen_age_",
+                "enabled": "enabled",
+                "name": "séquençage ",
+                "merged": false,
+                "keywords": [
+                  "séquençage & pré-traitement",
+                  "séquençage "
+                ],
+                "eventId": "11"
+              },
+              {
+                "type": "show",
+                "id": "DBG",
+                "enabled": "enabled",
+                "name": "DBG",
+                "merged": true,
+                "keywords": [
+                  "graphe de de Bruijn",
+                  "DBG"
+                ],
+                "eventId": "12"
+              },
+              {
+                "type": "show",
+                "id": "Enjeux___gros_graphes____peta_octet__topologie",
+                "enabled": "enabled",
+                "name": "Enjeux : gros graphes (→ peta-octet) topologie",
+                "merged": false,
+                "keywords": [
+                  "Enjeux : gros graphes (→ peta-octet) topologie"
+                ],
+                "eventId": "13"
+              },
+              {
+                "type": "show",
+                "id": "Group_242",
+                "enabled": "enabled",
+                "name": "But : requêter graphes de de Bruijn → enjeux théoriques & pratiques → langage de requête → propriétés structurelles des graphes",
+                "merged": false,
+                "keywords": [
+                  "But : requêter graphes de de Bruijn → enjeux théoriques & pratiques → langage de requête → propriétés structurelles des graphes"
+                ],
+                "eventId": "24"
+              },
+              {
+                "type": "show",
+                "id": "camille",
+                "enabled": "enabled",
+                "name": "camille",
+                "merged": false,
+                "keywords": [
+                  "[Copy] Camille Marchet",
+                  "camille"
+                ],
+                "eventId": "17"
+              },
+              {
+                "type": "show",
+                "id": "bastien",
+                "enabled": "enabled",
+                "name": "bastien",
+                "merged": true,
+                "keywords": [
+                  "[Copy] Bastien Degardins",
+                  "bastien"
+                ],
+                "eventId": "18"
+              },
+              {
+                "type": "show",
+                "id": "charles",
+                "enabled": "enabled",
+                "name": "charles",
+                "merged": true,
+                "keywords": [
+                  "[Copy] Charles Paperman",
+                  "charles"
+                ],
+                "eventId": "19"
+              },
+              {
+                "type": "show",
+                "id": "Group_24",
+                "enabled": "enabled",
+                "name": "Irriguer la théorie des BDD graphes",
+                "merged": false,
+                "keywords": [
+                  "Irriguer la théorie des BDD graphes par son application en bioinformatique des séquences",
+                  "Irriguer la théorie des BDD graphes"
+                ],
+                "eventId": "15"
+              },
+              {
+                "type": "show",
+                "id": "optimisation_de_requ_tes_identification_de_fragments__efficaces_",
+                "enabled": "enabled",
+                "name": "optimisation de requêtes identification de fragments “efficaces”",
+                "merged": false,
+                "keywords": [
+                  "optimisation de requêtes identification de fragments “efficaces”"
+                ],
+                "eventId": "16"
+              },
+              {
+                "type": "show",
+                "id": "antoine",
+                "enabled": "enabled",
+                "name": "antoine",
+                "merged": false,
+                "keywords": [
+                  "[Copy] Antoine Amarilli",
+                  "antoine"
+                ],
+                "eventId": "20"
+              },
+              {
+                "type": "show",
+                "id": "iovka",
+                "enabled": "enabled",
+                "name": "iovka",
+                "merged": true,
+                "keywords": [
+                  "[Copy] Iovka Boneva",
+                  "iovka"
+                ],
+                "eventId": "21"
+              },
+              {
+                "type": "show",
+                "id": "mikael",
+                "enabled": "enabled",
+                "name": "mikael",
+                "merged": true,
+                "keywords": [
+                  "[Copy] Mikaël Monnet",
+                  "mikael"
+                ],
+                "eventId": "22"
+              },
+              {
+                "type": "show",
+                "id": "sophie",
+                "enabled": "enabled",
+                "name": "sophie",
+                "merged": true,
+                "keywords": [
+                  "[Copy] Sophie Tison",
+                  "sophie"
+                ],
+                "eventId": "23"
+              }
+            ],
+            "keywords": [
+              "séquençage",
+              "ensemble de k-mers",
+              "multiplicité + erreurs",
+              "BDD & pangénome"
+            ],
+            "eventId": "1",
+            "originalParams": {
+              "Giraffe": {
+                "opacity": 1
+              },
+              "s_quen_age_": {
+                "opacity": 1
+              },
+              "DBG": {
+                "opacity": 1
+              },
+              "Enjeux___gros_graphes____peta_octet__topologie": {
+                "opacity": 1
+              },
+              "Projet___requ_ter_graphes_de_de_Bruijn___enjeux_th_oriques___pratiques": {
+                "opacity": 1
+              },
+              "Group_24": {
+                "opacity": 1
+              },
+              "optimisation_de_requ_tes_identification_de_fragments__efficaces_": {
+                "opacity": 1
+              },
+              "camille": {
+                "opacity": 1
+              },
+              "bastien": {
+                "opacity": 1
+              },
+              "charles": {
+                "opacity": 1
+              },
+              "antoine": {
+                "opacity": 1
+              },
+              "iovka": {
+                "opacity": 1
+              },
+              "mikael": {
+                "opacity": 1
+              },
+              "sophie": {
+                "opacity": 1
+              },
+              "Group_242": {
+                "opacity": 1
+              }
+            }
+          },
+          {
+            "type": "child",
+            "name": "relativisation",
+            "id": "relativisation",
+            "enabled": "enabled",
+            "merged": false,
+            "children": [
+              {
+                "type": "show",
+                "id": "one_if",
+                "enabled": "enabled",
+                "name": "one if",
+                "merged": false,
+                "keywords": [
+                  "const word u; … if (u in L) { … }",
+                  "compilation",
+                  "automate minimal de L",
+                  "one if"
+                ],
+                "eventId": "1"
+              },
+              {
+                "type": "hide",
+                "id": "one_if",
+                "enabled": "enabled",
+                "name": "one if",
+                "merged": false,
+                "keywords": [
+                  "one if"
+                ],
+                "eventId": "2"
+              },
+              {
+                "type": "show",
+                "id": "two_ifs",
+                "enabled": "enabled",
+                "name": "two ifs",
+                "merged": true,
+                "keywords": [
+                  "const word u; … if (u in L1) { … if (u in L2) { … } }",
+                  "compilation",
+                  "automate minimal de L1",
+                  "automate minimal de L2",
+                  "two ifs"
+                ],
+                "eventId": "3"
+              },
+              {
+                "type": "show",
+                "id": "minimal_",
+                "enabled": "enabled",
+                "name": "minimal?",
+                "merged": false,
+                "keywords": [
+                  "?",
+                  "minimal?"
+                ],
+                "eventId": "4"
+              },
+              {
+                "type": "show",
+                "id": "diagram",
+                "enabled": "enabled",
+                "name": "diagram",
+                "merged": true,
+                "keywords": [
+                  "L1",
+                  "“tous les mots”",
+                  "L2",
+                  "diagram"
+                ],
+                "eventId": "5"
+              },
+              {
+                "type": "show",
+                "id": "minimal",
+                "enabled": "enabled",
+                "name": "minimal",
+                "merged": false,
+                "keywords": [
+                  "oui",
+                  "non",
+                  "minimal"
+                ],
+                "eventId": "6"
+              },
+              {
+                "type": "hide",
+                "id": "minimal",
+                "enabled": "enabled",
+                "name": "minimal",
+                "merged": false,
+                "keywords": [
+                  "minimal"
+                ],
+                "eventId": "7"
+              },
+              {
+                "type": "show",
+                "id": "minimal_relativized",
+                "enabled": "enabled",
+                "name": "minimal-relativized",
+                "merged": true,
+                "keywords": [
+                  "non",
+                  "oui",
+                  "minimal-relativized"
+                ],
+                "eventId": "8"
+              },
+              {
+                "type": "show",
+                "id": "peu_importe",
+                "enabled": "enabled",
+                "name": "peu importe",
+                "merged": false,
+                "keywords": [
+                  "peu importe",
+                  "peu importe"
+                ],
+                "eventId": "9"
+              },
+              {
+                "type": "show",
+                "id": "Group_24",
+                "enabled": "enabled",
+                "name": "Utiliser des connaissances préalables comme espace supplémentaire d'optimisation",
+                "merged": false,
+                "keywords": [
+                  "Utiliser des connaissances préalables comme espace supplémentaire d'optimisation"
+                ],
+                "eventId": "19"
+              },
+              {
+                "type": "show",
+                "id": "Group_12",
+                "enabled": "enabled",
+                "name": "pb",
+                "merged": false,
+                "keywords": [
+                  "Entrée : un modèle Question : existe-t-il un modèle équivalent  vérifiant une propriété x ?",
+                  "pb"
+                ],
+                "eventId": "14"
+              },
+              {
+                "type": "show",
+                "id": "Group_13",
+                "enabled": "enabled",
+                "name": "rel",
+                "merged": false,
+                "keywords": [
+                  "relativisation // à un “univers”",
+                  "rel"
+                ],
+                "eventId": "15"
+              },
+              {
+                "type": "show",
+                "id": "Group_122",
+                "enabled": "enabled",
+                "name": "pb rel",
+                "merged": false,
+                "keywords": [
+                  "Entrée : un modèle Question : existe-t-il un modèle équivalent sur l'univers  vérifiant une propriété x ?",
+                  "pb rel"
+                ],
+                "eventId": "16"
+              },
+              {
+                "type": "show",
+                "id": "charles",
+                "enabled": "enabled",
+                "name": "charles",
+                "merged": false,
+                "keywords": [
+                  "[Copy] Charles Paperman",
+                  "charles"
+                ],
+                "eventId": "10"
+              },
+              {
+                "type": "show",
+                "id": "sebastien",
+                "enabled": "enabled",
+                "name": "sebastien",
+                "merged": true,
+                "keywords": [
+                  "[Copy] Sébastien Labbé",
+                  "sebastien"
+                ],
+                "eventId": "11"
+              },
+              {
+                "type": "show",
+                "id": "antoine2",
+                "enabled": "enabled",
+                "name": "antoine",
+                "merged": true,
+                "keywords": [
+                  "[Copy] Antoine Amarilli",
+                  "antoine"
+                ],
+                "eventId": "17"
+              },
+              {
+                "type": "show",
+                "id": "mikael2",
+                "enabled": "enabled",
+                "name": "mikael",
+                "merged": true,
+                "keywords": [
+                  "[Copy] Mikaël Monnet",
+                  "mikael"
+                ],
+                "eventId": "18"
+              }
+            ],
+            "keywords": [
+              "Text",
+              "relativisation"
+            ],
+            "eventId": "2",
+            "originalParams": {
+              "one_if": {
+                "opacity": 1
+              },
+              "two_ifs": {
+                "opacity": 1
+              },
+              "minimal_": {
+                "opacity": 1
+              },
+              "diagram": {
+                "opacity": 1
+              },
+              "minimal": {
+                "opacity": 1
+              },
+              "minimal_relativized": {
+                "opacity": 1
+              },
+              "peu_importe": {
+                "opacity": 1
+              },
+              "charles": {
+                "opacity": 1
+              },
+              "sebastien": {
+                "opacity": 1
+              },
+              "Group_12": {
+                "opacity": 1
+              },
+              "Group_13": {
+                "opacity": 1
+              },
+              "Group_122": {
+                "opacity": 1
+              },
+              "antoine2": {
+                "opacity": 1
+              },
+              "mikael2": {
+                "opacity": 1
+              },
+              "Group_24": {
+                "opacity": 1
+              }
+            }
+          },
+          {
+            "type": "show",
+            "id": "arrow",
+            "enabled": "enabled",
+            "name": "arrow",
+            "merged": false,
+            "keywords": [
+              "arrow"
+            ],
+            "eventId": "3"
+          }
+        ],
+        "keywords": [
+          "Bases de données graphes & applications à la bioinformatique des séquences",
+          "Problèmes de relativisation en théorie des langages",
+          "projet recherche"
+        ],
+        "eventId": "10",
+        "originalParams": {
+          "arrow": {
+            "opacity": 1
+          }
+        }
+      }
+    ],
+    "keywords": [
+      "Audition maître de conférences · Poste n°261472 · FST Univ. Lille & CRIStAL",
+      "11 mai 2026",
+      "Rémi Morvan",
+      "Masters ENS Paris-Saclay 2017–2021",
+      "Doctorat LaBRI · Univ. Bordeaux 2021–2025",
+      "Développeur logiciel Auto-entrepreneur 2025–2026",
+      "2026 CRIStAL · Univ. Lille Postdoctorant",
+      "2026– CRIStAL · D-DAL (+ BONSAI) Projet de recherche",
+      "Projet d'enseignement FST Univ. Lille",
+      "main slide"
+    ],
+    "eventId": "root",
+    "originalParams": {
+      "Colles_d_informatique_en_MP2I_Lyc_e_Montaigne": {
+        "opacity": 1
+      },
+      "categories": {
+        "opacity": 1
+      },
+      "Ellipse_51": {
+        "opacity": 1
+      },
+      "Group_12": {
+        "opacity": 1
+      },
+      "Pratique_recherche": {
+        "opacity": 1
+      }
+    }
+  },
+  "treeTimeLine": [],
+  "chronicleTimeLine": []
+}
