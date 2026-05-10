@@ -71,12 +71,12 @@
             "merged": false,
             "keywords": [
               "236heqTD · enseignements diversifiés",
+              "Enseirb- Matméca",
               "Univ. Bordeaux",
-              "Enseirb-Matméca",
-              "info fondamentale",
-              "programmation",
-              "bases de données",
-              "machine learning (co-création de l'UE)",
+              "info fonda",
+              "BDD",
+              "prog",
+              "(co-création de l'UE) ML",
               "thèse TD"
             ],
             "eventId": "6"
@@ -1183,5 +1183,6 @@
     }
   },
   "treeTimeLine": [],
-  "chronicleTimeLine": []
+  "chronicleTimeLine": [],
+  "pdfFile": "2026_audition_mcf_11mai.pdf"
 }
