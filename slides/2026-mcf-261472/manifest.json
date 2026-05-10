@@ -11,7 +11,8 @@
     "BDD___pang_nome": "BDD___pang_nome",
     "relativisation": "relativisation",
     "pratique_recherche": "pratique_recherche",
-    "zoom_DBG": "zoom_DBG"
+    "zoom_DBG": "zoom_DBG",
+    "syllabus": "syllabus"
   },
   "tree": {
     "type": "child",
@@ -64,24 +65,28 @@
           },
           {
             "type": "show",
-            "id": "th_se_TD",
+            "id": "Group_24",
             "enabled": "enabled",
             "name": "thèse TD",
             "merged": false,
             "keywords": [
               "236heqTD · enseignements diversifiés",
-              "public :  Univ. Bordeaux Enseirb-Matméca",
-              "sujets :  info fondamentale programmation bases de données machine learning (co-création de l'UE)",
+              "Univ. Bordeaux",
+              "Enseirb-Matméca",
+              "info fondamentale",
+              "programmation",
+              "bases de données",
+              "machine learning (co-création de l'UE)",
               "thèse TD"
             ],
-            "eventId": "4"
+            "eventId": "6"
           },
           {
             "type": "show",
             "id": "M2FeSup__Master_Formation___l_Enseignement_Sup_rieur_en_Math_matiques__Agr_gation_de_maths_option_info__Colles_de_math_matiques_en_MPSI_Lyc_e_Saint_Louis2",
             "enabled": "enabled",
             "name": "thèse encadrement",
-            "merged": true,
+            "merged": false,
             "keywords": [
               "thèse encadrement"
             ],
@@ -96,10 +101,10 @@
           "M2FeSup__Master_Formation___l_Enseignement_Sup_rieur_en_Math_matiques__Agr_gation_de_maths_option_info__Colles_de_math_matiques_en_MPSI_Lyc_e_Saint_Louis": {
             "opacity": 1
           },
-          "th_se_TD": {
+          "M2FeSup__Master_Formation___l_Enseignement_Sup_rieur_en_Math_matiques__Agr_gation_de_maths_option_info__Colles_de_math_matiques_en_MPSI_Lyc_e_Saint_Louis2": {
             "opacity": 1
           },
-          "M2FeSup__Master_Formation___l_Enseignement_Sup_rieur_en_Math_matiques__Agr_gation_de_maths_option_info__Colles_de_math_matiques_en_MPSI_Lyc_e_Saint_Louis2": {
+          "Group_24": {
             "opacity": 1
           }
         }
@@ -130,9 +135,9 @@
             "merged": false,
             "keywords": [
               "Enseignement en licence",
-              "BCC 1 UE Introductives  Appréhender les approches disciplinaires pour cerner leurs spécificités et leurs complémentarités BCC 2 Développement pro/perso Préparer son projet professionnel et savoir le valoriser BCC 3 Modèles & Algorithmes  Faire un choix de modèles et algorithmes adaptés à la résolution  de problème BCC 4 Langages de Programmation Mise en œuvre de langages de programmation BCC 5 Architectures Appréhender les architectures matérielles et logicielles support BCC 6 Données Organiser et gérer des données BCC 7 Approfondissement Approfondir ses connaissances disciplinaires BCC 8 Gestion (MIAGE) Appréhender les Systèmes d'Information des Entreprises",
+              "BCC 1 UE Introductives BCC 2 Développement pro/perso BCC 3 Modèles & Algorithmes BCC 4 Langages de Programmation BCC 5 Architectures BCC 6 Données BCC 7 Approfondissement BCC 8 Gestion (MIAGE)",
+              "+ projets interdisciplinaires maths-info (L3)",
               "?",
-              "+ projets interdisciplinaires maths-info (L3 maths-info)",
               "Licence"
             ],
             "eventId": "1"
@@ -145,7 +150,7 @@
             "merged": false,
             "keywords": [
               "Enseignement en master",
-              "Programmation avancée (M1) UE bases de données · pluridisciplinarité Introduction à l'IA (M2, parcours non-IA) …",
+              "Programmation avancée (M1) UE bases de données Introduction à l'IA (M2, parcours non-IA) …",
               "master"
             ],
             "eventId": "2"
@@ -265,6 +270,17 @@
               },
               {
                 "type": "show",
+                "id": "Structures_automatiques",
+                "enabled": "enabled",
+                "name": "Structures automatiques",
+                "merged": true,
+                "keywords": [
+                  "Structures automatiques"
+                ],
+                "eventId": "3"
+              },
+              {
+                "type": "show",
                 "id": "ICDT__23___LMCS__25___d_cidabilit__de_l__quivalence_avec_une_requ_te_de_petite_tree_width_path_width_PODS__25__Distinguished_Paper_Award____d_cidabilit__de_l__quivalence_avec_une_requ_te_de_petite_taille____conditions_de_non_exprimabilit____minimalit_",
                 "enabled": "enabled",
                 "name": "ICDT '23 & LMCS '25 : décidabilité de l'équivalence avec une requête de petite tree-width/path-width PODS '25 (Distinguished Paper Award) : décidabilité de l'équivalence avec une requête de petite taille  & conditions de non-exprimabilité  /minimalité",
@@ -273,17 +289,6 @@
                   "ICDT '23 & LMCS '25 : décidabilité de l'équivalence avec une requête de petite tree-width/path-width PODS '25 (Distinguished Paper Award) : décidabilité de l'équivalence avec une requête de petite taille  & conditions de non-exprimabilité  /minimalité"
                 ],
                 "eventId": "2"
-              },
-              {
-                "type": "show",
-                "id": "Structures_automatiques",
-                "enabled": "enabled",
-                "name": "Structures automatiques",
-                "merged": false,
-                "keywords": [
-                  "Structures automatiques"
-                ],
-                "eventId": "3"
               },
               {
                 "type": "show",
@@ -296,6 +301,17 @@
                   "MFCS '23 : indécidabilité de la 2-coloration régulière & lien avec pbs. de séparation"
                 ],
                 "eventId": "5"
+              },
+              {
+                "type": "show",
+                "id": "Group_24",
+                "enabled": "enabled",
+                "name": "International",
+                "merged": false,
+                "keywords": [
+                  "International"
+                ],
+                "eventId": "7"
               }
             ],
             "keywords": [
@@ -312,10 +328,13 @@
               "Structures_automatiques": {
                 "opacity": 1
               },
-              "Text": {
+              "Group_12": {
                 "opacity": 1
               },
-              "Group_12": {
+              "flag_for_flag_chile_svgrepo_com_1": {
+                "opacity": 1
+              },
+              "Group_24": {
                 "opacity": 1
               }
             }
@@ -377,9 +396,8 @@
             "name": "vie",
             "merged": false,
             "keywords": [
-              "co-responsable séminaire LX création & co-orga ATLAS '24 membre PC ICDT '27 membre PC LICS '27",
+              "président AFoDIB membre CS LaBRI co-responsable séminaire LX création & co-orga ATLAS '24 membre PC ICDT '27 membre PC LICS '27",
               "vie institutionnelle & scientifique",
-              "président AFoDIB membre CS LaBRI",
               "vie"
             ],
             "eventId": "1"
@@ -938,6 +956,130 @@
             "opacity": 1
           }
         }
+      },
+      {
+        "type": "show",
+        "id": "Nuage",
+        "enabled": "enabled",
+        "name": "Nuage",
+        "merged": false,
+        "keywords": [
+          "Nuage"
+        ],
+        "eventId": "35"
+      },
+      {
+        "type": "child",
+        "name": "syllabus",
+        "id": "syllabus",
+        "enabled": "enabled",
+        "merged": false,
+        "children": [
+          {
+            "type": "show",
+            "id": "Motivations",
+            "enabled": "enabled",
+            "name": "Motivations",
+            "merged": false,
+            "keywords": [
+              "Motivations :",
+              "fondations solides pour UE fondas approche réflexive / recul",
+              "Motivations"
+            ],
+            "eventId": "1"
+          },
+          {
+            "type": "show",
+            "id": "Objectifs",
+            "enabled": "enabled",
+            "name": "Objectifs",
+            "merged": false,
+            "keywords": [
+              "Objectifs pédagogiques :",
+              "modéliser une propriété en langage naturel par une formule mener à bien un raisonnement logique sur des objets informatiques",
+              "Objectifs"
+            ],
+            "eventId": "2"
+          },
+          {
+            "type": "show",
+            "id": "Volume",
+            "enabled": "enabled",
+            "name": "Volume",
+            "merged": false,
+            "keywords": [
+              "9h CM 18h TD 24h travail personnel → sujet préparatoire à rendre en début de chaque TD.",
+              "Volume horaire :",
+              "Volume"
+            ],
+            "eventId": "3"
+          },
+          {
+            "type": "show",
+            "id": "Contenu_",
+            "enabled": "enabled",
+            "name": "Contenu$",
+            "merged": false,
+            "keywords": [
+              "Contenu (séquences pédagogiques)",
+              "Preuves, quantificateurs, implication et ensembles Preuves par induction sur des structures récursives Logique propositionnelle I : syntaxe, modélisation, tables de vérité, satisfiabilité, équivalence Logique propositionnelle II : algo de Quine, intro aux SAT-solvers Correction de fonctions récursives I (entiers, listes) Correction de fonctions récursives II (listes, arbres, …)",
+              "Contenu$"
+            ],
+            "eventId": "4"
+          },
+          {
+            "type": "show",
+            "id": "prerequis",
+            "enabled": "enabled",
+            "name": "prerequis",
+            "merged": false,
+            "keywords": [
+              "Prérequis :",
+              "Preuves par récurrence sur les entiers listes, arbres, structures récursives",
+              "prerequis"
+            ],
+            "eventId": "5"
+          },
+          {
+            "type": "show",
+            "id": "evaluation",
+            "enabled": "enabled",
+            "name": "evaluation",
+            "merged": false,
+            "keywords": [
+              "Évaluation :",
+              "1/3 contrôle continu → 3 micro-evals en début de TD → note pondérée par sujets préparatoires rendus 2/3 DS final",
+              "evaluation"
+            ],
+            "eventId": "6"
+          }
+        ],
+        "keywords": [
+          "Syllabus : UE Raisonnements discrets",
+          "S3 Info · BCC3 · 3ECTS",
+          "syllabus"
+        ],
+        "eventId": "30",
+        "originalParams": {
+          "Motivations": {
+            "opacity": 1
+          },
+          "Objectifs": {
+            "opacity": 1
+          },
+          "Volume": {
+            "opacity": 1
+          },
+          "Contenu_": {
+            "opacity": 1
+          },
+          "prerequis": {
+            "opacity": 1
+          },
+          "evaluation": {
+            "opacity": 1
+          }
+        }
       }
     ],
     "keywords": [
@@ -946,8 +1088,8 @@
       "Rémi Morvan",
       "Masters ENS Paris-Saclay 2017–2021",
       "Doctorat LaBRI · Univ. Bordeaux 2021–2025",
-      "Développeur logiciel Auto-entrepreneur 2025–2026",
-      "2026 CRIStAL · Univ. Lille Postdoctorant",
+      "Ingénierie logicielle Auto-entrepreneur 2025–2026",
+      "2026 CRIStAL · Univ. Lille Postdoctorat",
       "2026– CRIStAL · D-DAL (+ BONSAI) Projet de recherche",
       "Projet d'enseignement FST Univ. Lille",
       "main slide"
@@ -967,6 +1109,9 @@
         "opacity": 1
       },
       "Pratique_recherche": {
+        "opacity": 1
+      },
+      "Nuage": {
         "opacity": 1
       }
     }
