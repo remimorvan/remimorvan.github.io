@@ -83,14 +83,15 @@
           },
           {
             "type": "show",
-            "id": "M2FeSup__Master_Formation___l_Enseignement_Sup_rieur_en_Math_matiques__Agr_gation_de_maths_option_info__Colles_de_math_matiques_en_MPSI_Lyc_e_Saint_Louis2",
+            "id": "Group_242",
             "enabled": "enabled",
-            "name": "thèse encadrement",
+            "name": "encadrement",
             "merged": false,
             "keywords": [
-              "thèse encadrement"
+              "thèse encadrement",
+              "encadrement"
             ],
-            "eventId": "5"
+            "eventId": "7"
           }
         ],
         "keywords": [
@@ -105,6 +106,9 @@
             "opacity": 1
           },
           "Group_24": {
+            "opacity": 1
+          },
+          "Group_242": {
             "opacity": 1
           }
         }
@@ -542,7 +546,7 @@
                 "name": "Irriguer la théorie des BDD graphes",
                 "merged": false,
                 "keywords": [
-                  "Irriguer la théorie des BDD graphes par son application en bioinformatique des séquences",
+                  "Irriguer la théorie des BDD graphes par son application en bioinfo des séquences",
                   "Irriguer la théorie des BDD graphes"
                 ],
                 "eventId": "15"
@@ -677,11 +681,21 @@
                 "merged": false,
                 "keywords": [
                   "const word u; … if (u in L) { … }",
-                  "compilation",
-                  "automate minimal de L",
                   "one if"
                 ],
                 "eventId": "1"
+              },
+              {
+                "type": "show",
+                "id": "two_ifs",
+                "enabled": "enabled",
+                "name": "compilation",
+                "merged": false,
+                "keywords": [
+                  "compilation",
+                  "automate minimal de L"
+                ],
+                "eventId": "25"
               },
               {
                 "type": "hide",
@@ -696,18 +710,61 @@
               },
               {
                 "type": "show",
-                "id": "two_ifs",
+                "id": "nested_if",
                 "enabled": "enabled",
-                "name": "two ifs",
+                "name": "nested-if",
                 "merged": true,
                 "keywords": [
                   "const word u; … if (u in L1) { … if (u in L2) { … } }",
-                  "compilation",
-                  "automate minimal de L1",
-                  "automate minimal de L2",
-                  "two ifs"
+                  "nested-if"
                 ],
-                "eventId": "3"
+                "eventId": "20"
+              },
+              {
+                "type": "hide",
+                "id": "nested_if",
+                "enabled": "enabled",
+                "name": "nested-if",
+                "merged": false,
+                "keywords": [
+                  "nested-if"
+                ],
+                "eventId": "23"
+              },
+              {
+                "type": "show",
+                "id": "XML",
+                "enabled": "enabled",
+                "name": "XML",
+                "merged": true,
+                "keywords": [
+                  "const word u = XML.Parse('doc'); … if (u in L) { … }",
+                  "XML"
+                ],
+                "eventId": "21"
+              },
+              {
+                "type": "hide",
+                "id": "XML",
+                "enabled": "enabled",
+                "name": "XML",
+                "merged": false,
+                "keywords": [
+                  "XML"
+                ],
+                "eventId": "24"
+              },
+              {
+                "type": "show",
+                "id": "general_case",
+                "enabled": "enabled",
+                "name": "general-case",
+                "merged": true,
+                "keywords": [
+                  "const word u; … assert(u in Ω); … if (u in L) { … }",
+                  "general-case"
+                ],
+                "eventId": "22"
               },
               {
                 "type": "show",
@@ -728,9 +785,9 @@
                 "name": "diagram",
                 "merged": true,
                 "keywords": [
-                  "L1",
+                  "Ω",
                   "“tous les mots”",
-                  "L2",
+                  "L",
                   "diagram"
                 ],
                 "eventId": "5"
@@ -889,9 +946,6 @@
               "one_if": {
                 "opacity": 1
               },
-              "two_ifs": {
-                "opacity": 1
-              },
               "minimal_": {
                 "opacity": 1
               },
@@ -929,6 +983,18 @@
                 "opacity": 1
               },
               "Group_24": {
+                "opacity": 1
+              },
+              "nested_if": {
+                "opacity": 1
+              },
+              "XML": {
+                "opacity": 1
+              },
+              "general_case": {
+                "opacity": 1
+              },
+              "two_ifs": {
                 "opacity": 1
               }
             }
