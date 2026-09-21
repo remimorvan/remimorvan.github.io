@@ -11,7 +11,7 @@ body {
 	width: 100vw;
 	min-width: $threshold-min;
 
-	line-height: 1.2;
+	line-height: 1.3;
 }
 
 h2,
@@ -282,6 +282,12 @@ article {
 	> *:last-child {
 		margin-bottom: 0;
 	}
+}
+
+// the prose column; figures and code blocks keep the full width.
+// Released again where two grid tracks already set the measure (see desktop.scss).
+article > *:not(figure):not(.highlight) {
+	max-width: $measure;
 }
 
 footer {

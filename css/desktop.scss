@@ -5,11 +5,56 @@
 
 	main {
 		position: relative;
-		width: calc(100% - $side-width - 3em);
+		// content-box: this must absorb the side padding below, or main overflows
+		width: calc(100% - $side-width - 4em);
 		left: $side-width;
 
-		display: flex;
-		flex-wrap: wrap;
+		// one column below $threshold-two-col, two above; the tracks fill the width, so
+		// the measure is held by the prose cap rather than by the track
+		display: grid;
+		grid-template-columns: 1fr;
+		column-gap: 3em;
+		row-gap: 2em;
+		align-content: start;
+		align-items: start;
+
+
+		// the articles no longer carry margins, so the gutter against the rail is here
+		padding-left: 2em;
+		padding-right: 2em;
+
+		article {
+			margin: 0;
+		}
+
+		article.fullwidth {
+			grid-column: 1 / -1;
+
+			figure {
+				width: 60%;
+			}
+
+			div.highlight pre {
+				margin-left: 2em;
+				margin-right: 2em;
+			}
+		}
+	}
+
+	@media ($threshold-two-col <=width) {
+		main {
+			grid-template-columns: repeat(2, 1fr);
+
+			// two columns already fill the width, so the cards set their own measure
+			article > *:not(figure):not(.highlight) {
+				max-width: none;
+			}
+
+			// and the intro matches exactly one of them
+			article.fullwidth > *:not(figure):not(.highlight) {
+				max-width: calc(50% - 1.5em);
+			}
+		}
 	}
 
 	nav {
@@ -104,37 +149,3 @@
 	}
 }
 
-@media ($threshold-mobile <=width < $threshold-two-col) {
-	// Desktop ; one column display.
-	article {
-		width: calc(100% - 3em);
-		min-width: calc(100% - 3em);
-	}
-}
-
-@media ($threshold-two-col <=width) {
-	main {
-		padding-left: 1.5em;
-		padding-right: 1.5em;
-	}
-
-	// Desktop ; Two column display.
-	article:not(.fullwidth) {
-		width: calc(50% - 3em);
-		min-width: calc(50% - 3em);
-	}
-
-	article.fullwidth {
-		width: calc(100% - 3em);
-		min-width: calc(100% - 3em);
-
-		figure {
-			width: 60%;
-		}
-
-		div.highlight pre {
-			margin-left: 2em;
-			margin-right: 2em;
-		}
-	}
-}

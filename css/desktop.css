@@ -22,11 +22,43 @@
 @media (640px <= width) {
   main {
     position: relative;
-    width: calc(100% - 18em - 3em);
+    width: calc(100% - 18em - 4em);
     left: 18em;
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr;
+    column-gap: 3em;
+    row-gap: 2em;
+    align-content: start;
+    align-items: start;
+    padding-left: 2em;
+    padding-right: 2em;
   }
+  main article {
+    margin: 0;
+  }
+  main article.fullwidth {
+    grid-column: 1/-1;
+  }
+  main article.fullwidth figure {
+    width: 60%;
+  }
+  main article.fullwidth div.highlight pre {
+    margin-left: 2em;
+    margin-right: 2em;
+  }
+}
+@media (640px <= width) and (1100px <= width) {
+  main {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  main article > *:not(figure):not(.highlight) {
+    max-width: none;
+  }
+  main article.fullwidth > *:not(figure):not(.highlight) {
+    max-width: calc(50% - 1.5em);
+  }
+}
+@media (640px <= width) {
   nav {
     position: fixed;
     overflow-y: scroll;
@@ -100,33 +132,6 @@
     padding-top: 1em;
     padding-left: 2.185em;
     padding-right: 2.185em;
-  }
-}
-@media (640px <= width < 1000px) {
-  article {
-    width: calc(100% - 3em);
-    min-width: calc(100% - 3em);
-  }
-}
-@media (1000px <= width) {
-  main {
-    padding-left: 1.5em;
-    padding-right: 1.5em;
-  }
-  article:not(.fullwidth) {
-    width: calc(50% - 3em);
-    min-width: calc(50% - 3em);
-  }
-  article.fullwidth {
-    width: calc(100% - 3em);
-    min-width: calc(100% - 3em);
-  }
-  article.fullwidth figure {
-    width: 60%;
-  }
-  article.fullwidth div.highlight pre {
-    margin-left: 2em;
-    margin-right: 2em;
   }
 }
 

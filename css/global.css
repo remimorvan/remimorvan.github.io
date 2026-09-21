@@ -28,7 +28,7 @@ body {
   margin: 0;
   width: 100vw;
   min-width: 340px;
-  line-height: 1.2;
+  line-height: 1.3;
 }
 
 h2,
@@ -140,7 +140,7 @@ a:hover {
 }
 
 .award {
-  color: #b71540;
+  color: #e93f6c;
   font-style: italic;
 }
 
@@ -272,6 +272,10 @@ article > *:last-child {
   margin-bottom: 0;
 }
 
+article > *:not(figure):not(.highlight) {
+  max-width: 32em;
+}
+
 footer a {
   text-decoration: none;
 }
@@ -306,59 +310,59 @@ code {
 @media (1920px <= width) {
   :root {
     --title-font-size: calc(
-    	22px * 1.44
+    	22.5px * 1.39
     );
     --main-font-size: calc(
-    	13px * 1.44
+    	13.5px * 1.39
     );
   }
 }
-@media (1200px <= width < 1920px) {
+@media (1400px <= width < 1920px) {
   :root {
     --title-font-size: calc(
-    	22px * 1.2
+    	22.5px * 1.16
     );
     --main-font-size: calc(
-    	13px * 1.2
+    	13.5px * 1.16
     );
   }
 }
-@media (800px <= width < 1200px) {
+@media (800px <= width < 1400px) {
   :root {
-    --title-font-size: 22px;
-    --main-font-size: 13px;
+    --title-font-size: 22.5px;
+    --main-font-size: 13.5px;
   }
 }
-@media (540px <= width < 800px) {
+@media (640px <= width < 800px) {
   .small {
     display: inline;
   }
   :root {
     --title-font-size: calc(
-    	22px * 0.9
+    	22.5px * 0.97
     );
     --main-font-size: calc(
-    	13px * 0.9
+    	13.5px * 0.97
     );
   }
 }
-@media (440px <= width < 540px) {
+@media (440px <= width < 640px) {
   :root {
     --title-font-size: calc(
-    	22px * 0.81
+    	22.5px * 1.11
     );
     --main-font-size: calc(
-    	13px * 0.81
+    	13.5px * 1.11
     );
   }
 }
 @media (width < 440px) {
   :root {
     --title-font-size: calc(
-    	22px * 0.73
+    	22.5px * 1.03
     );
     --main-font-size: calc(
-    	13px * 0.73
+    	13.5px * 1.03
     );
   }
 }

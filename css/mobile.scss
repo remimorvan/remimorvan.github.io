@@ -8,6 +8,10 @@
 	}
 
 	nav {
+		// the header's geometry is em-based off $side-width, so it would otherwise grow
+		// with the body text and drive the portrait into the wordmark
+		font-size: 10px;
+
 		position: sticky;
 		top: calc(-0.25 * 0.7 * $side-width - 6.25em);
 		z-index: 1;
@@ -119,6 +123,10 @@
 						text-align: left;
 						margin-left: 0;
 
+						// the menu text follows the body size, as it does on desktop;
+						// only the geometry above is pinned
+						font-size: calc(1.2 * var(--main-font-size));
+
 						width: auto;
 						padding: 0.25em;
 
@@ -167,7 +175,13 @@
 	}
 
 	main {
-		padding: 1.5em 2em;
+		// a fixed gutter: an em one grows with the text and eats the measure it just gained
+		padding: 1.5em 16px;
+
+		article {
+			margin-left: 0;
+			margin-right: 0;
+		}
 	}
 
 	footer {

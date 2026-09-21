@@ -26,6 +26,7 @@
     flex-direction: column;
   }
   nav {
+    font-size: 10px;
     position: sticky;
     top: -9.4em;
     z-index: 1;
@@ -116,6 +117,7 @@
   nav #menu #menu-container ul li {
     text-align: left;
     margin-left: 0;
+    font-size: calc(1.2 * var(--main-font-size));
     width: auto;
     padding: 0.25em;
   }
@@ -148,7 +150,11 @@
     transform: translateY(-0.38em) rotate(-405deg);
   }
   main {
-    padding: 1.5em 2em;
+    padding: 1.5em 16px;
+  }
+  main article {
+    margin-left: 0;
+    margin-right: 0;
   }
   footer {
     font-size: 90%;
