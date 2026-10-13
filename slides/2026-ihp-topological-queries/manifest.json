@@ -1,0 +1,644 @@
+{
+  "version": 3.1,
+  "presentation": "2026-ihp-topological-queries",
+  "slideDict": {
+    "new_slide": "new_slide",
+    "Building_DBGs": "Building_DBGs",
+    "DBs": "DBs",
+    "query_goal_": "query_goal_"
+  },
+  "tree": {
+    "type": "child",
+    "name": "main slide",
+    "id": "new_slide",
+    "enabled": "enabled",
+    "merged": false,
+    "children": [
+      {
+        "type": "child",
+        "name": "Building DBGs",
+        "id": "Building_DBGs",
+        "enabled": "enabled",
+        "merged": false,
+        "children": [
+          {
+            "type": "show",
+            "id": "sequencing",
+            "enabled": "enabled",
+            "name": "sequencing",
+            "merged": false,
+            "keywords": [
+              "sequencing",
+              "reads",
+              "GAGGTCTTATCAGAGGCACGTCAACATCTTAGAGATGGCACT TGGACTTTATTGACACTAAGAGGGGT GTGCTGACTCTATCATTATTGGTGGAGCTAAACTTAAAGCCTTGAATTTAGGTGA ..."
+            ],
+            "eventId": "2"
+          },
+          {
+            "type": "show",
+            "id": "k_mers",
+            "enabled": "enabled",
+            "name": "k-mers",
+            "merged": false,
+            "keywords": [
+              "GAGGTCTTATCAG AGGTCTTATCAGA GGTCTTATCAGAG GTCTTATCAGAGG TCTTATCAGAGGC CTTATCAGAGGCA TTATCAGAGGCAC",
+              "k-mers"
+            ],
+            "eventId": "3"
+          },
+          {
+            "type": "show",
+            "id": "DBG_building_arrow",
+            "enabled": "enabled",
+            "name": "DBG building arrow",
+            "merged": false,
+            "keywords": [
+              "de Bruijn graph construction",
+              "DBG building arrow"
+            ],
+            "eventId": "4"
+          }
+        ],
+        "keywords": [
+          "Building DBGs"
+        ],
+        "eventId": "3",
+        "originalParams": {
+          "sequencing": {
+            "opacity": 1
+          },
+          "k_mers": {
+            "opacity": 1
+          },
+          "DBG_building_arrow": {
+            "opacity": 1
+          }
+        }
+      },
+      {
+        "type": "hide",
+        "id": "DBG_building_arrow",
+        "enabled": "enabled",
+        "name": "DBG building arrow",
+        "merged": false,
+        "keywords": [
+          "DBG building arrow"
+        ],
+        "eventId": "4"
+      },
+      {
+        "type": "show",
+        "id": "GAGGTCTTATCAG",
+        "enabled": "enabled",
+        "name": "GAGGTCTTATCAG",
+        "merged": true,
+        "keywords": [
+          "GAGGTCTTATCAG"
+        ],
+        "eventId": "7"
+      },
+      {
+        "type": "show",
+        "id": "GAGGTCTTATCAG2",
+        "enabled": "enabled",
+        "name": "AGGTCTTATCAGT",
+        "merged": true,
+        "keywords": [
+          "AGGTCTTATCAGT"
+        ],
+        "eventId": "8"
+      },
+      {
+        "type": "show",
+        "id": "Mutated_stego",
+        "enabled": "enabled",
+        "name": "Stegy",
+        "merged": false,
+        "keywords": [
+          "Stegy"
+        ],
+        "eventId": "6"
+      },
+      {
+        "type": "show",
+        "id": "Stego",
+        "enabled": "enabled",
+        "name": "Stego name",
+        "merged": true,
+        "keywords": [
+          "Stego name"
+        ],
+        "eventId": "22"
+      },
+      {
+        "type": "show",
+        "id": "Text",
+        "enabled": "enabled",
+        "name": "Stegy name",
+        "merged": true,
+        "keywords": [
+          "Stegy name"
+        ],
+        "eventId": "23"
+      },
+      {
+        "type": "show",
+        "id": "orange_dots2",
+        "enabled": "enabled",
+        "name": "orange dots",
+        "merged": false,
+        "keywords": [
+          "orange dots"
+        ],
+        "eventId": "11"
+      },
+      {
+        "type": "show",
+        "id": "blue_dots2",
+        "enabled": "enabled",
+        "name": "blue dots",
+        "merged": false,
+        "keywords": [
+          "blue dots"
+        ],
+        "eventId": "12"
+      },
+      {
+        "type": "show",
+        "id": "coloured",
+        "enabled": "enabled",
+        "name": "coloured",
+        "merged": true,
+        "keywords": [
+          "coloured"
+        ],
+        "eventId": "5"
+      },
+      {
+        "type": "hide",
+        "id": "DBG",
+        "enabled": "enabled",
+        "name": "DBG",
+        "merged": false,
+        "keywords": [
+          "DBG"
+        ],
+        "eventId": "13"
+      },
+      {
+        "type": "hide",
+        "id": "blue_dots2",
+        "enabled": "enabled",
+        "name": "blue dots",
+        "merged": true,
+        "keywords": [
+          "blue dots"
+        ],
+        "eventId": "14"
+      },
+      {
+        "type": "hide",
+        "id": "orange_dots2",
+        "enabled": "enabled",
+        "name": "orange dots",
+        "merged": true,
+        "keywords": [
+          "orange dots"
+        ],
+        "eventId": "15"
+      },
+      {
+        "type": "show",
+        "id": "blue_dots3",
+        "enabled": "enabled",
+        "name": "compacted blue dots",
+        "merged": true,
+        "keywords": [
+          "compacted blue dots"
+        ],
+        "eventId": "17"
+      },
+      {
+        "type": "show",
+        "id": "orange_dots3",
+        "enabled": "enabled",
+        "name": "compacted  orange dots",
+        "merged": true,
+        "keywords": [
+          "compacted  orange dots"
+        ],
+        "eventId": "18"
+      },
+      {
+        "type": "show",
+        "id": "coloured2",
+        "enabled": "enabled",
+        "name": "compacted",
+        "merged": true,
+        "keywords": [
+          "compacted"
+        ],
+        "eventId": "20"
+      },
+      {
+        "type": "show",
+        "id": "Group_28",
+        "enabled": "enabled",
+        "name": "compacted DBG",
+        "merged": true,
+        "keywords": [
+          "compacted DBG"
+        ],
+        "eventId": "24"
+      },
+      {
+        "type": "show",
+        "id": "compacted",
+        "enabled": "enabled",
+        "name": "querying",
+        "merged": false,
+        "keywords": [
+          "querying"
+        ],
+        "eventId": "25"
+      },
+      {
+        "type": "show",
+        "id": "large_graphs__800_MB_for_4000_COVID_genomes__200_MB_for_3_human_21st_chromosome_can_reach_multiple_TB",
+        "enabled": "enabled",
+        "name": "large graphs ~800 MB for 4000 COVID genomes ~200 MB for 3 human 21st chromosome can reach multiple TB",
+        "merged": true,
+        "keywords": [
+          "large graphs ~800 MB for 4000 COVID genomes ~200 MB for 3 human 21st chromosome can reach multiple TB"
+        ],
+        "eventId": "26"
+      },
+      {
+        "type": "child",
+        "name": "DBs",
+        "id": "DBs",
+        "enabled": "enabled",
+        "merged": false,
+        "children": [
+          {
+            "type": "show",
+            "id": "large_graphs__800_MB_for_4000_COVID_genomes__200_MB_for_3_human_21st_chromosome_can_reach_multiple_TB",
+            "enabled": "enabled",
+            "name": "large graphs ~800 MB for 4000 COVID genomes ~200 MB for 3 human 21st chromosome can reach multiple TB",
+            "merged": false,
+            "keywords": [
+              "large graphs ~800 MB for 4000 COVID genomes ~200 MB for 3 human 21st chromosome can reach multiple TB"
+            ],
+            "eventId": "4"
+          },
+          {
+            "type": "child",
+            "name": "query goal ",
+            "id": "query_goal_",
+            "enabled": "enabled",
+            "merged": false,
+            "children": [
+              {
+                "type": "show",
+                "id": "sequencing_errors",
+                "enabled": "enabled",
+                "name": "sequencing errors",
+                "merged": false,
+                "keywords": [
+                  "  GTCTTATCAGAGGCACGTCAACATCTT",
+                  "GAGGTCTTATCAGTGC",
+                  "correct",
+                  "sequencing error",
+                  "sequencing errors"
+                ],
+                "eventId": "1"
+              },
+              {
+                "type": "show",
+                "id": "tips_label",
+                "enabled": "enabled",
+                "name": "tips label",
+                "merged": false,
+                "keywords": [
+                  "tips label"
+                ],
+                "eventId": "2"
+              },
+              {
+                "type": "show",
+                "id": "tips_graph",
+                "enabled": "enabled",
+                "name": "tips graph",
+                "merged": true,
+                "keywords": [
+                  "tips graph"
+                ],
+                "eventId": "3"
+              },
+              {
+                "type": "show",
+                "id": "bubble_DNA",
+                "enabled": "enabled",
+                "name": "bubble DNA",
+                "merged": false,
+                "keywords": [
+                  "GAGGTCTTATCAGAGGCACGTCAACATCTTAGAGATG",
+                  "GTCTTATCAGGCAAATGGTCACATCTTAGA  ",
+                  "bubble DNA"
+                ],
+                "eventId": "4"
+              },
+              {
+                "type": "show",
+                "id": "bubble_graph",
+                "enabled": "enabled",
+                "name": "bubble graph",
+                "merged": false,
+                "keywords": [
+                  "bubble graph"
+                ],
+                "eventId": "5"
+              },
+              {
+                "type": "show",
+                "id": "large_graphs__800_MB_for_4000_COVID_genomes__200_MB_for_3_human_21st_chromosome_can_reach_multiple_TB",
+                "enabled": "enabled",
+                "name": "bubbles label",
+                "merged": true,
+                "keywords": [
+                  "bubbles label"
+                ],
+                "eventId": "6"
+              },
+              {
+                "type": "show",
+                "id": "compacted_DBG",
+                "enabled": "enabled",
+                "name": "compacted DBG",
+                "merged": false,
+                "keywords": [
+                  "compacted DBG"
+                ],
+                "eventId": "7"
+              },
+              {
+                "type": "show",
+                "id": "bubbles_label",
+                "enabled": "enabled",
+                "name": "bubbles label",
+                "merged": false,
+                "keywords": [
+                  "bubbles label"
+                ],
+                "eventId": "8"
+              },
+              {
+                "type": "show",
+                "id": "there_exists_two_node_disjoint_paths_with_distinct_colours",
+                "enabled": "enabled",
+                "name": "there exists two node-disjoint paths with distinct colours",
+                "merged": true,
+                "keywords": [
+                  "there exists two node-disjoint paths with distinct colours"
+                ],
+                "eventId": "9"
+              },
+              {
+                "type": "show",
+                "id": "Group_29",
+                "enabled": "enabled",
+                "name": "legend",
+                "merged": false,
+                "keywords": [
+                  "= a node lying inside the bubble",
+                  "legend"
+                ],
+                "eventId": "10"
+              },
+              {
+                "type": "show",
+                "id": "bubble_evaluation",
+                "enabled": "enabled",
+                "name": "bubble evaluation",
+                "merged": true,
+                "keywords": [
+                  "bubble evaluation"
+                ],
+                "eventId": "11"
+              },
+              {
+                "type": "show",
+                "id": "adding_minimality_constraints__there_is___linearly_many_bubbles",
+                "enabled": "enabled",
+                "name": "adding minimality constraints, there is ≤ linearly many bubbles",
+                "merged": false,
+                "keywords": [
+                  "adding minimality constraints, there is ≤ linearly many bubbles"
+                ],
+                "eventId": "12"
+              },
+              {
+                "type": "show",
+                "id": "can_we_compute_them_all_",
+                "enabled": "enabled",
+                "name": "can we compute them all?",
+                "merged": true,
+                "keywords": [
+                  "can we compute them all?"
+                ],
+                "eventId": "13"
+              }
+            ],
+            "keywords": [
+              "query goal "
+            ],
+            "eventId": "3",
+            "originalParams": {
+              "sequencing_errors": {
+                "opacity": 1
+              },
+              "tips_label": {
+                "opacity": 1
+              },
+              "tips_graph": {
+                "opacity": 1
+              },
+              "bubble_DNA": {
+                "opacity": 1
+              },
+              "bubble_graph": {
+                "opacity": 1
+              },
+              "large_graphs__800_MB_for_4000_COVID_genomes__200_MB_for_3_human_21st_chromosome_can_reach_multiple_TB": {
+                "opacity": 1
+              },
+              "compacted_DBG": {
+                "opacity": 1
+              },
+              "bubbles_label": {
+                "opacity": 1
+              },
+              "there_exists_two_node_disjoint_paths_with_distinct_colours": {
+                "opacity": 1
+              },
+              "Group_29": {
+                "opacity": 1
+              },
+              "bubble_evaluation": {
+                "opacity": 1
+              },
+              "adding_minimality_constraints__there_is___linearly_many_bubbles": {
+                "opacity": 1
+              },
+              "can_we_compute_them_all_": {
+                "opacity": 1
+              }
+            }
+          },
+          {
+            "type": "show",
+            "id": "to_databases",
+            "enabled": "enabled",
+            "name": "to databases",
+            "merged": false,
+            "keywords": [
+              "querying",
+              "large graphs ~800 MB for 4000 COVID genomes ~200 MB for 3 human 21st chromosome can reach multiple TB",
+              "to databases"
+            ],
+            "eventId": "5"
+          },
+          {
+            "type": "show",
+            "id": "graph_dbs_Neo4j_K_zu",
+            "enabled": "enabled",
+            "name": "graph dbs Neo4j Kùzu",
+            "merged": false,
+            "keywords": [
+              "graph dbs Neo4j Kùzu"
+            ],
+            "eventId": "7"
+          },
+          {
+            "type": "show",
+            "id": "relational_dbs_SQLite3_DuckDB",
+            "enabled": "enabled",
+            "name": "relational dbs SQLite3 DuckDB",
+            "merged": false,
+            "keywords": [
+              "relational dbs SQLite3 DuckDB"
+            ],
+            "eventId": "8"
+          },
+          {
+            "type": "show",
+            "id": "hybrid_db___graph_algos_Neo4j_w__GDS_library_SQLite3___NetworkX_prototype__vibe_coded_in__10_minutes_",
+            "enabled": "enabled",
+            "name": "hybrid db + graph algos Neo4j w/ GDS library SQLite3 + NetworkX prototype (vibe-coded in ~10 minutes)",
+            "merged": false,
+            "keywords": [
+              "hybrid db + graph algos Neo4j w/ GDS library SQLite3 + NetworkX prototype (vibe-coded in ~10 minutes)"
+            ],
+            "eventId": "9"
+          },
+          {
+            "type": "show",
+            "id": "to_results",
+            "enabled": "enabled",
+            "name": "to results",
+            "merged": false,
+            "keywords": [
+              "large graphs ~800 MB for 4000 COVID genomes ~200 MB for 3 human 21st chromosome can reach multiple TB",
+              "to results"
+            ],
+            "eventId": "6"
+          }
+        ],
+        "keywords": [
+          "DBs"
+        ],
+        "eventId": "21",
+        "originalParams": {
+          "large_graphs__800_MB_for_4000_COVID_genomes__200_MB_for_3_human_21st_chromosome_can_reach_multiple_TB": {
+            "opacity": 1
+          },
+          "to_databases": {
+            "opacity": 1
+          },
+          "to_results": {
+            "opacity": 1
+          },
+          "graph_dbs_Neo4j_K_zu": {
+            "opacity": 1
+          },
+          "relational_dbs_SQLite3_DuckDB": {
+            "opacity": 1
+          },
+          "hybrid_db___graph_algos_Neo4j_w__GDS_library_SQLite3___NetworkX_prototype__vibe_coded_in__10_minutes_": {
+            "opacity": 1
+          }
+        }
+      }
+    ],
+    "keywords": [
+      "Finding Topological Patterns in de Bruijn Graphs Using Database Systems",
+      "Rémi Morvan Iovka Boneva Charles Paperman Camille Marchet  CRIStAL, Univ. Lille & CNRS",
+      "goal: finding topological patterns",
+      "[WIP]",
+      "main slide"
+    ],
+    "eventId": "root",
+    "originalParams": {
+      "DBG_building_arrow": {
+        "opacity": 1
+      },
+      "coloured": {
+        "opacity": 1
+      },
+      "Mutated_stego": {
+        "opacity": 1
+      },
+      "GAGGTCTTATCAG": {
+        "opacity": 1
+      },
+      "GAGGTCTTATCAG2": {
+        "opacity": 1
+      },
+      "orange_dots2": {
+        "opacity": 1
+      },
+      "blue_dots2": {
+        "opacity": 1
+      },
+      "DBG": {
+        "opacity": 1
+      },
+      "blue_dots3": {
+        "opacity": 1
+      },
+      "orange_dots3": {
+        "opacity": 1
+      },
+      "coloured2": {
+        "opacity": 1
+      },
+      "Stego": {
+        "opacity": 1
+      },
+      "Text": {
+        "opacity": 1
+      },
+      "Group_28": {
+        "opacity": 1
+      },
+      "compacted": {
+        "opacity": 1
+      },
+      "large_graphs__800_MB_for_4000_COVID_genomes__200_MB_for_3_human_21st_chromosome_can_reach_multiple_TB": {
+        "opacity": 1
+      }
+    }
+  },
+  "treeTimeLine": [],
+  "chronicleTimeLine": []
+}
