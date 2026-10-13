@@ -5,7 +5,8 @@
     "new_slide": "new_slide",
     "Building_DBGs": "Building_DBGs",
     "DBs": "DBs",
-    "query_goal_": "query_goal_"
+    "query_goal_": "query_goal_",
+    "results": "results"
   },
   "tree": {
     "type": "child",
@@ -41,7 +42,7 @@
             "name": "k-mers",
             "merged": false,
             "keywords": [
-              "GAGGTCTTATCAG AGGTCTTATCAGA GGTCTTATCAGAG GTCTTATCAGAGG TCTTATCAGAGGC CTTATCAGAGGCA TTATCAGAGGCAC",
+              "GAGGTCTTATCAG AGGTCTTATCAGA GGTCTTATCAGAG GTCTTATCAGAGG TCTTATCAGAGGC CTTATCAGAGGCA ...",
               "k-mers"
             ],
             "eventId": "3"
@@ -110,25 +111,25 @@
       },
       {
         "type": "show",
-        "id": "Mutated_stego",
-        "enabled": "enabled",
-        "name": "Stegy",
-        "merged": false,
-        "keywords": [
-          "Stegy"
-        ],
-        "eventId": "6"
-      },
-      {
-        "type": "show",
-        "id": "Stego",
+        "id": "Text2",
         "enabled": "enabled",
         "name": "Stego name",
-        "merged": true,
+        "merged": false,
         "keywords": [
           "Stego name"
         ],
-        "eventId": "22"
+        "eventId": "34"
+      },
+      {
+        "type": "show",
+        "id": "Mutated_stego",
+        "enabled": "enabled",
+        "name": "Stegy",
+        "merged": true,
+        "keywords": [
+          "Stegy"
+        ],
+        "eventId": "28"
       },
       {
         "type": "show",
@@ -139,7 +140,7 @@
         "keywords": [
           "Stegy name"
         ],
-        "eventId": "23"
+        "eventId": "29"
       },
       {
         "type": "show",
@@ -256,7 +257,7 @@
         "id": "compacted",
         "enabled": "enabled",
         "name": "querying",
-        "merged": false,
+        "merged": true,
         "keywords": [
           "querying"
         ],
@@ -300,6 +301,41 @@
             "children": [
               {
                 "type": "show",
+                "id": "bubble_DNA",
+                "enabled": "enabled",
+                "name": "bubble DNA",
+                "merged": false,
+                "keywords": [
+                  "GAGGTCTTATCAGAGGCACGTCAACATCTTAGAGATG",
+                  "GTCTTATCAGGCAAATGGTCACATCTTAGA  ",
+                  "bubble DNA"
+                ],
+                "eventId": "4"
+              },
+              {
+                "type": "show",
+                "id": "bubble_graph",
+                "enabled": "enabled",
+                "name": "bubble graph",
+                "merged": false,
+                "keywords": [
+                  "bubble graph"
+                ],
+                "eventId": "5"
+              },
+              {
+                "type": "show",
+                "id": "large_graphs__800_MB_for_4000_COVID_genomes__200_MB_for_3_human_21st_chromosome_can_reach_multiple_TB",
+                "enabled": "enabled",
+                "name": "bubbles label",
+                "merged": true,
+                "keywords": [
+                  "bubbles label"
+                ],
+                "eventId": "6"
+              },
+              {
+                "type": "show",
                 "id": "sequencing_errors",
                 "enabled": "enabled",
                 "name": "sequencing errors",
@@ -334,41 +370,6 @@
                   "tips graph"
                 ],
                 "eventId": "3"
-              },
-              {
-                "type": "show",
-                "id": "bubble_DNA",
-                "enabled": "enabled",
-                "name": "bubble DNA",
-                "merged": false,
-                "keywords": [
-                  "GAGGTCTTATCAGAGGCACGTCAACATCTTAGAGATG",
-                  "GTCTTATCAGGCAAATGGTCACATCTTAGA  ",
-                  "bubble DNA"
-                ],
-                "eventId": "4"
-              },
-              {
-                "type": "show",
-                "id": "bubble_graph",
-                "enabled": "enabled",
-                "name": "bubble graph",
-                "merged": false,
-                "keywords": [
-                  "bubble graph"
-                ],
-                "eventId": "5"
-              },
-              {
-                "type": "show",
-                "id": "large_graphs__800_MB_for_4000_COVID_genomes__200_MB_for_3_human_21st_chromosome_can_reach_multiple_TB",
-                "enabled": "enabled",
-                "name": "bubbles label",
-                "merged": true,
-                "keywords": [
-                  "bubbles label"
-                ],
-                "eventId": "6"
               },
               {
                 "type": "show",
@@ -510,36 +511,25 @@
           },
           {
             "type": "show",
-            "id": "graph_dbs_Neo4j_K_zu",
+            "id": "DB_engines_table",
             "enabled": "enabled",
-            "name": "graph dbs Neo4j Kùzu",
+            "name": "DB engines table",
             "merged": false,
             "keywords": [
-              "graph dbs Neo4j Kùzu"
+              "SQLite3 + NetworkX prototype",
+              "Neo4j/GDS",
+              "QLever LadybugDB Neo4j",
+              "DuckDB",
+              "Transactional",
+              "Analytical",
+              "Relational DBs",
+              "Graph DBs",
+              "Hybrid: DB + graph algo",
+              "SQLite3",
+              "vibe-coded",
+              "DB engines table"
             ],
-            "eventId": "7"
-          },
-          {
-            "type": "show",
-            "id": "relational_dbs_SQLite3_DuckDB",
-            "enabled": "enabled",
-            "name": "relational dbs SQLite3 DuckDB",
-            "merged": false,
-            "keywords": [
-              "relational dbs SQLite3 DuckDB"
-            ],
-            "eventId": "8"
-          },
-          {
-            "type": "show",
-            "id": "hybrid_db___graph_algos_Neo4j_w__GDS_library_SQLite3___NetworkX_prototype__vibe_coded_in__10_minutes_",
-            "enabled": "enabled",
-            "name": "hybrid db + graph algos Neo4j w/ GDS library SQLite3 + NetworkX prototype (vibe-coded in ~10 minutes)",
-            "merged": false,
-            "keywords": [
-              "hybrid db + graph algos Neo4j w/ GDS library SQLite3 + NetworkX prototype (vibe-coded in ~10 minutes)"
-            ],
-            "eventId": "9"
+            "eventId": "11"
           },
           {
             "type": "show",
@@ -548,10 +538,165 @@
             "name": "to results",
             "merged": false,
             "keywords": [
-              "large graphs ~800 MB for 4000 COVID genomes ~200 MB for 3 human 21st chromosome can reach multiple TB",
+              "prelim results",
               "to results"
             ],
             "eventId": "6"
+          },
+          {
+            "type": "child",
+            "name": "results",
+            "id": "results",
+            "enabled": "enabled",
+            "merged": false,
+            "children": [
+              {
+                "type": "show",
+                "id": "traffic_cone_svgrepo_com_1",
+                "enabled": "enabled",
+                "name": "traffic-cone-svgrepo-com 1",
+                "merged": false,
+                "keywords": [
+                  "traffic-cone-svgrepo-com 1"
+                ],
+                "eventId": "16"
+              },
+              {
+                "type": "show",
+                "id": "We_are_still_waiting_on_some_results__more_complex_queries__unbounded_bubbles__larger_databases__Scalability__some_engines_need_to_load_the_whole_DB_in_RAM_some_don_t_but_are_memory_intensive_some_are_frugal",
+                "enabled": "enabled",
+                "name": "We are still waiting on some results: more complex queries (unbounded bubbles) larger databases",
+                "merged": true,
+                "keywords": [
+                  "We are still waiting on some results: more complex queries (unbounded bubbles) larger databases"
+                ],
+                "eventId": "8"
+              },
+              {
+                "type": "show",
+                "id": "large_graphs__800_MB_for_4000_COVID_genomes__200_MB_for_3_human_21st_chromosome_can_reach_multiple_TB",
+                "enabled": "enabled",
+                "name": "Partial conclusions",
+                "merged": true,
+                "keywords": [
+                  "Partial conclusions"
+                ],
+                "eventId": "9"
+              },
+              {
+                "type": "show",
+                "id": "reachability_between_annotations_1",
+                "enabled": "enabled",
+                "name": "reachability_between_annotations 1",
+                "merged": false,
+                "keywords": [
+                  "reachability_between_annotations 1"
+                ],
+                "eventId": "17"
+              },
+              {
+                "type": "show",
+                "id": "Group_28",
+                "enabled": "enabled",
+                "name": "reachability query: constraints on both ends & output the minimal length (basepairs) of such a path",
+                "merged": true,
+                "keywords": [
+                  "reachability query: constraints on both ends & output the minimal length (basepairs) of such a path"
+                ],
+                "eventId": "18"
+              },
+              {
+                "type": "show",
+                "id": "Scalability__some_engines_need_to_load_the_whole_DB_in_RAM_some_don_t_but_are_memory_intensive_some_are_frugal",
+                "enabled": "enabled",
+                "name": "Scalability: some engines need to load the whole DB in RAM some don't but are memory-intensive some are frugal",
+                "merged": false,
+                "keywords": [
+                  "Scalability: some engines need to load the whole DB in RAM some don't but are memory-intensive some are frugal"
+                ],
+                "eventId": "10"
+              },
+              {
+                "type": "show",
+                "id": "Graph_databases_don_t_perform_well__even_especially_on_graph_reachability_queries__DuckDB__analytic_relational_database__performs_surprisingly_well__but_will_probably_not_scale__Hybrid_solutions_perform_well__but_we_expect_Neo4J_GDS_not_to_scale__SQLite3___NetworkX__prototype__could",
+                "enabled": "enabled",
+                "name": "Graph databases don't perform well, even/especially on graph reachability queries",
+                "merged": false,
+                "keywords": [
+                  "Graph databases don't perform well, even/especially on graph reachability queries"
+                ],
+                "eventId": "11"
+              },
+              {
+                "type": "show",
+                "id": "DuckDB__analytical_relational_database__performs_surprisingly_well__but_will_probably_not_scale_Hybrid_solutions_perform_well__but_we_expect_Neo4J_GDS_not_to_scale__SQLite3___NetworkX__prototype__could",
+                "enabled": "enabled",
+                "name": "DuckDB (analytical relational database) performs surprisingly well, but will probably not scale",
+                "merged": false,
+                "keywords": [
+                  "DuckDB (analytical relational database) performs surprisingly well, but will probably not scale"
+                ],
+                "eventId": "12"
+              },
+              {
+                "type": "show",
+                "id": "136485211_cbc184f9_38b2_4a04_86cd_4507c22371f1_1",
+                "enabled": "enabled",
+                "name": "136485211_cbc184f9-38b2-4a04-86cd-4507c22371f1 1",
+                "merged": true,
+                "keywords": [
+                  "136485211_cbc184f9-38b2-4a04-86cd-4507c22371f1 1"
+                ],
+                "eventId": "15"
+              },
+              {
+                "type": "show",
+                "id": "Hybrid_solutions_perform_well__but_we_expect_Neo4J_GDS_not_to_scale__SQLite3___NetworkX__prototype__could",
+                "enabled": "enabled",
+                "name": "Hybrid solutions perform well, but we expect Neo4J/GDS not to scale; SQLite3 + NetworkX (prototype) could",
+                "merged": false,
+                "keywords": [
+                  "Hybrid solutions perform well, but we expect Neo4J/GDS not to scale; SQLite3 + NetworkX (prototype) could"
+                ],
+                "eventId": "13"
+              }
+            ],
+            "keywords": [
+              "results"
+            ],
+            "eventId": "10",
+            "originalParams": {
+              "We_are_still_waiting_on_some_results__more_complex_queries__unbounded_bubbles__larger_databases__Scalability__some_engines_need_to_load_the_whole_DB_in_RAM_some_don_t_but_are_memory_intensive_some_are_frugal": {
+                "opacity": 1
+              },
+              "large_graphs__800_MB_for_4000_COVID_genomes__200_MB_for_3_human_21st_chromosome_can_reach_multiple_TB": {
+                "opacity": 1
+              },
+              "Scalability__some_engines_need_to_load_the_whole_DB_in_RAM_some_don_t_but_are_memory_intensive_some_are_frugal": {
+                "opacity": 1
+              },
+              "Graph_databases_don_t_perform_well__even_especially_on_graph_reachability_queries__DuckDB__analytic_relational_database__performs_surprisingly_well__but_will_probably_not_scale__Hybrid_solutions_perform_well__but_we_expect_Neo4J_GDS_not_to_scale__SQLite3___NetworkX__prototype__could": {
+                "opacity": 1
+              },
+              "DuckDB__analytical_relational_database__performs_surprisingly_well__but_will_probably_not_scale_Hybrid_solutions_perform_well__but_we_expect_Neo4J_GDS_not_to_scale__SQLite3___NetworkX__prototype__could": {
+                "opacity": 1
+              },
+              "Hybrid_solutions_perform_well__but_we_expect_Neo4J_GDS_not_to_scale__SQLite3___NetworkX__prototype__could": {
+                "opacity": 1
+              },
+              "136485211_cbc184f9_38b2_4a04_86cd_4507c22371f1_1": {
+                "opacity": 1
+              },
+              "traffic_cone_svgrepo_com_1": {
+                "opacity": 1
+              },
+              "reachability_between_annotations_1": {
+                "opacity": 1
+              },
+              "Group_28": {
+                "opacity": 1
+              }
+            }
           }
         ],
         "keywords": [
@@ -568,13 +713,7 @@
           "to_results": {
             "opacity": 1
           },
-          "graph_dbs_Neo4j_K_zu": {
-            "opacity": 1
-          },
-          "relational_dbs_SQLite3_DuckDB": {
-            "opacity": 1
-          },
-          "hybrid_db___graph_algos_Neo4j_w__GDS_library_SQLite3___NetworkX_prototype__vibe_coded_in__10_minutes_": {
+          "DB_engines_table": {
             "opacity": 1
           }
         }
@@ -593,9 +732,6 @@
         "opacity": 1
       },
       "coloured": {
-        "opacity": 1
-      },
-      "Mutated_stego": {
         "opacity": 1
       },
       "GAGGTCTTATCAG": {
@@ -622,12 +758,6 @@
       "coloured2": {
         "opacity": 1
       },
-      "Stego": {
-        "opacity": 1
-      },
-      "Text": {
-        "opacity": 1
-      },
       "Group_28": {
         "opacity": 1
       },
@@ -635,6 +765,18 @@
         "opacity": 1
       },
       "large_graphs__800_MB_for_4000_COVID_genomes__200_MB_for_3_human_21st_chromosome_can_reach_multiple_TB": {
+        "opacity": 1
+      },
+      "Mutated_stego": {
+        "opacity": 1
+      },
+      "Text": {
+        "opacity": 1
+      },
+      "Stego": {
+        "opacity": 1
+      },
+      "Text2": {
         "opacity": 1
       }
     }
