@@ -257,7 +257,7 @@
         "id": "compacted",
         "enabled": "enabled",
         "name": "querying",
-        "merged": true,
+        "merged": false,
         "keywords": [
           "querying"
         ],
@@ -307,7 +307,7 @@
                 "merged": false,
                 "keywords": [
                   "GAGGTCTTATCAGAGGCACGTCAACATCTTAGAGATG",
-                  "GTCTTATCAGGCAAATGGTCACATCTTAGA  ",
+                  "GTCTTATCAGGCAAATGGTCCCATCTTAGA  ",
                   "bubble DNA"
                 ],
                 "eventId": "4"
