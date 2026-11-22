@@ -1,0 +1,966 @@
+{
+  "version": 3.1,
+  "presentation": "2026-seqbim-topological-queries",
+  "slideDict": {
+    "new_slide": "main_slide",
+    "model": "model",
+    "queries": "queries",
+    "reachability_between_annotations2": "reachability_between_annotations",
+    "simple_bubbles2": "simple_bubbles",
+    "bicoloured_bubbles2": "bicoloured_bubbles",
+    "dbs": "dbs",
+    "results": "results"
+  },
+  "tree": {
+    "type": "child",
+    "name": "main-slide",
+    "id": "new_slide",
+    "enabled": "enabled",
+    "merged": false,
+    "children": [
+      {
+        "type": "show",
+        "id": "I__Pangenome_Graphs",
+        "enabled": "enabled",
+        "name": "I. Pangenome Graphs",
+        "merged": false,
+        "keywords": [
+          "I. Pangenome Graphs"
+        ],
+        "eventId": "14"
+      },
+      {
+        "type": "child",
+        "name": "model",
+        "id": "model",
+        "enabled": "enabled",
+        "merged": false,
+        "children": [
+          {
+            "type": "show",
+            "id": "Giraffe",
+            "enabled": "enabled",
+            "name": "Stego",
+            "merged": false,
+            "keywords": [
+              "Stego"
+            ],
+            "eventId": "1"
+          },
+          {
+            "type": "show",
+            "id": "DNA",
+            "enabled": "enabled",
+            "name": "DNA",
+            "merged": true,
+            "keywords": [
+              "DNA"
+            ],
+            "eventId": "2"
+          },
+          {
+            "type": "show",
+            "id": "sequencing",
+            "enabled": "enabled",
+            "name": "sequencing",
+            "merged": false,
+            "keywords": [
+              "sequencing",
+              "reads",
+              "GAGGTCTTATCAGAGGCACGTCAACATCTTAGAGATGGCACT TGGACTTTATTGACACTAAGAGGGGT GTGCTGACTCTATCATTATTGGTGGAGCTAAACTTAAAGCCTTGAATTTAGGTGA ..."
+            ],
+            "eventId": "3"
+          },
+          {
+            "type": "show",
+            "id": "k_mers",
+            "enabled": "enabled",
+            "name": "k-mers",
+            "merged": false,
+            "keywords": [
+              "GAGGTCTTATCAG AGGTCTTATCAGA GGTCTTATCAGAG GTCTTATCAGAGG TCTTATCAGAGGC CTTATCAGAGGCA ...",
+              "k-mers"
+            ],
+            "eventId": "4"
+          },
+          {
+            "type": "show",
+            "id": "DBG_building_arrow",
+            "enabled": "enabled",
+            "name": "DBG building arrow",
+            "merged": false,
+            "keywords": [
+              "de Bruijn graph construction",
+              "DBG building arrow"
+            ],
+            "eventId": "5"
+          },
+          {
+            "type": "show",
+            "id": "DBG",
+            "enabled": "enabled",
+            "name": "DBG",
+            "merged": false,
+            "keywords": [
+              "DBG"
+            ],
+            "eventId": "6"
+          },
+          {
+            "type": "show",
+            "id": "GAGGTCTTATCAG",
+            "enabled": "enabled",
+            "name": "GAGGTCTTATCAG",
+            "merged": false,
+            "keywords": [
+              "GAGGTCTTATCAG"
+            ],
+            "eventId": "13"
+          },
+          {
+            "type": "show",
+            "id": "GAGGTCTTATCAG2",
+            "enabled": "enabled",
+            "name": "AGGTCTTATCAGT",
+            "merged": true,
+            "keywords": [
+              "AGGTCTTATCAGT"
+            ],
+            "eventId": "14"
+          },
+          {
+            "type": "show",
+            "id": "Mutated_stego",
+            "enabled": "enabled",
+            "name": "Stegy",
+            "merged": false,
+            "keywords": [
+              "Stegy"
+            ],
+            "eventId": "7"
+          },
+          {
+            "type": "show",
+            "id": "blue_dots2",
+            "enabled": "enabled",
+            "name": "blue dots",
+            "merged": false,
+            "keywords": [
+              "blue dots"
+            ],
+            "eventId": "8"
+          },
+          {
+            "type": "show",
+            "id": "orange_dots2",
+            "enabled": "enabled",
+            "name": "orange dots",
+            "merged": true,
+            "keywords": [
+              "orange dots"
+            ],
+            "eventId": "9"
+          },
+          {
+            "type": "show",
+            "id": "coloured",
+            "enabled": "enabled",
+            "name": "coloured",
+            "merged": true,
+            "keywords": [
+              "coloured"
+            ],
+            "eventId": "10"
+          },
+          {
+            "type": "hide",
+            "id": "orange_dots2",
+            "enabled": "enabled",
+            "name": "orange dots",
+            "merged": false,
+            "keywords": [
+              "orange dots"
+            ],
+            "eventId": "17"
+          },
+          {
+            "type": "hide",
+            "id": "blue_dots2",
+            "enabled": "enabled",
+            "name": "blue dots",
+            "merged": true,
+            "keywords": [
+              "blue dots"
+            ],
+            "eventId": "18"
+          },
+          {
+            "type": "hide",
+            "id": "DBG",
+            "enabled": "enabled",
+            "name": "DBG",
+            "merged": true,
+            "keywords": [
+              "DBG"
+            ],
+            "eventId": "11"
+          },
+          {
+            "type": "show",
+            "id": "Group_28",
+            "enabled": "enabled",
+            "name": "compacted DBG",
+            "merged": true,
+            "keywords": [
+              "compacted DBG"
+            ],
+            "eventId": "12"
+          },
+          {
+            "type": "show",
+            "id": "compacted",
+            "enabled": "enabled",
+            "name": "compacted",
+            "merged": true,
+            "keywords": [
+              "compacted"
+            ],
+            "eventId": "15"
+          },
+          {
+            "type": "show",
+            "id": "annotations",
+            "enabled": "enabled",
+            "name": "annotations",
+            "merged": false,
+            "keywords": [
+              "gene x",
+              "gene y",
+              "annotations"
+            ],
+            "eventId": "16"
+          }
+        ],
+        "keywords": [
+          "model"
+        ],
+        "eventId": "5",
+        "originalParams": {
+          "Giraffe": {
+            "opacity": 1
+          },
+          "DNA": {
+            "opacity": 1
+          },
+          "sequencing": {
+            "opacity": 1
+          },
+          "k_mers": {
+            "opacity": 1
+          },
+          "DBG_building_arrow": {
+            "opacity": 1
+          },
+          "DBG": {
+            "opacity": 1
+          },
+          "Mutated_stego": {
+            "opacity": 1
+          },
+          "blue_dots2": {
+            "opacity": 1
+          },
+          "orange_dots2": {
+            "opacity": 1
+          },
+          "coloured": {
+            "opacity": 1
+          },
+          "Group_28": {
+            "opacity": 1
+          },
+          "GAGGTCTTATCAG": {
+            "opacity": 1
+          },
+          "GAGGTCTTATCAG2": {
+            "opacity": 1
+          },
+          "compacted": {
+            "opacity": 1
+          },
+          "annotations": {
+            "opacity": 1
+          }
+        }
+      },
+      {
+        "type": "show",
+        "id": "III__queries",
+        "enabled": "enabled",
+        "name": "II. queries",
+        "merged": false,
+        "keywords": [
+          "II. queries"
+        ],
+        "eventId": "16"
+      },
+      {
+        "type": "child",
+        "name": "queries",
+        "id": "queries",
+        "enabled": "enabled",
+        "merged": false,
+        "children": [
+          {
+            "type": "child",
+            "name": "reachability between annotations",
+            "id": "reachability_between_annotations2",
+            "enabled": "enabled",
+            "merged": false,
+            "children": [
+              {
+                "type": "show",
+                "id": "healthy",
+                "enabled": "enabled",
+                "name": "healthy",
+                "merged": false,
+                "keywords": [
+                  "healthy DNA",
+                  "exon 44",
+                  "exon 45",
+                  "exon 46",
+                  "healthy"
+                ],
+                "eventId": "1"
+              },
+              {
+                "type": "show",
+                "id": "DMD",
+                "enabled": "enabled",
+                "name": "DMD",
+                "merged": false,
+                "keywords": [
+                  "DMD gene exon 45 deletion (Duchenne myopathy)",
+                  "exon 44",
+                  "exon 46",
+                  "DMD"
+                ],
+                "eventId": "2"
+              },
+              {
+                "type": "show",
+                "id": "query",
+                "enabled": "enabled",
+                "name": "query",
+                "merged": false,
+                "keywords": [
+                  "paths from a node annotated with :left to a node annotated with :right with no intermediate node labelled by :block",
+                  "exon 44",
+                  "exon _",
+                  "exon 46",
+                  "query"
+                ],
+                "eventId": "3"
+              },
+              {
+                "type": "show",
+                "id": "__return_the_minimal_length__nb_of_basepairs__of_such_a_path",
+                "enabled": "enabled",
+                "name": "→ return the minimal length (nb of basepairs) of such a path",
+                "merged": false,
+                "keywords": [
+                  "→ return the minimal length (nb of basepairs) of such a path"
+                ],
+                "eventId": "4"
+              }
+            ],
+            "keywords": [
+              "reachability between annotations"
+            ],
+            "eventId": "1",
+            "originalParams": {
+              "healthy": {
+                "opacity": 1
+              },
+              "DMD": {
+                "opacity": 1
+              },
+              "query": {
+                "opacity": 1
+              },
+              "__return_the_minimal_length__nb_of_basepairs__of_such_a_path": {
+                "opacity": 1
+              }
+            }
+          },
+          {
+            "type": "child",
+            "name": "bicoloured bubbles",
+            "id": "bicoloured_bubbles2",
+            "enabled": "enabled",
+            "merged": false,
+            "children": [
+              {
+                "type": "show",
+                "id": "identify_inter_individual_variations__despite_the_presence_of_intra_individual_variations_",
+                "enabled": "enabled",
+                "name": "identify inter-individual variations (despite the presence of intra-individual variations)",
+                "merged": false,
+                "keywords": [
+                  "identify inter-individual variations (despite the presence of intra-individual variations)"
+                ],
+                "eventId": "1"
+              },
+              {
+                "type": "show",
+                "id": "coloured_DBG",
+                "enabled": "enabled",
+                "name": "coloured DBG",
+                "merged": false,
+                "keywords": [
+                  "coloured DBG"
+                ],
+                "eventId": "2"
+              },
+              {
+                "type": "show",
+                "id": "nodes__u_v__inside__region__with_a__blue__and_not__yellow__path_from_u_to_v__and_a__yellow__and_not__blue__path_from_u_to_v____return_nodes__u_v__and_all__simple__paths",
+                "enabled": "enabled",
+                "name": "nodes (u,v) inside :region, with a :blue (and not :yellow) path from u to v, and a :yellow (and not :blue) path from u to v. → return nodes (u,v) and all (simple) paths",
+                "merged": false,
+                "keywords": [
+                  "nodes (u,v) inside :region, with a :blue (and not :yellow) path from u to v, and a :yellow (and not :blue) path from u to v. → return nodes (u,v) and all (simple) paths"
+                ],
+                "eventId": "3"
+              }
+            ],
+            "keywords": [
+              "bicoloured bubbles"
+            ],
+            "eventId": "3",
+            "originalParams": {
+              "identify_inter_individual_variations__despite_the_presence_of_intra_individual_variations_": {
+                "opacity": 1
+              },
+              "coloured_DBG": {
+                "opacity": 1
+              },
+              "nodes__u_v__inside__region__with_a__blue__and_not__yellow__path_from_u_to_v__and_a__yellow__and_not__blue__path_from_u_to_v____return_nodes__u_v__and_all__simple__paths": {
+                "opacity": 1
+              }
+            }
+          }
+        ],
+        "keywords": [
+          "reachability between annotations",
+          "simple bubbles",
+          "bicoloured bubbles",
+          "queries"
+        ],
+        "eventId": "2",
+        "originalParams": {}
+      },
+      {
+        "type": "show",
+        "id": "eg_language",
+        "enabled": "enabled",
+        "name": "eg language",
+        "merged": false,
+        "keywords": [
+          "What it could look like: Blue: all blue nodes SomeGene: all nodes annotated with a gene bubble(Blue AND SomeGene ; Yellow)",
+          "eg language"
+        ],
+        "eventId": "12"
+      },
+      {
+        "type": "show",
+        "id": "II__databases",
+        "enabled": "enabled",
+        "name": "III. databases",
+        "merged": false,
+        "keywords": [
+          "III. databases"
+        ],
+        "eventId": "15"
+      },
+      {
+        "type": "child",
+        "name": "dbs",
+        "id": "dbs",
+        "enabled": "enabled",
+        "merged": false,
+        "children": [
+          {
+            "type": "show",
+            "id": "Group_392",
+            "enabled": "enabled",
+            "name": "relational schema",
+            "merged": false,
+            "keywords": [
+              "relational schema",
+              "= how the data is represented"
+            ],
+            "eventId": "19"
+          },
+          {
+            "type": "show",
+            "id": "Text3",
+            "enabled": "enabled",
+            "name": "table with name",
+            "merged": false,
+            "keywords": [
+              "table with name"
+            ],
+            "eventId": "8"
+          },
+          {
+            "type": "show",
+            "id": "nodes__id__int__sequence__string_edges__source__int_target__int__left_sign__int_right_sign__int_has_colors___node_id__int__color_id__string__abundance__int__has_annotations___node_id__int__annotation_id__string",
+            "enabled": "enabled",
+            "name": "edges",
+            "merged": true,
+            "keywords": [
+              "edges"
+            ],
+            "eventId": "14"
+          },
+          {
+            "type": "show",
+            "id": "Line_31",
+            "enabled": "enabled",
+            "name": "Line 31",
+            "merged": false,
+            "keywords": [
+              "Line 31"
+            ],
+            "eventId": "32"
+          },
+          {
+            "type": "show",
+            "id": "engines___languages",
+            "enabled": "enabled",
+            "name": "languages",
+            "merged": true,
+            "keywords": [
+              "languages",
+              "= how to query the data"
+            ],
+            "eventId": "20"
+          },
+          {
+            "type": "show",
+            "id": "SQL",
+            "enabled": "enabled",
+            "name": "SQL",
+            "merged": false,
+            "keywords": [
+              "SQL",
+              "SELECT … FROM …  JOIN … WHERE …  "
+            ],
+            "eventId": "22"
+          },
+          {
+            "type": "show",
+            "id": "__recursive_queries",
+            "enabled": "enabled",
+            "name": "+ recursive tables (1999)",
+            "merged": false,
+            "keywords": [
+              "+ recursive tables (1999)"
+            ],
+            "eventId": "23"
+          },
+          {
+            "type": "show",
+            "id": "Line_30",
+            "enabled": "enabled",
+            "name": "Line 30",
+            "merged": false,
+            "keywords": [
+              "Line 30"
+            ],
+            "eventId": "33"
+          },
+          {
+            "type": "show",
+            "id": "Datalog",
+            "enabled": "enabled",
+            "name": "Datalog",
+            "merged": true,
+            "keywords": [
+              "Datalog",
+              "Path(x,y) ← Edge(x,y). Path(x,z) ← Edge(x,y), Path(y,z).",
+              "designed for recursion"
+            ],
+            "eventId": "24"
+          },
+          {
+            "type": "show",
+            "id": "Group_21",
+            "enabled": "enabled",
+            "name": "this is a graph!",
+            "merged": false,
+            "keywords": [
+              "this is a graph!"
+            ],
+            "eventId": "29"
+          },
+          {
+            "type": "show",
+            "id": "Two_families_of_DBs__triple_store_RDF__collections_of_triplets__node__edge__node__property_graphs__graph_whose_nodes___edges_can_have_labels_and_attributes",
+            "enabled": "enabled",
+            "name": "Two families of DBs. triple-store RDF: collections of triplets (node, edge, node) property graphs: graph whose nodes & edges can have labels and attributes",
+            "merged": false,
+            "keywords": [
+              "Two families of DBs. triple-store RDF: collections of triplets (node, edge, node) property graphs: graph whose nodes & edges can have labels and attributes"
+            ],
+            "eventId": "30"
+          },
+          {
+            "type": "show",
+            "id": "relational_schema",
+            "enabled": "enabled",
+            "name": "graph schema",
+            "merged": false,
+            "keywords": [
+              "… you can guess it (mostly)!",
+              "graph schema"
+            ],
+            "eventId": "31"
+          },
+          {
+            "type": "show",
+            "id": "graph_languages",
+            "enabled": "enabled",
+            "name": "graph languages",
+            "merged": false,
+            "keywords": [
+              "languages",
+              "= how to query the data",
+              "SPARQL (for RDF) & Cypher (for PGs)",
+              "used by Wikidata",
+              "Neo4j's language",
+              "graph languages"
+            ],
+            "eventId": "25"
+          },
+          {
+            "type": "show",
+            "id": "In_short____n_Node____Edge_____n_Node_",
+            "enabled": "enabled",
+            "name": "In short:  (n:Node) -[Edge]-> (n:Node)",
+            "merged": false,
+            "keywords": [
+              "In short:  (n:Node) -[Edge]-> (n:Node)"
+            ],
+            "eventId": "26"
+          },
+          {
+            "type": "show",
+            "id": "reachability_in_Cypher",
+            "enabled": "enabled",
+            "name": "reachability in Cypher",
+            "merged": false,
+            "keywords": [
+              "(x:Node) -[:Edge+]-> (y:Node)",
+              "= a non-empty sequence of edges",
+              "reachability in Cypher"
+            ],
+            "eventId": "27"
+          },
+          {
+            "type": "show",
+            "id": "designed_for_paths_walks_in_graphs",
+            "enabled": "enabled",
+            "name": "designed for paths/walks in graphs",
+            "merged": false,
+            "keywords": [
+              "designed for paths/walks in graphs"
+            ],
+            "eventId": "28"
+          }
+        ],
+        "keywords": [
+          "relations",
+          "graphs",
+          "v.s.",
+          "dbs"
+        ],
+        "eventId": "6",
+        "originalParams": {
+          "Text3": {
+            "opacity": 1
+          },
+          "nodes__id__int__sequence__string_edges__source__int_target__int__left_sign__int_right_sign__int_has_colors___node_id__int__color_id__string__abundance__int__has_annotations___node_id__int__annotation_id__string": {
+            "opacity": 1
+          },
+          "___": {
+            "opacity": 1
+          },
+          "Group_392": {
+            "opacity": 1
+          },
+          "engines___languages": {
+            "opacity": 1
+          },
+          "SQL": {
+            "opacity": 1
+          },
+          "__recursive_queries": {
+            "opacity": 1
+          },
+          "Datalog": {
+            "opacity": 1
+          },
+          "graph_languages": {
+            "opacity": 1
+          },
+          "In_short____n_Node____Edge_____n_Node_": {
+            "opacity": 1
+          },
+          "reachability_in_Cypher": {
+            "opacity": 1
+          },
+          "designed_for_paths_walks_in_graphs": {
+            "opacity": 1
+          },
+          "Group_21": {
+            "opacity": 1
+          },
+          "Two_families_of_DBs__triple_store_RDF__collections_of_triplets__node__edge__node__property_graphs__graph_whose_nodes___edges_can_have_labels_and_attributes": {
+            "opacity": 1
+          },
+          "relational_schema": {
+            "opacity": 1
+          },
+          "Line_31": {
+            "opacity": 0.10000000149011612
+          },
+          "Line_30": {
+            "opacity": 1
+          }
+        }
+      },
+      {
+        "type": "show",
+        "id": "IV__Preliminary_results",
+        "enabled": "enabled",
+        "name": "IV. Preliminary results",
+        "merged": false,
+        "keywords": [
+          "IV. Preliminary results"
+        ],
+        "eventId": "7"
+      },
+      {
+        "type": "child",
+        "name": "results",
+        "id": "results",
+        "enabled": "enabled",
+        "merged": false,
+        "children": [
+          {
+            "type": "show",
+            "id": "Engines",
+            "enabled": "enabled",
+            "name": "Engines",
+            "merged": false,
+            "keywords": [
+              "SQL engines (SQLite, DuckDB)",
+              "SPARQL engines (QLever, Virtuoso)",
+              "Cypher engines (LadybugDB, Neo4j)",
+              "Datalog engines (Soufflé)",
+              "for comparison: Python graph algo",
+              "relational DBs",
+              "graph DBs",
+              "{",
+              "Engines"
+            ],
+            "eventId": "6"
+          },
+          {
+            "type": "show",
+            "id": "Columns",
+            "enabled": "enabled",
+            "name": "Columns",
+            "merged": false,
+            "keywords": [
+              "Declarative",
+              "Scalable",
+              "Compositional",
+              "Efficiently evaluable? machine: 64GB RAM, 32 threads and 1TB HDD ; result: median time",
+              "Columns"
+            ],
+            "eventId": "7"
+          },
+          {
+            "type": "show",
+            "id": "reachability_on_a_SARS_CoV_2_pangenome_w__8k_genomes_40k_nodes___2GB_DBs",
+            "enabled": "enabled",
+            "name": "reachability on a SARS-CoV-2 pangenome w/ 8k genomes 40k nodes, ~2GB DBs",
+            "merged": false,
+            "keywords": [
+              "reachability on a SARS-CoV-2 pangenome w/ 8k genomes 40k nodes, ~2GB DBs"
+            ],
+            "eventId": "8"
+          },
+          {
+            "type": "show",
+            "id": "reachability_on_a_bread_wheat_pangenome_w__3_genomes_40k_nodes___6GB_DBs",
+            "enabled": "enabled",
+            "name": "reachability on a bread wheat chr2D pangenome w/ 3 genomes 21M nodes, ~6GB DBs",
+            "merged": true,
+            "keywords": [
+              "reachability on a bread wheat chr2D pangenome w/ 3 genomes 21M nodes, ~6GB DBs"
+            ],
+            "eventId": "9"
+          },
+          {
+            "type": "show",
+            "id": "Group_39",
+            "enabled": "enabled",
+            "name": "declarative",
+            "merged": false,
+            "keywords": [
+              "in theory: yes in practice: no",
+              "yes",
+              "no",
+              "declarative"
+            ],
+            "eventId": "11"
+          },
+          {
+            "type": "show",
+            "id": "Group_392",
+            "enabled": "enabled",
+            "name": "compositional",
+            "merged": false,
+            "keywords": [
+              "yes",
+              "no + bugs in engines",
+              "no",
+              "compositional"
+            ],
+            "eventId": "12"
+          },
+          {
+            "type": "show",
+            "id": "query_time",
+            "enabled": "enabled",
+            "name": "query time",
+            "merged": false,
+            "keywords": [
+              "1min (but 25% at ≥ 3h) for SQLite 0.3s for DuckDB",
+              "≥ 1h30 for SQLite 19s for DuckDB",
+              "21s",
+              "0.7s",
+              "12min for LBug ≥ 3h for Neo4j",
+              "3min for LBug ≥ 1h30 for Neo4j",
+              "9min for QLever OOM for Virtuoso",
+              "query time"
+            ],
+            "eventId": "20"
+          },
+          {
+            "type": "show",
+            "id": "Group_393",
+            "enabled": "enabled",
+            "name": "scalable",
+            "merged": false,
+            "keywords": [
+              "no",
+              "no for LBug yes for Neo4j",
+              "yes for SQLite mostly no for DuckDB",
+              "scalable"
+            ],
+            "eventId": "26"
+          }
+        ],
+        "keywords": [
+          "results"
+        ],
+        "eventId": "13",
+        "originalParams": {
+          "Engines": {
+            "opacity": 1
+          },
+          "Columns": {
+            "opacity": 1
+          },
+          "reachability_on_a_SARS_CoV_2_pangenome_w__8k_genomes_40k_nodes___2GB_DBs": {
+            "opacity": 1
+          },
+          "reachability_on_a_bread_wheat_pangenome_w__3_genomes_40k_nodes___6GB_DBs": {
+            "opacity": 1
+          },
+          "Group_39": {
+            "opacity": 1
+          },
+          "Group_392": {
+            "opacity": 1
+          },
+          "query_time": {
+            "opacity": 1
+          },
+          "Group_393": {
+            "opacity": 1
+          }
+        }
+      },
+      {
+        "type": "show",
+        "id": "V__What_s_next_",
+        "enabled": "enabled",
+        "name": "V. What's next?",
+        "merged": false,
+        "keywords": [
+          "V. What's next?"
+        ],
+        "eventId": "10"
+      },
+      {
+        "type": "show",
+        "id": "We_d_be_interested_in_knowing_which_topological_patterns_are_relevant_for_your_research__E_g__tips__supperbubbles__ultrabubbles___",
+        "enabled": "enabled",
+        "name": "We'd be interested in knowing which topological patterns are relevant for your research. E.g. tips, supperbubbles, ultrabubbles, …",
+        "merged": false,
+        "keywords": [
+          "We'd be interested in knowing which topological patterns are relevant for your research. E.g. tips, supperbubbles, ultrabubbles, …"
+        ],
+        "eventId": "11"
+      }
+    ],
+    "keywords": [
+      "Benchmarking Topological Queries in Pangenome Graphs",
+      "Rémi Morvan, Iovka Boneva, Charles Paperman & Camille Marchet CRIStAL, Univ. Lille & CNRS",
+      "Our goal is to design a declarative compositional & easy-to-write query language for pangenomes graphs with an efficient and scalable engine.",
+      "main-slide"
+    ],
+    "eventId": "root",
+    "originalParams": {
+      "IV__Preliminary_results": {
+        "opacity": 1
+      },
+      "V__What_s_next_": {
+        "opacity": 1
+      },
+      "We_d_be_interested_in_knowing_which_topological_patterns_are_relevant_for_your_research__E_g__tips__supperbubbles__ultrabubbles___": {
+        "opacity": 1
+      },
+      "eg_language": {
+        "opacity": 1
+      },
+      "I__Pangenome_Graphs": {
+        "opacity": 1
+      },
+      "II__databases": {
+        "opacity": 1
+      },
+      "III__queries": {
+        "opacity": 1
+      }
+    }
+  },
+  "treeTimeLine": [],
+  "chronicleTimeLine": []
+}
