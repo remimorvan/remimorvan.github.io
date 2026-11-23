@@ -1,0 +1,73 @@
+{
+  "version": 3.1,
+  "presentation": "2026-seqbim-me",
+  "slideDict": {
+    "new_slide": "new_slide"
+  },
+  "tree": {
+    "type": "child",
+    "name": "new slide",
+    "id": "new_slide",
+    "enabled": "enabled",
+    "merged": false,
+    "children": [
+      {
+        "type": "show",
+        "id": "background1",
+        "enabled": "enabled",
+        "name": "background1",
+        "merged": false,
+        "keywords": [
+          "Background:",
+          "2017–21 ENS Cachan “Agreg de maths”  Parisian Master of Research in CS",
+          "background1"
+        ],
+        "eventId": "1"
+      },
+      {
+        "type": "show",
+        "id": "background2",
+        "enabled": "enabled",
+        "name": "background2",
+        "merged": false,
+        "keywords": [
+          "2021–25 Univ. Bordeaux Ph.D. in Theoretical Computer Science logics, automata theory, database theory, including  theoretical study of query languages for graph databases",
+          "background2"
+        ],
+        "eventId": "2"
+      },
+      {
+        "type": "show",
+        "id": "goal",
+        "enabled": "enabled",
+        "name": "goal",
+        "merged": false,
+        "keywords": [
+          "What I'm doing here:",
+          "Applying a logics framework to genomic graphs. Identify what genomics needs/wants from logics.",
+          "goal"
+        ],
+        "eventId": "3"
+      }
+    ],
+    "keywords": [
+      "Rémi Morvan Postdoc in Lille under Camille Marchet & Charles Paperman",
+      "ft. Antoine & Camille's latest book recommendation",
+      "new slide"
+    ],
+    "eventId": "root",
+    "originalParams": {
+      "background1": {
+        "opacity": 1
+      },
+      "background2": {
+        "opacity": 1
+      },
+      "goal": {
+        "opacity": 1
+      }
+    }
+  },
+  "treeTimeLine": [],
+  "chronicleTimeLine": []
+}
