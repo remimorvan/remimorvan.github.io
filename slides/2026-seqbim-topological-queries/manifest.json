@@ -395,6 +395,78 @@
           },
           {
             "type": "child",
+            "name": "simple bubbles",
+            "id": "simple_bubbles2",
+            "enabled": "enabled",
+            "merged": false,
+            "children": [
+              {
+                "type": "show",
+                "id": "single_basepair_mutation_e_g__soapy_taste_in_coriander",
+                "enabled": "enabled",
+                "name": "single basepair mutation e.g. soapy taste in coriander",
+                "merged": false,
+                "keywords": [
+                  "single basepair mutation e.g. soapy taste in coriander"
+                ],
+                "eventId": "1"
+              },
+              {
+                "type": "show",
+                "id": "Group_39",
+                "enabled": "enabled",
+                "name": "GAGGTCTTATCAGAGGCACGTCAACATCTTAGAGATG",
+                "merged": false,
+                "keywords": [
+                  "GAGGTCTTATCAGAGGCACGTCAACATCTTAGAGATG",
+                  "GTCTTATCAGAGGCAGGTCAACATCTTAGA  "
+                ],
+                "eventId": "2"
+              },
+              {
+                "type": "show",
+                "id": "bubble_graph",
+                "enabled": "enabled",
+                "name": "bubble graph",
+                "merged": false,
+                "keywords": [
+                  "bubble graph"
+                ],
+                "eventId": "3"
+              },
+              {
+                "type": "show",
+                "id": "get_all_diamond_shape_subgraphs__whose_intermediate_vertices_have_size_2k_1",
+                "enabled": "enabled",
+                "name": "get all diamond-shape subgraphs, whose intermediate vertices have size 2k-1",
+                "merged": false,
+                "keywords": [
+                  "get all diamond-shape subgraphs, whose intermediate vertices have size 2k-1"
+                ],
+                "eventId": "4"
+              }
+            ],
+            "keywords": [
+              "simple bubbles"
+            ],
+            "eventId": "4",
+            "originalParams": {
+              "single_basepair_mutation_e_g__soapy_taste_in_coriander": {
+                "opacity": 1
+              },
+              "Group_39": {
+                "opacity": 1
+              },
+              "bubble_graph": {
+                "opacity": 1
+              },
+              "get_all_diamond_shape_subgraphs__whose_intermediate_vertices_have_size_2k_1": {
+                "opacity": 1
+              }
+            }
+          },
+          {
+            "type": "child",
             "name": "bicoloured bubbles",
             "id": "bicoloured_bubbles2",
             "enabled": "enabled",
@@ -857,6 +929,9 @@
               "12min for LBug ≥ 3h for Neo4j",
               "3min for LBug ≥ 1h30 for Neo4j",
               "9min for QLever OOM for Virtuoso",
+              "5min",
+              "≥ 1h & OOM QLever OOM for Virtuoso",
+              "0.6s",
               "query time"
             ],
             "eventId": "20"
