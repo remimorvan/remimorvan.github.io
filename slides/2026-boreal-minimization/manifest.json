@@ -1,0 +1,2041 @@
+{
+  "version": 3.1,
+  "presentation": "2026-boreal-minimization",
+  "slideDict": {
+    "new_slide": "new_slide",
+    "CRPQs": "CRPQs",
+    "Table_Materialisation2": "Table_Materialisation",
+    "Structural_Approach2": "Structural_Approach",
+    "Minimization2": "Minimization",
+    "Inexpressibility": "Inexpressibility",
+    "minimization_non_trivial": "minimization_non_trivial",
+    "CRPQ_atom_minimization": "CRPQ_atom_minimization",
+    "union_matters": "union_matters",
+    "max_under_approx": "max_under_approx",
+    "construction_under_approximation": "construction_under_approximation",
+    "segment_graph": "segment_graph"
+  },
+  "tree": {
+    "type": "child",
+    "name": "main slide",
+    "id": "new_slide",
+    "enabled": "enabled",
+    "merged": false,
+    "children": [
+      {
+        "type": "show",
+        "id": "CRPQS",
+        "enabled": "enabled",
+        "name": "CRPQS",
+        "merged": false,
+        "keywords": [
+          "[Copy] CRPQs",
+          "CRPQS"
+        ],
+        "eventId": "1"
+      },
+      {
+        "type": "show",
+        "id": "Table_Materialisation",
+        "enabled": "enabled",
+        "name": "Table Materialisation",
+        "merged": false,
+        "keywords": [
+          "[Copy] Table Materialisation",
+          "Table Materialisation"
+        ],
+        "eventId": "2"
+      },
+      {
+        "type": "show",
+        "id": "Structural_Approach",
+        "enabled": "enabled",
+        "name": "Structural Approach",
+        "merged": true,
+        "keywords": [
+          "[Copy] Structural Approach",
+          "Structural Approach"
+        ],
+        "eventId": "3"
+      },
+      {
+        "type": "show",
+        "id": "Group_21",
+        "enabled": "enabled",
+        "name": "Arrow",
+        "merged": true,
+        "keywords": [
+          "Arrow"
+        ],
+        "eventId": "10"
+      },
+      {
+        "type": "show",
+        "id": "Arrow",
+        "enabled": "enabled",
+        "name": "Arrow",
+        "merged": true,
+        "keywords": [
+          "Arrow"
+        ],
+        "eventId": "11"
+      },
+      {
+        "type": "child",
+        "name": "CRPQs",
+        "id": "CRPQs",
+        "enabled": "enabled",
+        "merged": false,
+        "children": [
+          {
+            "type": "show",
+            "id": "database",
+            "enabled": "enabled",
+            "name": "database",
+            "merged": false,
+            "keywords": [
+              "database"
+            ],
+            "eventId": "1"
+          },
+          {
+            "type": "show",
+            "id": "db",
+            "enabled": "enabled",
+            "name": "db ex",
+            "merged": true,
+            "keywords": [
+              "author1",
+              "author2",
+              "author3",
+              "author4",
+              "author5",
+              "paper1",
+              "paper3",
+              "paper2",
+              "wrote",
+              "advised",
+              "db ex"
+            ],
+            "eventId": "2"
+          },
+          {
+            "type": "show",
+            "id": "CQ___informal",
+            "enabled": "enabled",
+            "name": "CRPQ ex",
+            "merged": false,
+            "keywords": [
+              "a",
+              "a'",
+              "advised+",
+              "p",
+              "wrote",
+              "“all people that wrote a paper with one of their ancestors”",
+              "CRPQ ex"
+            ],
+            "eventId": "3"
+          },
+          {
+            "type": "show",
+            "id": "CRPQs2",
+            "enabled": "enabled",
+            "name": "CRPQs",
+            "merged": false,
+            "keywords": [
+              "CRPQs"
+            ],
+            "eventId": "4"
+          },
+          {
+            "type": "show",
+            "id": "evaluation_arrows",
+            "enabled": "enabled",
+            "name": "evaluation arrows",
+            "merged": false,
+            "keywords": [
+              "one “evalution map”",
+              "evaluation arrows"
+            ],
+            "eventId": "5"
+          },
+          {
+            "type": "show",
+            "id": "Evaluation_is__NL_complete_in_data_complexity__NP_complete_in_query_complexity_and_combined_complexity_",
+            "enabled": "enabled",
+            "name": "Evaluation: NL-complete in data complexity, NP-complete in query complexity and combined complexity.",
+            "merged": false,
+            "keywords": [
+              "Evaluation: NL-complete in data complexity, NP-complete in query complexity and combined complexity."
+            ],
+            "eventId": "6"
+          }
+        ],
+        "keywords": [
+          "CRPQs"
+        ],
+        "eventId": "6",
+        "originalParams": {
+          "database": {
+            "opacity": 1
+          },
+          "db": {
+            "opacity": 1
+          },
+          "CQ___informal": {
+            "opacity": 1
+          },
+          "CRPQs2": {
+            "opacity": 1
+          },
+          "evaluation_arrows": {
+            "opacity": 1
+          },
+          "Evaluation_is__NL_complete_in_data_complexity__NP_complete_in_query_complexity_and_combined_complexity_": {
+            "opacity": 1
+          }
+        }
+      },
+      {
+        "type": "child",
+        "name": "Table Materialisation",
+        "id": "Table_Materialisation2",
+        "enabled": "enabled",
+        "merged": false,
+        "children": [
+          {
+            "type": "show",
+            "id": "Evaluating_CRPQs_via_Table_Materialization",
+            "enabled": "enabled",
+            "name": "Evaluating CRPQs via Table Materialization",
+            "merged": false,
+            "keywords": [
+              "Evaluating CRPQs via Table Materialization"
+            ],
+            "eventId": "1"
+          },
+          {
+            "type": "show",
+            "id": "Input__A_CRPQ___x1_____xn__and_a_graph_database_G__Output__All_tuples__u1_____un__of_G_that_satisfy___x1_____xn__",
+            "enabled": "enabled",
+            "name": "Input: A CRPQ γ(x1, …, xn) and a graph database G. Output: All tuples (u1, …, un) of G that satisfy γ(x1, …, xn).",
+            "merged": true,
+            "keywords": [
+              "Input: A CRPQ γ(x1, …, xn) and a graph database G. Output: All tuples (u1, …, un) of G that satisfy γ(x1, …, xn)."
+            ],
+            "eventId": "2"
+          },
+          {
+            "type": "show",
+            "id": "Algorithm__For_every_regular_language_L_of____compute_all_pairs_of_nodes_reachable_by_an_L_labelled_path________atoms_many_tables_Join_these____atoms_tables_of_size_____G_nodes_2_2",
+            "enabled": "enabled",
+            "name": "Algo1",
+            "merged": false,
+            "keywords": [
+              "Algo1"
+            ],
+            "eventId": "9"
+          },
+          {
+            "type": "show",
+            "id": "graph",
+            "enabled": "enabled",
+            "name": "graph",
+            "merged": false,
+            "keywords": [
+              "u",
+              "w",
+              "v",
+              "graph",
+              "a",
+              "b"
+            ],
+            "eventId": "3"
+          },
+          {
+            "type": "show",
+            "id": "automaton",
+            "enabled": "enabled",
+            "name": "automaton",
+            "merged": true,
+            "keywords": [
+              "automaton for a(ba)*",
+              "a",
+              "b",
+              "q0",
+              "q1",
+              "automaton"
+            ],
+            "eventId": "4"
+          },
+          {
+            "type": "show",
+            "id": "product_graph",
+            "enabled": "enabled",
+            "name": "product graph 1",
+            "merged": false,
+            "keywords": [
+              "a",
+              "b",
+              "u, q0",
+              "v, q1",
+              "v, q0",
+              "u, q1",
+              "w, q0",
+              "w, q1",
+              "+ some isolated nodes",
+              "product",
+              "product graph 1"
+            ],
+            "eventId": "6"
+          },
+          {
+            "type": "hide",
+            "id": "product_graph",
+            "enabled": "enabled",
+            "name": "product graph 1",
+            "merged": false,
+            "keywords": [
+              "product graph 1"
+            ],
+            "eventId": "11"
+          },
+          {
+            "type": "show",
+            "id": "product_graph_2",
+            "enabled": "enabled",
+            "name": "product graph 2",
+            "merged": true,
+            "keywords": [
+              "u, q0",
+              "v, q1",
+              "v, q0",
+              "u, q1",
+              "w, q0",
+              "w, q1",
+              "+ some isolated nodes",
+              "product",
+              "product graph 2"
+            ],
+            "eventId": "12"
+          },
+          {
+            "type": "show",
+            "id": "BFS",
+            "enabled": "enabled",
+            "name": "BFS",
+            "merged": false,
+            "keywords": [
+              "BFS",
+              "source target  u v u w v u w v  w w"
+            ],
+            "eventId": "5"
+          },
+          {
+            "type": "hide",
+            "id": "Algorithm__For_every_regular_language_L_of____compute_all_pairs_of_nodes_reachable_by_an_L_labelled_path________atoms_many_tables_Join_these____atoms_tables_of_size_____G_nodes_2_2",
+            "enabled": "enabled",
+            "name": "Algo1",
+            "merged": false,
+            "keywords": [
+              "Algo1"
+            ],
+            "eventId": "10"
+          },
+          {
+            "type": "show",
+            "id": "Algorithm__For_every_regular_language_L_of____compute_all_pairs_of_nodes_reachable_by_an_L_labelled_path________atoms_many_tables_Join_these____atoms_tables_of_size_____G_nodes_2_",
+            "enabled": "enabled",
+            "name": "Algo2",
+            "merged": true,
+            "keywords": [
+              "Algo2"
+            ],
+            "eventId": "7"
+          },
+          {
+            "type": "show",
+            "id": "Total_run_time___n2k_where_n__number_of_nodes_of_the_db_k__number_of_atoms_of_the_query",
+            "enabled": "enabled",
+            "name": "Total run time: ~n2k where n: number of nodes of the db k: number of atoms of the query",
+            "merged": false,
+            "keywords": [
+              "Total run time: ~n2k where n: number of nodes of the db k: number of atoms of the query"
+            ],
+            "eventId": "8"
+          }
+        ],
+        "keywords": [
+          "Table Materialisation"
+        ],
+        "eventId": "7",
+        "originalParams": {
+          "Evaluating_CRPQs_via_Table_Materialization": {
+            "opacity": 1
+          },
+          "Input__A_CRPQ___x1_____xn__and_a_graph_database_G__Output__All_tuples__u1_____un__of_G_that_satisfy___x1_____xn__": {
+            "opacity": 1
+          },
+          "graph": {
+            "opacity": 1
+          },
+          "automaton": {
+            "opacity": 1
+          },
+          "BFS": {
+            "opacity": 1
+          },
+          "product_graph": {
+            "opacity": 1
+          },
+          "Algorithm__For_every_regular_language_L_of____compute_all_pairs_of_nodes_reachable_by_an_L_labelled_path________atoms_many_tables_Join_these____atoms_tables_of_size_____G_nodes_2_": {
+            "opacity": 1
+          },
+          "Total_run_time___n2k_where_n__number_of_nodes_of_the_db_k__number_of_atoms_of_the_query": {
+            "opacity": 1
+          },
+          "Algorithm__For_every_regular_language_L_of____compute_all_pairs_of_nodes_reachable_by_an_L_labelled_path________atoms_many_tables_Join_these____atoms_tables_of_size_____G_nodes_2_2": {
+            "opacity": 1
+          },
+          "product_graph_2": {
+            "opacity": 1
+          }
+        }
+      },
+      {
+        "type": "child",
+        "name": "Structural Approach",
+        "id": "Structural_Approach2",
+        "enabled": "enabled",
+        "merged": false,
+        "children": [
+          {
+            "type": "show",
+            "id": "What_the_previous_algorithm_would_do_",
+            "enabled": "enabled",
+            "name": "What the previous algorithm would do →",
+            "merged": false,
+            "keywords": [
+              "What the previous algorithm would do →"
+            ],
+            "eventId": "1"
+          },
+          {
+            "type": "show",
+            "id": "step1",
+            "enabled": "enabled",
+            "name": "step1",
+            "merged": false,
+            "keywords": [
+              "u0",
+              "u1",
+              "step1"
+            ],
+            "eventId": "24"
+          },
+          {
+            "type": "show",
+            "id": "step12",
+            "enabled": "enabled",
+            "name": "step2",
+            "merged": false,
+            "keywords": [
+              "u2",
+              "u3",
+              "step2"
+            ],
+            "eventId": "25"
+          },
+          {
+            "type": "show",
+            "id": "step2",
+            "enabled": "enabled",
+            "name": "step3",
+            "merged": false,
+            "keywords": [
+              "u4",
+              "step3"
+            ],
+            "eventId": "26"
+          },
+          {
+            "type": "show",
+            "id": "step22",
+            "enabled": "enabled",
+            "name": "step4",
+            "merged": false,
+            "keywords": [
+              "u5",
+              "step4"
+            ],
+            "eventId": "27"
+          },
+          {
+            "type": "show",
+            "id": "Group_12",
+            "enabled": "enabled",
+            "name": "step5",
+            "merged": false,
+            "keywords": [
+              "step5"
+            ],
+            "eventId": "28"
+          },
+          {
+            "type": "hide",
+            "id": "step22",
+            "enabled": "enabled",
+            "name": "step4",
+            "merged": false,
+            "keywords": [
+              "step4"
+            ],
+            "eventId": "29"
+          },
+          {
+            "type": "hide",
+            "id": "Group_12",
+            "enabled": "enabled",
+            "name": "step5",
+            "merged": true,
+            "keywords": [
+              "step5"
+            ],
+            "eventId": "30"
+          },
+          {
+            "type": "show",
+            "id": "step4",
+            "enabled": "enabled",
+            "name": "step6",
+            "merged": true,
+            "keywords": [
+              "u'5",
+              "step6"
+            ],
+            "eventId": "31"
+          },
+          {
+            "type": "show",
+            "id": "Group_13",
+            "enabled": "enabled",
+            "name": "step7",
+            "merged": false,
+            "keywords": [
+              "u9",
+              "u7",
+              "u6",
+              "u8",
+              "step7"
+            ],
+            "eventId": "32"
+          },
+          {
+            "type": "show",
+            "id": "Group_14",
+            "enabled": "enabled",
+            "name": "step8",
+            "merged": false,
+            "keywords": [
+              "u10",
+              "step8"
+            ],
+            "eventId": "33"
+          },
+          {
+            "type": "show",
+            "id": "backtracking",
+            "enabled": "enabled",
+            "name": "backtracking",
+            "merged": false,
+            "keywords": [
+              "backtracking"
+            ],
+            "eventId": "34"
+          },
+          {
+            "type": "show",
+            "id": "backtracking2",
+            "enabled": "enabled",
+            "name": "backtracking2",
+            "merged": false,
+            "keywords": [
+              "…",
+              "backtracking",
+              "backtracking2"
+            ],
+            "eventId": "42"
+          },
+          {
+            "type": "show",
+            "id": "graph0",
+            "enabled": "enabled",
+            "name": "graph-bis",
+            "merged": false,
+            "keywords": [
+              "graph-bis"
+            ],
+            "eventId": "35"
+          },
+          {
+            "type": "show",
+            "id": "step13",
+            "enabled": "enabled",
+            "name": "step-bis1",
+            "merged": true,
+            "keywords": [
+              "u'0",
+              "u'1",
+              "step-bis1"
+            ],
+            "eventId": "36"
+          },
+          {
+            "type": "show",
+            "id": "step23",
+            "enabled": "enabled",
+            "name": "step-bis2",
+            "merged": false,
+            "keywords": [
+              "u2",
+              "u3",
+              "step-bis2"
+            ],
+            "eventId": "37"
+          },
+          {
+            "type": "show",
+            "id": "step3",
+            "enabled": "enabled",
+            "name": "step-bis3",
+            "merged": false,
+            "keywords": [
+              "u4",
+              "step-bis3"
+            ],
+            "eventId": "38"
+          },
+          {
+            "type": "show",
+            "id": "step6",
+            "enabled": "enabled",
+            "name": "step-bis6",
+            "merged": false,
+            "keywords": [
+              "u'5",
+              "step-bis6"
+            ],
+            "eventId": "39"
+          },
+          {
+            "type": "show",
+            "id": "step7",
+            "enabled": "enabled",
+            "name": "step-bis7",
+            "merged": false,
+            "keywords": [
+              "u9",
+              "u7",
+              "u6",
+              "u8",
+              "step-bis7"
+            ],
+            "eventId": "40"
+          },
+          {
+            "type": "show",
+            "id": "step8",
+            "enabled": "enabled",
+            "name": "step-bis8",
+            "merged": false,
+            "keywords": [
+              "u10",
+              "step-bis8"
+            ],
+            "eventId": "41"
+          },
+          {
+            "type": "show",
+            "id": "to_check",
+            "enabled": "enabled",
+            "name": "to check",
+            "merged": false,
+            "keywords": [
+              "u'0",
+              "u'1",
+              "u6",
+              "u10",
+              "But actually it would have been enough to check that",
+              "to conclude positively!",
+              "to check"
+            ],
+            "eventId": "43"
+          },
+          {
+            "type": "show",
+            "id": "Group_2",
+            "enabled": "enabled",
+            "name": "what we knew",
+            "merged": false,
+            "keywords": [
+              "u2",
+              "u3",
+              "u4",
+              "u5",
+              "u'5",
+              "u9",
+              "u7",
+              "u6",
+              "u8",
+              "u10",
+              "because we knew that",
+              "what we knew"
+            ],
+            "eventId": "44"
+          },
+          {
+            "type": "show",
+            "id": "Start_again_",
+            "enabled": "enabled",
+            "name": "Start again!",
+            "merged": false,
+            "keywords": [
+              "Start again!"
+            ],
+            "eventId": "45"
+          },
+          {
+            "type": "show",
+            "id": "graph",
+            "enabled": "enabled",
+            "name": "graph",
+            "merged": true,
+            "keywords": [
+              "graph"
+            ],
+            "eventId": "47"
+          },
+          {
+            "type": "show",
+            "id": "an_algorithm_that_uses_the_structure_of_the_query_",
+            "enabled": "enabled",
+            "name": "an algorithm that uses the structure of the query!",
+            "merged": true,
+            "keywords": [
+              "an algorithm that uses the structure of the query!"
+            ],
+            "eventId": "46"
+          },
+          {
+            "type": "show",
+            "id": "non_step1",
+            "enabled": "enabled",
+            "name": "step1",
+            "merged": false,
+            "keywords": [
+              "u0",
+              "u1",
+              "u2",
+              "step1"
+            ],
+            "eventId": "48"
+          },
+          {
+            "type": "hide",
+            "id": "non_step1",
+            "enabled": "enabled",
+            "name": "step1",
+            "merged": false,
+            "keywords": [
+              "step1"
+            ],
+            "eventId": "51"
+          },
+          {
+            "type": "show",
+            "id": "step14",
+            "enabled": "enabled",
+            "name": "step2",
+            "merged": true,
+            "keywords": [
+              "u1",
+              "u2",
+              "step2"
+            ],
+            "eventId": "50"
+          },
+          {
+            "type": "show",
+            "id": "step32",
+            "enabled": "enabled",
+            "name": "step3",
+            "merged": false,
+            "keywords": [
+              "u3",
+              "step3"
+            ],
+            "eventId": "52"
+          },
+          {
+            "type": "hide",
+            "id": "step32",
+            "enabled": "enabled",
+            "name": "step3",
+            "merged": false,
+            "keywords": [
+              "step3"
+            ],
+            "eventId": "55"
+          },
+          {
+            "type": "hide",
+            "id": "step14",
+            "enabled": "enabled",
+            "name": "step2",
+            "merged": true,
+            "keywords": [
+              "step2"
+            ],
+            "eventId": "53"
+          },
+          {
+            "type": "show",
+            "id": "step33",
+            "enabled": "enabled",
+            "name": "step4",
+            "merged": true,
+            "keywords": [
+              "u3",
+              "u2",
+              "step4"
+            ],
+            "eventId": "54"
+          },
+          {
+            "type": "hide",
+            "id": "step33",
+            "enabled": "enabled",
+            "name": "step4",
+            "merged": false,
+            "keywords": [
+              "step4"
+            ],
+            "eventId": "57"
+          },
+          {
+            "type": "show",
+            "id": "step42",
+            "enabled": "enabled",
+            "name": "step5",
+            "merged": true,
+            "keywords": [
+              "u3",
+              "u4",
+              "step5"
+            ],
+            "eventId": "59"
+          },
+          {
+            "type": "hide",
+            "id": "step42",
+            "enabled": "enabled",
+            "name": "step5",
+            "merged": false,
+            "keywords": [
+              "step5"
+            ],
+            "eventId": "61"
+          },
+          {
+            "type": "show",
+            "id": "step5",
+            "enabled": "enabled",
+            "name": "step6",
+            "merged": true,
+            "keywords": [
+              "u3",
+              "u4",
+              "v4",
+              "v2",
+              "step6"
+            ],
+            "eventId": "60"
+          },
+          {
+            "type": "hide",
+            "id": "step5",
+            "enabled": "enabled",
+            "name": "step6",
+            "merged": false,
+            "keywords": [
+              "step6"
+            ],
+            "eventId": "62"
+          },
+          {
+            "type": "show",
+            "id": "step62",
+            "enabled": "enabled",
+            "name": "step7",
+            "merged": true,
+            "keywords": [
+              "u3",
+              "v4",
+              "step7"
+            ],
+            "eventId": "63"
+          },
+          {
+            "type": "hide",
+            "id": "step62",
+            "enabled": "enabled",
+            "name": "step7",
+            "merged": false,
+            "keywords": [
+              "step7"
+            ],
+            "eventId": "64"
+          },
+          {
+            "type": "show",
+            "id": "step72",
+            "enabled": "enabled",
+            "name": "step8",
+            "merged": true,
+            "keywords": [
+              "step8"
+            ],
+            "eventId": "65"
+          },
+          {
+            "type": "show",
+            "id": "treedec",
+            "enabled": "enabled",
+            "name": "treedec",
+            "merged": false,
+            "keywords": [
+              "treedec"
+            ],
+            "eventId": "67"
+          },
+          {
+            "type": "show",
+            "id": "Def_k_2",
+            "enabled": "enabled",
+            "name": "Def k=2",
+            "merged": false,
+            "keywords": [
+              "Def k=2"
+            ],
+            "eventId": "70"
+          },
+          {
+            "type": "hide",
+            "id": "Def_k_2",
+            "enabled": "enabled",
+            "name": "Def k=2",
+            "merged": false,
+            "keywords": [
+              "Def k=2"
+            ],
+            "eventId": "68"
+          },
+          {
+            "type": "show",
+            "id": "Text",
+            "enabled": "enabled",
+            "name": "Def k>=0",
+            "merged": true,
+            "keywords": [
+              "Def k>=0"
+            ],
+            "eventId": "69"
+          },
+          {
+            "type": "show",
+            "id": "Algo",
+            "enabled": "enabled",
+            "name": "Algo",
+            "merged": false,
+            "keywords": [
+              "fixed",
+              "Algo for evaluating CRPQs of tree-width at most k: 1. Compute a tree-decomposition in linear time [Bodlaender '96] 2. Bottom-up: compute all valid partial mappings,  only keeping values at the frontier.",
+              "Algo"
+            ],
+            "eventId": "71"
+          },
+          {
+            "type": "show",
+            "id": "Text2",
+            "enabled": "enabled",
+            "name": "Total run time: ~nk+1 where n: number of nodes of the db k: tree-width of the query",
+            "merged": false,
+            "keywords": [
+              "Total run time: ~nk+1 where n: number of nodes of the db k: tree-width of the query"
+            ],
+            "eventId": "72"
+          }
+        ],
+        "keywords": [
+          "Assume that your Boolean CRPQ γ has this shape:",
+          "= every variable is existentially quantified",
+          "regexp & edge directions are omitted",
+          "Structural Approach"
+        ],
+        "eventId": "8",
+        "originalParams": {
+          "What_the_previous_algorithm_would_do_": {
+            "opacity": 1
+          },
+          "step1": {
+            "opacity": 1
+          },
+          "step12": {
+            "opacity": 1
+          },
+          "step2": {
+            "opacity": 1
+          },
+          "step22": {
+            "opacity": 1
+          },
+          "Group_12": {
+            "opacity": 1
+          },
+          "step4": {
+            "opacity": 1
+          },
+          "Group_13": {
+            "opacity": 1
+          },
+          "Group_14": {
+            "opacity": 1
+          },
+          "backtracking": {
+            "opacity": 1
+          },
+          "graph0": {
+            "opacity": 1
+          },
+          "step13": {
+            "opacity": 1
+          },
+          "step23": {
+            "opacity": 1
+          },
+          "step3": {
+            "opacity": 1
+          },
+          "step6": {
+            "opacity": 1
+          },
+          "step7": {
+            "opacity": 1
+          },
+          "step8": {
+            "opacity": 1
+          },
+          "backtracking2": {
+            "opacity": 1
+          },
+          "to_check": {
+            "opacity": 1
+          },
+          "Group_2": {
+            "opacity": 1
+          },
+          "Start_again_": {
+            "opacity": 1
+          },
+          "an_algorithm_that_uses_the_structure_of_the_query_": {
+            "opacity": 1
+          },
+          "graph": {
+            "opacity": 1
+          },
+          "non_step1": {
+            "opacity": 1
+          },
+          "step14": {
+            "opacity": 1
+          },
+          "step32": {
+            "opacity": 1
+          },
+          "step33": {
+            "opacity": 1
+          },
+          "step42": {
+            "opacity": 1
+          },
+          "step5": {
+            "opacity": 1
+          },
+          "step62": {
+            "opacity": 1
+          },
+          "step72": {
+            "opacity": 1
+          },
+          "Text": {
+            "opacity": 1
+          },
+          "treedec": {
+            "opacity": 1
+          },
+          "Def_k_2": {
+            "opacity": 1
+          },
+          "Algo": {
+            "opacity": 1
+          },
+          "Text2": {
+            "opacity": 1
+          }
+        }
+      },
+      {
+        "type": "show",
+        "id": "goal",
+        "enabled": "enabled",
+        "name": "goal",
+        "merged": false,
+        "keywords": [
+          "Goal: minimize parameters that are relevant for CRPQ evaluation.",
+          "goal"
+        ],
+        "eventId": "9"
+      },
+      {
+        "type": "show",
+        "id": "Minimization",
+        "enabled": "enabled",
+        "name": "Minimization",
+        "merged": false,
+        "keywords": [
+          "[Copy] minimization",
+          "Minimization"
+        ],
+        "eventId": "12"
+      },
+      {
+        "type": "child",
+        "name": "Minimization",
+        "id": "Minimization2",
+        "enabled": "enabled",
+        "merged": false,
+        "children": [
+          {
+            "type": "show",
+            "id": "Thm__Equivalence_is_ExpSpace_complete___Florescu__Levy___Suciu___PODS__98_Calvanese__De_Giacomo__Lenzerini____Vardi___KR__00_",
+            "enabled": "enabled",
+            "name": "Thm. Equivalence is ExpSpace-complete. (Florescu, Levy & Suciu · PODS '98 Calvanese, De Giacomo, Lenzerini, & Vardi · KR '00)",
+            "merged": false,
+            "keywords": [
+              "Thm. Equivalence is ExpSpace-complete. (Florescu, Levy & Suciu · PODS '98 Calvanese, De Giacomo, Lenzerini, & Vardi · KR '00)"
+            ],
+            "eventId": "1"
+          },
+          {
+            "type": "show",
+            "id": "Minimization_is_non_trivial",
+            "enabled": "enabled",
+            "name": "Minimization is non-trivial",
+            "merged": false,
+            "keywords": [
+              "Minimization is non-trivial"
+            ],
+            "eventId": "2"
+          },
+          {
+            "type": "child",
+            "name": "minimization non-trivial",
+            "id": "minimization_non_trivial",
+            "enabled": "enabled",
+            "merged": false,
+            "children": [
+              {
+                "type": "hide",
+                "id": "2",
+                "enabled": "enabled",
+                "name": "2",
+                "merged": false,
+                "keywords": [
+                  "2"
+                ],
+                "eventId": "2"
+              },
+              {
+                "type": "hide",
+                "id": "3",
+                "enabled": "enabled",
+                "name": "3",
+                "merged": false,
+                "keywords": [
+                  "3"
+                ],
+                "eventId": "3"
+              },
+              {
+                "type": "hide",
+                "id": "4",
+                "enabled": "enabled",
+                "name": "4",
+                "merged": false,
+                "keywords": [
+                  "4"
+                ],
+                "eventId": "4"
+              },
+              {
+                "type": "show",
+                "id": "Group_2",
+                "enabled": "enabled",
+                "name": "CQ",
+                "merged": false,
+                "keywords": [
+                  "For conjunctive queries, minimality equals non-redundancy. [Chandra & Merlin, STOC '77]",
+                  "a",
+                  "b",
+                  "≡",
+                  "CQ"
+                ],
+                "eventId": "5"
+              },
+              {
+                "type": "show",
+                "id": "Text5",
+                "enabled": "enabled",
+                "name": "For CRPQs, minimality and non-redundancy are distinct.",
+                "merged": false,
+                "keywords": [
+                  "For CRPQs, minimality and non-redundancy are distinct."
+                ],
+                "eventId": "6"
+              },
+              {
+                "type": "show",
+                "id": "For_CRPQs__minimality_and_non_redundancy_are_distinct_",
+                "enabled": "enabled",
+                "name": "Already true for tree patterns. [Czerwiński, Martens, Niewerth & Parys · JACM '18]",
+                "merged": false,
+                "keywords": [
+                  "Already true for tree patterns. [Czerwiński, Martens, Niewerth & Parys · JACM '18]"
+                ],
+                "eventId": "7"
+              }
+            ],
+            "keywords": [
+              "a",
+              "b",
+              "a+",
+              "c",
+              "≡",
+              "aa+",
+              "aa",
+              "minimization non-trivial"
+            ],
+            "eventId": "3",
+            "originalParams": {
+              "1": {
+                "opacity": 1
+              },
+              "2": {
+                "opacity": 1
+              },
+              "3": {
+                "opacity": 1
+              },
+              "4": {
+                "opacity": 1
+              },
+              "Group_2": {
+                "opacity": 1
+              },
+              "Text5": {
+                "opacity": 1
+              },
+              "For_CRPQs__minimality_and_non_redundancy_are_distinct_": {
+                "opacity": 1
+              }
+            }
+          },
+          {
+            "type": "show",
+            "id": "Thm__CRPQ_atom_minimization_is_decidable_",
+            "enabled": "enabled",
+            "name": "Thm. CRPQ atom minimization is decidable in 2ExpSpace.",
+            "merged": false,
+            "keywords": [
+              "Thm. CRPQ atom minimization is decidable in 2ExpSpace."
+            ],
+            "eventId": "4"
+          },
+          {
+            "type": "child",
+            "name": "CRPQ atom minimization",
+            "id": "CRPQ_atom_minimization",
+            "enabled": "enabled",
+            "merged": false,
+            "children": [
+              {
+                "type": "show",
+                "id": "Lemma_",
+                "enabled": "enabled",
+                "name": "Lemma.",
+                "merged": false,
+                "keywords": [
+                  "Lemma."
+                ],
+                "eventId": "1"
+              },
+              {
+                "type": "show",
+                "id": "input_CRPQ",
+                "enabled": "enabled",
+                "name": "input CRPQ",
+                "merged": false,
+                "keywords": [
+                  "a",
+                  "b",
+                  "(ac)+",
+                  "b+",
+                  "c",
+                  "(a+b)+",
+                  "(cc)+",
+                  "aaa+",
+                  "b(bb)*",
+                  "automata of size ≤ m",
+                  "input CRPQ"
+                ],
+                "eventId": "2"
+              },
+              {
+                "type": "show",
+                "id": "input_of_miz__problem",
+                "enabled": "enabled",
+                "name": "input of miz° problem",
+                "merged": true,
+                "keywords": [
+                  "input of miz° problem"
+                ],
+                "eventId": "3"
+              },
+              {
+                "type": "show",
+                "id": "if_it_is_equivalent_to",
+                "enabled": "enabled",
+                "name": "if it is equivalent to",
+                "merged": true,
+                "keywords": [
+                  "if it is equivalent to"
+                ],
+                "eventId": "4"
+              },
+              {
+                "type": "show",
+                "id": "witness",
+                "enabled": "enabled",
+                "name": "witness",
+                "merged": true,
+                "keywords": [
+                  "nb. of atoms ≤ k",
+                  "L1",
+                  "L0",
+                  "L2",
+                  "L3",
+                  "witness"
+                ],
+                "eventId": "5"
+              },
+              {
+                "type": "show",
+                "id": "positive_witness",
+                "enabled": "enabled",
+                "name": "positive witness",
+                "merged": true,
+                "keywords": [
+                  "positive witness"
+                ],
+                "eventId": "6"
+              },
+              {
+                "type": "show",
+                "id": "__then_it_is_equivalent_to",
+                "enabled": "enabled",
+                "name": "… then it is equivalent to",
+                "merged": false,
+                "keywords": [
+                  "… then it is equivalent to"
+                ],
+                "eventId": "7"
+              },
+              {
+                "type": "show",
+                "id": "small_witness",
+                "enabled": "enabled",
+                "name": "small witness",
+                "merged": true,
+                "keywords": [
+                  "automata of size ≤ f(m)",
+                  "nb. of atoms ≤ k",
+                  "K1",
+                  "K0",
+                  "K2",
+                  "K3",
+                  "small witness"
+                ],
+                "eventId": "8"
+              },
+              {
+                "type": "show",
+                "id": "small_positive_witness",
+                "enabled": "enabled",
+                "name": "small positive witness",
+                "merged": true,
+                "keywords": [
+                  "small positive witness"
+                ],
+                "eventId": "9"
+              }
+            ],
+            "keywords": [
+              "Proof idea: small model property (there are finitely many candidates).",
+              "CRPQ atom minimization"
+            ],
+            "eventId": "5",
+            "originalParams": {
+              "Lemma_": {
+                "opacity": 1
+              },
+              "input_CRPQ": {
+                "opacity": 1
+              },
+              "input_of_miz__problem": {
+                "opacity": 1
+              },
+              "if_it_is_equivalent_to": {
+                "opacity": 1
+              },
+              "witness": {
+                "opacity": 1
+              },
+              "positive_witness": {
+                "opacity": 1
+              },
+              "__then_it_is_equivalent_to": {
+                "opacity": 1
+              },
+              "small_witness": {
+                "opacity": 1
+              },
+              "small_positive_witness": {
+                "opacity": 1
+              }
+            }
+          },
+          {
+            "type": "child",
+            "name": "union matters",
+            "id": "union_matters",
+            "enabled": "enabled",
+            "merged": false,
+            "children": [
+              {
+                "type": "show",
+                "id": "LHS",
+                "enabled": "enabled",
+                "name": "LHS",
+                "merged": false,
+                "keywords": [
+                  "x",
+                  "y",
+                  "z",
+                  "a",
+                  "b+",
+                  "a(bb)+",
+                  "ab(bb)*",
+                  "!",
+                  "γ() =",
+                  "LHS"
+                ],
+                "eventId": "1"
+              },
+              {
+                "type": "show",
+                "id": "is_not_equivalent_to_any_CRPQ_with_any_at_most_4_atoms",
+                "enabled": "enabled",
+                "name": "is not equivalent to any CRPQ with any at most 4 atoms",
+                "merged": true,
+                "keywords": [
+                  "is not equivalent to any CRPQ with any at most 4 atoms"
+                ],
+                "eventId": "2"
+              },
+              {
+                "type": "show",
+                "id": "is_equivalent_to",
+                "enabled": "enabled",
+                "name": "is equivalent to",
+                "merged": false,
+                "keywords": [
+                  "is equivalent to"
+                ],
+                "eventId": "3"
+              },
+              {
+                "type": "show",
+                "id": "RHS",
+                "enabled": "enabled",
+                "name": "RHS",
+                "merged": false,
+                "keywords": [
+                  "x",
+                  "y",
+                  "z",
+                  "a",
+                  "ab(bb)*",
+                  "!",
+                  "δeven() =",
+                  "(bb)+",
+                  "a(bb)+",
+                  "b(bb)*",
+                  "δodd() =",
+                  "union",
+                  "RHS"
+                ],
+                "eventId": "4"
+              }
+            ],
+            "keywords": [
+              "Allowing unions help to minimize further!",
+              "union matters"
+            ],
+            "eventId": "6",
+            "originalParams": {
+              "LHS": {
+                "opacity": 1
+              },
+              "is_not_equivalent_to_any_CRPQ_with_any_at_most_4_atoms": {
+                "opacity": 1
+              },
+              "is_equivalent_to": {
+                "opacity": 1
+              },
+              "RHS": {
+                "opacity": 1
+              }
+            }
+          },
+          {
+            "type": "show",
+            "id": "Thm__UCRPQ_atom_minimization_is_decidable_",
+            "enabled": "enabled",
+            "name": "Thm. UCRPQ atom minimization is decidable in ExpSpace  and UCRPQ tree-width min°  is decidable in 2ExpSpace.",
+            "merged": false,
+            "keywords": [
+              "Thm. UCRPQ atom minimization is decidable in ExpSpace  and UCRPQ tree-width min°  is decidable in 2ExpSpace."
+            ],
+            "eventId": "8"
+          },
+          {
+            "type": "child",
+            "name": "max under approx",
+            "id": "max_under_approx",
+            "enabled": "enabled",
+            "merged": false,
+            "children": [
+              {
+                "type": "show",
+                "id": "gamma",
+                "enabled": "enabled",
+                "name": "gamma",
+                "merged": false,
+                "keywords": [
+                  "γ",
+                  "gamma"
+                ],
+                "eventId": "1"
+              },
+              {
+                "type": "show",
+                "id": "subquery",
+                "enabled": "enabled",
+                "name": "subquery",
+                "merged": true,
+                "keywords": [
+                  "δ ⊆ γ w/ ≤ k atoms",
+                  "subquery"
+                ],
+                "eventId": "2"
+              },
+              {
+                "type": "show",
+                "id": "under_approx",
+                "enabled": "enabled",
+                "name": "under approx",
+                "merged": true,
+                "keywords": [
+                  "maximal under-app°",
+                  "under approx"
+                ],
+                "eventId": "3"
+              },
+              {
+                "type": "show",
+                "id": "Main_idea__Define_an_infinite_query_satisfying__the_constraints_and_prove_that_it_is_finitely__expressible_using_combinatorial_techniques_",
+                "enabled": "enabled",
+                "name": "Main idea: Define an infinite query satisfying  the constraints and prove that it is finitely  expressible using combinatorial techniques.",
+                "merged": false,
+                "keywords": [
+                  "Main idea: Define an infinite query satisfying  the constraints and prove that it is finitely  expressible using combinatorial techniques."
+                ],
+                "eventId": "4"
+              },
+              {
+                "type": "child",
+                "name": "construction under approximation",
+                "id": "construction_under_approximation",
+                "enabled": "enabled",
+                "merged": false,
+                "children": [
+                  {
+                    "type": "show",
+                    "id": "refine",
+                    "enabled": "enabled",
+                    "name": "refine",
+                    "merged": false,
+                    "keywords": [
+                      "refine"
+                    ],
+                    "eventId": "1"
+                  },
+                  {
+                    "type": "show",
+                    "id": "refinement",
+                    "enabled": "enabled",
+                    "name": "refinement",
+                    "merged": true,
+                    "keywords": [
+                      "refinement"
+                    ],
+                    "eventId": "2"
+                  },
+                  {
+                    "type": "show",
+                    "id": "k_under_approximation",
+                    "enabled": "enabled",
+                    "name": "k-under-approximation",
+                    "merged": false,
+                    "keywords": [
+                      "under-approximation",
+                      "keep it if it has at most k atoms / if it has tree-width at most k",
+                      "k-under-approximation"
+                    ],
+                    "eventId": "3"
+                  },
+                  {
+                    "type": "show",
+                    "id": "fold",
+                    "enabled": "enabled",
+                    "name": "fold",
+                    "merged": true,
+                    "keywords": [
+                      "fold"
+                    ],
+                    "eventId": "4"
+                  },
+                  {
+                    "type": "show",
+                    "id": "The_infinite_union_of_all_such_queries_is_a_maximal_under_approximation_",
+                    "enabled": "enabled",
+                    "name": "The infinite union of all such queries is a maximal under-approximation.",
+                    "merged": false,
+                    "keywords": [
+                      "The infinite union of all such queries is a maximal under-approximation."
+                    ],
+                    "eventId": "5"
+                  }
+                ],
+                "keywords": [
+                  "original query",
+                  "construction under approximation"
+                ],
+                "eventId": "5",
+                "originalParams": {
+                  "refine": {
+                    "opacity": 1
+                  },
+                  "refinement": {
+                    "opacity": 1
+                  },
+                  "k_under_approximation": {
+                    "opacity": 1
+                  },
+                  "fold": {
+                    "opacity": 1
+                  },
+                  "The_infinite_union_of_all_such_queries_is_a_maximal_under_approximation_": {
+                    "opacity": 1
+                  }
+                }
+              }
+            ],
+            "keywords": [
+              "Thm. Every CRPQ γ has a maximal under-approximation by finite unions of CRPQs with at most k atoms.",
+              "max under approx"
+            ],
+            "eventId": "7",
+            "originalParams": {
+              "gamma": {
+                "opacity": 1
+              },
+              "subquery": {
+                "opacity": 1
+              },
+              "under_approx": {
+                "opacity": 1
+              },
+              "Main_idea__Define_an_infinite_query_satisfying__the_constraints_and_prove_that_it_is_finitely__expressible_using_combinatorial_techniques_": {
+                "opacity": 1
+              }
+            }
+          }
+        ],
+        "keywords": [
+          "Atom Minimization or Tree-Width Minimization Goal: Given k ∈ ℕ, a CRPQ γ, find another CRPQ δ s.t.  1. γ and δ are semantically equivalent, and 2. δ has at most k atoms,  /tree-width at most k.",
+          "same output on all databases",
+          "Minimization"
+        ],
+        "eventId": "13",
+        "originalParams": {
+          "Thm__Equivalence_is_ExpSpace_complete___Florescu__Levy___Suciu___PODS__98_Calvanese__De_Giacomo__Lenzerini____Vardi___KR__00_": {
+            "opacity": 1
+          },
+          "Minimization_is_non_trivial": {
+            "opacity": 1
+          },
+          "Thm__CRPQ_atom_minimization_is_decidable_": {
+            "opacity": 1
+          },
+          "Thm__UCRPQ_atom_minimization_is_decidable_": {
+            "opacity": 1
+          }
+        }
+      },
+      {
+        "type": "show",
+        "id": "Proving_Inexpressibility",
+        "enabled": "enabled",
+        "name": "Proving Inexpressibility",
+        "merged": false,
+        "keywords": [
+          "[Copy] Proving Inexpressibility",
+          "Proving Inexpressibility"
+        ],
+        "eventId": "5"
+      },
+      {
+        "type": "child",
+        "name": "Inexpressibility",
+        "id": "Inexpressibility",
+        "enabled": "enabled",
+        "merged": false,
+        "children": [
+          {
+            "type": "show",
+            "id": "Given_a_UCRPQ____if_its_semantics_contains_a_complex_pattern__then_any_UCRPQ_equivalent_to___must_be_complex_",
+            "enabled": "enabled",
+            "name": "Given a UCRPQ Γ, if its semantics contains a complex pattern, then any UCRPQ equivalent to Γ must be complex.",
+            "merged": false,
+            "keywords": [
+              "Given a UCRPQ Γ, if its semantics contains a complex pattern, then any UCRPQ equivalent to Γ must be complex."
+            ],
+            "eventId": "4"
+          },
+          {
+            "type": "show",
+            "id": "Complexity__a_class_of_graphs_closed_under_minors__E_g___at_most_k_atoms__or_tree_width_at_most_k_",
+            "enabled": "enabled",
+            "name": "Complexity: a class of graphs closed under minors. E.g.: at most k atoms, or tree-width at most k.",
+            "merged": false,
+            "keywords": [
+              "Complexity: a class of graphs closed under minors. E.g.: at most k atoms, or tree-width at most k."
+            ],
+            "eventId": "5"
+          },
+          {
+            "type": "show",
+            "id": "Complex_pattern_containment__there_exists_a_canonical_database_G_of___s_t____G_is_hom_minimal__amongst_canonical_databases___the_segment_graph_of_the_core_of_G_is_complex_",
+            "enabled": "enabled",
+            "name": "Complex pattern containment: there exists a canonical database G of Γ s.t. : G is hom-minimal (amongst canonical databases), the segment graph of the core of G is complex.",
+            "merged": true,
+            "keywords": [
+              "Complex pattern containment: there exists a canonical database G of Γ s.t. : G is hom-minimal (amongst canonical databases), the segment graph of the core of G is complex."
+            ],
+            "eventId": "6"
+          },
+          {
+            "type": "child",
+            "name": "segment graph",
+            "id": "segment_graph",
+            "enabled": "enabled",
+            "merged": false,
+            "children": [
+              {
+                "type": "show",
+                "id": "select_disjunct",
+                "enabled": "enabled",
+                "name": "select disjunct",
+                "merged": false,
+                "keywords": [
+                  "select a disjunct",
+                  "select disjunct"
+                ],
+                "eventId": "1"
+              },
+              {
+                "type": "show",
+                "id": "Group_10",
+                "enabled": "enabled",
+                "name": "a crpq",
+                "merged": true,
+                "keywords": [
+                  "b",
+                  "a",
+                  "ab≥4d3",
+                  "c",
+                  "(bb)+",
+                  "d≥3",
+                  "γi =",
+                  "a crpq"
+                ],
+                "eventId": "2"
+              },
+              {
+                "type": "show",
+                "id": "Group_11",
+                "enabled": "enabled",
+                "name": "acdb",
+                "merged": false,
+                "keywords": [
+                  "b",
+                  "d",
+                  "a",
+                  "c",
+                  "acdb"
+                ],
+                "eventId": "3"
+              },
+              {
+                "type": "show",
+                "id": "cdb",
+                "enabled": "enabled",
+                "name": "cdb",
+                "merged": true,
+                "keywords": [
+                  "canonical database",
+                  "cdb"
+                ],
+                "eventId": "4"
+              },
+              {
+                "type": "show",
+                "id": "Group_6",
+                "enabled": "enabled",
+                "name": "a core",
+                "merged": false,
+                "keywords": [
+                  "b",
+                  "d",
+                  "a",
+                  "c",
+                  "a core"
+                ],
+                "eventId": "5"
+              },
+              {
+                "type": "show",
+                "id": "core",
+                "enabled": "enabled",
+                "name": "core",
+                "merged": true,
+                "keywords": [
+                  "core"
+                ],
+                "eventId": "6"
+              },
+              {
+                "type": "show",
+                "id": "Group_7",
+                "enabled": "enabled",
+                "name": "Group 7",
+                "merged": false,
+                "keywords": [
+                  "Group 7"
+                ],
+                "eventId": "7"
+              },
+              {
+                "type": "show",
+                "id": "ident_segments",
+                "enabled": "enabled",
+                "name": "ident segments",
+                "merged": true,
+                "keywords": [
+                  "identify segments",
+                  "ident segments"
+                ],
+                "eventId": "8"
+              },
+              {
+                "type": "show",
+                "id": "Group_9",
+                "enabled": "enabled",
+                "name": "Group 9",
+                "merged": false,
+                "keywords": [
+                  "Group 9"
+                ],
+                "eventId": "9"
+              },
+              {
+                "type": "show",
+                "id": "seg_graph",
+                "enabled": "enabled",
+                "name": "seg graph",
+                "merged": true,
+                "keywords": [
+                  "segment graph",
+                  "seg graph"
+                ],
+                "eventId": "10"
+              }
+            ],
+            "keywords": [
+              "a UCRPQ γ1 ∨ … ∨ γn",
+              "Segment graphs:",
+              "segment graph"
+            ],
+            "eventId": "2",
+            "originalParams": {
+              "select_disjunct": {
+                "opacity": 1
+              },
+              "Group_10": {
+                "opacity": 1
+              },
+              "Group_11": {
+                "opacity": 1
+              },
+              "cdb": {
+                "opacity": 1
+              },
+              "Group_6": {
+                "opacity": 1
+              },
+              "core": {
+                "opacity": 1
+              },
+              "Group_7": {
+                "opacity": 1
+              },
+              "ident_segments": {
+                "opacity": 1
+              },
+              "Group_9": {
+                "opacity": 1
+              },
+              "seg_graph": {
+                "opacity": 1
+              }
+            }
+          },
+          {
+            "type": "show",
+            "id": "hom_minimality",
+            "enabled": "enabled",
+            "name": "hom minimality",
+            "merged": false,
+            "keywords": [
+              "Hom-minimality:",
+              "γ",
+              "hom-minimal for γ",
+              "not hom-minimal for γ",
+              "hom minimality"
+            ],
+            "eventId": "7"
+          },
+          {
+            "type": "show",
+            "id": "Text",
+            "enabled": "enabled",
+            "name": "“Coro”. All minimization problems we mentioned are ExpSpace-hard.",
+            "merged": false,
+            "keywords": [
+              "“Coro”. All minimization problems we mentioned are ExpSpace-hard."
+            ],
+            "eventId": "8"
+          }
+        ],
+        "keywords": [
+          "Q°. Given γ, how can we prove that it is not equivalent to a UCRPQ with at most k atoms?",
+          "Inexpressibility"
+        ],
+        "eventId": "14",
+        "originalParams": {
+          "Given_a_UCRPQ____if_its_semantics_contains_a_complex_pattern__then_any_UCRPQ_equivalent_to___must_be_complex_": {
+            "opacity": 1
+          },
+          "Complexity__a_class_of_graphs_closed_under_minors__E_g___at_most_k_atoms__or_tree_width_at_most_k_": {
+            "opacity": 1
+          },
+          "Complex_pattern_containment__there_exists_a_canonical_database_G_of___s_t____G_is_hom_minimal__amongst_canonical_databases___the_segment_graph_of_the_core_of_G_is_complex_": {
+            "opacity": 1
+          },
+          "hom_minimality": {
+            "opacity": 1
+          },
+          "Text": {
+            "opacity": 1
+          }
+        }
+      }
+    ],
+    "keywords": [
+      "Minimizing Conjunctive Regular Path Queries",
+      "Rémi Morvan, CRIStAL, Lille Boreal seminar, 24 Nov. 26",
+      "joint works w/ Diego Figueira (labri, Bordeaux) Miguel Romero (uC Chile, Santiago) published at ICDT 2023, LMCS 2025, PODS 2025",
+      "main slide"
+    ],
+    "eventId": "root",
+    "originalParams": {
+      "CRPQS": {
+        "opacity": 1
+      },
+      "Table_Materialisation": {
+        "opacity": 1
+      },
+      "Structural_Approach": {
+        "opacity": 1
+      },
+      "Proving_Inexpressibility": {
+        "opacity": 1
+      },
+      "goal": {
+        "opacity": 1
+      },
+      "Group_21": {
+        "opacity": 1
+      },
+      "Arrow": {
+        "opacity": 1
+      },
+      "Minimization": {
+        "opacity": 1
+      }
+    }
+  },
+  "treeTimeLine": [],
+  "chronicleTimeLine": []
+}
