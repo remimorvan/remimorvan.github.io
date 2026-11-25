@@ -1155,6 +1155,21 @@
             "merged": false,
             "children": [
               {
+                "type": "show",
+                "id": "Group_2",
+                "enabled": "enabled",
+                "name": "CQ",
+                "merged": false,
+                "keywords": [
+                  "For conjunctive queries, minimality equals non-redundancy. [Chandra & Merlin, STOC '77]",
+                  "a",
+                  "b",
+                  "≡",
+                  "CQ"
+                ],
+                "eventId": "5"
+              },
+              {
                 "type": "hide",
                 "id": "2",
                 "enabled": "enabled",
@@ -1186,21 +1201,6 @@
                   "4"
                 ],
                 "eventId": "4"
-              },
-              {
-                "type": "show",
-                "id": "Group_2",
-                "enabled": "enabled",
-                "name": "CQ",
-                "merged": false,
-                "keywords": [
-                  "For conjunctive queries, minimality equals non-redundancy. [Chandra & Merlin, STOC '77]",
-                  "a",
-                  "b",
-                  "≡",
-                  "CQ"
-                ],
-                "eventId": "5"
               },
               {
                 "type": "show",
@@ -1237,9 +1237,6 @@
             ],
             "eventId": "3",
             "originalParams": {
-              "1": {
-                "opacity": 1
-              },
               "2": {
                 "opacity": 1
               },
